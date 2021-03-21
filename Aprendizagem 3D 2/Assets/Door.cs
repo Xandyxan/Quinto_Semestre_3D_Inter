@@ -9,7 +9,7 @@ public class Door : MonoBehaviour
 
     [Tooltip("If the door starts closed or not")]
     [SerializeField] private bool isClosed = true; // se a porta está aberta ou fechada na animação
-    private Animator doorAnim;
+    private Animator doorAnimator;
     
     [Space]
 
@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        doorAnim = GetComponent<Animator>();
+        doorAnimator = GetComponent<Animator>(); // test comment, delete later
     }
 
     public void OpenDoor()
@@ -37,8 +37,8 @@ public class Door : MonoBehaviour
         {
 
             isClosed = !isClosed;
-            doorAnim.SetBool("IsClosed", isClosed);
-            doorAnim.SetBool("IsIdle", false);
+            doorAnimator.SetBool("IsClosed", isClosed);
+            doorAnimator.SetBool("IsIdle", false);
         }
 
     }
@@ -53,7 +53,7 @@ public class Door : MonoBehaviour
         }
         else                    // roda a animação de porta trancada
         {
-            doorAnim.SetTrigger("Locked");
+            doorAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             return;
         }
