@@ -27,6 +27,8 @@ public class Door : MonoBehaviour
 
     //Xandy> Testando merge conflict nos scripts! 16:51 - 21/03
 
+    //Xandy> Segundo teste de merge conflict nos scripts! 17:13 - 21/03
+
     // Start is called before the first frame update
     void Start()
     {
