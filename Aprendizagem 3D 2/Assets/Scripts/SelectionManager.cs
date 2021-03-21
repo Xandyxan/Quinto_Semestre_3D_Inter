@@ -18,22 +18,16 @@ public class SelectionManager : MonoBehaviour
 
     Interactive interactiveScript = null;
 
-    [SerializeField] private float maxDistance = 3.4f; 
+    [SerializeField] private float maxDistance = 20f; 
 
     [Header("Crosshair Change")]
     public Image crosshair;
     private float chRaioSelected = 100f;
     private float zoomSpeed = 8f;
 
-    private Inspecao insp;
     private void Awake()
     {
         instance = this;
-    }
-
-    private void Start() 
-    {
-        insp = FindObjectOfType<Inspecao>();
     }
     private void Update()
     {
@@ -55,7 +49,8 @@ public class SelectionManager : MonoBehaviour
         if (Physics.Raycast(ray, out hit, maxDistance))
         {
             Transform selection = hit.transform;
-            if (selection.gameObject.CompareTag(selectableTag) && !insp.inspecionando)
+
+            if (selection.gameObject.CompareTag(selectableTag))
             {
                 selectionRenderer = selection.GetComponent<Renderer>();
                 interactiveScript = selection.GetComponent<Interactive>();
@@ -71,6 +66,19 @@ public class SelectionManager : MonoBehaviour
 
                 selectionTransform = selection;
                
+            }
+
+            if(selection.gameObject.CompareTag("Doors"))
+            {
+
+                interactiveScript = selection.GetComponent<Interactive>();
+                if (interactiveScript != null) interactiveScript.SetSelectedTrue();
+                /*
+                InteractiveDoors interactiveDoors = selection.GetComponentInParent<InteractiveDoors>();
+                if(Input.GetKeyDown("e"))
+                interactiveDoors.OpenCloseDoors();
+                //print("está olhando para uma porta");
+                */
             }
         }
     }
