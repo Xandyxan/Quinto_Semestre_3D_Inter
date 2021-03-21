@@ -51,6 +51,12 @@ public class Interactive : MonoBehaviour
                         Doors doorScript2 = transform.GetComponent<Doors>();
                         doorScript2.OpenCloseDoors();
                         break;
+                        
+                    case "Interagivel":
+                        Transform objectRoot = transform.root;
+                        Inspecao insp = objectRoot.GetComponent<Inspecao>();
+                        insp.Interagindo();
+                        break;
                 }
                     
             }
