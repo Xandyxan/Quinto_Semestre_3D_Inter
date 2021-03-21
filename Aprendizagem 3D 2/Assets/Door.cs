@@ -22,7 +22,10 @@ public class Door : MonoBehaviour
     [SerializeField] private string keyName; 
    
 
+
     // Será que vai dar conflito? ai ai ai
+
+    //Xandy> Testando merge conflict nos scripts! 16:51 - 21/03
 
     // Start is called before the first frame update
     void Start()
