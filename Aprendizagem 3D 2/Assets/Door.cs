@@ -30,7 +30,7 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
-        if (isLocked) CheckKey();
+        if (isLocked) CheckKey(); // glubglub
         else
         {
 
@@ -40,16 +40,16 @@ public class Door : MonoBehaviour
         }
 
     }
-    private void CheckKey()
+    private void CheckKey()   // checa se o player tem um pref com a mesma string do nome da chave
     {
-        if (PlayerPrefs.HasKey(keyName))
+        if (PlayerPrefs.HasKey(keyName))   // abre a porta
         {
             // destranca a porta
             print("Open the door!");
             isLocked = false;
          
         }
-        else
+        else                    // roda a animação de porta trancada
         {
             doorAnim.SetTrigger("Locked");
             print("jogador não possui a chave!");
