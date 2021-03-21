@@ -25,9 +25,15 @@ public class SelectionManager : MonoBehaviour
     private float chRaioSelected = 100f;
     private float zoomSpeed = 8f;
 
+    private Inspecao insp;
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Start() 
+    {
+        insp = FindObjectOfType<Inspecao>();
     }
     private void Update()
     {
@@ -50,7 +56,7 @@ public class SelectionManager : MonoBehaviour
         {
             Transform selection = hit.transform;
 
-            if (selection.gameObject.CompareTag(selectableTag))
+            if (selection.gameObject.CompareTag(selectableTag) && !insp.inspecionando)
             {
                 selectionRenderer = selection.GetComponent<Renderer>();
                 interactiveScript = selection.GetComponent<Interactive>();
