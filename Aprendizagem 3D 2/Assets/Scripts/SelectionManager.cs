@@ -1,0 +1,77 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class SelectionManager : MonoBehaviour
+{
+    //quando o objeto for selecionado, o crosshair fica size 100
+    public static SelectionManager instance; //singleton
+
+    [SerializeField] private string selectableTag = "Selectable";
+
+    Renderer selectionRenderer = null;
+    [SerializeField] private Material highlightMaterial;
+    private Material defaultMaterial;
+
+    private Transform selectionTransform;
+
+    Interactive interactiveScript = null;
+
+    [SerializeField] private float maxDistance = 3.4f; 
+
+    [Header("Crosshair Change")]
+    public Image crosshair;
+    private float chRaioSelected = 100f;
+    private float zoomSpeed = 8f;
+
+    private Inspecao insp;
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    private void Start() 
+    {
+        insp = FindObjectOfType<Inspecao>();
+    }
+    private void Update()
+    {
+        if (selectionTransform != null)
+        {
+            //Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
+            selectionRenderer.material = defaultMaterial;
+
+                selectionTransform = null;
+        }
+        else
+        {
+            crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected / 2, chRaioSelected / 2), zoomSpeed * Time.deltaTime);
+            if (interactiveScript != null) interactiveScript.SetSelectedFalse();
+        }
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, maxDistance))
+        {
+            Transform selection = hit.transform;
+            if (selection.gameObject.CompareTag(selectableTag) && !insp.inspecionando)
+            {
+                selectionRenderer = selection.GetComponent<Renderer>();
+                interactiveScript = selection.GetComponent<Interactive>();
+                if (selectionRenderer != null)
+                {
+                    defaultMaterial = selectionRenderer.material;
+                    selectionRenderer.material = highlightMaterial;
+                }
+
+                crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
+
+                 if(interactiveScript!= null)   interactiveScript.SetSelectedTrue();
+
+                selectionTransform = selection;
+               
+            }
+        }
+    }
+}
