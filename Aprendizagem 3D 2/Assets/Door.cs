@@ -24,11 +24,11 @@ public class Door : MonoBehaviour
 
 
     // Será que vai dar conflito? ai ai ai
-
+    // test for conflicts 17:31
     //Xandy> Testando merge conflict nos scripts! 16:51 - 21/03
 
     // Start is called before the first frame update
-    void Start()
+    void Start()          // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 17:32
     {
         doorAnimator = GetComponent<Animator>(); // test comment, delete later
     }
