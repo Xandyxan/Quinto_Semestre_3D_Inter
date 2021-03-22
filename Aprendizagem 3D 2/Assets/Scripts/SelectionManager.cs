@@ -24,8 +24,11 @@ public class SelectionManager : MonoBehaviour
     public Image crosshair;
     private float chRaioSelected = 100f;
     private float zoomSpeed = 8f;
+    public bool inspecionando;
 
-    private Inspecao insp;
+
+
+
     private void Awake()
     {
         instance = this;
@@ -33,7 +36,7 @@ public class SelectionManager : MonoBehaviour
 
     private void Start() 
     {
-        insp = FindObjectOfType<Inspecao>();
+        inspecionando = false;
     }
     private void Update()
     {
@@ -56,7 +59,7 @@ public class SelectionManager : MonoBehaviour
         {
             Transform selection = hit.transform;
 
-            if (selection.gameObject.CompareTag(selectableTag) && !insp.inspecionando)
+            if (selection.gameObject.CompareTag(selectableTag) && !inspecionando)
             {
                 selectionRenderer = selection.GetComponent<Renderer>();
                 interactiveScript = selection.GetComponent<Interactive>();

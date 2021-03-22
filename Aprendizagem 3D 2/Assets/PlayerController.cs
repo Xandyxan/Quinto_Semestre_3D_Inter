@@ -46,7 +46,8 @@ public class PlayerController : MonoBehaviour
     //run
     private float fovRun = 80f;
     private bool isRunning;
-    private Inspecao insp;
+
+    SelectionManager sManager;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -59,7 +60,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         insp = FindObjectOfType<Inspecao>();
+       
+         sManager = FindObjectOfType<SelectionManager>();
         if(lookCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -70,7 +72,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if(insp.inspecionando == false)
+        if(!sManager.inspecionando)
         {
             UpdateMouseLook();
             UpdateMovement();    
