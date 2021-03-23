@@ -14,6 +14,8 @@ public class Inspecao : MonoBehaviour
     private Quaternion origemRot;
     private Vector3 posicaoAtual;
     private Quaternion rotacaoAtual;
+    Transform sManagerObject;
+    Transform obTrans;
     
     SelectionManager sManager;
     InspectorHolder iHolder;
@@ -25,6 +27,7 @@ public class Inspecao : MonoBehaviour
     void Start()
     {
         chegando = false;
+        obTrans = transform;
         sManager = FindObjectOfType<SelectionManager>();
         origemPos = transform.position;
         origemRot = transform.rotation;
@@ -33,6 +36,8 @@ public class Inspecao : MonoBehaviour
 
     void Update()
     {
+        
+        
         posicaoAtual = transform.position;
         rotacaoAtual = transform.rotation;
 
@@ -40,10 +45,12 @@ public class Inspecao : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             sManager.inspecionando = false;
+            sManagerObject = null;
+
         }
 
         //O Obejto esta sendo inspecionado
-        if(sManager.inspecionando)
+        if(sManager.inspecionando && sManagerObject == transform)
         {
             
             posicaoAtual = Vector3.MoveTowards(posicaoAtual, Camera.main.transform.position, - Input.mouseScrollDelta.y * escala * Time.deltaTime);
@@ -93,6 +100,7 @@ public class Inspecao : MonoBehaviour
     //Começa o processo de inspeção.    
     public void Interagindo()
     {
+        sManagerObject = sManager.selectionTransform;
         chegando = true;
         sManager.inspecionando = true;
     }

@@ -14,7 +14,7 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private Material highlightMaterial;
     private Material defaultMaterial;
 
-    private Transform selectionTransform;
+    public Transform selectionTransform;
 
     Interactive interactiveScript = null;
 
@@ -40,6 +40,7 @@ public class SelectionManager : MonoBehaviour
     }
     private void Update()
     {
+        
         if (selectionTransform != null)
         {
             //Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
