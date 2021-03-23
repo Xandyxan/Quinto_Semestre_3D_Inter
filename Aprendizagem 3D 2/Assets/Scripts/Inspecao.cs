@@ -59,7 +59,10 @@ public class Inspecao : MonoBehaviour
             //Rotaciona o obejto em inspeção quando o joghador aperta e segura o botão esquerdo do mouse e o move.
             if(Input.GetMouseButton(0))
             {
-                this.transform.Rotate((Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime), (Input.GetAxis("Mouse X") * -rotVel * Time.deltaTime), 0, Space.World);
+               
+                this.transform.Rotate((Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime), (-Input.GetAxis("Mouse X") * rotVel * Time.deltaTime), 0);
+             
+               
             }
             //Rotaciona o objeto para a rotação inicial de inspeção quando o jogado não está mais pressionando o botão esquerdo do mouse
             else
