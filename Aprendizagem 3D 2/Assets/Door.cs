@@ -43,11 +43,13 @@ public class Door : MonoBehaviour
     }
     private void CheckKey()   // checa se o player tem um pref com a mesma string do nome da chave e se o pref está com o valor 1. (Valor1 = true / Valor0 = false)
     {
+        
         if (PlayerPrefs.HasKey(keyName))   // abre a porta
         {
-            if(PlayerPrefs.GetInt(keyName, 0) == 1)
-            // destranca a porta
-            print("Open the door!");
+            if (PlayerPrefs.GetInt(keyName, 0) == 1)
+                // destranca a porta
+                print("Open the door!");
+            DialogueManager.instance.StartCoroutine(1);
             isLocked = false;
          
         }
@@ -56,8 +58,10 @@ public class Door : MonoBehaviour
             doorAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
+            DialogueManager.instance.StartCoroutine(1);
             return;
         }
+ 
     }
 
 }

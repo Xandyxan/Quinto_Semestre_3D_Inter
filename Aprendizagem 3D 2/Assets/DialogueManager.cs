@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour
         dialogueIndex++;
     }
 
-    private void UpdateObjective()
+    public void UpdateObjective()
     {
         objectiveText.text = objectives[objectiveIndex];
         objectiveText.gameObject.SetActive(true);
@@ -55,16 +55,17 @@ public class DialogueManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         NextSentence();
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
         dialogueText.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        NextSentence();
         yield return new WaitForSeconds(1.5f);
+        NextSentence();
+        yield return new WaitForSeconds(2.5f);
         dialogueText.gameObject.SetActive(false);
         yield return new WaitForSeconds(.2f);
         UpdateObjective();
         yield return new WaitUntil(PressedF);
         objectiveText.gameObject.SetActive(false);
+        objectiveIndex++;
     }
 
     private bool PressedF()
@@ -78,11 +79,45 @@ public class DialogueManager : MonoBehaviour
 
     public IEnumerator DoorInteraction() // dialogo da porta
     {
+        if (PlayerPrefs.GetInt("EntranceKey", 0) == 0)
+        {
+            yield return new WaitForEndOfFrame();
+            dialogueText.text = sentences[2];
+            dialogueText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(2.5f);
+            dialogueText.text = sentences[3];
+            yield return new WaitForSeconds(2.5f);
+            dialogueText.gameObject.SetActive(false);
+        }
+        else if (PlayerPrefs.GetInt("EntranceKey", 0) == 1)
+        {
+            yield return new WaitForEndOfFrame();
+            dialogueText.text = sentences[4];
+            dialogueText.gameObject.SetActive(true);
+            yield return new WaitForSeconds(3.5f);
+            dialogueText.text = sentences[5];
+            yield return new WaitForSeconds(3.5f);
+            dialogueText.gameObject.SetActive(false);
+            UpdateObjective();
+        }
+    }
+
+    public IEnumerator LigthInteraction()
+    {
+        objectiveText.gameObject.SetActive(false);
         yield return new WaitForEndOfFrame();
-        NextSentence();
-        yield return new WaitForSeconds(1.5f);
+        dialogueText.text = sentences[6];
+        dialogueText.gameObject.SetActive(true);
+        yield return new WaitForSeconds(4.5f);
+        dialogueText.text = sentences[7];
+        yield return new WaitForSeconds(5.5f);
         dialogueText.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        NextSentence();
+        UpdateObjective();
+    }
+
+    public void StartCoroutine(int number)
+    {
+        if (number == 1) StartCoroutine(DoorInteraction());
+        if (number == 2) StartCoroutine(LigthInteraction());
     }
 }
