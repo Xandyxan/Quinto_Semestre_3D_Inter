@@ -23,24 +23,15 @@ public class Door : MonoBehaviour
    
 
 
-    // Será que vai dar conflito? ai ai ai
-    // test for conflicts 17:31
-    //Xandy> Testando merge conflict nos scripts! 16:51 - 21/03
-    //Xandy> Testando merge conflict nos scripts! 17:24 - 21/03
-    //Xandy> Segundo teste de merge conflict nos scripts! 17:13 - 21/03
-
-    //Xandy> Segundo teste de merge conflict nos scripts! 17:13 - 21/03
-    //Xandy> Terceiro teste de merge conflict nos scripts! 17:32 - 21/03
-
     // Start is called before the first frame update
-    void Start()          // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 17:32
+    void Start()         
     {
-        doorAnimator = GetComponent<Animator>(); // test comment, delete later
+        doorAnimator = GetComponent<Animator>(); 
     }
 
     public void OpenDoor()
     {
-        if (isLocked) CheckKey(); // glubglub
+        if (isLocked) CheckKey(); 
         else
         {
 
@@ -50,10 +41,11 @@ public class Door : MonoBehaviour
         }
 
     }
-    private void CheckKey()   // checa se o player tem um pref com a mesma string do nome da chave
+    private void CheckKey()   // checa se o player tem um pref com a mesma string do nome da chave e se o pref está com o valor 1. (Valor1 = true / Valor0 = false)
     {
         if (PlayerPrefs.HasKey(keyName))   // abre a porta
         {
+            if(PlayerPrefs.GetInt(keyName, 0) == 1)
             // destranca a porta
             print("Open the door!");
             isLocked = false;
@@ -63,6 +55,7 @@ public class Door : MonoBehaviour
         {
             doorAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
+            //DialogueManager.UpdateObjective();
             return;
         }
     }

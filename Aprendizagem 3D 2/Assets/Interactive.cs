@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class Interactive : MonoBehaviour
 {
-    [Header("MouseOver text")]
+    [Header("MouseOver")]
 
     [Tooltip("Reference to the text component from the HUD Canvas")]
     public Text selectionText;
 
     [Tooltip("Text displayed when object is selected")]
     [SerializeField] private string objectDescription;
+
+    [Tooltip("Material of the object when selected")]
+    public Material selectionMaterial;
 
     [Space]
 
@@ -56,6 +59,14 @@ public class Interactive : MonoBehaviour
                         Transform objectRoot = transform.root;
                         Inspecao insp = objectRoot.GetComponent<Inspecao>();
                         insp.Interagindo();
+                        break;
+                    case "Collectable":
+                        Collectable collectable = transform.GetComponent<Collectable>();
+                        collectable.CollectItem();
+                        break;
+                    case "LightsOn":
+                        LightSwitchPanel lightPanel = transform.GetComponent<LightSwitchPanel>();
+                        lightPanel.PowerOn();
                         break;
                 }
                     
