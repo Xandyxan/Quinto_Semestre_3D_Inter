@@ -10,7 +10,10 @@ public class LightSwitchPanel : MonoBehaviour
 
     public void PowerOn()
     {
-        foreach(GameObject shadow in shadowZones)
+        DialogueManager.instance.StartCoroutine(2);
+
+
+        foreach (GameObject shadow in shadowZones)
         {
             shadow.SetActive(false); // fazer as sombras sumirem um pouco suavemente.
         }
