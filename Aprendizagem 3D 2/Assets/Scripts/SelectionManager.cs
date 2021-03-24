@@ -11,7 +11,7 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
 
     Renderer selectionRenderer = null;
-    [SerializeField] private Material highlightMaterial;
+    private Material highlightMaterial;
     private Material defaultMaterial;
 
     private Transform selectionTransform;
@@ -71,7 +71,11 @@ public class SelectionManager : MonoBehaviour
 
                 crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
 
-                 if(interactiveScript!= null)   interactiveScript.SetSelectedTrue();
+                if (interactiveScript != null)
+                {
+                    interactiveScript.SetSelectedTrue();
+                    highlightMaterial = interactiveScript.selectionMaterial;
+                }
 
                 selectionTransform = selection;
                
