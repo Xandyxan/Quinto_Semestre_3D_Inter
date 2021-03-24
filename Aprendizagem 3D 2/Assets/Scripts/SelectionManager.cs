@@ -14,7 +14,7 @@ public class SelectionManager : MonoBehaviour
     private Material highlightMaterial;
     private Material defaultMaterial;
 
-    private Transform selectionTransform;
+    public Transform selectionTransform;
 
     Interactive interactiveScript = null;
 
@@ -40,12 +40,13 @@ public class SelectionManager : MonoBehaviour
     }
     private void Update()
     {
+        
         if (selectionTransform != null)
         {
             //Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
+            //selectionRenderer.material = defaultMaterial;
 
-                selectionTransform = null;
+            selectionTransform = null;
         }
         else
         {
@@ -83,15 +84,9 @@ public class SelectionManager : MonoBehaviour
 
             if(selection.gameObject.CompareTag("Doors"))
             {
-
+                crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
                 interactiveScript = selection.GetComponent<Interactive>();
                 if (interactiveScript != null) interactiveScript.SetSelectedTrue();
-                /*
-                InteractiveDoors interactiveDoors = selection.GetComponentInParent<InteractiveDoors>();
-                if(Input.GetKeyDown("e"))
-                interactiveDoors.OpenCloseDoors();
-                //print("está olhando para uma porta");
-                */
             }
         }
     }

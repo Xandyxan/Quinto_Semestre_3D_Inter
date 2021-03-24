@@ -21,32 +21,27 @@ public class Doors : MonoBehaviour
 
     [SerializeField] private Vector3 desireRotationValues;
 
-
     private void Awake()
     {
         doorToOpen = this.transform;
         openingIsHappening = isOpened = false;
-        
+
         idleRotation = Quaternion.Euler(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
         idlePosition = this.transform.localPosition;
-
-        //print(gameObject.name + " " + idlePosition);
-        
 
         DesireAxisRotation();
     }
     private void Start()
     {
-        if(velocityToOpen == 0) velocityToOpen = 40f;
+        if (velocityToOpen == 0) velocityToOpen = 40f;
     }
 
     // Update is called once per frame
     void Update()
     {
         if (openingIsHappening) Opening();
-        print(isOpened);
     }
-    
+
     public void OpenCloseDoors() { openingIsHappening = true; } //É chamado no 'Interactive' script
 
     private void Opening()
@@ -69,62 +64,36 @@ public class Doors : MonoBehaviour
     {
         if (xRotate)
         {
-            if (doorToOpen.eulerAngles.x <= idleRotation.eulerAngles.x)
-            {
-                isOpened = false;
-                if (openingIsHappening) openingIsHappening = false;
-            }
-            else if (doorToOpen.eulerAngles.x >= desireRotation.eulerAngles.x)
-            {
-                isOpened = true;
-                if (openingIsHappening) openingIsHappening = false;
-            }
+            if (doorToOpen.eulerAngles.x <= idleRotation.eulerAngles.x) SetIsOpened(false);
+            else if (doorToOpen.eulerAngles.x >= desireRotation.eulerAngles.x) SetIsOpened(true);
         }
         else if (yRotateLeft)
         {
-            if (this.transform.rotation.eulerAngles.y <= idleRotation.eulerAngles.y)
-            {
-                isOpened = false;
-                if (openingIsHappening) openingIsHappening = false;
-            }
-            else if (this.transform.rotation.eulerAngles.y >= desireRotation.eulerAngles.y)
-            {
-                isOpened = true;
-                if (openingIsHappening) openingIsHappening = false;
-            }
+            if (this.transform.rotation.eulerAngles.y <= idleRotation.eulerAngles.y) SetIsOpened(false);
+            else if (this.transform.rotation.eulerAngles.y >= desireRotation.eulerAngles.y) SetIsOpened(true);
         }
         else if (yRotateRight)
         {
-            if (this.transform.rotation.eulerAngles.y >= idleRotation.eulerAngles.y)
-            {
-                isOpened = false;
-                if (openingIsHappening) openingIsHappening = false;
-            }
-            else if (this.transform.rotation.eulerAngles.y <= desireRotation.eulerAngles.y)
-            {
-                isOpened = true;
-                if (openingIsHappening) openingIsHappening = false;
-            }
+            if (this.transform.rotation.eulerAngles.y >= idleRotation.eulerAngles.y) SetIsOpened(false);
+            else if (this.transform.rotation.eulerAngles.y <= desireRotation.eulerAngles.y) SetIsOpened(true);
         }
         else if (zPosition)
         {
-            if(this.transform.localPosition.z <= idlePosition.z + 0.001f)
-            {
-                isOpened = false;
-                if (openingIsHappening) openingIsHappening = false;
-            }
-            else if(this.transform.localPosition.z >= desirePosition.z - 0.001f)
-            {
-                isOpened = true;
-                if (openingIsHappening) openingIsHappening = false;
-            }
+            if (this.transform.localPosition.z <= idlePosition.z + 0.01f) SetIsOpened(false);
+            else if (this.transform.localPosition.z >= desirePosition.z - 0.01f) SetIsOpened(true);
         }
     }
 
     private void DesireAxisRotation()
     {
-        if(xRotate) desireRotation = Quaternion.Euler(desireRotationValues.x, transform.eulerAngles.y, transform.eulerAngles.z);
-        if(yRotateLeft || yRotateRight) desireRotation = Quaternion.Euler(transform.eulerAngles.x, desireRotationValues.y, transform.eulerAngles.z);
+        if (xRotate) desireRotation = Quaternion.Euler(desireRotationValues.x, transform.eulerAngles.y, transform.eulerAngles.z);
+        if (yRotateLeft || yRotateRight) desireRotation = Quaternion.Euler(transform.eulerAngles.x, desireRotationValues.y, transform.eulerAngles.z);
         if (zPosition) desirePosition = new Vector3(this.doorToOpen.localPosition.x, this.doorToOpen.localPosition.y, desirePosition.z);
+    }
+
+    private void SetIsOpened(bool isOpened)
+    {
+        this.isOpened = isOpened;
+        if (openingIsHappening) openingIsHappening = false;
     }
 }
