@@ -21,6 +21,13 @@ public class Doors : MonoBehaviour
 
     [SerializeField] private Vector3 desireRotationValues;
 
+   // [Header("Room Door")]
+
+   // [SerializeField] private bool isRoomDoor;
+   // [SerializeField] private bool isLocked;
+
+
+
     private void Awake()
     {
         doorToOpen = this.transform;
