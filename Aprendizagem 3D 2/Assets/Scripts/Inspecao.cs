@@ -9,6 +9,7 @@ public class Inspecao : MonoBehaviour
     [Tooltip("Tranform position for inspection")]
 
     public Transform pontoInspecao;
+    public PlayerController jogador;
 
     private Vector3 origemPos;
     private Quaternion origemRot;
@@ -21,11 +22,13 @@ public class Inspecao : MonoBehaviour
     InspectorHolder iHolder;
     public float escala;
     public float rotVel;
+    public float limite;
 
     bool chegando;
     
     void Start()
     {
+        jogador = FindObjectOfType<PlayerController>();
         chegando = false;
         obTrans = transform;
         sManager = FindObjectOfType<SelectionManager>();
@@ -53,16 +56,20 @@ public class Inspecao : MonoBehaviour
         if(sManager.inspecionando && sManagerObject == transform)
         {
             
-            posicaoAtual = Vector3.MoveTowards(posicaoAtual, Camera.main.transform.position, - Input.mouseScrollDelta.y * escala * Time.deltaTime);
+            
+            limite += Input.mouseScrollDelta.y * Time.deltaTime;
+            limite = Mathf.Clamp(limite, -0.02f, 0.01f);
+            posicaoAtual = pontoInspecao.transform.position + limite * pontoInspecao.transform.forward * escala ;
+
             //Colocar limite para Zoom de Inspeção**
           
             //Rotaciona o obejto em inspeção quando o joghador aperta e segura o botão esquerdo do mouse e o move.
             if(Input.GetMouseButton(0))
             {
                
-                this.transform.Rotate((Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime), (-Input.GetAxis("Mouse X") * rotVel * Time.deltaTime), 0);
-             
-               
+                transform.RotateAround(transform.position, jogador.transform.right,(Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime));
+                transform.RotateAround(transform.position, -jogador.transform.up,(Input.GetAxis("Mouse X") * rotVel * Time.deltaTime));
+                 
             }
             //Rotaciona o objeto para a rotação inicial de inspeção quando o jogado não está mais pressionando o botão esquerdo do mouse
             else

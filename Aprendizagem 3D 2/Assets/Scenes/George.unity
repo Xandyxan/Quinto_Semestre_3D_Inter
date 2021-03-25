@@ -499,6 +499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &22196360
 BoxCollider:
@@ -2821,6 +2822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdasda
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &98195089
 BoxCollider:
@@ -3389,6 +3391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Foto do Miguel
+  selectionMaterial: {fileID: 0}
   interactionKind: Inspectable
 --- !u!65 &132117339
 BoxCollider:
@@ -3695,6 +3698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &158456748
 BoxCollider:
@@ -5411,6 +5415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &299870298
 BoxCollider:
@@ -6262,6 +6267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdasda
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &403348580
 BoxCollider:
@@ -6922,6 +6928,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: "Chave Quarto da v\xF3"
+  selectionMaterial: {fileID: 0}
   interactionKind: key
 --- !u!65 &455635868
 BoxCollider:
@@ -9589,6 +9596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Chave Entrada
+  selectionMaterial: {fileID: 0}
   interactionKind: key
 --- !u!65 &487327290
 BoxCollider:
@@ -11472,6 +11480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Interagivel
+  selectionMaterial: {fileID: 2100000, guid: e2da4da581536dd46a222c52025f316d, type: 2}
   interactionKind: Interagivel
 --- !u!114 &503625886
 MonoBehaviour:
@@ -11854,6 +11863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &540701782
 BoxCollider:
@@ -11983,6 +11993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Pressione "E" para abrir
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &556301286
 BoxCollider:
@@ -12368,6 +12379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &598306930
 BoxCollider:
@@ -12764,6 +12776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Porta de entrada
+  selectionMaterial: {fileID: 0}
   interactionKind: Door
 --- !u!64 &616651239
 MeshCollider:
@@ -17948,6 +17961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &742167422
 BoxCollider:
@@ -21048,6 +21062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &815328103
 BoxCollider:
@@ -24838,6 +24853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &839490339
 BoxCollider:
@@ -25104,6 +25120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &879500915
 BoxCollider:
@@ -25276,6 +25293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: ADajbqd
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!23 &888348779
 MeshRenderer:
@@ -25405,6 +25423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: ADajbqd
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!23 &924352301
 MeshRenderer:
@@ -26249,6 +26268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Pressione "E" para abrir
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!23 &970239264
 MeshRenderer:
@@ -27584,6 +27604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: asdasdsad
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1026850236
 BoxCollider:
@@ -34254,6 +34275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1354835449
 BoxCollider:
@@ -35787,7 +35809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectableTag: Selectable
-  highlightMaterial: {fileID: 2100000, guid: 75a758cd216627844a679885738c36e8, type: 2}
   selectionTransform: {fileID: 0}
   maxDistance: 1.5
   crosshair: {fileID: 88011135}
@@ -36651,6 +36672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1485447763
 BoxCollider:
@@ -37090,6 +37112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1505522124
 BoxCollider:
@@ -37340,6 +37363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: Interagivel
+  selectionMaterial: {fileID: 2100000, guid: e2da4da581536dd46a222c52025f316d, type: 2}
   interactionKind: Interagivel
 --- !u!1 &1572496210
 GameObject:
@@ -39450,6 +39474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1609816714
 BoxCollider:
@@ -41183,6 +41208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: asdasdsad
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1784491818
 BoxCollider:
@@ -41705,6 +41731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1797361326
 BoxCollider:
@@ -43225,6 +43252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionText: {fileID: 1093133254}
   objectDescription: dasdq
+  selectionMaterial: {fileID: 0}
   interactionKind: Furniture door
 --- !u!65 &1956014763
 BoxCollider:
