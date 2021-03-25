@@ -68,6 +68,12 @@ public class Interactive : MonoBehaviour
                         LightSwitchPanel lightPanel = transform.GetComponent<LightSwitchPanel>();
                         lightPanel.PowerOn();
                         break;
+                    case "Fade":
+                        Fade fade = transform.GetComponent<Fade>();
+                        Inspecao inspec  = transform.GetComponent<Inspecao>();
+                        inspec.Interagindo();
+                        fade.FadeImage();
+                        break;
                 }
                     
             }
