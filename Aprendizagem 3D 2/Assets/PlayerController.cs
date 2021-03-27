@@ -33,10 +33,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform head;
 
     [Header("Zoom")]
-    public Camera mainCamera;
-
-
-    public Image crosshair;
+    [SerializeField] private Camera mainCamera;
+    [SerializeField] private Image crosshair;
+    [SerializeField] private float defaultZoomSpeed;
     private float chRaio = 50f;
 
     private float fovDefault = 90f;
@@ -47,21 +46,18 @@ public class PlayerController : MonoBehaviour
     private float fovRun = 80f;
     private bool isRunning;
 
-    SelectionManager sManager;
+    [SerializeField] SelectionManager SelectionManager;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
         actualWalkSpeedZ = walkSpeedZ;
-
     }
 
     // Start is called before the first frame update
     void Start()
-    {
-       
-         sManager = FindObjectOfType<SelectionManager>();
+    {   
         if(lookCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -72,7 +68,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!sManager.inspecionando)
+        if(!SelectionManager.inspecionando)
         {
             UpdateMouseLook();
             UpdateMovement();    
@@ -128,9 +124,11 @@ public class PlayerController : MonoBehaviour
 
     private void HandleZoom()
     {
+        zoomSpeed = actualWalkSpeedZ;
+
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovZoom, zoomSpeed * Time.deltaTime);
+            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovZoom, defaultZoomSpeed * Time.deltaTime);
             // make crosshair smaller.
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio / 2, chRaio / 2), zoomSpeed * Time.deltaTime);
         }else if (isRunning)
@@ -139,10 +137,18 @@ public class PlayerController : MonoBehaviour
         }
         else if (mainCamera.fieldOfView != fovDefault)
         {
-            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovDefault, (zoomSpeed - 2) * Time.deltaTime);
+            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovDefault, defaultZoomSpeed * Time.deltaTime);
             // return crosshair to bigger size.
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio, chRaio), (zoomSpeed - 2) * Time.deltaTime);
         }
     }
 
+
+    //getters
+    public bool GetIsRunning() { return this.isRunning; }
+    public bool GetIsWalking()
+    {
+        if (this.currentDir.y >= 0.05f) return true;
+        else return false;
+    }
 }
