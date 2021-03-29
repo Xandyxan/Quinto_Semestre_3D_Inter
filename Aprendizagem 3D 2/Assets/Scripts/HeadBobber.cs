@@ -6,14 +6,15 @@ using UnityEngine;
 public class HeadBobber : MonoBehaviour
 {
     [Header("Breath Parameters")]
-    [SerializeField] float idleAmplitude = 0.00035f;
+    [SerializeField] float idleAmplitude = 0.015f;
     [SerializeField] float idlePeriod = 0.65f;
-    [SerializeField] float walkAmplitude = 0.001f;
-    [SerializeField] float walkPeriod = 0.08f;
-    [SerializeField] float runAmplitude = 0.005f;
-    [SerializeField] float runPeriod = 0.06f;
+    [SerializeField] float walkAmplitude = 0.01f;
+    [SerializeField] float walkPeriod = 0.06f;
+    [SerializeField] float runAmplitude = 0.02f;
+    [SerializeField] float runPeriod = 0.045f;
 
     private float actualAmplitude, actualPeriod;
+    private Vector3 startPos;
 
     private PlayerController playerController;
 
@@ -23,6 +24,7 @@ public class HeadBobber : MonoBehaviour
 
         actualAmplitude = walkAmplitude;
         actualPeriod = walkPeriod;
+        startPos = this.transform.position;
     }
 
     private void Update()
@@ -42,7 +44,7 @@ public class HeadBobber : MonoBehaviour
         float distance = actualAmplitude * Mathf.Sin(theta);
 
         //Aply the transformation overtime (remembering it's from -1 to 1 + increases/decreases changers)
-        transform.position = transform.position + Vector3.up * distance;
+        transform.position = new Vector3(this.transform.position.x, startPos.y + 1 * distance, this.transform.position.z);
     }
 
     private void UpdateBreathValues()   //Get the actual idle/walk/run state of playerController to update values

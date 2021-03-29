@@ -6,13 +6,9 @@ public class LightSwitchPanel : MonoBehaviour
 {
     [SerializeField] private List<GameObject> shadowZones;
     [SerializeField] private List<GameObject> lightsRealTime;
- 
 
     public void PowerOn()
     {
-        DialogueManager.instance.StartCoroutine(2);
-
-
         foreach (GameObject shadow in shadowZones)
         {
             shadow.SetActive(false); // fazer as sombras sumirem um pouco suavemente.

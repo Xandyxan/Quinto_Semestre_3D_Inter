@@ -23,6 +23,11 @@ public class Interactive : MonoBehaviour
     [Tooltip("What kind of interaction this object have?")]
     [SerializeField] private string interactionKind;     // checamos em um switchCase, pra ver qual tipo de interação é, dai mandamos sinal pro script específico
 
+    [Header("It's a objective object?")]
+    [SerializeField] private bool isObjectiveObj;
+    [SerializeField] ObjectiveManager objectiveManager;
+    [SerializeField] private int dialogueIndex;
+
 
     private bool isSelected = false;  // script do SeletionManager vai tornar isso true
 
@@ -42,6 +47,8 @@ public class Interactive : MonoBehaviour
 
             if (Input.GetMouseButtonDown(0))
             {
+                if (isObjectiveObj) objectiveManager.ExecuteDialogue(dialogueIndex);
+
                 switch (interactionKind)
                 {
                     case "Door":
@@ -60,14 +67,17 @@ public class Interactive : MonoBehaviour
                         Inspecao insp = objectRoot.GetComponent<Inspecao>();
                         insp.Interagindo();
                         break;
+
                     case "Collectable":
                         Collectable collectable = transform.GetComponent<Collectable>();
                         collectable.CollectItem();
                         break;
+
                     case "LightsOn":
                         LightSwitchPanel lightPanel = transform.GetComponent<LightSwitchPanel>();
                         lightPanel.PowerOn();
                         break;
+
                     case "Fade":
                         Fade fade = transform.GetComponent<Fade>();
                         Inspecao inspec  = transform.GetComponent<Inspecao>();
@@ -75,7 +85,6 @@ public class Interactive : MonoBehaviour
                         fade.FadeImage();
                         break;
                 }
-                    
             }
         }
     }

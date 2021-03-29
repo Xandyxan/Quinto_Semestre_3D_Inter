@@ -19,8 +19,13 @@ public class Door : MonoBehaviour
     [SerializeField] private bool isLocked = true;
     // da pra usar uma string pra quando o jogador coletar uma chave, nós criarmos um playerPref com o nome da chave e depois checar se bate com esse.
     [Tooltip("Name of the key used to open this door")]
-    [SerializeField] private string keyName; 
-   
+    [SerializeField] private string keyName;
+
+    [Header("It's a objective object?")]
+    [SerializeField] private bool isObjectiveObj;
+    [SerializeField] ObjectiveManager objectiveManager;
+    [SerializeField] private int doorLocked, doorUnlocked;
+
 
 
     // Start is called before the first frame update
@@ -49,7 +54,7 @@ public class Door : MonoBehaviour
             if (PlayerPrefs.GetInt(keyName, 0) == 1)
                 // destranca a porta
                 print("Open the door!");
-            DialogueManager.instance.StartCoroutine(1);
+            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorUnlocked);
             isLocked = false;
          
         }
@@ -58,7 +63,7 @@ public class Door : MonoBehaviour
             doorAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
-            DialogueManager.instance.StartCoroutine(1);
+            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorLocked);
             return;
         }
  
