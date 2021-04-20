@@ -4,64 +4,92 @@ using UnityEngine;
 
 public class Doors : MonoBehaviour
 {
-    private Transform doorToOpen;
-    private Quaternion desireRotation, idleRotation;
+    [Header("Use only one movement type & axis")]
+    public bool understandable;
 
-    [SerializeField] private Vector3 desirePosition;
-    private Vector3 idlePosition;
+    [Header("Rotation Movement?")]
+    [Tooltip("Use only one value")]
+    public Vector3 desireRotationValue;
+    public float degreesPerSecond = 45f;
 
-    [SerializeField] private float velocityToOpen;
-    private bool openingIsHappening, isOpened;
+    [Header("Position Movement?")]
+    [Tooltip("Use only one value")]
+    public Vector3 desirePositionValue;
+    public float positionVelocity = 2f;
+    public bool positionOnlyZ;
 
-    [Header("Wich type of movement it is?")]
-    [SerializeField] private bool xRotate;
-    [SerializeField] private bool yRotateLeft;
-    [SerializeField] private bool yRotateRight;
-    [SerializeField] private bool zPosition;
+    private Vector3 idleRotation, idlePosition;
 
-    [SerializeField] private Vector3 desireRotationValues;
+    private bool isOpened, openingIsHappening;
 
-   // [Header("Room Door")]
-
-   // [SerializeField] private bool isRoomDoor;
-   // [SerializeField] private bool isLocked;
-
-
+    private bool rotateRigth, rotateLeft, rotateUp, rotateDown;
+    private bool positionZ;
 
     private void Awake()
     {
-        doorToOpen = this.transform;
-        openingIsHappening = isOpened = false;
+        openingIsHappening = rotateRigth = rotateLeft =  rotateUp = rotateDown = positionZ = false;
 
-        idleRotation = Quaternion.Euler(this.transform.eulerAngles.x, this.transform.eulerAngles.y, this.transform.eulerAngles.z);
+        //set the idleRotation and openedRotation values
+        idleRotation = this.transform.localEulerAngles;
         idlePosition = this.transform.localPosition;
 
-        DesireAxisRotation();
-    }
-    private void Start()
-    {
-        if (velocityToOpen == 0) velocityToOpen = 40f;
+        //check the direction of rotation Y rotation
+        if (desireRotationValue.y > 1f) rotateLeft = true;
+        else if(desireRotationValue.y < -1f) rotateRigth = true;
+
+        //check the direction of rotation X rotation
+        if (desireRotationValue.x > 1f) rotateDown = true;
+        else if (desireRotationValue.x < -1f) rotateUp = true;
+
+        if (desirePositionValue.z > Mathf.Abs(1f)) positionZ = true;
+
+        if (positionOnlyZ) desirePositionValue = new Vector3(idlePosition.x, idlePosition.y, desirePositionValue.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (openingIsHappening) Opening();
+        if (openingIsHappening) RotateDoor();
     }
 
     public void OpenCloseDoors() { openingIsHappening = true; } //É chamado no 'Interactive' script
 
-    private void Opening()
+    private void RotateDoor()
     {
-        if (xRotate || yRotateLeft || yRotateRight)
+        //It takes rotation value of eulerAngles and not localEulerAngles because the received values are differents
+        //To rotate we are using a Quarternion Method where it is necessary atributte to the transform.rotation instead of localEulerAngles
+        //Summing up: eulerAngles to transform.rotation changes - localEulerAngles to transform.localEulerAngles
+        Vector3 currentAngle = transform.rotation.eulerAngles;
+        Vector3 currentPosition = this.transform.localPosition;
+
+        // Y rotate
+        if (rotateLeft)
         {
-            if (!isOpened) doorToOpen.rotation = Quaternion.RotateTowards(doorToOpen.rotation, desireRotation, velocityToOpen * Time.deltaTime);
-            else if (isOpened) doorToOpen.rotation = Quaternion.RotateTowards(doorToOpen.rotation, idleRotation, velocityToOpen * Time.deltaTime);
+            if (!isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y + (Time.deltaTime * degreesPerSecond), Vector3.up);
+            else if(isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y - (Time.deltaTime * degreesPerSecond), Vector3.up);
         }
-        else if (zPosition)
+        else if(rotateRigth)
         {
-            if (!isOpened) this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, desirePosition, Time.deltaTime * velocityToOpen);
-            else if (isOpened) this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, idlePosition, Time.deltaTime * velocityToOpen);
+            if (!isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y - (Time.deltaTime * degreesPerSecond), Vector3.up);
+            else if(isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y + (Time.deltaTime * degreesPerSecond), Vector3.up);
+        }
+
+        // X rotate > Different way to rotate due to Quaternion.AgleAxis sligth changes the other rotation axis while rotating X axis for some reason
+        if(rotateUp)
+        {
+            if (!isOpened) transform.rotation = Quaternion.Euler(currentAngle.x - (Time.deltaTime * degreesPerSecond), currentAngle.y, currentAngle.z);
+            else if (isOpened) transform.rotation = Quaternion.Euler(currentAngle.x + (Time.deltaTime * degreesPerSecond), currentAngle.y, currentAngle.z);
+        }
+        else if(rotateDown)
+        {
+            if (!isOpened) transform.rotation = Quaternion.Euler(currentAngle.x + (Time.deltaTime * degreesPerSecond), currentAngle.y, currentAngle.z);
+            else if (isOpened) transform.rotation = Quaternion.Euler(currentAngle.x - (Time.deltaTime * degreesPerSecond), currentAngle.y, currentAngle.z);
+        }
+
+        // Z position move
+        if (positionZ)
+        {
+            if (!isOpened) this.transform.localPosition = Vector3.Lerp(currentPosition, desirePositionValue, Time.deltaTime * positionVelocity);
+            else if (isOpened) this.transform.localPosition = Vector3.Lerp(currentPosition, idlePosition, Time.deltaTime * positionVelocity);
         }
 
         CheckDoorState();
@@ -69,38 +97,61 @@ public class Doors : MonoBehaviour
 
     private void CheckDoorState()
     {
-        if (xRotate)
+        // Y rotate check
+        if (rotateLeft)
         {
-            if (doorToOpen.eulerAngles.x <= idleRotation.eulerAngles.x) SetIsOpened(false);
-            else if (doorToOpen.eulerAngles.x >= desireRotation.eulerAngles.x) SetIsOpened(true);
+            if (InspectorRotation(this.transform.localEulerAngles.y) >= InspectorRotation(desireRotationValue.y)) SetIsOpened(true);
+            else if (InspectorRotation(this.transform.localEulerAngles.y) <= InspectorRotation(idleRotation.y)) SetIsOpened(false);
         }
-        else if (yRotateLeft)
+        else if(rotateRigth)
         {
-            if (this.transform.rotation.eulerAngles.y <= idleRotation.eulerAngles.y) SetIsOpened(false);
-            else if (this.transform.rotation.eulerAngles.y >= desireRotation.eulerAngles.y) SetIsOpened(true);
+            if (InspectorRotation(this.transform.localEulerAngles.y) <= InspectorRotation(desireRotationValue.y)) SetIsOpened(true);
+            else if (InspectorRotation(this.transform.localEulerAngles.y) >= InspectorRotation(idleRotation.y)) SetIsOpened(false);
         }
-        else if (yRotateRight)
+
+        // X rotate check
+        if (rotateUp)
         {
-            if (this.transform.rotation.eulerAngles.y >= idleRotation.eulerAngles.y) SetIsOpened(false);
-            else if (this.transform.rotation.eulerAngles.y <= desireRotation.eulerAngles.y) SetIsOpened(true);
+            if (InspectorRotation(this.transform.localEulerAngles.x) <= InspectorRotation(desireRotationValue.x)) SetIsOpened(true);
+            else if (InspectorRotation(this.transform.localEulerAngles.x) >= InspectorRotation(idleRotation.x)) SetIsOpened(false);
         }
-        else if (zPosition)
+        else if(rotateDown)
+        {
+            if (InspectorRotation(this.transform.localEulerAngles.x) >= InspectorRotation(desireRotationValue.x)) SetIsOpened(true);
+            else if (InspectorRotation(this.transform.localEulerAngles.x) <= InspectorRotation(idleRotation.x)) SetIsOpened(false);
+        }
+
+        // Z position check
+        if (positionZ)
         {
             if (this.transform.localPosition.z <= idlePosition.z + 0.01f) SetIsOpened(false);
-            else if (this.transform.localPosition.z >= desirePosition.z - 0.01f) SetIsOpened(true);
+            else if (this.transform.localPosition.z >= desirePositionValue.z - 0.05f) SetIsOpened(true);
         }
     }
 
-    private void DesireAxisRotation()
-    {
-        if (xRotate) desireRotation = Quaternion.Euler(desireRotationValues.x, transform.eulerAngles.y, transform.eulerAngles.z);
-        if (yRotateLeft || yRotateRight) desireRotation = Quaternion.Euler(transform.eulerAngles.x, desireRotationValues.y, transform.eulerAngles.z);
-        if (zPosition) desirePosition = new Vector3(this.doorToOpen.localPosition.x, this.doorToOpen.localPosition.y, desirePosition.z);
-    }
-
-    private void SetIsOpened(bool isOpened)
+    private void SetIsOpened(bool isOpened)     //stop rotating when reach the desire or idle value,
     {
         this.isOpened = isOpened;
-        if (openingIsHappening) openingIsHappening = false;
+        openingIsHappening = false;
+        ResetDefaultRotation();
     }
+
+    private void ResetDefaultRotation()     //this.transform.localEulerAngles altera o valor diretamente da rotação do objeto igual a que mostra no inspector
+    {
+        if (!isOpened) this.transform.localEulerAngles = idleRotation;
+        else this.transform.localEulerAngles = desireRotationValue;
+    }
+
+    float InspectorRotation(float angle)  //apply to this.transform.localEulerAngles value
+    {
+        if (angle > 180)
+        {
+            angle -= 360;
+        }
+        return angle;
+    }
+
+    //NOTAS PARA FUTURA ATUALIZAÇÃO
+    //InspectorRotation method está sendo apenas diferença quando assunto é comparar os valores de rotação como segue no método CheckDoorState
+    //Nos outros pontos onde é atribuir o valor esse método não está fazendo diferença, com ou sem o valor é o mesmo, necessita investigação
 }
