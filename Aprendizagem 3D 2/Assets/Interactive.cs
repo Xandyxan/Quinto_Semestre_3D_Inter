@@ -61,10 +61,9 @@ public class Interactive : MonoBehaviour
                         Doors doorScript2 = transform.GetComponent<Doors>();
                         doorScript2.OpenCloseDoors();
                         break;
-                        
+
                     case "Interagivel":
-                        Transform objectRoot = transform.root;
-                        Inspecao insp = objectRoot.GetComponent<Inspecao>();
+                        Inspecao insp = transform.GetComponent<Inspecao>();
                         insp.Interagindo();
                         break;
 
@@ -80,8 +79,8 @@ public class Interactive : MonoBehaviour
 
                     case "Fade":
                         Fade fade = transform.GetComponent<Fade>();
-                        Inspecao inspec  = transform.GetComponent<Inspecao>();
-                        inspec.Interagindo();
+                       // Inspecao inspec  = transform.GetComponent<Inspecao>();
+                       // inspec.Interagindo();
                         fade.FadeImage();
                         break;
                 }

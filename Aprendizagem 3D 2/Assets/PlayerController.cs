@@ -46,7 +46,10 @@ public class PlayerController : MonoBehaviour
     private float fovRun = 80f;
     private bool isRunning;
 
+    [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
+
+    private bool usingCellphone;
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -54,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
         actualWalkSpeedZ = walkSpeedZ;
     }
-
+    /*
     // Start is called before the first frame update
     void Start()
     {   
@@ -64,16 +67,48 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
         }
     }
+    */
+    private void OnEnable()
+    {
+        Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
+        Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
+        Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void OnDisable()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+       
+    }
     // Update is called once per frame
     void Update()
     {
-        if(!SelectionManager.inspecionando)
+        if (!usingCellphone)
         {
-            UpdateMouseLook();
-            UpdateMovement();    
+            if (!SelectionManager.inspecionando)
+            {
+                UpdateMouseLook();
+                UpdateMovement();
+            }
+            HandleZoom();
         }
-        HandleZoom();
+        else   // disable the script only after the player interpolates to the idle animation.
+        {
+            actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, 0, Time.deltaTime * 6f);
+            animator.SetFloat("Velocity", actualWalkSpeedZ);
+            isRunning = false;
+            currentDir = Vector2.zero;
+            if (actualWalkSpeedZ < .1f)
+            {
+                this.enabled = false;
+               // print("PCtrl OF");
+            }
+        }
     }
 
     private void UpdateMouseLook()
@@ -150,5 +185,17 @@ public class PlayerController : MonoBehaviour
     {
         if (this.currentDir.y >= 0.05f) return true;
         else return false;
+    }
+
+    // On and Off
+    public void TurnPlayerControllerOn()
+    {
+        usingCellphone = false;
+        this.enabled = true;
+       // print(" PCtrl ON");
+    }
+    public void TurnPlayerControllerOff() 
+    {
+        usingCellphone = true;
     }
 }
