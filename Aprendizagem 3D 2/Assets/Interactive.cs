@@ -58,7 +58,9 @@ public class Interactive : MonoBehaviour
                         break;
 
                     case "Furniture door":
-                        Doors doorScript2 = transform.GetComponent<Doors>();
+                        //Doors doorScript2 = transform.GetComponent<Doors>();
+                        //doorScript2.OpenCloseDoors();
+                        DoorTest2 doorScript2 = transform.GetComponent<DoorTest2>();
                         doorScript2.OpenCloseDoors();
                         break;
                         
