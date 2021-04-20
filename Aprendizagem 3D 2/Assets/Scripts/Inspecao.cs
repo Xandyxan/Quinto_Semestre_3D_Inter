@@ -25,7 +25,8 @@ public class Inspecao : MonoBehaviour
     public float limite;
 
     bool chegando;
-    
+
+    private Interactive interactiveScript;
     void Start()
     {
         jogador = FindObjectOfType<PlayerController>();
@@ -34,7 +35,7 @@ public class Inspecao : MonoBehaviour
         sManager = FindObjectOfType<SelectionManager>();
         origemPos = transform.position;
         origemRot = transform.rotation;
-      
+        interactiveScript = GetComponent<Interactive>();
     }
 
     void Update()
@@ -48,8 +49,11 @@ public class Inspecao : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E))
         {
             sManager.inspecionando = false;
+            chegando = false; // testando essa bool, ainda n sei oq ela faz
+            interactiveScript.SetSelectedFalse();// adicionei essa linha pq o objeto continuava selecionado msm após terminar o processo de inspeção!
             sManagerObject = null;
 
+            Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
         }
 
         //O Obejto esta sendo inspecionado
@@ -84,14 +88,14 @@ public class Inspecao : MonoBehaviour
         //Retorna o objeto para origem.
         if(posicaoAtual != origemPos && rotacaoAtual != origemRot && !sManager.inspecionando) 
         {
-            transform.position = Vector3.Slerp(posicaoAtual,origemPos, Time.deltaTime * 2);
+            transform.position = Vector3.Slerp(posicaoAtual,origemPos, Time.deltaTime * 2);  // passou
             transform.rotation = Quaternion.Slerp(rotacaoAtual, origemRot, Time.deltaTime * 2);
         }
 
         //Leva o Objeto até o ponto de inspeção.
         else if(posicaoAtual != pontoInspecao.position && rotacaoAtual != pontoInspecao.rotation && sManager.inspecionando && chegando) 
-        {
-            transform.position = Vector3.Slerp(posicaoAtual, pontoInspecao.position, Time.deltaTime * 8);
+        { 
+            transform.position = Vector3.Slerp(posicaoAtual, pontoInspecao.position, Time.deltaTime * 8); // passou
             transform.rotation =  Quaternion.Slerp(rotacaoAtual, pontoInspecao.rotation, Time.deltaTime * 8);
 
             //Verifica a posição do objeto em relação ao ponto de inspeção e desliga o Slerp acima. 
@@ -113,6 +117,8 @@ public class Inspecao : MonoBehaviour
         sManagerObject = sManager.selectionTransform;
         chegando = true;
         sManager.inspecionando = true;
+
+        Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
     }
     
 }
