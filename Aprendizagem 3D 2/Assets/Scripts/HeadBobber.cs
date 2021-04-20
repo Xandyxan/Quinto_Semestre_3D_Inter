@@ -18,6 +18,8 @@ public class HeadBobber : MonoBehaviour
 
     private PlayerController playerController;
 
+    private bool usingCellphone;
+
     private void Awake()
     {
         playerController = GetComponentInParent<PlayerController>();
@@ -27,10 +29,21 @@ public class HeadBobber : MonoBehaviour
         startPos = this.transform.position;
     }
 
+    private void Start()
+    {
+        Cellphone.instance.usingCellphoneEvent -= SetUsingCellphoneTrue; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        Cellphone.instance.closeCellMenuEvent -= SetUsingCellphoneFalse;
+        Cellphone.instance.usingCellphoneEvent += SetUsingCellphoneTrue;
+        Cellphone.instance.closeCellMenuEvent += SetUsingCellphoneFalse;
+    }
+
     private void Update()
     {
-        UpdateBreathValues();
-        Breath();
+        if (!usingCellphone)
+        {
+            UpdateBreathValues();
+            Breath();
+        }
     }
 
     private void Breath()
@@ -64,5 +77,19 @@ public class HeadBobber : MonoBehaviour
             actualAmplitude = idleAmplitude;
             actualPeriod = idlePeriod;
         }
+    }
+
+    // functions to be called from the usingCellphone event.
+    // While using the cellphone, the player stops breathing cause a moving camera could make players dizzy when trying to read the text from the messages.
+    private void SetUsingCellphoneTrue()
+    {
+        usingCellphone = true;
+      //  print("Headbobbing off");
+    }
+
+    private void SetUsingCellphoneFalse()
+    {
+        usingCellphone = false;
+       // print("Headbobbing true");
     }
 }
