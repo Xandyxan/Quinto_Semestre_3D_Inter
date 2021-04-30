@@ -51,12 +51,6 @@ public class Interactive : MonoBehaviour
 
                 switch (interactionKind)
                 {
-                    case "Door":
-                        Transform doorRoot = transform.root;
-                        Door doorScript = doorRoot.GetComponent<Door>();
-                        doorScript.OpenDoor();
-                        break;
-
                     case "Furniture door":
                         Doors doorScript2 = transform.GetComponent<Doors>();
                         doorScript2.OpenCloseDoors();

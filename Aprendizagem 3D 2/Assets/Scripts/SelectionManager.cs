@@ -11,8 +11,6 @@ public class SelectionManager : MonoBehaviour
     [SerializeField] private string selectableTag = "Selectable";
 
     Renderer selectionRenderer = null;
-    private Material highlightMaterial;
-    private Material defaultMaterial;
 
     public Transform selectionTransform;
 
@@ -28,10 +26,16 @@ public class SelectionManager : MonoBehaviour
 
     private bool usingCellphone;
 
-
+    private Color selectionColor = new Color(140, 87, 49);
     private void Awake()
     {
         instance = this;
+
+        // essas linhas abaixo são pra normalizar a intensidade da cor HDR, deixando o valor dela como 1.
+        float intensity = (selectionColor.r + selectionColor.g + selectionColor.b) / 3f;
+        float factor = 1f / intensity;
+        factor *= .16f;
+        selectionColor = new Color(selectionColor.r * factor, selectionColor.g * factor, selectionColor.b * factor);
     }
 
     private void Start() 
@@ -48,8 +52,8 @@ public class SelectionManager : MonoBehaviour
         if (selectionTransform != null)
         {
             Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
-
+            //selectionRenderer.material = defaultMaterial;
+            selectionRenderer.material.DisableKeyword("_EMISSION");
             selectionTransform = null;
         }
         else
@@ -72,8 +76,10 @@ public class SelectionManager : MonoBehaviour
                     interactiveScript = selection.GetComponent<Interactive>();
                     if (selectionRenderer != null)
                     {
-                        defaultMaterial = selectionRenderer.material;
-                        selectionRenderer.material = highlightMaterial;
+                        // defaultMaterial = selectionRenderer.material;
+                        // selectionRenderer.material = highlightMaterial;
+                        selectionRenderer.material.SetColor("_EmissionColor", selectionColor);
+                        selectionRenderer.material.EnableKeyword("_EMISSION");
                     }
 
                     crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
@@ -81,7 +87,7 @@ public class SelectionManager : MonoBehaviour
                     if (interactiveScript != null)
                     {
                         interactiveScript.SetSelectedTrue();
-                        highlightMaterial = interactiveScript.selectionMaterial;
+                        //highlightMaterial = interactiveScript.selectionMaterial;
                     }
 
                     selectionTransform = selection;
