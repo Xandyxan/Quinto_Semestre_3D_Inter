@@ -5,7 +5,7 @@ using UnityEngine;
 public class Doors : MonoBehaviour
 {
     [Header("Use only one movement type & axis")]
-    public bool understandable;
+    public bool understandable; // variavel que não usa pra nada, understandable
 
     [Header("Rotation Movement?")]
     [Tooltip("Use only one value")]
@@ -18,14 +18,14 @@ public class Doors : MonoBehaviour
     public float positionVelocity = 2f;
     public bool positionOnlyZ;
 
-    private Vector3 idleRotation, idlePosition;
+    protected Vector3 idleRotation, idlePosition;
 
-    private bool isOpened, openingIsHappening;
+    protected bool isOpened, openingIsHappening;
 
-    private bool rotateRigth, rotateLeft, rotateUp, rotateDown;
+    protected bool rotateRigth, rotateLeft, rotateUp, rotateDown;
     private bool positionZ;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         openingIsHappening = rotateRigth = rotateLeft =  rotateUp = rotateDown = positionZ = false;
 
@@ -46,14 +46,14 @@ public class Doors : MonoBehaviour
         if (positionOnlyZ) desirePositionValue = new Vector3(idlePosition.x, idlePosition.y, desirePositionValue.z);
     }
 
-    void Update()
+    protected void Update()
     {
         if (openingIsHappening) RotateDoor();
     }
 
-    public void OpenCloseDoors() { openingIsHappening = true; } //É chamado no 'Interactive' script
+    public virtual void OpenCloseDoors() { openingIsHappening = true; } //É chamado no 'Interactive' script // chama que a porta vai abrir
 
-    private void RotateDoor()
+    protected void RotateDoor()
     {
         //It takes rotation value of eulerAngles and not localEulerAngles because the received values are differents
         //To rotate we are using a Quarternion Method where it is necessary atributte to the transform.rotation instead of localEulerAngles
@@ -95,7 +95,7 @@ public class Doors : MonoBehaviour
         CheckDoorState();
     }
 
-    private void CheckDoorState()
+    protected void CheckDoorState()
     {
         // Y rotate check
         if (rotateLeft)
@@ -129,14 +129,14 @@ public class Doors : MonoBehaviour
         }
     }
 
-    private void SetIsOpened(bool isOpened)     //stop rotating when reach the desire or idle value,
+    protected void SetIsOpened(bool isOpened)     //stop rotating when reach the desire or idle value,
     {
         this.isOpened = isOpened;
         openingIsHappening = false;
         ResetDefaultRotation();
     }
 
-    private void ResetDefaultRotation()     //this.transform.localEulerAngles altera o valor diretamente da rotação do objeto igual a que mostra no inspector
+    protected void ResetDefaultRotation()     //this.transform.localEulerAngles altera o valor diretamente da rotação do objeto igual a que mostra no inspector
     {
         if (!isOpened) this.transform.localEulerAngles = idleRotation;
         else this.transform.localEulerAngles = desireRotationValue;

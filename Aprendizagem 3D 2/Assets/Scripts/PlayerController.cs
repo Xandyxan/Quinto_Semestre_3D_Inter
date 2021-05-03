@@ -38,12 +38,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float defaultZoomSpeed;
     private float chRaio = 50f;
 
-    private float fovDefault = 90f;
-    private float fovZoom = 50f;
+    private float fovDefault = 60f;   // Vertical fov value, the horizontal one is based on the screen resolution
+    private float fovZoom = 40f;
     private float zoomSpeed = 8f;
 
     //run
-    private float fovRun = 80f;
+    private float fovRun = 55f;
     private bool isRunning;
 
     [Header("Other")]
