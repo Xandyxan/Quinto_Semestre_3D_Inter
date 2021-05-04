@@ -25,6 +25,10 @@ public class PlayerView : MonoBehaviour
     protected float fovZoom = 40f;
     protected float zoomSpeed = 8f;
 
+    [Header("Other")]
+    [SerializeField] SelectionManager SelectionManager;
+    private bool usingCellphone;
+
     private void Awake()
     {
         playerCamera = FindObjectOfType<Camera>();
@@ -33,6 +37,13 @@ public class PlayerView : MonoBehaviour
         playerCameraTransform.position = cameraOffSet.transform.position;
     }
 
+    private void OnEnable()
+    {
+        Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
+        Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
+        Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
+    }
     void Start()
     {
         if (lookCursor)
@@ -45,8 +56,16 @@ public class PlayerView : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateMouseLook();
-        HandleZoom();
+        if (!usingCellphone)
+        {
+            if (!SelectionManager.inspecionando)
+            {
+                UpdateMouseLook();
+            }
+            HandleZoom();
+        }
+        
+       
     }
 
     protected virtual void UpdateMouseLook()
@@ -79,5 +98,17 @@ public class PlayerView : MonoBehaviour
             // return crosshair to bigger size.
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio, chRaio), (zoomSpeed - 2) * Time.deltaTime);
         }
+    }
+
+    // On and Off
+    public void TurnPlayerVisonOn()
+    {
+        usingCellphone = false;
+        this.enabled = true;
+        // print(" PCtrl ON");
+    }
+    public void TurnPlayerVisionOff()
+    {
+        usingCellphone = true;
     }
 }
