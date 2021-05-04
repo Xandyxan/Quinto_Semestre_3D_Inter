@@ -5,15 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    AudioSource audioS;
-    AudioClip lanternaON;
-    AudioClip lanternaOff;
-    [SerializeField] private Transform playerCamera = null;
-    [SerializeField] private float mouseSensitivity;
-    [SerializeField] bool lookCursor = true;
-    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
-    [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.3f;
-    
     private CharacterController characterController;
     private Animator animator;
 
@@ -21,36 +12,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float gravity = -13.0f;
     float velocityY = 0.0f;
 
-    float cameraPitch = 0f;
     public float walkSpeedX, actualWalkSpeedZ;
     float walkSpeedZ = 2.0f;
     float runSpeedZ = 4.0f;
     float backWalkSpeedZ = 1.25f;
     float crouchSpeedZ = 1f;
+    [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
     Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
-    private Vector3 velocityC = Vector3.zero;
-
-    Vector2 currentMouseDelta = Vector2.zero;
-    Vector2 currentMouseVelocity = Vector2.zero;
-    //[SerializeField] Transform head;
-
-    [Header("Zoom")]
-    [SerializeField] private Camera mainCamera;
-    [SerializeField] private Image crosshair;
-    [SerializeField] private float defaultZoomSpeed;
-    private float chRaio = 50f;
-
-    private float fovDefault = 60f;   // Vertical fov value, the horizontal one is based on the screen resolution
-    private float fovZoom = 40f;
-    private float zoomSpeed = 8f;
-
 
     //Character States
-    private float fovRun = 55f;
     private bool isRunning, isCrouched;
-
 
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
@@ -64,22 +37,12 @@ public class PlayerController : MonoBehaviour
         actualWalkSpeedZ = walkSpeedZ;
     }
     
-    // Start is called before the first frame update
-    void Start()
-    {   
-        if(lookCursor)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-        }
-    }
-    
     private void OnEnable()
     {
-        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
-        //Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
-        //Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
+        Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
+        Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
+        Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -91,22 +54,19 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = true;
 
     }
-    // Update is called once per frame
+
     void Update()
     {
-        UpdateMouseLook();
-        UpdateMovement();
-        HandleZoom();
+       // UpdateMovement();
 
-        /*
+        
         if (!usingCellphone)
         {
             if (!SelectionManager.inspecionando)
             {
-                UpdateMouseLook();
                 UpdateMovement();
             }
-            HandleZoom();
+            
         }
         else   // disable the script only after the player interpolates to the idle animation.
         {
@@ -120,21 +80,8 @@ public class PlayerController : MonoBehaviour
                // print("PCtrl OF");
             }
         }
-        */
-    }
-
-    private void UpdateMouseLook()
-    {
-        Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseVelocity, mouseSmoothTime);
-        transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
         
-
-        cameraPitch -= currentMouseDelta.y * mouseSensitivity;
-        cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
-        playerCamera.localEulerAngles = Vector3.right * cameraPitch;
     }
-
     private void UpdateMovement()
     {
         InputManager();
@@ -218,27 +165,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isCrouched", isCrouched);
     }
 
-    private void HandleZoom()
-    {
-        zoomSpeed = actualWalkSpeedZ;
-
-        if (Input.GetKey(KeyCode.Mouse1))
-        {
-            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovZoom, defaultZoomSpeed * Time.deltaTime);
-            // make crosshair smaller.
-            crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio / 2, chRaio / 2), zoomSpeed * Time.deltaTime);
-        }else if (isRunning)
-        {
-            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovRun, zoomSpeed * Time.deltaTime);
-        }
-        else if (mainCamera.fieldOfView != fovDefault)
-        {
-            mainCamera.fieldOfView = Mathf.Lerp(mainCamera.fieldOfView, fovDefault, defaultZoomSpeed * Time.deltaTime);
-            // return crosshair to bigger size.
-            crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio, chRaio), (zoomSpeed - 2) * Time.deltaTime);
-        }
-    }
-
     private void UpdateCollider()
     {
         if(!isCrouched)
@@ -254,7 +180,6 @@ public class PlayerController : MonoBehaviour
             characterController.height = 0.155f;
         }
     }
-
 
     //getters
     public bool GetIsRunning() { return this.isRunning; }

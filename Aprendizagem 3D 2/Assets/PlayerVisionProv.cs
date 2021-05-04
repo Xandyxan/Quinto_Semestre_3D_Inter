@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerVision : MonoBehaviour
+public class PlayerVisionProv : PlayerView
 {
     [SerializeField] private Transform playerHead, cameraTransform, cameraOffSet;
     [SerializeField] private float mouseSensitivity;
@@ -45,7 +45,7 @@ public class PlayerVision : MonoBehaviour
         HandleZoom();
     }
 
-    private void UpdateMouseLook()
+    protected override void UpdateMouseLook()
     {
         Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseVelocity, mouseSmoothTime);
