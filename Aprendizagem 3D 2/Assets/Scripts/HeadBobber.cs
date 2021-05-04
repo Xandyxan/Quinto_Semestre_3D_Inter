@@ -13,6 +13,7 @@ public class HeadBobber : MonoBehaviour
     [SerializeField] float runAmplitude = 0.02f;
     [SerializeField] float runPeriod = 0.045f;
 
+    [SerializeField] private GameObject offset;
     private float actualAmplitude, actualPeriod;
     private Vector3 startPos;
 
@@ -39,10 +40,13 @@ public class HeadBobber : MonoBehaviour
 
     private void Update()
     {
+        this.transform.position = offset.transform.position;
+
         if (!usingCellphone)
         {
-            UpdateBreathValues();
-            Breath();
+            //StayWithHead();
+            //UpdateBreathValues();
+            //Breath();
         }
     }
 
@@ -77,6 +81,11 @@ public class HeadBobber : MonoBehaviour
             actualAmplitude = idleAmplitude;
             actualPeriod = idlePeriod;
         }
+    }
+
+    private void StayWithHead()
+    {
+        this.transform.localEulerAngles = new Vector3(this.transform.localEulerAngles.x, this.transform.localEulerAngles.y, 0);
     }
 
     // functions to be called from the usingCellphone event.
