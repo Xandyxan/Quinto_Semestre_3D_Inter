@@ -13,9 +13,6 @@ public class Interactive : MonoBehaviour
     [Tooltip("Text displayed when object is selected")]
     [SerializeField] private string objectDescription;
 
-    [Tooltip("Material of the object when selected")]
-    public Material selectionMaterial;
-
     [Space]
 
     [Header("Functionality")]

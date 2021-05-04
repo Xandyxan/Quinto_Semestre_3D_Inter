@@ -39,10 +39,10 @@ public class PlayerController : MonoBehaviour
     
     private void OnEnable()
     {
-        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
-        //Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
-        //Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
+        Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
+        Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
+        Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -57,17 +57,16 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        UpdateMovement();
+       // UpdateMovement();
 
-        /*
+        
         if (!usingCellphone)
         {
             if (!SelectionManager.inspecionando)
             {
-                UpdateMouseLook();
                 UpdateMovement();
             }
-            HandleZoom();
+            
         }
         else   // disable the script only after the player interpolates to the idle animation.
         {
@@ -81,7 +80,7 @@ public class PlayerController : MonoBehaviour
                // print("PCtrl OF");
             }
         }
-        */
+        
     }
     private void UpdateMovement()
     {
