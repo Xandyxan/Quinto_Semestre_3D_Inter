@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Cellphone : MonoBehaviour
 {
+    AudioSource audioS;
+    public AudioClip botao;
     // this script contain events, wich affect the following scripts: PlayerController, HeadBobber, SelectionManager, Inspecao. 
     #region Singleton Stuff
     private static Cellphone _instance;
@@ -22,6 +24,7 @@ public class Cellphone : MonoBehaviour
     // says if the player can open the cellphone menu, or not. In cases like an object being inspecionated, we dont want to open it.
     private bool canUseCellphone = true; 
 
+    
     private void Awake()
     {
         if(_instance!= null && _instance != this)
@@ -38,7 +41,7 @@ public class Cellphone : MonoBehaviour
     void Start()
     {
         cellAnim = GetComponent<Animator>();
-        
+        audioS = GetComponent<AudioSource>();
     }
 
     public void PrintNumbers()
@@ -84,6 +87,11 @@ public class Cellphone : MonoBehaviour
     {
         cellOn = false;
         closeCellMenuEvent?.Invoke();
+    }
+
+    public void Som()
+    {
+        audioS.PlayOneShot(botao);
     }
 }
 

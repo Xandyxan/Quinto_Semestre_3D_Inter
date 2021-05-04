@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    AudioSource audioS;
+    AudioClip lanternaON;
+    AudioClip lanternaOff;
     [SerializeField] private Transform playerCamera = null;
     [SerializeField] private float mouseSensitivity;
     [SerializeField] bool lookCursor = true;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    //AudioSource audioS;
+    //public AudioClip trancada;
     // coordena o funcionamento das portas, checando se precisam ser abertas, qual chave, animação, etc
     [Header("Default Infos")]
 
@@ -32,6 +34,7 @@ public class Door : MonoBehaviour
     void Start()         
     {
         doorAnimator = GetComponent<Animator>(); 
+        //audioS = GetComponent<AudioSource>();
     }
 
     public void OpenDoor()
@@ -60,6 +63,7 @@ public class Door : MonoBehaviour
         }
         else                    // roda a animação de porta trancada
         {
+            //audioS.PlayOneShot(trancada);
             doorAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
