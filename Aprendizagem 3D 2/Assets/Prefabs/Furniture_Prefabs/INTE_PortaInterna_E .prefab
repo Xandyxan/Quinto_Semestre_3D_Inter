@@ -669,7 +669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectionText: {fileID: 0}
-  objectDescription: Porta Quarto
+  objectDescription: "Porta V\xF3"
   interactionKind: Furniture door
   isObjectiveObj: 0
   objectiveManager: {fileID: 0}
@@ -692,8 +692,8 @@ MonoBehaviour:
   desirePositionValue: {x: 0, y: 0, z: 0}
   positionVelocity: 2
   positionOnlyZ: 0
-  isLocked: 0
-  keyName: PortaInternaE
+  isLocked: 1
+  keyName: "Chave V\xF3"
   isObjectiveObj: 1
   objectiveManager: {fileID: 0}
   doorLocked: 1
