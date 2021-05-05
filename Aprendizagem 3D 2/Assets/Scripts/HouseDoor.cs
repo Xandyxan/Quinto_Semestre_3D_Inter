@@ -83,7 +83,7 @@ public class HouseDoor : Doors
             if (isObjectiveObj)
             { 
                 objectiveManager.ExecuteDialogue(doorLocked);
-                audioS.PlayOneShot(trancada);
+                audioS.PlayOneShot(trancada, 0.3f);
             }
             return;
         }
