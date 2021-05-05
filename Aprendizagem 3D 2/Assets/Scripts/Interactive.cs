@@ -22,7 +22,7 @@ public class Interactive : MonoBehaviour
 
     [Header("It's a objective object?")]
     [SerializeField] private bool isObjectiveObj;
-    [SerializeField] ObjectiveManager objectiveManager;
+    [SerializeField] DialogueManager2 objectiveManager;
     [SerializeField] private int dialogueIndex;
 
 
