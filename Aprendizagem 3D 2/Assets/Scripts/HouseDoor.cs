@@ -9,7 +9,11 @@ public class HouseDoor : Doors
 
     // player da o input para abrir, maçaneta gira e porta gira. Quando a rotação finalizar, a macaneta volta para a rotação inicial, enquanto que a porta mantém.
 
-
+    AudioSource audioS;
+    public AudioClip trancada;
+    public AudioClip destranca;
+    public AudioClip abre;
+    public AudioClip Fecha;
     private Animator knobAnimator;
 
     [Header("Locked Door Stuff")]
@@ -26,6 +30,11 @@ public class HouseDoor : Doors
     [SerializeField] DialogueManager2 objectiveManager;
     [SerializeField] private int doorLocked, doorUnlocked;
 
+
+    private void Start()
+    {
+        audioS = GetComponent<AudioSource>();
+    }
     protected override void Awake()
     {
         base.Awake();
@@ -39,6 +48,7 @@ public class HouseDoor : Doors
         {
             base.OpenCloseDoors();
             knobAnimator.SetTrigger("Open");
+            audioS.PlayOneShot(abre);
         }
     }
 
@@ -53,7 +63,12 @@ public class HouseDoor : Doors
             if (PlayerPrefs.GetInt(keyName, 0) == 1)
                 // destranca a porta
                 print("Open the door!");
-            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorUnlocked);
+            if (isObjectiveObj)
+            {
+                objectiveManager.ExecuteDialogue(doorUnlocked);
+                audioS.PlayOneShot(destranca);
+            }
+
             isLocked = false;
             // depois que isLocked fica false, quando o jogador tentar rodar o código de abrir a porta, ela irá abrir normalmente
 
@@ -61,10 +76,15 @@ public class HouseDoor : Doors
         else                    // roda a animação de porta trancada, roda a parte do código de abrir a porta em que a porta abre e fecha rápido.
         {
             // bool isLocked já começa como true
+            
             knobAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
-            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorLocked);
+            if (isObjectiveObj)
+            { 
+                objectiveManager.ExecuteDialogue(doorLocked);
+                audioS.PlayOneShot(trancada);
+            }
             return;
         }
 
