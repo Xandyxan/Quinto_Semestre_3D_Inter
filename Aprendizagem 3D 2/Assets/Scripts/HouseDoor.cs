@@ -23,7 +23,7 @@ public class HouseDoor : Doors
 
     [Header("It's a objective object?")]
     [SerializeField] private bool isObjectiveObj;
-    [SerializeField] ObjectiveManager objectiveManager;
+    [SerializeField] DialogueManager2 objectiveManager;
     [SerializeField] private int doorLocked, doorUnlocked;
 
     protected override void Awake()

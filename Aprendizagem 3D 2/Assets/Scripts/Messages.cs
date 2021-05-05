@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class Messages : MonoBehaviour
 {
+    [Tooltip("Com quem a mariana está conversando")]
     [SerializeField] string contactName;
+
+    [Tooltip("quantas mensagens desse contato vão existir no começo da cena")]
+    [SerializeField] int numberOfMessagesAtStart; // quantas mensagens desse contato vão existir no começo da cena
 
     [SerializeField] InterfaceScroll scrollMessages;
 
@@ -18,11 +22,16 @@ public class Messages : MonoBehaviour
 
     private void Awake()
     {
-        SetMessagesNumberTest(3);
+        SetMessagesNumber(numberOfMessagesAtStart);
       
     }
 
-    public void SetMessagesNumberTest(int number)
+    private void OnEnable()
+    {
+        UpdateMessages();
+    }
+
+    public void SetMessagesNumber(int number)     // -> chamar no evento para setar o número de mensagens com o contato
     {
         PlayerPrefs.SetInt(contactName, number);
         UpdateMessages();
@@ -56,7 +65,7 @@ public class Messages : MonoBehaviour
             print((i+ 1) + " messages are active");
         }
 
-        if(updatedChatMessagesCounter > numberOfMessages) { print("NEW MESSAGES ARRIVED"); } // ativar feedback de mensagem nova aqui.
+        if(updatedChatMessagesCounter > numberOfMessages) { print("NEW MESSAGES ARRIVED"); } // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
 
         // after adding the messages, set the newest's position as the start.
         if(updatedChatMessagesCounter > 0) 
