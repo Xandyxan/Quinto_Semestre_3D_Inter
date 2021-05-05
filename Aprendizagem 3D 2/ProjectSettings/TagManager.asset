@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Selectable
   - Doors
+  - DialogueText
+  - CharacterText
+  - DialogueBox
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - PostProcessingVolumes
   - FurnitureIgnore
   - Structure
-  - 
+  - Volume
   - 
   - 
   - 
