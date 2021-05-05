@@ -62,7 +62,7 @@ public class Inspecao : MonoBehaviour
             
             
             limite += Input.mouseScrollDelta.y * Time.deltaTime;
-            limite = Mathf.Clamp(limite, -0.02f, 0.1f);
+            limite = Mathf.Clamp(limite, -0.03f, 0.1f);
             posicaoAtual = pontoInspecao.transform.position + limite * pontoInspecao.transform.forward * escala ;
 
             //Colocar limite para Zoom de Inspeção**
