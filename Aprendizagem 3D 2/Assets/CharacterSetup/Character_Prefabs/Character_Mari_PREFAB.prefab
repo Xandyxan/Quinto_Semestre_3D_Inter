@@ -2042,7 +2042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5614684797112224414
 Transform:
   m_ObjectHideFlags: 0
@@ -2051,7 +2051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5614684797112224413}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.25}
+  m_LocalPosition: {x: -0.0036, y: 0, z: -0.0425}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5614684797787655794}
@@ -2069,9 +2069,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.97154343, b: 0.8915094, a: 1}
-  m_Intensity: 12
-  m_Range: 13
-  m_SpotAngle: 35
+  m_Intensity: 2
+  m_Range: 9
+  m_SpotAngle: 58
   m_InnerSpotAngle: 2
   m_CookieSize: 10
   m_Shadows:
@@ -2111,7 +2111,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0.001
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 4.4348e-41, z: 0, w: 9.18355e-40}
@@ -2171,7 +2171,6 @@ GameObject:
   - component: {fileID: 5614684797787655794}
   - component: {fileID: 5614684797787655805}
   - component: {fileID: 5614684797787655804}
-  - component: {fileID: 5614684797787655795}
   m_Layer: 0
   m_Name: FPS_Camera
   m_TagString: MainCamera
@@ -2247,25 +2246,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5614684797787655793}
   m_Enabled: 1
---- !u!114 &5614684797787655795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5614684797787655793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31c470d241bfb68498fd889bf610a400, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idleAmplitude: 0.015
-  idlePeriod: 0.65
-  walkAmplitude: 0.01
-  walkPeriod: 0.06
-  runAmplitude: 0.02
-  runPeriod: 0.045
-  offset: {fileID: 5614684796925520586}
 --- !u!1 &5699139803487616156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,7 +2937,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7813694426326095311}
   m_Enabled: 1
-  m_CastShadows: 3
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3267,15 +3247,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1496b55dd7d8c3e499a3efe32f94acec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 5
-  lookCursor: 1
-  mouseSmoothTime: 0.05
   gravity: -13
   walkSpeedX: 2
   actualWalkSpeedZ: 0
   moveSmoothTime: 0.1
-  crosshair: {fileID: 0}
-  defaultZoomSpeed: 8
   SelectionManager: {fileID: 0}
 --- !u!114 &962639029923544103
 MonoBehaviour:
@@ -3289,6 +3264,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da85fe9b391f5549b770aa29b288a70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraOffSet: {fileID: 5614684796925520587}
+  lookCursor: 1
+  mouseSensitivity: 5
+  mouseSmoothTime: 0.05
+  crosshair: {fileID: 0}
+  defaultZoomSpeed: 8
+  SelectionManager: {fileID: 0}
 --- !u!95 &8221364053448504278
 Animator:
   serializedVersion: 3
@@ -3347,7 +3329,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8756292689079934546}
   m_Enabled: 1
-  m_CastShadows: 3
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
