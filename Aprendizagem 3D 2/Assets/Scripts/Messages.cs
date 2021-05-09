@@ -20,6 +20,10 @@ public class Messages : MonoBehaviour
     private bool newMessagesArrived; // guardamos o último valor do contador de mensagens em uma variavel e batemos com o novo valor durante o update.
     private int numberOfMessages;
 
+    [Space]
+
+    [SerializeField] private GameObject feedbackAnimation;
+
     private void Awake()
     {
         SetMessagesNumber(numberOfMessagesAtStart);
@@ -65,7 +69,11 @@ public class Messages : MonoBehaviour
             print((i+ 1) + " messages are active");
         }
 
-        if(updatedChatMessagesCounter > numberOfMessages) { print("NEW MESSAGES ARRIVED"); } // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
+        if(updatedChatMessagesCounter > numberOfMessages)  // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
+        {
+            feedbackAnimation.SetActive(true);
+            print("NEW MESSAGES ARRIVED"); 
+        } 
 
         // after adding the messages, set the newest's position as the start.
         if(updatedChatMessagesCounter > 0) 

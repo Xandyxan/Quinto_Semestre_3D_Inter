@@ -11,7 +11,7 @@ public class Cellphone : MonoBehaviour
     #endregion
 
     private Animator cellAnim;
-    private bool cellOn;
+    public bool cellOn;
     #region delegates
     public delegate void UsingCellMenu();     // apenas métodos com parametros bool podem ser inscritos nesse delegate. 
     public UsingCellMenu usingCellphoneEvent;             // Talvez mudar para um delegate sem parametros.
@@ -59,12 +59,14 @@ public class Cellphone : MonoBehaviour
                 {
                     //start usingCellphoneEvent -> takes control out of the player, they cannot move nor control the camera. The mouse lock is disabled.
                     // The ? before the invoke checks if the delegate is not null.
-                    usingCellphoneEvent?.Invoke();
+                   // usingCellphoneEvent?.Invoke();
+                    GameManager.instance.removePlayerControlEvent?.Invoke();
                 }
                 else
                 {
                     //start closeCellMenu event -> gives control back to the player, they can now control the camera and move around the map. The mouse lock is activated.
-                    closeCellMenuEvent?.Invoke();
+                    //closeCellMenuEvent?.Invoke();
+                    GameManager.instance.returnPlayerControlEvent?.Invoke();
                 }
             }
 
@@ -83,7 +85,8 @@ public class Cellphone : MonoBehaviour
     public void RemoteCloseCellphone()  // used for the home button on the cellphone main screen, maybe we will change this option.
     {
         cellOn = false;
-        closeCellMenuEvent?.Invoke();
+       // closeCellMenuEvent?.Invoke();
+        GameManager.instance.returnPlayerControlEvent?.Invoke();
     }
 }
 
