@@ -37,12 +37,13 @@ public class PlayerView : MonoBehaviour
         playerCameraTransform.position = cameraOffSet.transform.position;
     }
 
+    
     private void OnEnable()
     {
-        Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
-        Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
-        Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
+        // Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        // Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
+        // Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
+        // Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
     }
     void Start()
     {
@@ -51,6 +52,10 @@ public class PlayerView : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        GameManager.instance.returnPlayerControlEvent -= TurnPlayerVisonOn;
+        GameManager.instance.removePlayerControlEvent += TurnPlayerVisionOff;
+        GameManager.instance.returnPlayerControlEvent += TurnPlayerVisonOn;
     }
 
     // Update is called once per frame

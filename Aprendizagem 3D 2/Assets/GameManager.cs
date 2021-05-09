@@ -5,6 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // this script contain events, wich affect the following scripts: PlayerController, HeadBobber, SelectionManager, Inspecao, Cellphone. 
+    // Use it to control the game state, the actual scene or if the player can/can't move
+    // Needs to be a singleton, so any script can call it's methods on the go
+    #region Singleton Stuff
+    private static GameManager _instance;
+    public static GameManager instance { get { return _instance; } }
+    #endregion
+
+    #region delegates
+    public delegate void TakePlayerControl();     // tira controle da movimentação do player. 
+    public TakePlayerControl removePlayerControlEvent;            
+    public delegate void ReturnPlayerControl();         // retorna o controle do player sobre sua movimentação.
+    public ReturnPlayerControl returnPlayerControlEvent;
+    #endregion
+    //----------------------------------------------------------------------------\\
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+        
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
