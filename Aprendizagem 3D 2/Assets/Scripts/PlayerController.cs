@@ -39,10 +39,10 @@ public class PlayerController : MonoBehaviour
     
     private void OnEnable()
     {
-        Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
-        Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
-        Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
+        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
+        //Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
+        //Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

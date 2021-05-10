@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/1_Gameplay/1_Introducao.unity
     guid: 8cc6b1a8a264f0146b1e8513ee547a0f
   - enabled: 1
-    path: Assets/Scenes/George.unity
-    guid: 43d86b24e2a1bb54a9b0edce80ff0e81
+    path: Assets/Scenes/Sonho 1.unity
+    guid: 7d4f022d91a39d24e8ee529b206724be
+  - enabled: 1
+    path: Assets/Scenes/Logo.unity
+    guid: 720ee67679640f44b9310263ea74a9c4
   m_configObjects: {}

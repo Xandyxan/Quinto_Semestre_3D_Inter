@@ -39,10 +39,10 @@ public class PlayerView : MonoBehaviour
 
     private void OnEnable()
     {
-        Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
-        Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
-        Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
+        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
+        //Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
+        //Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
     }
     void Start()
     {

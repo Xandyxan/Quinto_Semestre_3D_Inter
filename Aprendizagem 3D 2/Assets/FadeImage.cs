@@ -12,13 +12,17 @@ public class FadeImage : MonoBehaviour
     [SerializeField] private Color startColor;
     [SerializeField] private Color endColor;
 
+    [Header("Has another fade?")]
+    [SerializeField] private bool hasNextFade;
+    [SerializeField] private float intervalTime;
+
     private Image imagem;
-    private Menu menu;
+    private GameManager gameManager;
 
     private void Awake()
     {
         imagem = GetComponent<Image>();
-        menu = GetComponent<Menu>();
+        gameManager = GetComponent<GameManager>();
 
         imagem.color = startColor;
     }
@@ -37,5 +41,18 @@ public class FadeImage : MonoBehaviour
             yield return null;
         }
         imagem.color = endColor;
+
+        if(hasNextFade)
+        {
+            yield return new WaitForSeconds(intervalTime);
+            for (float t = 0f; t < tempoFade; t += Time.deltaTime)
+            {
+                float normalizedTime = t / tempoFade;
+                imagem.color = Color.Lerp(endColor, startColor, normalizedTime);
+                yield return null;
+            }
+            imagem.color = startColor;
+            gameManager.LoadScene(0);
+        }
     }
 }

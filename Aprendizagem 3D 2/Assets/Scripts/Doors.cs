@@ -25,6 +25,9 @@ public class Doors : MonoBehaviour
     protected bool rotateRigth, rotateLeft, rotateUp, rotateDown;
     private bool positionZ;
 
+    public Dialogue dialogue;
+    public GameObject tvTrigger;
+
     protected virtual void Awake()
     {
         openingIsHappening = rotateRigth = rotateLeft =  rotateUp = rotateDown = positionZ = false;
@@ -49,9 +52,19 @@ public class Doors : MonoBehaviour
     protected void Update()
     {
         if (openingIsHappening) RotateDoor();
+        
     }
 
-    public virtual void OpenCloseDoors() { openingIsHappening = true; } //É chamado no 'Interactive' script // chama que a porta vai abrir
+    public virtual void OpenCloseDoors()
+    { 
+        openingIsHappening = true;
+        if (dialogue != null)
+        {
+            dialogue.RunCoroutine();
+            tvTrigger.SetActive(true);
+        }
+
+    } //É chamado no 'Interactive' script // chama que a porta vai abrir
 
     protected void RotateDoor()
     {
