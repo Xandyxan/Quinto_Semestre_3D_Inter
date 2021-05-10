@@ -24,6 +24,8 @@ public class Dialogue : MonoBehaviour
 
     [Header("Other Continuations")]
     [SerializeField] private GameObject postProcessEffect;
+    [SerializeField] private GameObject postProcessEffect2;
+    public GameObject tutorialCrouch;
 
     private void Awake()
     {
@@ -36,6 +38,7 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Speech()
     {
+        if (tutorialCrouch != null) { tutorialCrouch.SetActive(true); }
         characterNameUI.text = characterName;
 
         if (!alreadyExecuted)
@@ -55,6 +58,8 @@ public class Dialogue : MonoBehaviour
 
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }
+        if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }
+        if(tutorialCrouch != null) { tutorialCrouch.SetActive(false); }
     }
 
     public void RunCoroutine(){ StartCoroutine(Speech()); }
@@ -66,7 +71,8 @@ public class Dialogue : MonoBehaviour
         {
             if(letters != ' ')totalTime += 0.1f; 
         }
-        if (totalTime < 1f) totalTime = 2f;
+        //if (totalTime < 1f) totalTime = 2f;
+        totalTime = 1f;
         return totalTime;
     }
 }
