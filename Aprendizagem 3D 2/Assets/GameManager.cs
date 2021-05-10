@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public TakePlayerControl removePlayerControlEvent;            
     public delegate void ReturnPlayerControl();         // retorna o controle do player sobre sua movimentação.
     public ReturnPlayerControl returnPlayerControlEvent;
+
+    public delegate void UpdateMessages();     // tira controle da movimentação do player. 
+    public UpdateMessages updateMessagesEvent;
+  
     #endregion
     //----------------------------------------------------------------------------\\
     private void Awake()
@@ -51,5 +55,10 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void SetPrefValue(string prefKey, int number)     // -> chamar no evento para setar o número de mensagens com o contato
+    {
+        PlayerPrefs.SetInt(prefKey, number);
     }
 }

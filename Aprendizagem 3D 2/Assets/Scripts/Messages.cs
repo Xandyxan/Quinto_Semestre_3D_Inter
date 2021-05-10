@@ -8,9 +8,6 @@ public class Messages : MonoBehaviour
     [Tooltip("Com quem a mariana está conversando")]
     [SerializeField] string contactName;
 
-    [Tooltip("quantas mensagens desse contato vão existir no começo da cena")]
-    [SerializeField] int numberOfMessagesAtStart; // quantas mensagens desse contato vão existir no começo da cena
-
     [SerializeField] InterfaceScroll scrollMessages;
 
     [SerializeField] List<RectTransform> messages; // We chose a list of Rectransforms because we'll need to get and set the UI elements position.
@@ -24,16 +21,7 @@ public class Messages : MonoBehaviour
 
     [SerializeField] private GameObject feedbackAnimation;
 
-    private void Awake()
-    {
-        SetMessagesNumber(numberOfMessagesAtStart);
-      
-    }
-
-    private void OnEnable()
-    {
-        UpdateMessages();
-    }
+  
 
     public void SetMessagesNumber(int number)     // -> chamar no evento para setar o número de mensagens com o contato
     {
@@ -41,8 +29,9 @@ public class Messages : MonoBehaviour
         UpdateMessages();
     }
 
-    private void UpdateMessages()
+    public void UpdateMessages()
     {
+        print("aaaaaaaaaaaa");
         int updatedChatMessagesCounter = 0; // vamos setar quantas das mensagens presentes na lista estarão ativas (enviadas) no momento em que o update foi chamado.
 
         if (PlayerPrefs.HasKey(contactName)) // pega a quantidade de mensagens presente na conversa atual através do valor do Pref.
