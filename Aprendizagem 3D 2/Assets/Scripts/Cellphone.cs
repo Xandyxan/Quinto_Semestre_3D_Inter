@@ -20,8 +20,9 @@ public class Cellphone : MonoBehaviour
     #endregion
 
     // says if the player can open the cellphone menu, or not. In cases like an object being inspecionated, we dont want to open it.
-    private bool canUseCellphone = true; 
+    private bool canUseCellphone = true;
 
+    [SerializeField] private List<Messages> MessagesContacts;
     private void Awake()
     {
         if(_instance!= null && _instance != this)
@@ -87,6 +88,13 @@ public class Cellphone : MonoBehaviour
         cellOn = false;
        // closeCellMenuEvent?.Invoke();
         GameManager.instance.returnPlayerControlEvent?.Invoke();
+    }
+
+    public void UpdateAllMessages()
+    {
+        foreach(Messages message in MessagesContacts){
+            message.UpdateMessages();
+        }
     }
 }
 

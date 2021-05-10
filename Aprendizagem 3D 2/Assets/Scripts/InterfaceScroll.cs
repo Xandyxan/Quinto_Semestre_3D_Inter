@@ -10,7 +10,7 @@ public class InterfaceScroll : MonoBehaviour
     private float maskPos, maskHeight;
 
     [Header("Scrolling Bounds")]
-    [SerializeField] float newestMessagePos;
+    [SerializeField] float newestMessagePos = 0f;
     [SerializeField] private float offsetTop = 485;
     [SerializeField] private float offsetBottom = 637;
 
@@ -37,23 +37,32 @@ public class InterfaceScroll : MonoBehaviour
 
     private void OnEnable() // Position the most recent message on the bottom of the screen.
     {
-        CalculateOffset(newestMessagePos);
-        containerRectTransform.anchoredPosition = new Vector2(containerRectTransform.anchoredPosition.x, 0);
-        pos.y = newestMessagePos * -1+ offsetBottom - 30f; // sem o offset, a posição deverá ser o centro da tela. Adicionamos o offset para a mensagem ir para baixo.
-        containerRectTransform.anchoredPosition = new Vector2(containerRectTransform.anchoredPosition.x, pos.y);
-        scrollLimitMax = pos.y;
 
-        scrollLimitMin = -offsetBottom + 30;
-        if (scrollLimitMin > scrollLimitMax) { scrollLimitMin = scrollLimitMax; }
+            CalculateOffset();
+            containerRectTransform.anchoredPosition = new Vector2(containerRectTransform.anchoredPosition.x, 0);
+            pos.y = newestMessagePos * -1 + offsetBottom - 30f; // sem o offset, a posição deverá ser o centro da tela. Adicionamos o offset para a mensagem ir para baixo.
+            containerRectTransform.anchoredPosition = new Vector2(containerRectTransform.anchoredPosition.x, pos.y);
+            scrollLimitMax = pos.y;
+
+            scrollLimitMin = -offsetBottom + 30;
+            if (scrollLimitMin > scrollLimitMax) { scrollLimitMin = scrollLimitMax; }
+    
     }
 
-    private void CalculateOffset(float messagePos)
+    private void CalculateOffset()
     {
-        // offset = distancia do centro da tela + (heightMensagem/2) + sangria;
-        float messageBoxHeight = lastMessageRectTransform.rect.height;
-        // offsetBottom = -137 + 2 * messagePos;
-        offsetBottom = -165.8f + Mathf.Abs(messageBoxHeight / 2);
-
+        if(lastMessageRectTransform != null)
+        {
+            // offset = distancia do centro da tela + (heightMensagem/2) + sangria;
+            float messageBoxHeight = lastMessageRectTransform.rect.height;
+            // offsetBottom = -137 + 2 * messagePos;
+            offsetBottom = -165.8f + Mathf.Abs(messageBoxHeight / 2);
+        }
+        else
+        {
+            offsetBottom = -165.8f + 50f;
+        }
+       
     }
 
     // Setters       
