@@ -44,7 +44,8 @@ public class Dialogue : MonoBehaviour
         if (!alreadyExecuted)
         {
             dialogueBox.SetActive(true);
-            Cellphone.instance.SetCanUseCellphone(false);
+           
+            Cellphone.instance.SetInDialogue(true);
 
             for (int i = 0; i < speechs.Length; i++)
             {
@@ -56,7 +57,8 @@ public class Dialogue : MonoBehaviour
         }
 
         dialogueBox.SetActive(false);
-        Cellphone.instance.SetCanUseCellphone(true);
+        Cellphone.instance.SetInDialogue(false);
+      
 
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }

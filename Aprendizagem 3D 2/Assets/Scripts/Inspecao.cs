@@ -117,7 +117,8 @@ public class Inspecao : MonoBehaviour
         sManager.inspecionando = true;
         estaSelecionado = true;
 
-        Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
+        // Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
+        Cellphone.instance.SetInspecting(true);
 
         GameManager.instance.removePlayerControlEvent?.Invoke();
     }
@@ -142,7 +143,8 @@ public class Inspecao : MonoBehaviour
         interactiveScript.SetSelectedFalse();// adicionei essa linha pq o objeto continuava selecionado msm após terminar o processo de inspeção!
         estaSelecionado = false;
 
-        Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
+        // Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
+        Cellphone.instance.SetInspecting(false);
 
         GameManager.instance.returnPlayerControlEvent?.Invoke();
     }

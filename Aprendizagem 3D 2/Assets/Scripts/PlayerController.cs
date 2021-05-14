@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
     //Character States
     private bool isRunning, isCrouched;
 
+    private PlayerView playerView;
+
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
 
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         actualWalkSpeedZ = walkSpeedZ;
+        playerView = GetComponent<PlayerView>();
     }
     
     private void OnEnable()
@@ -116,6 +119,7 @@ public class PlayerController : MonoBehaviour
             if (isCrouched) isCrouched = false;
             else isCrouched = true;
             isRunning = false;
+            playerView.SetIsCrouching(isCrouched);
         }
         
 
@@ -174,7 +178,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             characterController.center = new Vector3(0, 0.0775f, 0.02f);
-            characterController.radius = 0.061f;
+            characterController.radius = 0.033f;
             characterController.height = 0.155f;
         }
     }
@@ -186,6 +190,7 @@ public class PlayerController : MonoBehaviour
         if (this.currentDir.y >= 0.05f) return true;
         else return false;
     }
+    public bool GetIsCrouched() { return this.isCrouched; }
 
     // Turn Controller On and Off
     public void TurnPlayerControllerOn()
@@ -201,5 +206,4 @@ public class PlayerController : MonoBehaviour
         usingCellphone = Cellphone.instance.cellOn;
     }
 
-   
 }
