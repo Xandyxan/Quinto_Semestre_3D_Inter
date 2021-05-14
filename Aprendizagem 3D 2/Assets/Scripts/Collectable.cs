@@ -17,6 +17,7 @@ public class Collectable : Inspecao
 
     protected override void ConcludeInspection() // por algum motivo quando chamado do mainkey, esse método roda no grandmaKey (╯‵□′)╯︵┻━┻
     {
+        //Cellphone.instance.gameObject.SetActive(true);
         print(CanBeCollected + this.name);
         base.ConcludeInspection();
         CollectItem();
@@ -35,11 +36,10 @@ public class Collectable : Inspecao
    
     public override void Interagindo()
     {
+       // Cellphone.instance.gameObject.SetActive(false); // eu sei que é ruim chamar duas vezes, mas tava bugado 🤠
         this.CanBeCollected = true;
-        base.Interagindo();
-        print(this.name + "está interagindo");
         PressToCollectText.SetActive(true);
-        print(CanBeCollected + this.name);
+        base.Interagindo();
     }
 
     

@@ -57,6 +57,7 @@ public class SelectionManager : MonoBehaviour
         {
             Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
             //selectionRenderer.material = defaultMaterial;
+            if(selectionRenderer != null)
             selectionRenderer.material.DisableKeyword("_EMISSION");
             selectionTransform = null;
         }

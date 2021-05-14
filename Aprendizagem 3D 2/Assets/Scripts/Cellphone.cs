@@ -20,7 +20,8 @@ public class Cellphone : MonoBehaviour
     #endregion
 
     // says if the player can open the cellphone menu, or not. In cases like an object being inspecionated, we dont want to open it.
-    private bool canUseCellphone = true;
+    private bool inDialogue = false;
+    private bool inspecting = false;
 
     [SerializeField] private List<Messages> MessagesContacts;
     private void Awake()
@@ -42,16 +43,10 @@ public class Cellphone : MonoBehaviour
         
     }
 
-    public void PrintNumbers()
-    {
-        float value1 = Random.Range(1, 11);
-        float value2 = Random.Range(1, 15);
-        print("resultado da soma é: " + (value1 + value2));
-    }
     // Update is called once per frame
     void Update()
     {
-        if (canUseCellphone)
+        if (!inspecting && !inDialogue)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -78,9 +73,14 @@ public class Cellphone : MonoBehaviour
     }
 
     // Setters
-    public void SetCanUseCellphone(bool value)
+    public void SetInDialogue(bool value)
     {
-        canUseCellphone = value;
+        inDialogue = value;
+    }
+
+    public void SetInspecting(bool value)
+    {
+        inspecting = value;
     }
 
     public void RemoteCloseCellphone()  // used for the home button on the cellphone main screen, maybe we will change this option.
