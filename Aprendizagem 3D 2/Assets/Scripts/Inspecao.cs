@@ -15,18 +15,20 @@ public class Inspecao : MonoBehaviour
     private Quaternion origemRot;
     private Vector3 posicaoAtual;
     private Quaternion rotacaoAtual;
-    Transform sManagerObject;
     Transform obTrans;
     
-    SelectionManager sManager;
-    InspectorHolder iHolder;
-    public float escala;
+    private SelectionManager sManager;
+
+    public float zoomMultiplier;
     public float rotVel;
-    public float limite;
+    public float inspectionZoom;
 
     bool chegando;
 
     private Interactive interactiveScript;
+
+    bool estaSelecionado = false;
+
     void Start()
     {
         jogador = FindObjectOfType<PlayerController>();
@@ -38,36 +40,28 @@ public class Inspecao : MonoBehaviour
         interactiveScript = GetComponent<Interactive>();
     }
 
-    void Update()
+    private void Update()
     {
-        
-        
         posicaoAtual = transform.position;
         rotacaoAtual = transform.rotation;
 
         //Encerra o processo de inspeção
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.E) && estaSelecionado)
         {
-            sManager.inspecionando = false;
-            chegando = false; // testando essa bool, ainda n sei oq ela faz
-            interactiveScript.SetSelectedFalse();// adicionei essa linha pq o objeto continuava selecionado msm após terminar o processo de inspeção!
-            sManagerObject = null;
-
-            Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
+            ConcludeInspection();
         }
 
-        //O Obejto esta sendo inspecionado
-        if(sManager.inspecionando && sManagerObject == transform)
+        //O Objeto esta sendo inspecionado
+        if(estaSelecionado)
         {
-            
-            
-            limite += Input.mouseScrollDelta.y * Time.deltaTime;
-            limite = Mathf.Clamp(limite, -0.03f, 0.1f);
-            posicaoAtual = pontoInspecao.transform.position + limite * pontoInspecao.transform.forward * escala ;
+                                 
+            inspectionZoom += Input.mouseScrollDelta.y * Time.deltaTime;
+            inspectionZoom = Mathf.Clamp(inspectionZoom, -0.03f, -0.02f);
+            posicaoAtual = pontoInspecao.transform.position + inspectionZoom * pontoInspecao.transform.forward * zoomMultiplier ;
 
             //Colocar limite para Zoom de Inspeção**
           
-            //Rotaciona o obejto em inspeção quando o joghador aperta e segura o botão esquerdo do mouse e o move.
+            //Rotaciona o objeto em inspeção quando o joghador aperta e segura o botão esquerdo do mouse e o move.
             if(Input.GetMouseButton(0))
             {
                
@@ -83,19 +77,20 @@ public class Inspecao : MonoBehaviour
             }
             
             this.transform.position = posicaoAtual;
+            
         }
 
         //Retorna o objeto para origem.
         if(posicaoAtual != origemPos && rotacaoAtual != origemRot && !sManager.inspecionando) 
         {
-            transform.position = Vector3.Slerp(posicaoAtual,origemPos, Time.deltaTime * 2);  // passou
+            transform.position = Vector3.Slerp(posicaoAtual,origemPos, Time.deltaTime * 2);  
             transform.rotation = Quaternion.Slerp(rotacaoAtual, origemRot, Time.deltaTime * 2);
         }
 
         //Leva o Objeto até o ponto de inspeção.
         else if(posicaoAtual != pontoInspecao.position && rotacaoAtual != pontoInspecao.rotation && sManager.inspecionando && chegando) 
         { 
-            transform.position = Vector3.Slerp(posicaoAtual, pontoInspecao.position, Time.deltaTime * 8); // passou
+            transform.position = Vector3.Slerp(posicaoAtual, pontoInspecao.position, Time.deltaTime * 8); 
             transform.rotation =  Quaternion.Slerp(rotacaoAtual, pontoInspecao.rotation, Time.deltaTime * 8);
 
             //Verifica a posição do objeto em relação ao ponto de inspeção e desliga o Slerp acima. 
@@ -110,15 +105,47 @@ public class Inspecao : MonoBehaviour
         }
 
     }
-
-    //Começa o processo de inspeção.    
-    public void Interagindo()
+    private void LateUpdate()
     {
-        sManagerObject = sManager.selectionTransform;
+        if (estaSelecionado) { HandleObjectPan(); }
+        
+    }
+    //Começa o processo de inspeção.    
+    public virtual void Interagindo()                     // é chamado no Interactive
+    {
         chegando = true;
         sManager.inspecionando = true;
+        estaSelecionado = true;
 
-        Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
+        // Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
+        Cellphone.instance.SetInspecting(true);
+
+        GameManager.instance.removePlayerControlEvent?.Invoke();
     }
     
+    private void HandleObjectPan() // Para que o jogador possa mover o objeto durante a inspeção, facilitando a visualização dos objetos
+    {
+        Vector3 objMovement = Vector3.zero;
+        float panSpeed = 2f;
+     
+        objMovement += Input.GetAxis("Horizontal") * pontoInspecao.transform.right * panSpeed * Time.deltaTime;
+
+        objMovement += Input.GetAxis("Vertical") * pontoInspecao.transform.up * panSpeed * Time.deltaTime;
+
+        // objMovement = new Vector3();
+        transform.position += objMovement;
+
+    }
+    protected virtual void ConcludeInspection()
+    {
+        sManager.inspecionando = false;
+        chegando = false; // testando essa bool, ainda n sei oq ela faz
+        interactiveScript.SetSelectedFalse();// adicionei essa linha pq o objeto continuava selecionado msm após terminar o processo de inspeção!
+        estaSelecionado = false;
+
+        // Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
+        Cellphone.instance.SetInspecting(false);
+
+        GameManager.instance.returnPlayerControlEvent?.Invoke();
+    }
 }

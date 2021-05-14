@@ -58,11 +58,6 @@ public class Interactive : MonoBehaviour
                         insp.Interagindo();
                         break;
 
-                    case "Collectable":
-                        Collectable collectable = transform.GetComponent<Collectable>();
-                        collectable.CollectItem();
-                        break;
-
                     case "LightsOn":
                         LightSwitchPanel lightPanel = transform.GetComponent<LightSwitchPanel>();
                         lightPanel.PowerOn();

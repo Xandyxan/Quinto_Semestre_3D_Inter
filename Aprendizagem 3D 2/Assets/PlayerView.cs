@@ -29,6 +29,9 @@ public class PlayerView : MonoBehaviour
     [SerializeField] SelectionManager SelectionManager;
     private bool usingCellphone;
 
+    [Header("Crouching")]
+    private bool isCrouching;
+
     private void Awake()
     {
         playerCamera = FindObjectOfType<Camera>();
@@ -37,12 +40,10 @@ public class PlayerView : MonoBehaviour
         playerCameraTransform.position = cameraOffSet.transform.position;
     }
 
+    
     private void OnEnable()
     {
-        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerVisonOn;
-        //Cellphone.instance.usingCellphoneEvent += TurnPlayerVisionOff;
-        //Cellphone.instance.closeCellMenuEvent += TurnPlayerVisonOn;
+
     }
     void Start()
     {
@@ -51,6 +52,10 @@ public class PlayerView : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        GameManager.instance.returnPlayerControlEvent -= TurnPlayerVisonOn;
+        GameManager.instance.removePlayerControlEvent += TurnPlayerVisionOff;
+        GameManager.instance.returnPlayerControlEvent += TurnPlayerVisonOn;
     }
 
     // Update is called once per frame
@@ -76,7 +81,8 @@ public class PlayerView : MonoBehaviour
 
 
         cameraPitch -= currentMouseDelta.y * mouseSensitivity;
-        cameraPitch = Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
+        
+        cameraPitch = isCrouching? Mathf.Clamp(cameraPitch, -60.0f, 90.0f) : Mathf.Clamp(cameraPitch, -90.0f, 90.0f);
         playerCameraTransform.localEulerAngles = Vector3.right * cameraPitch;
 
         //this is the "HeadBobber", cameraOffSet is inside of head rig animation
@@ -110,5 +116,10 @@ public class PlayerView : MonoBehaviour
     public void TurnPlayerVisionOff()
     {
         usingCellphone = true;
+    }
+    // Setters
+    public void SetIsCrouching(bool value)
+    {
+        isCrouching = value;
     }
 }

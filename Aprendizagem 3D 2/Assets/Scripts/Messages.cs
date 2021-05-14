@@ -8,9 +8,6 @@ public class Messages : MonoBehaviour
     [Tooltip("Com quem a mariana está conversando")]
     [SerializeField] string contactName;
 
-    [Tooltip("quantas mensagens desse contato vão existir no começo da cena")]
-    [SerializeField] int numberOfMessagesAtStart; // quantas mensagens desse contato vão existir no começo da cena
-
     [SerializeField] InterfaceScroll scrollMessages;
 
     [SerializeField] List<RectTransform> messages; // We chose a list of Rectransforms because we'll need to get and set the UI elements position.
@@ -20,16 +17,11 @@ public class Messages : MonoBehaviour
     private bool newMessagesArrived; // guardamos o último valor do contador de mensagens em uma variavel e batemos com o novo valor durante o update.
     private int numberOfMessages;
 
-    private void Awake()
-    {
-        SetMessagesNumber(numberOfMessagesAtStart);
-      
-    }
+    [Space]
 
-    private void OnEnable()
-    {
-        UpdateMessages();
-    }
+    [SerializeField] private GameObject feedbackAnimation;
+
+  
 
     public void SetMessagesNumber(int number)     // -> chamar no evento para setar o número de mensagens com o contato
     {
@@ -37,8 +29,9 @@ public class Messages : MonoBehaviour
         UpdateMessages();
     }
 
-    private void UpdateMessages()
+    public void UpdateMessages()
     {
+        print("aaaaaaaaaaaa");
         int updatedChatMessagesCounter = 0; // vamos setar quantas das mensagens presentes na lista estarão ativas (enviadas) no momento em que o update foi chamado.
 
         if (PlayerPrefs.HasKey(contactName)) // pega a quantidade de mensagens presente na conversa atual através do valor do Pref.
@@ -65,7 +58,11 @@ public class Messages : MonoBehaviour
             print((i+ 1) + " messages are active");
         }
 
-        if(updatedChatMessagesCounter > numberOfMessages) { print("NEW MESSAGES ARRIVED"); } // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
+        if(updatedChatMessagesCounter > numberOfMessages)  // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
+        {
+            feedbackAnimation.SetActive(true);
+            print("NEW MESSAGES ARRIVED"); 
+        } 
 
         // after adding the messages, set the newest's position as the start.
         if(updatedChatMessagesCounter > 0) 

@@ -164,6 +164,18 @@ public class Doors : MonoBehaviour
         return angle;
     }
 
+    // Setters
+
+    public void SetRandomRotationSpeed(float min, float max)
+    {
+        degreesPerSecond = Random.Range(min, max);
+    }
+
+    public void SetRotationSpeed(float desiredDPS)
+    {
+        degreesPerSecond = desiredDPS;
+    }
+
     //NOTAS PARA FUTURA ATUALIZAÇÃO
     //InspectorRotation method está sendo apenas diferença quando assunto é comparar os valores de rotação como segue no método CheckDoorState
     //Nos outros pontos onde é atribuir o valor esse método não está fazendo diferença, com ou sem o valor é o mesmo, necessita investigação

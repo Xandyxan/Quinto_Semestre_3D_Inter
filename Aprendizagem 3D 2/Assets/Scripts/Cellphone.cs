@@ -11,7 +11,7 @@ public class Cellphone : MonoBehaviour
     #endregion
 
     private Animator cellAnim;
-    private bool cellOn;
+    public bool cellOn;
     #region delegates
     public delegate void UsingCellMenu();     // apenas métodos com parametros bool podem ser inscritos nesse delegate. 
     public UsingCellMenu usingCellphoneEvent;             // Talvez mudar para um delegate sem parametros.
@@ -20,8 +20,10 @@ public class Cellphone : MonoBehaviour
     #endregion
 
     // says if the player can open the cellphone menu, or not. In cases like an object being inspecionated, we dont want to open it.
-    private bool canUseCellphone = true; 
+    private bool inDialogue = false;
+    private bool inspecting = false;
 
+    [SerializeField] private List<Messages> MessagesContacts;
     private void Awake()
     {
         if(_instance!= null && _instance != this)
@@ -41,16 +43,10 @@ public class Cellphone : MonoBehaviour
         
     }
 
-    public void PrintNumbers()
-    {
-        float value1 = Random.Range(1, 11);
-        float value2 = Random.Range(1, 15);
-        print("resultado da soma é: " + (value1 + value2));
-    }
     // Update is called once per frame
     void Update()
     {
-        if (canUseCellphone)
+        if (!inspecting && !inDialogue)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -59,12 +55,14 @@ public class Cellphone : MonoBehaviour
                 {
                     //start usingCellphoneEvent -> takes control out of the player, they cannot move nor control the camera. The mouse lock is disabled.
                     // The ? before the invoke checks if the delegate is not null.
-                    usingCellphoneEvent?.Invoke();
+                   // usingCellphoneEvent?.Invoke();
+                    GameManager.instance.removePlayerControlEvent?.Invoke();
                 }
                 else
                 {
                     //start closeCellMenu event -> gives control back to the player, they can now control the camera and move around the map. The mouse lock is activated.
-                    closeCellMenuEvent?.Invoke();
+                    //closeCellMenuEvent?.Invoke();
+                    GameManager.instance.returnPlayerControlEvent?.Invoke();
                 }
             }
 
@@ -75,15 +73,28 @@ public class Cellphone : MonoBehaviour
     }
 
     // Setters
-    public void SetCanUseCellphone(bool value)
+    public void SetInDialogue(bool value)
     {
-        canUseCellphone = value;
+        inDialogue = value;
+    }
+
+    public void SetInspecting(bool value)
+    {
+        inspecting = value;
     }
 
     public void RemoteCloseCellphone()  // used for the home button on the cellphone main screen, maybe we will change this option.
     {
         cellOn = false;
-        closeCellMenuEvent?.Invoke();
+       // closeCellMenuEvent?.Invoke();
+        GameManager.instance.returnPlayerControlEvent?.Invoke();
+    }
+
+    public void UpdateAllMessages()
+    {
+        foreach(Messages message in MessagesContacts){
+            message.UpdateMessages();
+        }
     }
 }
 

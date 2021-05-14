@@ -25,24 +25,29 @@ public class PlayerController : MonoBehaviour
     //Character States
     private bool isRunning, isCrouched;
 
+    private PlayerView playerView;
+
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
 
+    private bool canMove = true;
     private bool usingCellphone;
+   
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
         actualWalkSpeedZ = walkSpeedZ;
+        playerView = GetComponent<PlayerView>();
     }
     
     private void OnEnable()
     {
-        //Cellphone.instance.usingCellphoneEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        //Cellphone.instance.closeCellMenuEvent -= TurnPlayerControllerOn;
-        //Cellphone.instance.usingCellphoneEvent += TurnPlayerControllerOff;
-        //Cellphone.instance.closeCellMenuEvent += TurnPlayerControllerOn;
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
+        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff; 
+        GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -50,23 +55,19 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
+        if (usingCellphone)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     void Update()
     {
-       // UpdateMovement();
-
-        
-        if (!usingCellphone)
+      
+        if (canMove)
         {
-            if (!SelectionManager.inspecionando)
-            {
                 UpdateMovement();
-            }
-            
         }
         else   // disable the script only after the player interpolates to the idle animation.
         {
@@ -118,6 +119,7 @@ public class PlayerController : MonoBehaviour
             if (isCrouched) isCrouched = false;
             else isCrouched = true;
             isRunning = false;
+            playerView.SetIsCrouching(isCrouched);
         }
         
 
@@ -176,7 +178,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             characterController.center = new Vector3(0, 0.0775f, 0.02f);
-            characterController.radius = 0.061f;
+            characterController.radius = 0.033f;
             characterController.height = 0.155f;
         }
     }
@@ -188,16 +190,20 @@ public class PlayerController : MonoBehaviour
         if (this.currentDir.y >= 0.05f) return true;
         else return false;
     }
+    public bool GetIsCrouched() { return this.isCrouched; }
 
-    // On and Off
+    // Turn Controller On and Off
     public void TurnPlayerControllerOn()
     {
+        canMove = true;
         usingCellphone = false;
         this.enabled = true;
        // print(" PCtrl ON");
     }
     public void TurnPlayerControllerOff() 
     {
-        usingCellphone = true;
+        canMove = false;
+        usingCellphone = Cellphone.instance.cellOn;
     }
+
 }

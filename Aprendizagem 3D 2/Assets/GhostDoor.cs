@@ -7,18 +7,7 @@ public class GhostDoor : MonoBehaviour
     private bool conditionCleared = false;
     [SerializeField] private List<Doors> portas;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+  
     private IEnumerator RemoteOpenDoor()
     {
         // para cada porta, chamar método que faz a porta abrir, esperar alguns segundos e chamar o método novamente, para que a porta feche.
@@ -27,12 +16,10 @@ public class GhostDoor : MonoBehaviour
         {
             foreach( Doors door in portas)
             {
-                yield return new WaitForSeconds(Random.Range(2,4));
+                door.SetRandomRotationSpeed(150f, 200f);
                 door.OpenCloseDoors(); // abrir porta
-                yield return new WaitForSeconds(Random.Range(2, 4));
-                door.OpenCloseDoors(); // fechar porta
-                yield return new WaitForSeconds(Random.Range(2, 4));
             }
+            yield return new WaitForSeconds(Random.Range(.2f, 1.5f));
         }
         StopCoroutine(RemoteOpenDoor());
         yield return null;
@@ -41,6 +28,7 @@ public class GhostDoor : MonoBehaviour
     // métodos para inscrever em eventos
     public void StartGhostDoors() // evento para começar
     {
+        conditionCleared = false;
         StartCoroutine(RemoteOpenDoor());
     }
 

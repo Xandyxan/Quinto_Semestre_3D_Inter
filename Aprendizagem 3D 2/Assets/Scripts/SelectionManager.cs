@@ -42,10 +42,14 @@ public class SelectionManager : MonoBehaviour
     {
         inspecionando = false;
 
-        Cellphone.instance.usingCellphoneEvent -= SetUsingCellphoneTrue; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-        Cellphone.instance.closeCellMenuEvent -= SetUsingCellphoneFalse;
-        Cellphone.instance.usingCellphoneEvent += SetUsingCellphoneTrue;
-        Cellphone.instance.closeCellMenuEvent += SetUsingCellphoneFalse;
+        GameManager.instance.removePlayerControlEvent -= SetUsingCellphoneTrue; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        GameManager.instance.returnPlayerControlEvent -= SetUsingCellphoneFalse;
+        GameManager.instance.removePlayerControlEvent += SetUsingCellphoneTrue;
+        GameManager.instance.returnPlayerControlEvent += SetUsingCellphoneFalse;
+       // Cellphone.instance.usingCellphoneEvent -= SetUsingCellphoneTrue; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+       // Cellphone.instance.closeCellMenuEvent -= SetUsingCellphoneFalse;
+       // Cellphone.instance.usingCellphoneEvent += SetUsingCellphoneTrue;
+       // Cellphone.instance.closeCellMenuEvent += SetUsingCellphoneFalse;
     }
     private void Update()
     {
@@ -53,6 +57,7 @@ public class SelectionManager : MonoBehaviour
         {
             Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
             //selectionRenderer.material = defaultMaterial;
+            if(selectionRenderer != null)
             selectionRenderer.material.DisableKeyword("_EMISSION");
             selectionTransform = null;
         }
