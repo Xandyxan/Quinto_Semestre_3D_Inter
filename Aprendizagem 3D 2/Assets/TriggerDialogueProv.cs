@@ -4,25 +4,17 @@ using UnityEngine;
 
 public class TriggerDialogueProv : MonoBehaviour
 {
-    [SerializeField] DialogueManager2 objectiveManager;
-
-    [SerializeField] List<int> dialogueIndexes;
+    [SerializeField] private DialogueManager2 objectiveManager;
+    [SerializeField] private int dialogueIndex;
 
     private float delay;
-    private void OnTriggerStay(Collider other)
+
+    private void OnTriggerEnter(Collider col)
     {
-        if(delay < Time.time)
+        if (col.CompareTag("Player"))
         {
-            delay = Time.time + 5f;
-            if (other.CompareTag("Player"))
-            {
-                int i = 0;
-                if (dialogueIndexes.Count > 1) { i = Random.Range(0, dialogueIndexes.Count); }
-                objectiveManager.ExecuteDialogue(dialogueIndexes[i]);
-                print("DIALOGUE HAPPENED" + i);
-            }
+            objectiveManager.ExecuteDialogue(dialogueIndex);
         }
-        
     }
 
 }

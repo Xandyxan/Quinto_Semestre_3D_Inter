@@ -68,9 +68,7 @@ public class PlayerView : MonoBehaviour
                 UpdateMouseLook();
             }
             HandleZoom();
-        }
-        
-       
+        }    
     }
 
     protected virtual void UpdateMouseLook()
@@ -111,12 +109,12 @@ public class PlayerView : MonoBehaviour
     {
         usingCellphone = false;
         this.enabled = true;
-        // print(" PCtrl ON");
     }
-    public void TurnPlayerVisionOff()
-    {
-        usingCellphone = true;
-    }
+
+    public void TurnPlayerVisionOff() { usingCellphone = true; }
+
+    
+    
     // Setters
     public void SetIsCrouching(bool value)
     {

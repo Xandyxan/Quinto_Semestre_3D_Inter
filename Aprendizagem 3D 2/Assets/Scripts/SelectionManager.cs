@@ -68,7 +68,7 @@ public class SelectionManager : MonoBehaviour
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected / 2, chRaioSelected / 2), zoomSpeed * Time.deltaTime);
         }
 
-        if (!usingCellphone)
+        if (!usingCellphone && Dialogue.isSomeDialogueRunning == false)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

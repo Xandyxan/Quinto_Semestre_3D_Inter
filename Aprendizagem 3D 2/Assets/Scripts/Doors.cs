@@ -25,8 +25,9 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable
     protected bool rotateRigth, rotateLeft, rotateUp, rotateDown;
     private bool positionZ;
 
+    [Header("Extra situations")]
     public Dialogue dialogue;
-    public GameObject tvTrigger;
+    public GameObject areaTrigger;
 
     [Header("Selected")]
 
@@ -72,7 +73,7 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable
         if (dialogue != null)
         {
             dialogue.RunCoroutine();
-            tvTrigger.SetActive(true);
+            areaTrigger.SetActive(true);
         }
     }
 
