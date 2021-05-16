@@ -18,7 +18,7 @@ public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable
     [SerializeField] bool _isObjectiveObj;
     [SerializeField] int _dialogueIndex;
 
-    public string objectDescription { get => _objectDescription != null ? _objectDescription : "Abrir"; set => _objectDescription = value; }
+    public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     public bool isObjectiveObj { get => _isObjectiveObj; set => _isObjectiveObj = value; }
     public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
 
