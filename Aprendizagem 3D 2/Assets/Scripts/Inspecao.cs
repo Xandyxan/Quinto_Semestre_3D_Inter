@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inspecao : MonoBehaviour
+public class Inspecao : MonoBehaviour, IInteractable, ISelectable
 {
     [Header("pontoDeInspecao")]
 
@@ -25,9 +25,22 @@ public class Inspecao : MonoBehaviour
 
     bool chegando;
 
-    private Interactive interactiveScript;
-
     bool estaSelecionado = false;
+
+    [Header("Trigger Messages")]
+    [SerializeField] private bool triggerMessage;
+    private MessageTrigger messageTrigger;
+
+    [Header("Selected")]
+
+    [SerializeField] string _objectDescription;
+
+    [SerializeField] bool _isObjectiveObj;
+    [SerializeField] int _dialogueIndex;
+
+    public string objectDescription { get => _objectDescription != null ? _objectDescription : "inspecionar"; set => _objectDescription = value; }
+    public bool isObjectiveObj { get => _isObjectiveObj; set => _isObjectiveObj = value; }
+    public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
 
     void Start()
     {
@@ -37,7 +50,7 @@ public class Inspecao : MonoBehaviour
         sManager = FindObjectOfType<SelectionManager>();
         origemPos = transform.position;
         origemRot = transform.rotation;
-        interactiveScript = GetComponent<Interactive>();
+        if(triggerMessage) { messageTrigger = GetComponent<MessageTrigger>(); } // se o objeto for ser trigger de novas mensagens no zap, ele pega a ref do trigger.
     }
 
     private void Update()
@@ -111,17 +124,10 @@ public class Inspecao : MonoBehaviour
         
     }
     //Começa o processo de inspeção.    
-    public virtual void Interagindo()                     // é chamado no Interactive
-    {
-        chegando = true;
-        sManager.inspecionando = true;
-        estaSelecionado = true;
-
-        // Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
-        Cellphone.instance.SetInspecting(true);
-
-        GameManager.instance.removePlayerControlEvent?.Invoke();
-    }
+   // public virtual void Interagindo()                     // é chamado no Interactive
+   // {
+       
+   // }
     
     private void HandleObjectPan() // Para que o jogador possa mover o objeto durante a inspeção, facilitando a visualização dos objetos
     {
@@ -140,12 +146,25 @@ public class Inspecao : MonoBehaviour
     {
         sManager.inspecionando = false;
         chegando = false; // testando essa bool, ainda n sei oq ela faz
-        interactiveScript.SetSelectedFalse();// adicionei essa linha pq o objeto continuava selecionado msm após terminar o processo de inspeção!
         estaSelecionado = false;
 
         // Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
         Cellphone.instance.SetInspecting(false);
 
         GameManager.instance.returnPlayerControlEvent?.Invoke();
+    }
+
+    public virtual void Interact()
+    {
+        chegando = true;
+        sManager.inspecionando = true;
+        estaSelecionado = true;
+
+        // Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
+        Cellphone.instance.SetInspecting(true);
+
+        GameManager.instance.removePlayerControlEvent?.Invoke();
+
+        if (triggerMessage) { messageTrigger.ActivateTrigger(); }
     }
 }

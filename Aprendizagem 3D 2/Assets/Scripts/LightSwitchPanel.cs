@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitchPanel : MonoBehaviour
+public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable
 {
     [SerializeField] private List<GameObject> shadowZones;
     [SerializeField] private List<GameObject> lightsRealTime;
@@ -11,14 +11,27 @@ public class LightSwitchPanel : MonoBehaviour
 
     private bool lightsOn = true;
 
+    [Header("Selected")]
+
+    [SerializeField] string _objectDescription;
+
+    [SerializeField] bool _isObjectiveObj;
+    [SerializeField] int _dialogueIndex;
+
+    public string objectDescription { get => _objectDescription != null ? _objectDescription : "Abrir"; set => _objectDescription = value; }
+    public bool isObjectiveObj { get => _isObjectiveObj; set => _isObjectiveObj = value; }
+    public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
+
     //private Vector3 currentSwitchAngle;
 
     private void Start()
     {
         //currentSwitchAngle = transform.rotation.eulerAngles;
-        PowerOn();
+       Interact();
     }
-    public void PowerOn()
+   
+
+    public void Interact()
     {
         if (!lightsOn)
         {
@@ -34,7 +47,7 @@ public class LightSwitchPanel : MonoBehaviour
             foreach (GameObject disjuntor in disjuntores)
             {
                 // disjuntor roda pra direita (-40 no y)
-                
+
                 disjuntor.transform.rotation = Quaternion.AngleAxis(50, Vector3.up);
             }
         }
@@ -56,7 +69,7 @@ public class LightSwitchPanel : MonoBehaviour
                 disjuntor.transform.rotation = Quaternion.AngleAxis(130, Vector3.up);
             }
         }
-       
+
 
         lightsOn = !lightsOn;
         //currentSwitchAngle = transform.rotation.eulerAngles;

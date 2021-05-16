@@ -21,23 +21,26 @@ public class HouseDoor : Doors
     [Tooltip("Name of the key used to open this door")]
     [SerializeField] private string keyName;
 
-    [Header("It's a objective object?")]
-    [SerializeField] private bool isObjectiveObj;
-    [SerializeField] DialogueManager2 objectiveManager;
+    [Header("Trigger dialogue?")]  // valores específicos pra quando for uma porta trancada
+    [Tooltip("valores específicos pra interação trancada / destrancou")]
+    [SerializeField] private bool hasDoorDialogue;
+    [Tooltip("Index do diálogo")]
     [SerializeField] private int doorLocked, doorUnlocked;
+    private DialogueManager2 objectiveManager;
 
     protected override void Awake()
     {
         base.Awake();
         knobAnimator = GetComponent<Animator>(); // talvez mudar pra um get child na macaneta
+        if(hasDoorDialogue) { objectiveManager = FindObjectOfType<DialogueManager2>(); }
     }
 
-    public override void OpenCloseDoors()
+    public override void Interact()
     {
         if (isLocked) CheckKey();
         else
         {
-            base.OpenCloseDoors();
+            base.Interact();
             knobAnimator.SetTrigger("Open");
         }
     }
@@ -53,7 +56,7 @@ public class HouseDoor : Doors
             if (PlayerPrefs.GetInt(keyName, 0) == 1)
                 // destranca a porta
                 print("Open the door!");
-            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorUnlocked);
+            if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorUnlocked);
             isLocked = false;
             // depois que isLocked fica false, quando o jogador tentar rodar o código de abrir a porta, ela irá abrir normalmente
 
@@ -64,7 +67,7 @@ public class HouseDoor : Doors
             knobAnimator.SetTrigger("Locked");
             print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
-            if (isObjectiveObj) objectiveManager.ExecuteDialogue(doorLocked);
+            if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorLocked);
             return;
         }
 

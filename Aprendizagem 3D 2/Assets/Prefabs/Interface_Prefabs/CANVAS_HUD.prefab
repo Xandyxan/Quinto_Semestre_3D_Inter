@@ -52,6 +52,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &173317380
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +108,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &1159031827
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +215,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &1744814823
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +267,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &1822933344
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +405,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &65175093122861925
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +524,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &800623580066142189
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,6 +670,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &2540802030674485176
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +724,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &2589658169556237582
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +776,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &2651108353413460513
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +831,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &2886877777278924607
 GameObject:
   m_ObjectHideFlags: 0
@@ -863,6 +883,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &3202271587817008022
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +935,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &3408516009513990079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,6 +1116,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &4515982870630094397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,6 +1169,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &4893519760244265458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2099,7 +2127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactName: Mae Geralda
-  numberOfMessagesAtStart: 2
   scrollMessages: {fileID: 2822250432871595432}
   messages:
   - {fileID: 7376014761954239204}
@@ -2111,6 +2138,7 @@ MonoBehaviour:
   - {fileID: 6905504291332408105}
   - {fileID: 8260897162041893045}
   - {fileID: 2543943519152517878}
+  feedbackAnimation: {fileID: 0}
 --- !u!1 &4893519760359240552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,6 +3104,8 @@ GameObject:
   - component: {fileID: 4893519760585043488}
   - component: {fileID: 4893519760585043489}
   - component: {fileID: 4893519760585043490}
+  - component: {fileID: 5366960113600933921}
+  - component: {fileID: 4627869826980027581}
   m_Layer: 5
   m_Name: Home_Screen
   m_TagString: Untagged
@@ -3143,6 +3173,38 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5366960113600933921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893519760585043491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5d8462f39ec0d4b8cc6cea0d00a0c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contactNameMessage:
+  - RafaelaPsico
+  - MaeGeralda
+  - PrimoJoao
+  - AntoniaIrma
+  - RafaelEx
+  desiredNumberOfMessages: 0300000002000000030000000200000003000000
+  triggeredByCollider: 0
+--- !u!114 &4627869826980027581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4893519760585043491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e62594f84691a4a8a1f42ab9c7cd8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4893519760642113748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,7 +3620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactName: Antonia_Irma
-  numberOfMessagesAtStart: 5
   scrollMessages: {fileID: 1556093827521080276}
   messages:
   - {fileID: 4402730319699932116}
@@ -3570,6 +3631,7 @@ MonoBehaviour:
   - {fileID: 9075386422192073974}
   - {fileID: 8968258419057459682}
   - {fileID: 8568277221462356048}
+  feedbackAnimation: {fileID: 0}
 --- !u!1 &4893519760933704992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3824,7 +3886,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactName: RafaelaPsico
-  numberOfMessagesAtStart: 3
   scrollMessages: {fileID: 4893519761636461630}
   messages:
   - {fileID: 9036823800591147333}
@@ -3836,6 +3897,7 @@ MonoBehaviour:
   - {fileID: 9036823801508776261}
   - {fileID: 9036823801628806152}
   - {fileID: 326648282637015657}
+  feedbackAnimation: {fileID: 0}
 --- !u!1 &4893519761085142294
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,7 +4675,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contactName: Rafael_Ex
-  numberOfMessagesAtStart: 2
   scrollMessages: {fileID: 2937355042206233351}
   messages:
   - {fileID: 1004936935335085078}
@@ -4625,6 +4686,7 @@ MonoBehaviour:
   - {fileID: 6988547622823075834}
   - {fileID: 2743646121530321552}
   - {fileID: 6803814295037207022}
+  feedbackAnimation: {fileID: 0}
 --- !u!1 &4893519761550329533
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5161,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cc2eacaf8b7b4a448ed334727bd3689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cellOn: 0
+  MessagesContacts:
+  - {fileID: 4893519761029241466}
+  - {fileID: 614484256340729715}
+  - {fileID: 5840860457056287982}
+  - {fileID: 8921287173737246808}
+  - {fileID: 6620036465796588908}
 --- !u!95 &4893519761922820627
 Animator:
   serializedVersion: 3
@@ -5667,6 +5736,8 @@ MonoBehaviour:
   durationTime: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  hasNextFade: 0
+  intervalTime: 0
 --- !u!114 &4893519762189615978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5769,8 +5840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f029460cbf24edc4d952b366ab9d579e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactName: Primo_Joao
-  numberOfMessagesAtStart: 1
+  contactName: PrimoJoao
   scrollMessages: {fileID: 8333823063811970459}
   messages:
   - {fileID: 838350648009499963}
@@ -5782,6 +5852,7 @@ MonoBehaviour:
   - {fileID: 5046091463270407388}
   - {fileID: 96265664100780171}
   - {fileID: 5143384953002207370}
+  feedbackAnimation: {fileID: 0}
 --- !u!1 &4893519762278313720
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +6098,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &6274506308189980946
 GameObject:
   m_ObjectHideFlags: 0
@@ -6078,6 +6151,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &6362798782207439868
 GameObject:
   m_ObjectHideFlags: 0
@@ -6129,6 +6204,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &6938106777745227336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6179,6 +6256,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &7501064018604582153
 GameObject:
   m_ObjectHideFlags: 0
@@ -6230,6 +6309,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &7537891917249020814
 GameObject:
   m_ObjectHideFlags: 0
@@ -6282,6 +6363,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &7658871095885152873
 GameObject:
   m_ObjectHideFlags: 0
@@ -6332,6 +6415,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &7705250714595101607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6383,6 +6468,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &8615069472776519889
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,6 +6601,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 0}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1 &9113106332298090810
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,6 +6654,8 @@ MonoBehaviour:
   nextDialogue: {fileID: 2589658169556237582}
   dialogueBox: {fileID: 4893519760262328286}
   postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
 --- !u!1001 &496940852968746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8286,13 +8377,8 @@ PrefabInstance:
     - target: {fileID: 7025957915030708013, guid: 733e6bc96a5196c45809b7140c0280b3,
         type: 3}
       propertyPath: m_Text
-      value: 'Teste aaaaaaaaaa
-
-        aaaaaaaaaaaaa
-
-        aaaaaaaaaaaa
-
-        aaaaaaaaaaaaa'
+      value: "Eu to deixando a chave \nextra no vaso de planta \nque fica a\xED na
+        varandinha! "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
@@ -8967,7 +9053,7 @@ PrefabInstance:
     - target: {fileID: 7025957915030708013, guid: 733e6bc96a5196c45809b7140c0280b3,
         type: 3}
       propertyPath: m_Text
-      value: awawq
+      value: "Ih, \xE9 mesmo! Eu tinha \nesquecido de avisar k k k! "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
@@ -13517,6 +13603,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 47.150272
       objectReference: {fileID: 0}
+    - target: {fileID: 7025957915030708013, guid: 733e6bc96a5196c45809b7140c0280b3,
+        type: 3}
+      propertyPath: m_Text
+      value: "Deve t\xE1 cheio de \nterra a essa altura..."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
 --- !u!224 &5944088839574253773 stripped
@@ -14025,7 +14116,8 @@ PrefabInstance:
     - target: {fileID: 8195046532674649462, guid: 67868ce0085c6224f8674c6d3a6ce4d0,
         type: 3}
       propertyPath: m_Text
-      value: Teste
+      value: "Ah, t\xE1 de boa, mas voc\xEA \npodia moitar em outro \nlugar hein!
+        Brincadeira! \nObrigad\xE3o! "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67868ce0085c6224f8674c6d3a6ce4d0, type: 3}

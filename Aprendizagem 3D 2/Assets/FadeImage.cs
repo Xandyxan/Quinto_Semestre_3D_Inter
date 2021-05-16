@@ -32,7 +32,7 @@ public class FadeImage : MonoBehaviour
         StartCoroutine(Fade(durationTime));
     }
 
-    private IEnumerator Fade(float tempoFade)
+    public IEnumerator Fade(float tempoFade) // tava private 🤠
     {
         for (float t = 0f; t < tempoFade; t += Time.deltaTime)
         {

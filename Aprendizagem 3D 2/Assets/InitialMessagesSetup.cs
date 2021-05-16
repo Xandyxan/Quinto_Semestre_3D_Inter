@@ -10,7 +10,7 @@ public class InitialMessagesSetup : MonoBehaviour
     void Start()
     {
         initialMessagesTrigger = GetComponent<MessageTrigger>();
-        Invoke("StartSetup", 10f);
+        Invoke("StartSetup", 5f);                                    //tempo até terminar o monólogo inicial
     }
 
     private void StartSetup()

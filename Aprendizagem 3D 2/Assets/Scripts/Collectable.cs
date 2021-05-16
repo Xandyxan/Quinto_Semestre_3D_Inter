@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Collectable : Inspecao
 {
+    [Header("Collectable")]  // 😎
     [Tooltip("Tag that will be written on the inventory prefs")]
     [SerializeField] private string itemTag;
 
@@ -34,12 +35,12 @@ public class Collectable : Inspecao
         }
     }
    
-    public override void Interagindo()
+    public override void Interact()
     {
        // Cellphone.instance.gameObject.SetActive(false); // eu sei que é ruim chamar duas vezes, mas tava bugado 🤠
         this.CanBeCollected = true;
         PressToCollectText.SetActive(true);
-        base.Interagindo();
+        base.Interact();
     }
 
     

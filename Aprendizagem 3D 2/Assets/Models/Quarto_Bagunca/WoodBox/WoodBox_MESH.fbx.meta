@@ -3,7 +3,57 @@ guid: ff7af2dee0d4c204fb3d82d09b1129e5
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box
+    second: {fileID: 2100000, guid: 7c3bd6809307bd243a05cf70d1554993, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BoxTampa
+    second: {fileID: 2100000, guid: b4842cefb4d818d4e9a9fd9b0c17701f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CartolinaAzul
+    second: {fileID: 2100000, guid: 0bda59066b30ba74f903414fc85c66b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CartolinaVerde
+    second: {fileID: 2100000, guid: f3b04f2d9a56ebd48881e36d534fd045, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cartolina_Amarela
+    second: {fileID: 2100000, guid: 46864618f960e8c488ea62131b3d24b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GiftBox
+    second: {fileID: 2100000, guid: e4d7e02d17093754c9ceae2bb65a6673, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GiftBox2
+    second: {fileID: 2100000, guid: 41b3cec4ac39a694e972a2fd827716da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShoeBox_Bennita
+    second: {fileID: 2100000, guid: 7a2dbdeac61ca7e47ad5a3dffa8a8acc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShoeBox_Neverlast
+    second: {fileID: 2100000, guid: 219dabe952bb8d44a9900565cc2ff1a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShoeBox_Poison
+    second: {fileID: 2100000, guid: 17e7d734127290340b0393b9ab5f386f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -81,7 +131,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.099999994
+    globalScale: 10
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
