@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doors : MonoBehaviour
+public class Doors : MonoBehaviour, IInteractable, ISelectable
 {
     [Header("Use only one movement type & axis")]
     public bool understandable; // variavel que não usa pra nada, understandable
@@ -27,6 +27,17 @@ public class Doors : MonoBehaviour
 
     public Dialogue dialogue;
     public GameObject tvTrigger;
+
+    [Header("Selected")]
+
+    [SerializeField] string _objectDescription;
+
+    [SerializeField] bool _isObjectiveObj;
+    [SerializeField] int _dialogueIndex;
+
+    public string objectDescription { get => _objectDescription != null ? _objectDescription : "Abrir"; set => _objectDescription = value; }
+    public bool isObjectiveObj { get => _isObjectiveObj; set => _isObjectiveObj = value; }
+    public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
 
     protected virtual void Awake()
     {
@@ -55,16 +66,20 @@ public class Doors : MonoBehaviour
         
     }
 
-    public virtual void OpenCloseDoors()
-    { 
+    public virtual void Interact()
+    {
         openingIsHappening = true;
         if (dialogue != null)
         {
             dialogue.RunCoroutine();
             tvTrigger.SetActive(true);
         }
+    }
 
-    } //É chamado no 'Interactive' script // chama que a porta vai abrir
+  //  public virtual void OpenCloseDoors()
+   // { 
+
+   // } //É chamado no 'Interactive' script // chama que a porta vai abrir
 
     protected void RotateDoor()
     {
@@ -175,6 +190,7 @@ public class Doors : MonoBehaviour
     {
         degreesPerSecond = desiredDPS;
     }
+
 
     //NOTAS PARA FUTURA ATUALIZAÇÃO
     //InspectorRotation method está sendo apenas diferença quando assunto é comparar os valores de rotação como segue no método CheckDoorState

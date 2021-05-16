@@ -17,7 +17,7 @@ public class GhostDoor : MonoBehaviour
             foreach( Doors door in portas)
             {
                 door.SetRandomRotationSpeed(150f, 200f);
-                door.OpenCloseDoors(); // abrir porta
+                door.Interact(); // abrir porta
             }
             yield return new WaitForSeconds(Random.Range(.2f, 1.5f));
         }

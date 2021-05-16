@@ -10,11 +10,7 @@ public class SelectionManager : MonoBehaviour
 
     [SerializeField] private string selectableTag = "Selectable";
 
-    Renderer selectionRenderer = null;
-
     public Transform selectionTransform;
-
-    Interactive interactiveScript = null;
 
     [SerializeField] private float maxDistance = 20f; 
 
@@ -26,16 +22,23 @@ public class SelectionManager : MonoBehaviour
 
     private bool usingCellphone;
 
-    private Color selectionColor = new Color(140, 87, 49);
+    //private Color selectionColor = new Color(140, 87, 49);
+    //Renderer selectionRenderer = null;
+
+    [Tooltip("Reference to the text component from the HUD Canvas")]  // se a seleção tiver um component do tipo ISelectable, seta esse texto e ativa ele
+    public Text selectionText;
+    private DialogueManager2 objectiveManager; // caso consiga colocar o trigger de dialogo em uma interface, o dialogue manager fica centralizado aqui
     private void Awake()
     {
         instance = this;
 
-        // essas linhas abaixo são pra normalizar a intensidade da cor HDR, deixando o valor dela como 1.
+        objectiveManager = FindObjectOfType<DialogueManager2>();
+
+      /*  // essas linhas abaixo são pra normalizar a intensidade da cor HDR, deixando o valor dela como 1.
         float intensity = (selectionColor.r + selectionColor.g + selectionColor.b) / 3f;
         float factor = 1f / intensity;
-        factor *= .16f;
-        selectionColor = new Color(selectionColor.r * factor, selectionColor.g * factor, selectionColor.b * factor);
+        factor *= .05f;
+        selectionColor = new Color(selectionColor.r * factor, selectionColor.g * factor, selectionColor.b * factor);*/
     }
 
     private void Start() 
@@ -46,25 +49,23 @@ public class SelectionManager : MonoBehaviour
         GameManager.instance.returnPlayerControlEvent -= SetUsingCellphoneFalse;
         GameManager.instance.removePlayerControlEvent += SetUsingCellphoneTrue;
         GameManager.instance.returnPlayerControlEvent += SetUsingCellphoneFalse;
-       // Cellphone.instance.usingCellphoneEvent -= SetUsingCellphoneTrue; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
-       // Cellphone.instance.closeCellMenuEvent -= SetUsingCellphoneFalse;
-       // Cellphone.instance.usingCellphoneEvent += SetUsingCellphoneTrue;
-       // Cellphone.instance.closeCellMenuEvent += SetUsingCellphoneFalse;
+      
     }
     private void Update()
     {
         if (selectionTransform != null)
         {
-            Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
-            //selectionRenderer.material = defaultMaterial;
-            if(selectionRenderer != null)
-            selectionRenderer.material.DisableKeyword("_EMISSION");
+           // Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
+            
+           // if(selectionRenderer != null)
+           // selectionRenderer.material.DisableKeyword("_EMISSION");
             selectionTransform = null;
+
+            selectionText.gameObject.SetActive(false);
         }
         else
         {
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected / 2, chRaioSelected / 2), zoomSpeed * Time.deltaTime);
-            if (interactiveScript != null) interactiveScript.SetSelectedFalse();
         }
 
         if (!usingCellphone)
@@ -77,33 +78,32 @@ public class SelectionManager : MonoBehaviour
 
                 if (selection.gameObject.CompareTag(selectableTag) && !inspecionando)
                 {
-                    selectionRenderer = selection.GetComponent<Renderer>();
-                    interactiveScript = selection.GetComponent<Interactive>();
-                    if (selectionRenderer != null)
+                   // selectionRenderer = selection.GetComponent<Renderer>();
+                    var selectable = selection.GetComponent<ISelectable>();
+
+                   /* if (selectionRenderer != null)
                     {
-                        // defaultMaterial = selectionRenderer.material;
-                        // selectionRenderer.material = highlightMaterial;
                         selectionRenderer.material.SetColor("_EmissionColor", selectionColor);
                         selectionRenderer.material.EnableKeyword("_EMISSION");
+                    }*/
+                    if(selectable != null)
+                    {
+                        selectionText.text = selectable.objectDescription;
+                        selectionText.gameObject.SetActive(true);
                     }
-
                     crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
 
-                    if (interactiveScript != null)
+                    if (Input.GetMouseButtonDown(0))
                     {
-                        interactiveScript.SetSelectedTrue();
-                        //highlightMaterial = interactiveScript.selectionMaterial;
+                        var interactable = selection.GetComponent<IInteractable>();
+                        if (interactable == null) return;
+                        interactable.Interact();
+
+                        if (interactable.isObjectiveObj) objectiveManager.ExecuteDialogue(interactable.dialogueIndex); // arrumar interface pra implementar isso
                     }
 
                     selectionTransform = selection;
 
-                }
-
-                if (selection.gameObject.CompareTag("Doors"))
-                {
-                    crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaioSelected, chRaioSelected), (zoomSpeed - 2) * Time.deltaTime);
-                    interactiveScript = selection.GetComponent<Interactive>();
-                    if (interactiveScript != null) interactiveScript.SetSelectedTrue();
                 }
             }
         }
@@ -113,12 +113,10 @@ public class SelectionManager : MonoBehaviour
     private void SetUsingCellphoneTrue()
     {
         usingCellphone = true;
-       // print("Selection off");
     }
 
     private void SetUsingCellphoneFalse()
     {
         usingCellphone = false;
-       // print("Selection true");
     }
 }
