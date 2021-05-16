@@ -13,7 +13,7 @@ public class InteractionToFade : MonoBehaviour, ISelectable
     [Header("Selected")]
 
     [SerializeField] string _objectDescription;
-    public string objectDescription { get => _objectDescription != null ? _objectDescription : "interagir"; set => _objectDescription = value; }
+    public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     void Awake()
     {
         fadeScript = FindObjectOfType<FadeImage>();
@@ -22,10 +22,7 @@ public class InteractionToFade : MonoBehaviour, ISelectable
 
     void Update()
     {
-        if(gameObject.activeInHierarchy == true)
-        {
-            print("A");
-        }
+      
     }
 
     public virtual void StartFadeInteraction() // fazer override pra cada script que tem isso
