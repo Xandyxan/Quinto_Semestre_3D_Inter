@@ -25,8 +25,9 @@ public class Doors : MonoBehaviour
     protected bool rotateRigth, rotateLeft, rotateUp, rotateDown;
     private bool positionZ;
 
+    [Header("Extra situations")]
     public Dialogue dialogue;
-    public GameObject tvTrigger;
+    public GameObject areaTrigger;
 
     protected virtual void Awake()
     {
@@ -61,7 +62,7 @@ public class Doors : MonoBehaviour
         if (dialogue != null)
         {
             dialogue.RunCoroutine();
-            tvTrigger.SetActive(true);
+            areaTrigger.SetActive(true);
         }
 
     } //É chamado no 'Interactive' script // chama que a porta vai abrir

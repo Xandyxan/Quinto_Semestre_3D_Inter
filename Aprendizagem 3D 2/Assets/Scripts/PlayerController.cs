@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     float velocityY = 0.0f;
 
     public float walkSpeedX, actualWalkSpeedZ;
-    float walkSpeedZ = 2.0f;
+    float walkSpeedZ = 1.0f;
     float runSpeedZ = 4.0f;
     float backWalkSpeedZ = 1.25f;
     float crouchSpeedZ = 1f;
@@ -32,7 +32,10 @@ public class PlayerController : MonoBehaviour
 
     private bool canMove = true;
     private bool usingCellphone;
-   
+
+    
+
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -48,6 +51,11 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
         GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff; 
         GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
+
+        Dialogue.playerDuringDialogueOn -= PlayerDuringDialogueOn;
+        Dialogue.playerDuringDialogueOff -= PlayerDuringDialogueOff;
+        Dialogue.playerDuringDialogueOn += PlayerDuringDialogueOn;
+        Dialogue.playerDuringDialogueOff += PlayerDuringDialogueOff;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -111,7 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetAxis("Horizontal") >= 0 || Input.GetAxis("Vertical") >=0)
         {
-                UpdateCollider();
+            UpdateCollider();
         }
 
         if (Input.GetButtonDown("Crouch"))
@@ -165,18 +173,22 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("Velocity", Input.GetAxis("Vertical") * actualWalkSpeedZ);
         animator.SetBool("isCrouched", isCrouched);
+
+        //animator.SetFloat("Velocity", Input.GetAxis("Vertical") * actualWalkSpeedZ * 3.5f);
     }
 
     private void UpdateCollider()
     {
         if(!isCrouched)
         {
+            characterController.stepOffset = 0.3f;
             characterController.center = new Vector3(0, 0.0775f, 0);
             characterController.radius = 0.03f;
             characterController.height = 0.155f;
         }
         else
         {
+            characterController.stepOffset = 0.1f;
             characterController.center = new Vector3(0, 0.0775f, 0.02f);
             characterController.radius = 0.033f;
             characterController.height = 0.155f;
@@ -206,4 +218,13 @@ public class PlayerController : MonoBehaviour
         usingCellphone = Cellphone.instance.cellOn;
     }
 
+    public void PlayerDuringDialogueOn()
+    {
+        walkSpeedZ = 0.5f;
+    }
+
+    public void PlayerDuringDialogueOff()
+    {
+        walkSpeedZ = 2f;
+    }
 }

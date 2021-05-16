@@ -67,7 +67,7 @@ public class SelectionManager : MonoBehaviour
             if (interactiveScript != null) interactiveScript.SetSelectedFalse();
         }
 
-        if (!usingCellphone)
+        if (!usingCellphone && Dialogue.isSomeDialogueRunning == false)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
