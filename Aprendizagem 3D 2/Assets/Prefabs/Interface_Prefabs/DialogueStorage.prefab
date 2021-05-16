@@ -1,0 +1,1920 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &312223889501642410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7452192731858538415}
+  - component: {fileID: 8485123948433352965}
+  m_Layer: 0
+  m_Name: DIA_Rafaela5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7452192731858538415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312223889501642410}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8485123948433352965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312223889501642410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Mariana, desde que voc\xEA reduziu a frequ\xEAncia de seus rem\xE9dios, voc\xEA
+    tem me relatado mais sobre seus sonhos com a trag\xE9dia. Voc\xEA precisa se
+    cuidar meu bem, e \xE9 s\xE9rio, ESCUTE O S\xC9RGIO."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &348999010514352173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5499242056452849379}
+  - component: {fileID: 1978139339525956467}
+  m_Layer: 0
+  m_Name: DIA_Mariana9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5499242056452849379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348999010514352173}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1978139339525956467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348999010514352173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Com certeza, vai ser \xF3timo! - Mari ri de volta, mas num tom cabisbaixo. -
+    Vou ver se relaxo um pouco essa noite pra ficar bem pra amanh\xE3!"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &441433614866732675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167550420653500349}
+  - component: {fileID: 5223022528659767628}
+  m_Layer: 0
+  m_Name: DIA_Rafaela4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1167550420653500349
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441433614866732675}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5223022528659767628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441433614866732675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Bom, voc\xEA precisa explicar pra ele toda a situa\xE7\xE3o, o S\xE9rgio precisa
+    te arranjar uma solu\xE7\xE3o mais vi\xE1vel ent\xE3o."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &470348625113096013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3651631114905406907}
+  - component: {fileID: 6696040330116048843}
+  m_Layer: 0
+  m_Name: DIA_Mariana3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3651631114905406907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470348625113096013}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6696040330116048843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470348625113096013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Sim.
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &902934758637675372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7705048612264066367}
+  - component: {fileID: 5269347952823732063}
+  m_Layer: 0
+  m_Name: DIA_Mariana6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7705048612264066367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902934758637675372}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5269347952823732063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902934758637675372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Isso, isso mesmo.
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &1348411196360213534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2750184077126011714}
+  - component: {fileID: 4775451407741562748}
+  m_Layer: 0
+  m_Name: DIA_Rafaela1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2750184077126011714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348411196360213534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4775451407741562748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348411196360213534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Mariana, respira! Conta comigo! Um, dois, tr\xEAs, quatro, cinco! Respira fundo!"
+  - "Como voc\xEA est\xE1 se sentindo? Ainda t\xE1 a\xED? Al\xF4?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 5710165590205669418}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &1443244106432965044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3453647172042766305}
+  - component: {fileID: 1585728200671522951}
+  m_Layer: 0
+  m_Name: DIA_Rafaela2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3453647172042766305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443244106432965044}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1585728200671522951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443244106432965044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Mariana, voc\xEA sabe que n\xE3o vai adiantar nada continuar assim, o Dr. S\xE9rgio
+    me passou o diagn\xF3stico e o seu \"ah, vou simplesmente parar com os rem\xE9dios
+    de agora\" n\xE3o vai ajudar em nada. E voc\xEA sabe disso."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &3784139674852486872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617604056219700329}
+  - component: {fileID: 8769784155477216678}
+  m_Layer: 0
+  m_Name: DIA_Rafaela8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617604056219700329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784139674852486872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8769784155477216678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784139674852486872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Beleza ent\xE3o Mari! Bom, o nosso tempo j\xE1 esgotou tem uns 5 minutinhos,
+    eu preciso ir saindo!"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &4062964412881496779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5922479188037894438}
+  - component: {fileID: 4062964412881496778}
+  m_Layer: 0
+  m_Name: Dialogues_InitialMariHouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5922479188037894438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062964412881496779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2750184077126011714}
+  - {fileID: 5247924921787395301}
+  - {fileID: 3453647172042766305}
+  - {fileID: 1320781164949309731}
+  - {fileID: 5068921562395865817}
+  - {fileID: 3651631114905406907}
+  - {fileID: 1167550420653500349}
+  - {fileID: 8114825354256709377}
+  - {fileID: 7452192731858538415}
+  - {fileID: 3652241913331651259}
+  - {fileID: 6166996838143757130}
+  - {fileID: 7705048612264066367}
+  - {fileID: 747079839111607982}
+  - {fileID: 496967450751264007}
+  - {fileID: 617604056219700329}
+  - {fileID: 526596883882935653}
+  - {fileID: 2508411251279010283}
+  - {fileID: 5499242056452849379}
+  - {fileID: 200538368851761104}
+  m_Father: {fileID: 7840420860905992496}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4062964412881496778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4062964412881496779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 4775451407741562748}
+  hasInitialDialogue: 0
+  initialDialogue: 0
+  hasDelayInitialDialogue: 0
+  delayTime: 0
+--- !u!1 &4138842873517737027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747079839111607982}
+  - component: {fileID: 5248336823246886546}
+  m_Layer: 0
+  m_Name: DIA_Rafaela7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747079839111607982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138842873517737027}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5248336823246886546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138842873517737027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "T\xE1 bom! \xC9 legal que a gente v\xE1 se falando enquanto voc\xEA estiver
+    l\xE1!"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &4313677709299733558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526596883882935653}
+  - component: {fileID: 451588246546810203}
+  m_Layer: 0
+  m_Name: DIA_Mariana8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &526596883882935653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313677709299733558}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451588246546810203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313677709299733558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Sem problemas Rafa. Muito obrigado pela sess\xE3o, foi \xF3tima! Prometo que
+    vou tentar fazer o melhor nos pr\xF3ximos dias!"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &4665170873456588466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3652241913331651259}
+  - component: {fileID: 8735141437969826295}
+  m_Layer: 0
+  m_Name: DIA_Mariana5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3652241913331651259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665170873456588466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8735141437969826295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665170873456588466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Vou tentar Rafa, juro que vou tentar.
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &4962550283875232283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200538368851761104}
+  - component: {fileID: 8287275746510487988}
+  m_Layer: 0
+  m_Name: DIA_Rafaela10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &200538368851761104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962550283875232283}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8287275746510487988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962550283875232283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "At\xE9 mais Mari! Boa viagem pra voc\xEA! - a chamada \xE9 desligada"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &5189382877763071749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5068921562395865817}
+  - component: {fileID: 6294220434743653333}
+  m_Layer: 0
+  m_Name: DIA_Rafaela3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5068921562395865817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189382877763071749}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6294220434743653333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189382877763071749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Eu sei que n\xE3o meu bem, mas o que eu quero dizer \xE9 que mesmo com toda
+    essa situa\xE7\xE3o, voc\xEA precisa ser mais delicada com suas escolhas, mas
+    isso \xE9 algo que voc\xEA precisa tratar com o seu psiquiatra urgente, sua pr\xF3xima
+    consulta com ele acontece daqui duas semanas, n\xE9?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &5710165590205669418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5247924921787395301}
+  - component: {fileID: 7267141702130301182}
+  m_Layer: 0
+  m_Name: DIA_Mariana1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5247924921787395301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710165590205669418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7267141702130301182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710165590205669418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Oi Rafa, desculpa. To me sentindo um pouco melhor sim.
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &5732089225994158748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2508411251279010283}
+  - component: {fileID: 4542282568816241774}
+  m_Layer: 0
+  m_Name: DIA_Rafaela9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2508411251279010283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732089225994158748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4542282568816241774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732089225994158748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "T\xE1 bom Mari, semana que vem a gente se fala e se tudo der certo, a minha
+    internet vai estar melhor e podemos fazer a chamada em v\xEDdeo, t\xE1 bom? -
+    ela finaliza com uma risadinha"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &5880722535007843271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6166996838143757130}
+  - component: {fileID: 3853288131465903455}
+  m_Layer: 0
+  m_Name: DIA_Rafaela6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6166996838143757130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880722535007843271}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3853288131465903455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880722535007843271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Rafaela
+  speechs:
+  - "Espero de verdade que voc\xEA tente! Ali\xE1s, j\xE1 que voc\xEA tocou no assunto,
+    voc\xEA volta pra Brumadinho amanh\xE3 n\xE9?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &5937216854340635417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8114825354256709377}
+  - component: {fileID: 1833576303759168837}
+  m_Layer: 0
+  m_Name: DIA_Mariana4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8114825354256709377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937216854340635417}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1833576303759168837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937216854340635417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Ser\xE1 que eu vou ficar bem, Rafa? Fiquei bem mexida quando recebi a not\xEDcia,
+    acho que nenhum rem\xE9dio pode me ajudar mais."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7623227118341386124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320781164949309731}
+  - component: {fileID: 5652370413996982243}
+  m_Layer: 0
+  m_Name: DIA_Mariana2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320781164949309731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623227118341386124}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5652370413996982243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623227118341386124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Mas Rafa, eu j\xE1 te falei a situa\xE7\xE3o, os rem\xE9dios novos s\xE3o muito
+    caros, eu n\xE3o vou ter condi\xE7\xF5es de pagar mesmo, os que eu tomo no momento
+    n\xE3o fazem mais o efeito esperado, eu n\xE3o me sinto melhor. N\xE3o estou
+    fazendo por maldade. Poxa Rafa, voc\xEA sabe. "
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420860673134437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420860673134438}
+  - component: {fileID: 7840420860673134439}
+  m_Layer: 0
+  m_Name: DIA_DoorLocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420860673134438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860673134437}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840420861474140878}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420860673134439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860673134437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "A porta est\xE1 trancada.."
+  - Deve estar por aqui fora
+  onlyOnce: 0
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420860745243769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420860745243768}
+  - component: {fileID: 7840420860745243771}
+  m_Layer: 0
+  m_Name: DIA_Mariana2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420860745243768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860745243769}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420860745243771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860745243769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Filha? \xC9 voc\xEA? Cad\xEA voc\xEA?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 7840420862331575371}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420860774216694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420860774216697}
+  - component: {fileID: 7840420860774216696}
+  m_Layer: 0
+  m_Name: DIA_Mariana3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420860774216697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860774216694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420860774216696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860774216694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Eu vou te achar!
+  - "Ser\xE1 que ela se escondeu dentro de algum m\xF3vel? "
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420860905992503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420860905992496}
+  m_Layer: 0
+  m_Name: DialogueStorage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420860905992496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860905992503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 54.427216, y: -26.614212, z: 0}
+  m_LocalScale: {x: 1.1554114, y: 1.1554114, z: 1.1554114}
+  m_Children:
+  - {fileID: 7840420861474140878}
+  - {fileID: 5922479188037894438}
+  - {fileID: 7840420862229618661}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7840420861398458307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861398458317}
+  - component: {fileID: 7840420861398458316}
+  m_Layer: 0
+  m_Name: DIA_FoundKey
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861398458317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861398458307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840420861474140878}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861398458316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861398458307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Achei a chave!
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420861457138962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861457138972}
+  - component: {fileID: 7840420861457138963}
+  m_Layer: 0
+  m_Name: DIA_LightsUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861457138972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861457138962}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840420861474140878}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861457138963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861457138962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Agora sim bem melhor!... Me pergunto se meu ursinho ainda est\xE1 no quarto
+    da v\xF3v\xF3"
+  - "Por\xE9m n\xE3o me lembro muito bem dos quartos, qual ser\xE1?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420861474140879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861474140878}
+  - component: {fileID: 7840420861474140913}
+  m_Layer: 0
+  m_Name: Dialogues_General
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861474140878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861474140879}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7840420861723852834}
+  - {fileID: 7840420860673134438}
+  - {fileID: 7840420861398458317}
+  - {fileID: 7840420861850201548}
+  - {fileID: 7840420861457138972}
+  m_Father: {fileID: 7840420860905992496}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861474140913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861474140879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 7840420861723852833}
+  - {fileID: 7840420860673134439}
+  - {fileID: 7840420861398458316}
+  - {fileID: 7840420861850201549}
+  hasInitialDialogue: 0
+  initialDialogue: 0
+  hasDelayInitialDialogue: 0
+  delayTime: 0
+--- !u!1 &7840420861571211887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861571211886}
+  - component: {fileID: 7840420861571212689}
+  m_Layer: 0
+  m_Name: DIA_Televisao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861571211886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861571211887}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861571212689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861571211887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: "Televis\xE3o"
+  speechs:
+  - "Infelizmente tivemos not\xEDcias tristes vindo da Escola Municipal Infantil
+    Padre Michelin!"
+  - "A lama atingiu de forma violenta os muros da escola e boa parte da estrutura
+    desabou, deixando muitas crian\xE7as e profissionais feridos."
+  - "Ainda n\xE3o temos confirma\xE7\xF5es exatas, mas infelizmente parece que v\xEDtimas
+    n\xE3o sobreviventes..."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420861616053214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861616053185}
+  - component: {fileID: 7840420861616053184}
+  m_Layer: 0
+  m_Name: DIA_Mariana1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861616053185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861616053214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861616053184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861616053214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Arreda! Que esquisito!
+  onlyOnce: 1
+  nextDialogue: {fileID: 7840420862424236621}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 7840420862424236621}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420861723852832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861723852834}
+  - component: {fileID: 7840420861723852833}
+  m_Layer: 0
+  m_Name: DIA_Initial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861723852834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861723852832}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840420861474140878}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861723852833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861723852832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Meu Deus, aqui est\xE1 um breu! "
+  - Melhor ligar minha lanterna se quiser enxergar alguma coisa.
+  - "A chave est\xE1 em algum lugar por aqui."
+  - "Me lembro do Jo\xE3o ter dito que a chave estava escondida em um vaso de planta
+    perto da entrada."
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420861850201539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420861850201548}
+  - component: {fileID: 7840420861850201549}
+  m_Layer: 0
+  m_Name: DIA_DoorUnlocked
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420861850201548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861850201539}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7840420861474140878}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420861850201549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861850201539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "At\xE9 que enfim consegui destrancar a porta!"
+  - "Que escurid\xE3o aqui dentro..."
+  - Eu deveria entrar e ligar o quadro de energia
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420862229618658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420862229618661}
+  - component: {fileID: 7840420862229618660}
+  m_Layer: 0
+  m_Name: Dialogues_1_Sonho
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420862229618661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862229618658}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 7840420861616053185}
+  - {fileID: 7840420862424236620}
+  - {fileID: 7840420860745243768}
+  - {fileID: 7840420862331575370}
+  - {fileID: 7840420860774216697}
+  - {fileID: 7840420862653766515}
+  - {fileID: 7840420862635972465}
+  - {fileID: 7840420861571211886}
+  m_Father: {fileID: 7840420860905992496}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420862229618660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862229618658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - {fileID: 7840420861616053184}
+  - {fileID: 7840420862653766514}
+  - {fileID: 7840420862635972464}
+  - {fileID: 7840420861571212689}
+  hasInitialDialogue: 0
+  initialDialogue: 0
+  hasDelayInitialDialogue: 0
+  delayTime: 0
+--- !u!1 &7840420862331575371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420862331575370}
+  - component: {fileID: 7840420862331575373}
+  m_Layer: 0
+  m_Name: DIA_Silvana2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420862331575370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862331575371}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420862331575373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862331575371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Silvana
+  speechs:
+  - "Vem me procurar m\xE3e! N\xE3o posso contar onde me escondo num esconde-esconde
+    n\xE9 boba?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 7840420860774216694}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420862424236621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420862424236620}
+  - component: {fileID: 7840420862424236623}
+  m_Layer: 0
+  m_Name: DIA_Silvana1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420862424236620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862424236621}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420862424236623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862424236621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Silvana
+  speechs:
+  - "Mam\xE3e? Cad\xEA voc\xEA? Voc\xEA n\xE3o vai me achar?"
+  onlyOnce: 1
+  nextDialogue: {fileID: 7840420860745243769}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420862635972430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420862635972465}
+  - component: {fileID: 7840420862635972464}
+  m_Layer: 0
+  m_Name: DIA_Mariana4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420862635972465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862635972430}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420862635972464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862635972430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - "Eu acho que n\xE3o deveria sair agora..."
+  onlyOnce: 0
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &7840420862653766512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7840420862653766515}
+  - component: {fileID: 7840420862653766514}
+  m_Layer: 0
+  m_Name: DIA_Silvana3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7840420862653766515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862653766512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
+  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
+  m_Children: []
+  m_Father: {fileID: 7840420862229618661}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7840420862653766514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862653766512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Silvana
+  speechs:
+  - "Errou! Eu n\xE3o estou na cozinha! Volte para a sala! "
+  onlyOnce: 0
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}
+--- !u!1 &8639244934623942584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496967450751264007}
+  - component: {fileID: 261314282924635760}
+  m_Layer: 0
+  m_Name: DIA_Mariana7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496967450751264007
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639244934623942584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5922479188037894438}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &261314282924635760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639244934623942584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Mariana
+  speechs:
+  - Beleza, eu vou te mandando mensagem quando eu sentir que preciso!
+  onlyOnce: 1
+  nextDialogue: {fileID: 0}
+  dialogueBox: {fileID: 0}
+  postProcessEffect: {fileID: 0}
+  postProcessEffect2: {fileID: 0}
+  tutorialCrouch: {fileID: 0}

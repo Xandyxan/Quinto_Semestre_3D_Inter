@@ -624,6 +624,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 1370796771}
   areaTrigger: {fileID: 948837686}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &22673092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,12 +639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &22673093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1257,58 +1254,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23efd55e1ecc9bd4f808d6a72f51c10a, type: 3}
---- !u!1 &76101202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 76101212}
-  - component: {fileID: 76101213}
-  m_Layer: 0
-  m_Name: DIA_FoundKey
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &76101212
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76101202}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402971487}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &76101213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76101202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Achei a chave!
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &76742300
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2032,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 0
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
   itemTag: "Chave V\xF3"
   PressToCollectText: {fileID: 0}
 --- !u!4 &182488183 stripped
@@ -2120,12 +2069,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: "Chave V\xF3"
-  interactionKind: Collectable
-  isObjectiveObj: 1
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 2
 --- !u!1 &187229876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2279,12 +2222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: caneca
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &212741661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2302,6 +2239,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!1 &227160231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 23efd55e1ecc9bd4f808d6a72f51c10a,
@@ -2339,12 +2280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Chave Entrada
-  interactionKind: Collectable
-  isObjectiveObj: 1
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 2
 --- !u!114 &227160237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2362,6 +2297,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 0
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
   itemTag: Chave Entrada
   PressToCollectText: {fileID: 0}
 --- !u!1 &228519629
@@ -2419,6 +2358,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 1370796771}
   areaTrigger: {fileID: 948837686}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &228519632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2431,12 +2373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &228519633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2905,6 +2841,7 @@ MonoBehaviour:
   maxDistance: 1.5
   crosshair: {fileID: 4893519760930728009}
   inspecionando: 0
+  selectionText: {fileID: 4893519762074825482}
 --- !u!1 &289756892
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,58 +3013,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291315975}
   m_Mesh: {fileID: 4071462579862489758, guid: dcf41c0594c1bb84b8dc61b4c3fdba44, type: 3}
---- !u!1 &328299087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 328299088}
-  - component: {fileID: 328299089}
-  m_Layer: 0
-  m_Name: DIA_Mariana1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &328299088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328299087}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &328299089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328299087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Arreda! Que esquisito!
-  onlyOnce: 1
-  nextDialogue: {fileID: 1139108828}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 1139108828}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1001 &338805964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3517,63 +3402,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399286406}
   m_Mesh: {fileID: 2540817853737639666, guid: 2b622da789305b046b6c91dabbccd7de, type: 3}
---- !u!1 &402971486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 402971487}
-  - component: {fileID: 402971488}
-  m_Layer: 0
-  m_Name: Dialogues_General
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &402971487
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402971486}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1763862963}
-  - {fileID: 675456759}
-  - {fileID: 76101212}
-  - {fileID: 1637483613}
-  - {fileID: 420064397}
-  m_Father: {fileID: 644061345}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &402971488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402971486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - {fileID: 1763862960}
-  - {fileID: 675456758}
-  - {fileID: 76101213}
-  - {fileID: 1637483612}
-  hasInitialDialogue: 0
-  initialDialogue: 0
-  hasDelayInitialDialogue: 0
-  delayTime: 0
 --- !u!1 &406616441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,60 +3619,6 @@ CapsuleCollider:
   m_Height: 0.9532242
   m_Direction: 1
   m_Center: {x: 0.015660524, y: 0.47158432, z: -0.3024335}
---- !u!114 &420064386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420064387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Agora sim bem melhor!... Me pergunto se meu ursinho ainda est\xE1 no quarto
-    da v\xF3v\xF3"
-  - "Por\xE9m n\xE3o me lembro muito bem dos quartos, qual ser\xE1?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
---- !u!1 &420064387
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 420064397}
-  - component: {fileID: 420064386}
-  m_Layer: 0
-  m_Name: DIA_LightsUp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &420064397
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 420064387}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402971487}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &426060173
 GameObject:
   m_ObjectHideFlags: 0
@@ -4034,12 +3808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &433313335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4060,6 +3828,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!1 &433826059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,63 +4263,6 @@ Transform:
   m_Father: {fileID: 832661027}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &507317246
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 507317247}
-  - component: {fileID: 507317248}
-  m_Layer: 0
-  m_Name: DIA_Televisao
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &507317247
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507317246}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &507317248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507317246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: "Televis\xE3o"
-  speechs:
-  - "Infelizmente tivemos not\xEDcias tristes vindo da Escola Municipal Infantil
-    Padre Michelin!"
-  - "A lama atingiu de forma violenta os muros da escola e boa parte da estrutura
-    desabou, deixando muitas crian\xE7as e profissionais feridos."
-  - "Ainda n\xE3o temos confirma\xE7\xF5es exatas, mas infelizmente parece que v\xEDtimas
-    n\xE3o sobreviventes..."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 1715065387}
-  postProcessEffect2: {fileID: 514392582}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &508349679
 GameObject:
   m_ObjectHideFlags: 0
@@ -5158,59 +4872,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 562560620}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &566024807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 566024808}
-  - component: {fileID: 566024809}
-  m_Layer: 0
-  m_Name: DIA_Mariana3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &566024808
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566024807}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &566024809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 566024807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Eu vou te achar!
-  - "Ser\xE1 que ela se escondeu dentro de algum m\xF3vel? "
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1001 &570012857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5594,6 +5255,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &614658271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5606,12 +5271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: poesia
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &614658272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5625,39 +5284,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2448156, y: 0.21996841, z: 0.41425964}
   m_Center: {x: 0, y: 0.029034305, z: 0.058629826}
---- !u!4 &644061345
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644061350}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -461.58557, y: -259.5945, z: 0}
-  m_LocalScale: {x: 1.5158803, y: 1.5158803, z: 1.5158803}
-  m_Children:
-  - {fileID: 2004661876}
-  - {fileID: 4539094382939875511}
-  - {fileID: 402971487}
-  m_Father: {fileID: 4893519762015901249}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &644061350
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 644061345}
-  m_Layer: 0
-  m_Name: Dialogue_Managers_Scenes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &650743012
 GameObject:
   m_ObjectHideFlags: 0
@@ -6039,59 +5665,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &675456756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 675456759}
-  - component: {fileID: 675456758}
-  m_Layer: 0
-  m_Name: DIA_DoorLocked
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &675456758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675456756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "A porta est\xE1 trancada.."
-  - Deve estar por aqui fora
-  onlyOnce: 0
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
---- !u!4 &675456759
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675456756}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402971487}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &677694200 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5143456751886718368, guid: 67868ce0085c6224f8674c6d3a6ce4d0,
@@ -6200,12 +5773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: poesia
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &689020631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6223,6 +5790,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &689020632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6319,7 +5890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703887026
 GameObject:
@@ -6663,6 +6234,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 1370796771}
   areaTrigger: {fileID: 948837686}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &723121665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6675,12 +6249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &723121666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6888,6 +6456,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &729709822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6900,12 +6471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!23 &729709823
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7271,7 +6836,7 @@ PrefabInstance:
     - target: {fileID: 8742603571918727535, guid: 524081d2dca0ef74a8d1beedb87c2003,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8742603571918727535, guid: 524081d2dca0ef74a8d1beedb87c2003,
         type: 3}
@@ -7572,58 +7137,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796443756}
   m_Mesh: {fileID: 2540817853737639666, guid: 2b622da789305b046b6c91dabbccd7de, type: 3}
---- !u!1 &804713960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 804713961}
-  - component: {fileID: 804713962}
-  m_Layer: 0
-  m_Name: DIA_Mariana2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &804713961
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804713960}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &804713962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 804713960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Filha? \xC9 voc\xEA? Cad\xEA voc\xEA?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 1298888154}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &821295470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8439,7 +7952,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &948837686
 GameObject:
@@ -8644,6 +8157,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &954241257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8656,12 +8172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!1 &955336503
 GameObject:
   m_ObjectHideFlags: 0
@@ -9380,6 +8890,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1019131924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9392,12 +8905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1019131925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10458,12 +9965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &1117536617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10484,6 +9985,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &1117536618
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10528,7 +10032,7 @@ Transform:
   - {fileID: 426060174}
   - {fileID: 1031259482}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 90.107, z: 0}
 --- !u!1 &1131716184
 GameObject:
@@ -10622,58 +10126,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &1139108828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1139108829}
-  - component: {fileID: 1139108830}
-  m_Layer: 0
-  m_Name: DIA_Silvana1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1139108829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139108828}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1139108830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139108828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Silvana
-  speechs:
-  - "Mam\xE3e? Cad\xEA voc\xEA? Voc\xEA n\xE3o vai me achar?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 804713960}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &1142080315
 GameObject:
   m_ObjectHideFlags: 0
@@ -10948,12 +10400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1155343643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10987,6 +10433,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!4 &1163427463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ca5a38beedffac40a225e6c1c43309a,
@@ -11048,6 +10497,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 1370796771}
   areaTrigger: {fileID: 948837686}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1163450276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11060,12 +10512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1163450277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11168,6 +10614,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 0
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
   itemTag: Chave Fundos
   PressToCollectText: {fileID: 0}
 --- !u!114 &1164480708
@@ -11182,12 +10632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Chave Fundos
-  interactionKind: Collectable
-  isObjectiveObj: 1
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 2
 --- !u!1 &1192250467
 GameObject:
   m_ObjectHideFlags: 0
@@ -11670,6 +11114,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1252550334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11682,12 +11129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1252550335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11850,6 +11291,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1268996066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11862,12 +11307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: poesia
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1268996067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11918,59 +11357,6 @@ RectTransform:
   m_AnchoredPosition: {x: -379.2, y: 155.9}
   m_SizeDelta: {x: 242.31961, y: 77.127174}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1298888154
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1298888155}
-  - component: {fileID: 1298888156}
-  m_Layer: 0
-  m_Name: DIA_Silvana2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1298888155
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298888154}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1298888156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298888154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Silvana
-  speechs:
-  - "Vem me procurar m\xE3e! N\xE3o posso contar onde me escondo num esconde-esconde
-    n\xE9 boba?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 566024807}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &1326100226
 GameObject:
   m_ObjectHideFlags: 0
@@ -12302,6 +11688,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1348057536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12314,12 +11703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!23 &1348057537
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12617,58 +12000,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367001859}
   m_Mesh: {fileID: -2895742565828067113, guid: dcf41c0594c1bb84b8dc61b4c3fdba44, type: 3}
---- !u!1 &1370796769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1370796770}
-  - component: {fileID: 1370796771}
-  m_Layer: 0
-  m_Name: DIA_Silvana3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1370796770
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370796769}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1370796771
+--- !u!114 &1370796771 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7840420862653766514, guid: 1a6f7616016ea934c84c7ddd177f4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 7840420861340199313}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370796769}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: Silvana
-  speechs:
-  - "Errou! Eu n\xE3o estou na cozinha! Volte para a sala! "
-  onlyOnce: 0
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &1377778555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4241a2d1ca1c0984f8ca8019d7deef9c,
@@ -13763,6 +13106,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &1481478367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13788,12 +13134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!1 &1485148170
 GameObject:
   m_ObjectHideFlags: 0
@@ -14812,6 +14152,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1567910028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14824,12 +14168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: caneca
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!224 &1570615000 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
@@ -14882,7 +14220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576612767 stripped
 GameObject:
@@ -14923,6 +14261,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1576612771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14935,12 +14276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!1 &1582374459
 GameObject:
   m_ObjectHideFlags: 0
@@ -15424,58 +14759,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67459e5d8dda1a14092687640c0d0ee4, type: 3}
---- !u!1 &1598308063
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1598308064}
-  - component: {fileID: 1598308065}
-  m_Layer: 0
-  m_Name: DIA_Mariana4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1598308064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598308063}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 65.87624, y: -31.423267, z: 0}
-  m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
-  m_Children: []
-  m_Father: {fileID: 2004661876}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1598308065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598308063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Eu acho que n\xE3o deveria sair agora..."
-  onlyOnce: 0
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &1632033331
 GameObject:
   m_ObjectHideFlags: 0
@@ -15632,12 +14915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: poesia
-  interactionKind: Interagivel
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &1635630803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15655,6 +14932,10 @@ MonoBehaviour:
   zoomMultiplier: 0
   rotVel: 140
   inspectionZoom: 0
+  triggerMessage: 0
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &1635630804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15668,60 +14949,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09421323, y: 0.09500007, z: 0.0872855}
   m_Center: {x: -0.00066093175, y: 0, z: 0.0020341948}
---- !u!1 &1637483602
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1637483613}
-  - component: {fileID: 1637483612}
-  m_Layer: 0
-  m_Name: DIA_DoorUnlocked
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1637483612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637483602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "At\xE9 que enfim consegui destrancar a porta!"
-  - "Que escurid\xE3o aqui dentro..."
-  - Eu deveria entrar e ligar o quadro de energia
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
---- !u!4 &1637483613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637483602}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402971487}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1642927397
 GameObject:
   m_ObjectHideFlags: 0
@@ -15944,12 +15171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &1677481957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15970,6 +15191,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &1677481958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16224,7 +15448,7 @@ Transform:
   - {fileID: 187229877}
   - {fileID: 739911531}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1699696328 stripped
 GameObject:
@@ -16445,7 +15669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739002912
 GameObject:
@@ -17040,62 +16264,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1408117332}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1763862960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763862961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Meu Deus, aqui est\xE1 um breu! "
-  - Melhor ligar minha lanterna se quiser enxergar alguma coisa.
-  - "A chave est\xE1 em algum lugar por aqui."
-  - "Me lembro do Jo\xE3o ter dito que a chave estava escondida em um vaso de planta
-    perto da entrada."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
---- !u!1 &1763862961
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1763862963}
-  - component: {fileID: 1763862960}
-  m_Layer: 0
-  m_Name: DIA_Initial
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1763862963
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763862961}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 402971487}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775336364
 GameObject:
   m_ObjectHideFlags: 0
@@ -17935,7 +17103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896027843
 GameObject:
@@ -17992,6 +17160,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &1896027846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18004,12 +17175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &1896027847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18403,24 +17568,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.48669162, y: 0.8876933, z: 0.058573145}
   m_Center: {x: 0.24334572, y: -0.017197818, z: 0.0021918584}
---- !u!114 &1931331139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983507212940145744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &1931331140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18441,6 +17588,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!4 &1933026208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bfca1416d4d17dc41a4e21b522d7a6f0,
@@ -18705,6 +17855,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &1946424483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18730,12 +17883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!4 &1947737074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ff7af2dee0d4c204fb3d82d09b1129e5,
@@ -18987,66 +18134,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994782217}
   m_Mesh: {fileID: 4300000, guid: 33de1ba98774b164abd5eab85d45a2c0, type: 3}
---- !u!1 &2004661875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2004661876}
-  - component: {fileID: 2004661877}
-  m_Layer: 0
-  m_Name: Dialogues_1_Sonho
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2004661876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004661875}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 328299088}
-  - {fileID: 1139108829}
-  - {fileID: 804713961}
-  - {fileID: 1298888155}
-  - {fileID: 566024808}
-  - {fileID: 1370796770}
-  - {fileID: 1598308064}
-  - {fileID: 507317247}
-  m_Father: {fileID: 644061345}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2004661877
+--- !u!114 &2004661877 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7840420862229618660, guid: 1a6f7616016ea934c84c7ddd177f4759,
+    type: 3}
+  m_PrefabInstance: {fileID: 7840420861340199313}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004661875}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues:
-  - {fileID: 328299089}
-  - {fileID: 1370796771}
-  - {fileID: 1598308065}
-  - {fileID: 507317248}
-  hasInitialDialogue: 0
-  initialDialogue: 0
-  hasDelayInitialDialogue: 0
-  delayTime: 0
 --- !u!4 &2006183218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ca5a38beedffac40a225e6c1c43309a,
@@ -19171,6 +18270,9 @@ MonoBehaviour:
   positionOnlyZ: 1
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &2016709739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19183,12 +18285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!1 &2016841595
 GameObject:
   m_ObjectHideFlags: 0
@@ -19851,6 +18947,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &2088657820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19863,12 +18962,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!65 &2088657821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20119,12 +19212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &2119396757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20145,6 +19232,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &2119396758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21259,23 +20349,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &361943383853385245
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9122778007594475698}
-  - component: {fileID: 2503867020480157298}
-  m_Layer: 0
-  m_Name: DIA_Mariana2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &366175168137296065
 Transform:
   m_ObjectHideFlags: 0
@@ -21531,20 +20604,6 @@ Transform:
   - {fileID: 4342539662817568092}
   m_Father: {fileID: 4993732673843998839}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &442216809679230126
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6938106777226251005}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &452016629160190135
 MeshRenderer:
@@ -21829,7 +20888,7 @@ Transform:
   - {fileID: 4626551805354689765}
   - {fileID: 5465940246950260689}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &543450653282306377 stripped
 Transform:
@@ -21869,27 +20928,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &582327590360568175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2589658167933700539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Oi Rafa, desculpa. To me sentindo um pouco melhor sim.
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!4 &583873335206640346
 Transform:
   m_ObjectHideFlags: 0
@@ -21994,10 +21032,12 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
   isLocked: 0
   keyName: 
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
+  hasDoorDialogue: 0
   doorLocked: 1
   doorUnlocked: 3
 --- !u!114 &586997721672438893
@@ -22012,12 +21052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Porta dos fundos
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!1 &591729971054370729
 GameObject:
   m_ObjectHideFlags: 0
@@ -22090,10 +21124,12 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
   isLocked: 1
   keyName: Chave Entrada
-  isObjectiveObj: 1
-  objectiveManager: {fileID: 0}
+  hasDoorDialogue: 0
   doorLocked: 5
   doorUnlocked: 5
 --- !u!114 &591729971054370733
@@ -22108,12 +21144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Porta Entrada
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!23 &603482327535517569
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22525,20 +21555,6 @@ Transform:
   m_Father: {fileID: 3199222091155509684}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &839152728081147454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537891915616515899}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &863001972583907857
 GameObject:
   m_ObjectHideFlags: 0
@@ -22740,11 +21756,10 @@ GameObject:
   - component: {fileID: 5687792172216228736}
   - component: {fileID: 7906425577919434843}
   - component: {fileID: 1931331138}
-  - component: {fileID: 1931331139}
   - component: {fileID: 1931331140}
   m_Layer: 0
   m_Name: Portinha
-  m_TagString: Doors
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22793,12 +21808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &1012285094405736270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22819,6 +21828,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!1 &1018222223632696142
 GameObject:
   m_ObjectHideFlags: 0
@@ -23831,28 +22843,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1547634093102933047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6362798780579170121}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Beleza ent\xE3o Mari! Bom, o nosso tempo j\xE1 esgotou tem uns 5 minutinhos,
-    eu preciso ir saindo!"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!23 &1561019448319651319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23923,27 +22913,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1582929372917147750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3202271586193137443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Vou tentar Rafa, juro que vou tentar.
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &1605904846937541987
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24168,29 +23137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &1805928597709979796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537891915616515899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Mariana, desde que voc\xEA reduziu a frequ\xEAncia de seus rem\xE9dios, voc\xEA
-    tem me relatado mais sobre seus sonhos com a trag\xE9dia. Voc\xEA precisa se
-    cuidar meu bem, e \xE9 s\xE9rio, ESCUTE O S\xC9RGIO."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!4 &1814066802919123459
 Transform:
   m_ObjectHideFlags: 0
@@ -24563,23 +23509,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!1 &1957383883186306601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7650296871688817814}
-  - component: {fileID: 8029525399929872353}
-  m_Layer: 0
-  m_Name: DIA_Mariana7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &2002278770946496903
 Transform:
   m_ObjectHideFlags: 0
@@ -24692,20 +23621,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
   m_IsActive: 1
---- !u!4 &2041084534701907600
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4515982868971856520}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2052521072739281572
 Transform:
   m_ObjectHideFlags: 0
@@ -25129,12 +24044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &2145214385044417094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25155,6 +24064,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!65 &2145214385044417095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25424,27 +24336,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6391756971840907336}
   m_Mesh: {fileID: -6475276739941358363, guid: 58ee8e40b6d6d81438f17ea03522c233, type: 3}
---- !u!114 &2291369423011407909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2886877778942821258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "At\xE9 mais Mari! Boa viagem pra voc\xEA! - a chamada \xE9 desligada"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &2292179955128376725
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25573,20 +24464,6 @@ Transform:
   m_Father: {fileID: 7151331950757187187}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 76.57606, y: -98.28312, z: -92.65472}
---- !u!4 &2350877597635450738
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501064020193251772}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2354039990629144580
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25913,30 +24790,6 @@ Transform:
   m_Father: {fileID: 2052521072739281572}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2503867020480157298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361943383853385245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Mas Rafa, eu j\xE1 te falei a situa\xE7\xE3o, os rem\xE9dios novos s\xE3o muito
-    caros, eu n\xE3o vou ter condi\xE7\xF5es de pagar mesmo, os que eu tomo no momento
-    n\xE3o fazem mais o efeito esperado, eu n\xE3o me sinto melhor. N\xE3o estou
-    fazendo por maldade. Poxa Rafa, voc\xEA sabe. "
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!23 &2508903822254478055
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26033,23 +24886,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &2540802031187618573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5620896429215756410}
-  - component: {fileID: 6036979460677502463}
-  m_Layer: 0
-  m_Name: DIA_Rafaela9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &2559285840518583981
 Transform:
   m_ObjectHideFlags: 0
@@ -26156,23 +24992,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &2589658167933700539
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2601561964894225780}
-  - component: {fileID: 582327590360568175}
-  m_Layer: 0
-  m_Name: DIA_Mariana1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &2592265258358478451
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26254,42 +25073,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2601561964894225780
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2589658167933700539}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2601694869298953987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6178616057529380306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "T\xE1 bom! \xC9 legal que a gente v\xE1 se falando enquanto voc\xEA estiver
-    l\xE1!"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &2604817344845455332
 GameObject:
   m_ObjectHideFlags: 0
@@ -26421,28 +25204,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2604817344845455332}
   m_Mesh: {fileID: 3425102284932147216, guid: 58ee8e40b6d6d81438f17ea03522c233, type: 3}
---- !u!114 &2645058197011720413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7705250713033703186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Bom, voc\xEA precisa explicar pra ele toda a situa\xE7\xE3o, o S\xE9rgio precisa
-    te arranjar uma solu\xE7\xE3o mais vi\xE1vel ent\xE3o."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!4 &2646987345440103923
 Transform:
   m_ObjectHideFlags: 0
@@ -26457,23 +25218,6 @@ Transform:
   m_Father: {fileID: 6402493745120674267}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2651108352858343060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3068825419404991304}
-  - component: {fileID: 4293994334364686916}
-  m_Layer: 0
-  m_Name: DIA_Rafaela3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &2664602994300046457
 GameObject:
   m_ObjectHideFlags: 0
@@ -26629,27 +25373,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &2733325643231211214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6938106777226251005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Isso, isso mesmo.
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!4 &2734993615972017378
 Transform:
   m_ObjectHideFlags: 0
@@ -27083,23 +25806,6 @@ GameObject:
   - component: {fileID: 2420202491559913562}
   m_Layer: 0
   m_Name: mixamorig:LeftShoulder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &2886877778942821258
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7928219558513507905}
-  - component: {fileID: 2291369423011407909}
-  m_Layer: 0
-  m_Name: DIA_Rafaela10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27602,20 +26308,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &3068825419404991304
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2651108352858343060}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3081730259632900736
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27937,23 +26629,6 @@ Transform:
   m_Father: {fileID: 6341119541489891234}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 9.871864, y: -0.11625894, z: -1.1521128}
---- !u!1 &3202271586193137443
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6800887958780230442}
-  - component: {fileID: 1582929372917147750}
-  m_Layer: 0
-  m_Name: DIA_Mariana5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &3207542655746169617
 Transform:
   m_ObjectHideFlags: 0
@@ -28113,28 +26788,6 @@ Transform:
   m_Father: {fileID: 9204093676490686365}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3353786419203901165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113106333951552911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Mariana, respira! Conta comigo! Um, dois, tr\xEAs, quatro, cinco! Respira fundo!"
-  - "Como voc\xEA est\xE1 se sentindo? Ainda t\xE1 a\xED? Al\xF4?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 2589658167933700539}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &3365675182641466664
 GameObject:
   m_ObjectHideFlags: 0
@@ -28433,27 +27086,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3468853668353085018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658871094258644700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Sim.
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!23 &3486990193585713297
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29308,20 +27940,6 @@ Transform:
   m_Father: {fileID: 4993732673843998839}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4132993602051285723
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418665409196612182}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &4138333937591281910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29509,30 +28127,6 @@ Transform:
   m_Father: {fileID: 4342539662817568092}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4293994334364686916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2651108352858343060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Eu sei que n\xE3o meu bem, mas o que eu quero dizer \xE9 que mesmo com toda
-    essa situa\xE7\xE3o, voc\xEA precisa ser mais delicada com suas escolhas, mas
-    isso \xE9 algo que voc\xEA precisa tratar com o seu psiquiatra urgente, sua pr\xF3xima
-    consulta com ele acontece daqui duas semanas, n\xE9?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &4325161047100827574
 GameObject:
   m_ObjectHideFlags: 0
@@ -29728,23 +28322,6 @@ Transform:
   m_Father: {fileID: 7631651220261827366}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4418665409196612182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4132993602051285723}
-  - component: {fileID: 6464745846452671694}
-  m_Layer: 0
-  m_Name: DIA_Rafaela6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &4433778574996282101
 GameObject:
   m_ObjectHideFlags: 0
@@ -29928,56 +28505,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6402493745120674267}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4515982868971856520
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2041084534701907600}
-  - component: {fileID: 8483918398124539092}
-  m_Layer: 0
-  m_Name: DIA_Mariana4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4539094382939875511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6101332550169674586}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000020131918, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 5396535987385311955}
-  - {fileID: 2601561964894225780}
-  - {fileID: 4837733470121401968}
-  - {fileID: 9122778007594475698}
-  - {fileID: 3068825419404991304}
-  - {fileID: 6801550468671464490}
-  - {fileID: 9006422794880568876}
-  - {fileID: 2041084534701907600}
-  - {fileID: 839152728081147454}
-  - {fileID: 6800887958780230442}
-  - {fileID: 4132993602051285723}
-  - {fileID: 442216809679230126}
-  - {fileID: 7390666595206750015}
-  - {fileID: 7650296871688817814}
-  - {fileID: 7231917499580573176}
-  - {fileID: 7746222320457690356}
-  - {fileID: 5620896429215756410}
-  - {fileID: 2350877597635450738}
-  - {fileID: 7928219558513507905}
-  m_Father: {fileID: 644061345}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4542943602097417110
 MeshFilter:
@@ -30507,20 +29034,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7072035014728872379}
   m_Mesh: {fileID: -1990725475234821254, guid: 58ee8e40b6d6d81438f17ea03522c233, type: 3}
---- !u!4 &4837733470121401968
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8703676758825779237}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4847264214359213177
 GameObject:
   m_ObjectHideFlags: 0
@@ -34213,7 +32726,7 @@ GameObject:
   - component: {fileID: 4893519761821703022}
   m_Layer: 5
   m_Name: Dialogue_Box
-  m_TagString: Untagged
+  m_TagString: DialogueBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35601,9 +34114,8 @@ RectTransform:
   - {fileID: 4893519761821703023}
   - {fileID: 4893519760294510240}
   - {fileID: 289731910}
-  - {fileID: 644061345}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -37456,6 +35968,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &5195935257252791804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37468,12 +35983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!33 &5210771901910813928
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -37791,20 +36300,6 @@ Transform:
   m_Father: {fileID: 1189529852873711814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 76.615654, y: 130.70717, z: 135.38817}
---- !u!4 &5396535987385311955
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9113106333951552911}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &5408109326642911197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -38284,20 +36779,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125626711261572387}
   m_Mesh: {fileID: 1534993111798583604, guid: 6bd58561824aa034ab416f9449eed6aa, type: 3}
---- !u!4 &5620896429215756410
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2540802031187618573}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5631108800564976042
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39088,29 +37569,6 @@ Transform:
   m_Father: {fileID: 4342539662817568092}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6036979460677502463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2540802031187618573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "T\xE1 bom Mari, semana que vem a gente se fala e se tudo der certo, a minha
-    internet vai estar melhor e podemos fazer a chamada em v\xEDdeo, t\xE1 bom? -
-    ela finaliza com uma risadinha"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!23 &6038581152886782675
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39226,41 +37684,6 @@ Transform:
   m_Father: {fileID: 6402493745120674267}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6101332550169674586
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4539094382939875511}
-  - component: {fileID: 6101332550169674587}
-  m_Layer: 0
-  m_Name: Dialogues_InitialMariHouse
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &6101332550169674587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6101332550169674586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db03d5570a4d28e4690814088a9d5328, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - {fileID: 3353786419203901165}
-  hasInitialDialogue: 0
-  initialDialogue: 0
-  hasDelayInitialDialogue: 0
-  delayTime: 0
 --- !u!1 &6136935971117538341
 GameObject:
   m_ObjectHideFlags: 0
@@ -39336,23 +37759,6 @@ GameObject:
   - component: {fileID: 8295181253708850121}
   m_Layer: 0
   m_Name: Group38106
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &6178616057529380306
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7390666595206750015}
-  - component: {fileID: 2601694869298953987}
-  m_Layer: 0
-  m_Name: DIA_Rafaela7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39627,23 +38033,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!1 &6274506307708550567
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7746222320457690356}
-  - component: {fileID: 7677115802534063306}
-  m_Layer: 0
-  m_Name: DIA_Mariana8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &6284807699465347559
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -39815,23 +38204,6 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!1 &6362798780579170121
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7231917499580573176}
-  - component: {fileID: 1547634093102933047}
-  m_Layer: 0
-  m_Name: DIA_Rafaela8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &6367197257594331816
 Transform:
@@ -40095,28 +38467,6 @@ Transform:
   m_Father: {fileID: 2348787447037851295}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 36.126015, y: 0.7982687, z: 4.8624177}
---- !u!114 &6464745846452671694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4418665409196612182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Espero de verdade que voc\xEA tente! Ali\xE1s, j\xE1 que voc\xEA tocou no assunto,
-    voc\xEA volta pra Brumadinho amanh\xE3 n\xE9?"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &6472065031333171892
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -40786,34 +39136,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &6800887958780230442
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3202271586193137443}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &6801550468671464490
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7658871094258644700}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6817268073801097679
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -41041,6 +39363,9 @@ MonoBehaviour:
   positionOnlyZ: 0
   dialogue: {fileID: 0}
   areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _isObjectiveObj: 0
+  _dialogueIndex: 0
 --- !u!114 &6876183144674967596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41053,12 +39378,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionText: {fileID: 4893519762074825482}
-  objectDescription: Pressione para abrir
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!224 &6929994566635288610
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41078,23 +39397,6 @@ RectTransform:
   m_AnchoredPosition: {x: -255.13, y: 63.2}
   m_SizeDelta: {x: 510.25916, y: 49.683067}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &6938106777226251005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 442216809679230126}
-  - component: {fileID: 2733325643231211214}
-  m_Layer: 0
-  m_Name: DIA_Mariana6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &6948318458810180119
 GameObject:
   m_ObjectHideFlags: 0
@@ -41717,20 +40019,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8529259705391745241}
   m_Mesh: {fileID: 3576517614727030828, guid: 58ee8e40b6d6d81438f17ea03522c233, type: 3}
---- !u!4 &7231917499580573176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6362798780579170121}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7239979044317883431
 GameObject:
   m_ObjectHideFlags: 0
@@ -41881,20 +40169,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &7390666595206750015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6178616057529380306}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7403244012827707730
 GameObject:
   m_ObjectHideFlags: 0
@@ -42040,23 +40314,6 @@ Transform:
   m_Father: {fileID: 543450651974580384}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7501064020193251772
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2350877597635450738}
-  - component: {fileID: 8628059075379530466}
-  m_Layer: 0
-  m_Name: DIA_Mariana9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &7510196238294154336
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42152,23 +40409,6 @@ Transform:
   m_Father: {fileID: 8930329875801382168}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7537891915616515899
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 839152728081147454}
-  - component: {fileID: 1805928597709979796}
-  m_Layer: 0
-  m_Name: DIA_Rafaela5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &7542137907145097031
 GameObject:
   m_ObjectHideFlags: 0
@@ -42286,37 +40526,6 @@ Transform:
   m_Father: {fileID: 3168520619881601924}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &7650296871688817814
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957383883186306601}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7658871094258644700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6801550468671464490}
-  - component: {fileID: 3468853668353085018}
-  m_Layer: 0
-  m_Name: DIA_Mariana3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &7666680083592791270
 Transform:
   m_ObjectHideFlags: 0
@@ -42332,28 +40541,6 @@ Transform:
   m_Father: {fileID: 1330755669184504642}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 77.968, y: -14.098801, z: -20.197235}
---- !u!114 &7677115802534063306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274506307708550567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Sem problemas Rafa. Muito obrigado pela sess\xE3o, foi \xF3tima! Prometo que
-    vou tentar fazer o melhor nos pr\xF3ximos dias!"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &7679566197199370095
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -42439,23 +40626,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!1 &7705250713033703186
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9006422794880568876}
-  - component: {fileID: 2645058197011720413}
-  m_Layer: 0
-  m_Name: DIA_Rafaela4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &7719885757267399243
 Transform:
   m_ObjectHideFlags: 0
@@ -42512,20 +40682,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954334054699572138}
   m_Mesh: {fileID: -8433832427835393222, guid: 58ee8e40b6d6d81438f17ea03522c233, type: 3}
---- !u!4 &7746222320457690356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274506307708550567}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7751854805131179033
 GameObject:
   m_ObjectHideFlags: 0
@@ -42679,6 +40835,245 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!1001 &7840420861340199313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 261314282924635760, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 451588246546810203, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 1585728200671522951, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 1833576303759168837, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 1978139339525956467, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 3853288131465903455, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 4542282568816241774, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 4775451407741562748, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 5223022528659767628, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 5248336823246886546, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 5269347952823732063, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 5652370413996982243, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 6294220434743653333, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 6696040330116048843, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7267141702130301182, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420860673134439, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420860745243771, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420860774216696, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.427216
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -26.614212
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420860905992503, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogueStorage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840420861398458316, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420861457138963, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420861571212689, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420861571212689, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: postProcessEffect
+      value: 
+      objectReference: {fileID: 1715065387}
+    - target: {fileID: 7840420861571212689, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: postProcessEffect2
+      value: 
+      objectReference: {fileID: 514392582}
+    - target: {fileID: 7840420861616053184, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420861723852833, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420861850201549, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420862331575373, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420862424236623, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420862635972464, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 7840420862653766514, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 8287275746510487988, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 8485123948433352965, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 8735141437969826295, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    - target: {fileID: 8769784155477216678, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 4893519761821703019}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
 --- !u!4 &7869081000703764860
 Transform:
   m_ObjectHideFlags: 0
@@ -42879,20 +41274,6 @@ Transform:
   m_Father: {fileID: 4342539662817568092}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &7928219558513507905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2886877778942821258}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &7930214443814504819
 Transform:
   m_ObjectHideFlags: 0
@@ -43044,27 +41425,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8029525399929872353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957383883186306601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - Beleza, eu vou te mandando mensagem quando eu sentir que preciso!
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!4 &8038062973766193517
 Transform:
   m_ObjectHideFlags: 0
@@ -43829,28 +42189,6 @@ Transform:
   m_Father: {fileID: 6402493745120674267}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8483918398124539092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4515982868971856520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Ser\xE1 que eu vou ficar bem, Rafa? Fiquei bem mexida quando recebi a not\xEDcia,
-    acho que nenhum rem\xE9dio pode me ajudar mais."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!1 &8514195741269294516
 GameObject:
   m_ObjectHideFlags: 0
@@ -44025,28 +42363,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &8628059075379530466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7501064020193251772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Mariana
-  speechs:
-  - "Com certeza, vai ser \xF3timo! - Mari ri de volta, mas num tom cabisbaixo. -
-    Vou ver se relaxo um pouco essa noite pra ficar bem pra amanh\xE3!"
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &8631899338297426790
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -44242,23 +42558,6 @@ Transform:
   m_Father: {fileID: 5901452235403976134}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8703676758825779237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4837733470121401968}
-  - component: {fileID: 8849404347640371478}
-  m_Layer: 0
-  m_Name: DIA_Rafaela2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &8717362778859639581
 Transform:
   m_ObjectHideFlags: 0
@@ -44423,29 +42722,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!114 &8849404347640371478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8703676758825779237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6413c1d5b39b6e458d0cb47392e4505, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterName: Rafaela
-  speechs:
-  - "Mariana, voc\xEA sabe que n\xE3o vai adiantar nada continuar assim, o Dr. S\xE9rgio
-    me passou o diagn\xF3stico e o seu \"ah, vou simplesmente parar com os rem\xE9dios
-    de agora\" n\xE3o vai ajudar em nada. E voc\xEA sabe disso."
-  onlyOnce: 1
-  nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 4893519761821703019}
-  postProcessEffect: {fileID: 0}
-  postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
 --- !u!33 &8849620139782818902
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -44905,20 +43181,6 @@ Transform:
   m_Father: {fileID: 5966447747952332097}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &9006422794880568876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7705250713033703186}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9010292337995318260
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -45123,23 +43385,6 @@ Transform:
   m_Father: {fileID: 6402493745120674267}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9113106333951552911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5396535987385311955}
-  - component: {fileID: 3353786419203901165}
-  m_Layer: 0
-  m_Name: DIA_Rafaela1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &9116523964219859505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -45194,20 +43439,6 @@ Transform:
   m_Father: {fileID: 1852576806706861926}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 84.28981, y: 66.228874, z: 70.04996}
---- !u!4 &9122778007594475698
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361943383853385245}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4539094382939875511}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9123909093022283542
 GameObject:
   m_ObjectHideFlags: 0
