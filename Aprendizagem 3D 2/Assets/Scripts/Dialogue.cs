@@ -33,7 +33,7 @@ public class Dialogue : MonoBehaviour
     public delegate void PlayerDuringDialogueOn();
     public static event PlayerDuringDialogueOn playerDuringDialogueOn;
     public delegate void PlayerDuringDialogueOff();
-    public static event PlayerDuringDialogueOn playerDuringDialogueOff;
+    public static event PlayerDuringDialogueOff playerDuringDialogueOff;  // seria aqui um evento do tipo playerDuringDialogueOff?
 
     public static Dialogue instance;
 

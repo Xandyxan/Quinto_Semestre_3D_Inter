@@ -22,6 +22,7 @@ public class SelectionManager : MonoBehaviour
 
     private bool usingCellphone;
 
+    [SerializeField] private bool mission2;
     //private Color selectionColor = new Color(140, 87, 49);
     //Renderer selectionRenderer = null;
 
@@ -99,7 +100,15 @@ public class SelectionManager : MonoBehaviour
                         if (interactable == null) return;
                         interactable.Interact();
 
-                        if (interactable.isObjectiveObj) objectiveManager.ExecuteDialogue(interactable.dialogueIndex); // arrumar interface pra implementar isso
+                        var objectiveObj = selection.GetComponent<IObjectiveObj>(); 
+                        if (objectiveObj == null) return;
+                        if(objectiveObj.triggerDialogue) objectiveManager.ExecuteDialogue(objectiveObj.dialogueIndex);
+                        if (mission2) 
+                        { 
+                            var addIntCount = selection.GetComponent<Mission2InteractionAddCount>();
+                            if (addIntCount == null) return;
+                            addIntCount.AddCount();
+                        }
                     }
 
                     selectionTransform = selection;
