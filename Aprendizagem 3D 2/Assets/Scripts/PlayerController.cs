@@ -12,29 +12,30 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float gravity = -13.0f;
     float velocityY = 0.0f;
 
-    public float walkSpeedX, actualWalkSpeedZ;
-    float walkSpeedZ = 1.0f;
-    float runSpeedZ = 4.0f;
-    float backWalkSpeedZ = 1.25f;
-    float crouchSpeedZ = 1f;
+    private float actualWalkSpeedX, actualWalkSpeedZ;
+    private float walkSpeedZ = 2.0f;
+    private float runSpeedZ = 4.0f;
+    private float backWalkSpeedZ = 1.25f;
+    private float crouchSpeedZ = 1f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
 
-    Vector2 currentDir = Vector2.zero;
-    Vector2 currentDirVelocity = Vector2.zero;
+    [Header("Axis Values")]
+    private float rawAxisZ, rawAxisX;
+    private float axisZ, axisX;
+
+    private Vector2 currentDir = Vector2.zero;
+    private Vector2 currentDirVelocity = Vector2.zero;
 
     //Character States
-    private bool isRunning, isCrouched;
+    private bool isRunning, isCrouched, isWalkingZ;
 
     private PlayerView playerView;
 
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
 
-    private bool canMove = true;
+    private bool canMove, limitedMovement;
     private bool usingCellphone;
-
-    
-
 
     private void Awake()
     {
@@ -43,13 +44,17 @@ public class PlayerController : MonoBehaviour
 
         actualWalkSpeedZ = walkSpeedZ;
         playerView = GetComponent<PlayerView>();
+
+        canMove = true;
+        limitedMovement = false;
     }
-    
+
     private void OnEnable()
     {
-        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        //We remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff; 
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
-        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff; 
+        GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
         GameManager.instance.returnPlayerControlEvent += TurnPlayerControllerOn;
 
         Dialogue.playerDuringDialogueOn -= PlayerDuringDialogueOn;
@@ -70,75 +75,82 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
-      
         if (canMove)
         {
-                UpdateMovement();
+            UpdateMovement();
         }
         else   // disable the script only after the player interpolates to the idle animation.
         {
             actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, 0, Time.deltaTime * 6f);
-            animator.SetFloat("Velocity", actualWalkSpeedZ);
+            //SetAnimators();
             isRunning = false;
             currentDir = Vector2.zero;
             if (actualWalkSpeedZ < .1f)
             {
                 this.enabled = false;
-               // print("PCtrl OF");
+                // print("PCtrl OF");
             }
         }
-        
+
     }
+
+    private void InputProcessing()
+    {
+        rawAxisX = Input.GetAxisRaw("Horizontal");
+        rawAxisZ = Input.GetAxisRaw("Vertical");
+
+        axisX = Input.GetAxis("Horizontal");
+        axisZ = Input.GetAxis("Vertical");
+
+        isWalkingZ = Mathf.Abs(rawAxisZ) > 0.05f ? true : false;
+
+        if (Input.GetAxis("Horizontal") >= 0 || Input.GetAxis("Vertical") >= 0) { UpdateCollider(); }
+
+        if (!limitedMovement)
+        {
+            if (Input.GetButtonDown("Crouch"))
+            {
+                if (isCrouched) isCrouched = false;
+                else isCrouched = true;
+                isRunning = false;
+                playerView.SetIsCrouching(isCrouched);
+            }
+
+            if (Input.GetButton("Run"))
+            {
+                isRunning = true;
+                isCrouched = false;
+            }
+            else isRunning = false;
+
+            if (Input.GetAxisRaw("Vertical") <= 0f) isRunning = false;
+        }
+    }
+
     private void UpdateMovement()
     {
-        InputManager();
+        InputProcessing();
 
         //Get RawMovement and normalize
-        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        Vector2 targetDir = new Vector2(rawAxisX, rawAxisZ);
         targetDir.Normalize();
-        
+
         //Pass raw values to make a smooth transtion
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 
-        SmoothWalkSpeedZ();
-
-        if (characterController.isGrounded)
-            velocityY = 0.0f;
-
+        //Apply gravity
+        if (characterController.isGrounded) velocityY = 0.0f;
         velocityY += gravity * Time.deltaTime;
 
-        Vector3 velocity = (transform.forward * currentDir.y * actualWalkSpeedZ) + (transform.right * currentDir.x * walkSpeedX) + Vector3.up * velocityY;
-        
+        SmoothWalkSpeedZ();
+
+        //Update the character movements
+        Vector3 velocity = (transform.forward * currentDir.y * actualWalkSpeedZ) + (transform.right * currentDir.x * actualWalkSpeedX) + Vector3.up * velocityY;
         characterController.Move(velocity * Time.deltaTime);
+
         SetAnimators();
-    }
-
-    private void InputManager()
-    {
-        if(Input.GetAxis("Horizontal") >= 0 || Input.GetAxis("Vertical") >=0)
-        {
-            UpdateCollider();
-        }
-
-        if (Input.GetButtonDown("Crouch"))
-        {
-            if (isCrouched) isCrouched = false;
-            else isCrouched = true;
-            isRunning = false;
-            playerView.SetIsCrouching(isCrouched);
-        }
-        
-
-        if (Input.GetButton("Run"))
-        {
-            isRunning = true;
-            isCrouched = false;
-        }
-        else isRunning = false;
-
-        if(Input.GetAxisRaw("Vertical") <= 0f) isRunning = false;
     }
 
     private void SmoothWalkSpeedZ() //It's to make velocity changes in a smooth way getting the smooth currentDir
@@ -153,42 +165,63 @@ public class PlayerController : MonoBehaviour
 
             else if (currentDir.y > 0f) //From any state to -> To walk forward stand state
                 actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, walkSpeedZ, Time.deltaTime * 10f);
+
+            actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, walkSpeedZ, Time.deltaTime * 10f);
         }
         else if (isRunning && !isCrouched)
         {
             if (currentDir.y > 0f) //Se está correndo em pé
                 actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, runSpeedZ, Time.deltaTime * 2f);
+
+            actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, runSpeedZ, Time.deltaTime * 2f);
         }
         else if (isCrouched && !isRunning)
         {
             if (currentDir.y > -0.0001f && currentDir.y < 0.0001f) //From any state to -> To idle crouch state
-                actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, 0, Time.deltaTime * 50f);
+                actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, crouchSpeedZ, Time.deltaTime * 50f);
 
             else if (currentDir.y > 0f && isCrouched && !isRunning) //From any state to -> To walk crouch state
                 actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, crouchSpeedZ, Time.deltaTime * 50f);
+
+            actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, crouchSpeedZ, Time.deltaTime * 50f);
         }
+
+
+
+        if (limitedMovement) actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, 0.5f);
+        else actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, runSpeedZ);
     }
 
     private void SetAnimators()
     {
-        animator.SetFloat("Velocity", Input.GetAxis("Vertical") * actualWalkSpeedZ);
-        animator.SetBool("isCrouched", isCrouched);
+        if (!limitedMovement)
+        {
+            animator.SetBool("isWalkingZ", isWalkingZ);
+            animator.SetBool("isCrouched", isCrouched); 
 
-        //animator.SetFloat("Velocity", Input.GetAxis("Vertical") * actualWalkSpeedZ * 3.5f);
+            animator.SetFloat("VelocityZ", axisZ * actualWalkSpeedZ);
+            animator.SetFloat("VelocityX", axisX * actualWalkSpeedX);
+        }
+        else
+        {
+            animator.SetFloat("VelocityZ", axisZ * actualWalkSpeedZ * 3.7f);
+            animator.SetFloat("VelocityX", axisX * actualWalkSpeedX * 3.7f);
+        }
+
     }
 
     private void UpdateCollider()
     {
-        if(!isCrouched)
+        if (!isCrouched)
         {
-            characterController.stepOffset = 0.3f;
+            characterController.stepOffset = 0.150f;
             characterController.center = new Vector3(0, 0.0775f, 0);
             characterController.radius = 0.03f;
             characterController.height = 0.155f;
         }
         else
         {
-            characterController.stepOffset = 0.1f;
+            characterController.stepOffset = 0f;
             characterController.center = new Vector3(0, 0.0775f, 0.02f);
             characterController.radius = 0.033f;
             characterController.height = 0.155f;
@@ -210,21 +243,15 @@ public class PlayerController : MonoBehaviour
         canMove = true;
         usingCellphone = false;
         this.enabled = true;
-       // print(" PCtrl ON");
+        // print(" PCtrl ON");
     }
-    public void TurnPlayerControllerOff() 
+    public void TurnPlayerControllerOff()
     {
         canMove = false;
         usingCellphone = Cellphone.instance.cellOn;
     }
 
-    public void PlayerDuringDialogueOn()
-    {
-        walkSpeedZ = 0.5f;
-    }
+    public void PlayerDuringDialogueOn() { limitedMovement = true; }
 
-    public void PlayerDuringDialogueOff()
-    {
-        walkSpeedZ = 2f;
-    }
+    public void PlayerDuringDialogueOff() { limitedMovement = false; }
 }

@@ -21,10 +21,16 @@ public class DialogueManager2 : MonoBehaviour
     [SerializeField] private bool hasDelayInitialDialogue;
     [SerializeField] private float delayTime;
 
+    [Header("Dialogue Box UI")]
+    private GameObject dialogueBox;
+    private Text dialogueTextUI;
+    private Text characterNameUI;
 
     private void Awake()
     {
-        
+        dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
+        dialogueTextUI = dialogueBox.transform.GetChild(1).GetComponent<Text>();
+        characterNameUI = dialogueBox.transform.GetChild(2).GetComponent<Text>();
     }
 
     void Start()
@@ -41,4 +47,9 @@ public class DialogueManager2 : MonoBehaviour
     {
         dialogues[index].RunCoroutine();
     }
+
+    //getters
+    public GameObject GetDialogueBox() { return this.dialogueBox; }
+    public Text GetDialogueTextUI() { return this.dialogueTextUI; }
+    public Text GetCharacterNameUI() { return this.characterNameUI; }
 }
