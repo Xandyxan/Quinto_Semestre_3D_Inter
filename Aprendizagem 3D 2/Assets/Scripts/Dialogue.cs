@@ -18,9 +18,10 @@ public class Dialogue : MonoBehaviour
     private Dialogue nextDialogueScript;
 
     [Header("Dialogue Box UI")]
-    [SerializeField] GameObject dialogueBox;
-    private Text characterNameUI;
-    private Text dialogueTextUI;
+    private DialogueManager2 dialogueManager;
+    
+    [Header("Restrict Character Movement?")]
+    [SerializeField] private bool restrictCharMovement;
 
     [Header("Other Continuations")]
     [SerializeField] private GameObject postProcessEffect;
@@ -38,10 +39,10 @@ public class Dialogue : MonoBehaviour
 
     private void Awake()
     {
+        dialogueManager = GetComponentInParent<DialogueManager2>();
         instance = this;
 
-        dialogueTextUI = dialogueBox.transform.GetChild(1).GetComponent<Text>();
-        characterNameUI = dialogueBox.transform.GetChild(2).GetComponent<Text>();      
+            
         alreadyExecuted = false;
 
         if (nextDialogue != null) { nextDialogueScript = nextDialogue.GetComponent<Dialogue>(); }
@@ -55,20 +56,20 @@ public class Dialogue : MonoBehaviour
     public IEnumerator Speech()
     {
         isSomeDialogueRunning = true;
-        playerDuringDialogueOn();
+        if(restrictCharMovement) playerDuringDialogueOn();
 
         if (tutorialCrouch != null) { tutorialCrouch.SetActive(true); }
-        characterNameUI.text = characterName;
+        dialogueManager.GetCharacterNameUI().text = characterName;
 
         if (!alreadyExecuted)
         {
-            dialogueBox.SetActive(true);
+            dialogueManager.GetDialogueBox().SetActive(true);
            
             Cellphone.instance.SetInDialogue(true);
 
             for (int i = 0; i < speechs.Length; i++)
             {
-                dialogueTextUI.text = speechs[i];
+                dialogueManager.GetDialogueTextUI().text = speechs[i];
                 yield return new WaitForSeconds(CalculateSpeechTime(speechs[i]));
                 
             }
@@ -77,12 +78,12 @@ public class Dialogue : MonoBehaviour
             
         }
 
-        dialogueBox.SetActive(false);
+        dialogueManager.GetDialogueBox().SetActive(false);
         Cellphone.instance.SetInDialogue(false);
 
         
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
-        else if(nextDialogueScript == null) { DelayPlayerDuringDialogueOff(); }
+        else if(nextDialogueScript == null && restrictCharMovement) { DelayPlayerDuringDialogueOff(); }
 
 
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }

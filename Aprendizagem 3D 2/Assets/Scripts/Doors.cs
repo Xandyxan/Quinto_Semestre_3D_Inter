@@ -56,7 +56,7 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable
         if (desireRotationValue.x > 1f) rotateDown = true;
         else if (desireRotationValue.x < -1f) rotateUp = true;
 
-        if (desirePositionValue.z > Mathf.Abs(1f)) positionZ = true;
+        if (desirePositionValue.z > Mathf.Abs(0.001f)) positionZ = true;
 
         if (positionOnlyZ) desirePositionValue = new Vector3(idlePosition.x, idlePosition.y, desirePositionValue.z);
     }
@@ -101,6 +101,7 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable
             if (!isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y - (Time.deltaTime * degreesPerSecond), Vector3.up);
             else if(isOpened) transform.rotation = Quaternion.AngleAxis(currentAngle.y + (Time.deltaTime * degreesPerSecond), Vector3.up);
         }
+        
 
         // X rotate > Different way to rotate due to Quaternion.AgleAxis sligth changes the other rotation axis while rotating X axis for some reason
         if(rotateUp)
@@ -153,8 +154,16 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable
         // Z position check
         if (positionZ)
         {
-            if (this.transform.localPosition.z <= idlePosition.z + 0.01f) SetIsOpened(false);
-            else if (this.transform.localPosition.z >= desirePositionValue.z - 0.05f) SetIsOpened(true);
+            if (this.transform.localPosition.z <= idlePosition.z + 0.0005f)
+            {
+                this.transform.localPosition = idlePosition;
+                SetIsOpened(false);
+            }
+            else if (this.transform.localPosition.z >= desirePositionValue.z - 0.0005f)
+            {
+                this.transform.localPosition = desirePositionValue;
+                SetIsOpened(true);
+            }
         }
     }
 
