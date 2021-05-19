@@ -50,7 +50,7 @@ MonoBehaviour:
     cuidar meu bem, e \xE9 s\xE9rio, ESCUTE O S\xC9RGIO."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
     Vou ver se relaxo um pouco essa noite pra ficar bem pra amanh\xE3!"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
     te arranjar uma solu\xE7\xE3o mais vi\xE1vel ent\xE3o."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   - Sim.
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -260,7 +260,7 @@ MonoBehaviour:
   - Isso, isso mesmo.
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -313,7 +313,7 @@ MonoBehaviour:
   - "Como voc\xEA est\xE1 se sentindo? Ainda t\xE1 a\xED? Al\xF4?"
   onlyOnce: 1
   nextDialogue: {fileID: 5710165590205669418}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
     de agora\" n\xE3o vai ajudar em nada. E voc\xEA sabe disso."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -420,7 +420,7 @@ MonoBehaviour:
     eu preciso ir saindo!"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -541,7 +541,7 @@ MonoBehaviour:
     l\xE1!"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -594,7 +594,7 @@ MonoBehaviour:
     vou tentar fazer o melhor nos pr\xF3ximos dias!"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -646,7 +646,7 @@ MonoBehaviour:
   - Vou tentar Rafa, juro que vou tentar.
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -698,7 +698,7 @@ MonoBehaviour:
   - "At\xE9 mais Mari! Boa viagem pra voc\xEA! - a chamada \xE9 desligada"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -753,7 +753,7 @@ MonoBehaviour:
     consulta com ele acontece daqui duas semanas, n\xE9?"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -805,7 +805,7 @@ MonoBehaviour:
   - Oi Rafa, desculpa. To me sentindo um pouco melhor sim.
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -859,7 +859,7 @@ MonoBehaviour:
     ela finaliza com uma risadinha"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -912,7 +912,7 @@ MonoBehaviour:
     voc\xEA volta pra Brumadinho amanh\xE3 n\xE9?"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -965,7 +965,7 @@ MonoBehaviour:
     acho que nenhum rem\xE9dio pode me ajudar mais."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1020,7 +1020,7 @@ MonoBehaviour:
     fazendo por maldade. Poxa Rafa, voc\xEA sabe. "
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   - Deve estar por aqui fora
   onlyOnce: 0
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   - "Filha? \xC9 voc\xEA? Cad\xEA voc\xEA?"
   onlyOnce: 1
   nextDialogue: {fileID: 7840420862331575371}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1178,7 +1178,7 @@ MonoBehaviour:
   - "Ser\xE1 que ela se escondeu dentro de algum m\xF3vel? "
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1205,7 +1205,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7840420860905992503}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.427216, y: -26.614212, z: 0}
   m_LocalScale: {x: 1.1554114, y: 1.1554114, z: 1.1554114}
   m_Children:
@@ -1263,7 +1263,7 @@ MonoBehaviour:
   - Achei a chave!
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   - "Por\xE9m n\xE3o me lembro muito bem dos quartos, qual ser\xE1?"
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1388,6 +1388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420861571211886}
   - component: {fileID: 7840420861571212689}
+  - component: {fileID: 154338279}
   m_Layer: 0
   m_Name: DIA_Televisao
   m_TagString: Untagged
@@ -1431,10 +1432,25 @@ MonoBehaviour:
     n\xE3o sobreviventes..."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
+--- !u!114 &154338279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861571211887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO 1/DUB_Jornalista
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &7840420861616053214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1499,7 @@ MonoBehaviour:
   - Arreda! Que esquisito!
   onlyOnce: 1
   nextDialogue: {fileID: 7840420862424236621}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 7840420862424236621}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1539,7 +1555,7 @@ MonoBehaviour:
     perto da entrada."
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1593,7 +1609,7 @@ MonoBehaviour:
   - Eu deveria entrar e ligar o quadro de energia
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1706,7 +1722,7 @@ MonoBehaviour:
     n\xE9 boba?"
   onlyOnce: 1
   nextDialogue: {fileID: 7840420860774216694}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1758,7 +1774,7 @@ MonoBehaviour:
   - "Mam\xE3e? Cad\xEA voc\xEA? Voc\xEA n\xE3o vai me achar?"
   onlyOnce: 1
   nextDialogue: {fileID: 7840420860745243769}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1810,7 +1826,7 @@ MonoBehaviour:
   - "Eu acho que n\xE3o deveria sair agora..."
   onlyOnce: 0
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1862,7 +1878,7 @@ MonoBehaviour:
   - "Errou! Eu n\xE3o estou na cozinha! Volte para a sala! "
   onlyOnce: 0
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
@@ -1914,7 +1930,7 @@ MonoBehaviour:
   - Beleza, eu vou te mandando mensagem quando eu sentir que preciso!
   onlyOnce: 1
   nextDialogue: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   tutorialCrouch: {fileID: 0}
