@@ -23,10 +23,13 @@ public class Dialogue : MonoBehaviour
     [Header("Restrict Character Movement?")]
     [SerializeField] private bool restrictCharMovement;
 
+    [Header("Dialogue Sounds")]
+    private PlaySound dialogueSound;
+
     [Header("Other Continuations")]
     [SerializeField] private GameObject postProcessEffect;
     [SerializeField] private GameObject postProcessEffect2;
-    public GameObject tutorialCrouch;
+    [SerializeField] private float _countProvisorio;
 
     public static bool isSomeDialogueRunning;
 
@@ -40,6 +43,7 @@ public class Dialogue : MonoBehaviour
     private void Awake()
     {
         dialogueManager = GetComponentInParent<DialogueManager2>();
+        dialogueSound = GetComponent<PlaySound>();
         instance = this;
 
             
@@ -58,39 +62,41 @@ public class Dialogue : MonoBehaviour
         isSomeDialogueRunning = true;
         if(restrictCharMovement) playerDuringDialogueOn();
 
-        if (tutorialCrouch != null) { tutorialCrouch.SetActive(true); }
         dialogueManager.GetCharacterNameUI().text = characterName;
 
         if (!alreadyExecuted)
         {
+            dialogueSound.StartSound();
             dialogueManager.GetDialogueBox().SetActive(true);
            
             Cellphone.instance.SetInDialogue(true);
 
+            _countProvisorio = _countProvisorio / speechs.Length;
+
             for (int i = 0; i < speechs.Length; i++)
             {
                 dialogueManager.GetDialogueTextUI().text = speechs[i];
-                yield return new WaitForSeconds(CalculateSpeechTime(speechs[i]));
+                yield return new WaitForSeconds(_countProvisorio);
                 
             }
 
             if (onlyOnce) alreadyExecuted = true;
             
         }
+        dialogueSound.StopSound();
 
         dialogueManager.GetDialogueBox().SetActive(false);
         Cellphone.instance.SetInDialogue(false);
 
-        
+        if (nextDialogueScript != null) isSomeDialogueRunning = false;
+        else isSomeDialogueRunning = true;
+
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
         else if(nextDialogueScript == null && restrictCharMovement) { DelayPlayerDuringDialogueOff(); }
 
 
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }
-        if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }
-        if(tutorialCrouch != null) { tutorialCrouch.SetActive(false); }
-
-        isSomeDialogueRunning = false;
+        if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }   
     }
 
     public void RunCoroutine(){ StartCoroutine(SpeechCoroutine()); }
@@ -111,9 +117,9 @@ public class Dialogue : MonoBehaviour
         float totalTime = 0;
         foreach(char letters in speechTotalLetters)
         {
-            if(letters != ' ')totalTime += 0.1f; 
+            if(letters != ' ')totalTime += 0.2f; 
         }
-        if (totalTime < 1f) totalTime = 2f;
+        if (totalTime < 1f) totalTime = 2.5f;
         return totalTime;
     }
 

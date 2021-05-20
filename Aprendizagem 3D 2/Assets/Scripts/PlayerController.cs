@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 currentDirVelocity = Vector2.zero;
 
     //Character States
-    private bool isRunning, isCrouched, isWalkingZ;
+    private bool isRunning, isCrouched, isWalkingZ, isWalkingX;
 
     private PlayerView playerView;
 
@@ -104,7 +104,8 @@ public class PlayerController : MonoBehaviour
         axisX = Input.GetAxis("Horizontal");
         axisZ = Input.GetAxis("Vertical");
 
-        isWalkingZ = Mathf.Abs(rawAxisZ) > 0.05f ? true : false;
+        isWalkingZ = Mathf.Abs(rawAxisZ) > 0.01f ? true : false;
+        isWalkingX = Mathf.Abs(rawAxisX) > 0.01f ? true : false;
 
         if (Input.GetAxis("Horizontal") >= 0 || Input.GetAxis("Vertical") >= 0) { UpdateCollider(); }
 
@@ -166,7 +167,7 @@ public class PlayerController : MonoBehaviour
             else if (currentDir.y > 0f) //From any state to -> To walk forward stand state
                 actualWalkSpeedZ = Mathf.Lerp(actualWalkSpeedZ, walkSpeedZ, Time.deltaTime * 10f);
 
-            actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, walkSpeedZ, Time.deltaTime * 10f);
+            actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, walkSpeedZ, Time.deltaTime * 50f);
         }
         else if (isRunning && !isCrouched)
         {
@@ -188,8 +189,16 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (limitedMovement) actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, 0.5f);
-        else actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, runSpeedZ);
+        if (limitedMovement)
+        {
+            actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, 0.5f);
+            actualWalkSpeedX = Mathf.Clamp(actualWalkSpeedX, 0, 0.5f);
+        }
+        else
+        {
+            actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, runSpeedZ);
+            actualWalkSpeedX = Mathf.Clamp(actualWalkSpeedX, 0, runSpeedZ);
+        }
     }
 
     private void SetAnimators()
@@ -197,6 +206,7 @@ public class PlayerController : MonoBehaviour
         if (!limitedMovement)
         {
             animator.SetBool("isWalkingZ", isWalkingZ);
+            animator.SetBool("isWalkingX", isWalkingX);
             animator.SetBool("isCrouched", isCrouched); 
 
             animator.SetFloat("VelocityZ", axisZ * actualWalkSpeedZ);
@@ -204,8 +214,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            animator.SetBool("isWalkingZ", isWalkingZ);
+            animator.SetBool("isWalkingX", isWalkingX);
+
             animator.SetFloat("VelocityZ", axisZ * actualWalkSpeedZ * 3.7f);
-            animator.SetFloat("VelocityX", axisX * actualWalkSpeedX * 3.7f);
+            animator.SetFloat("VelocityX", axisX * actualWalkSpeedX * 1.7f);
         }
 
     }
