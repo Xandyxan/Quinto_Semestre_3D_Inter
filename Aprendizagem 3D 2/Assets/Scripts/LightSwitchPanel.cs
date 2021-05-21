@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable
+public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
 {
     [SerializeField] private List<GameObject> shadowZones;
     [SerializeField] private List<GameObject> lightsRealTime;
@@ -14,14 +14,12 @@ public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable
     [Header("Selected")]
 
     [SerializeField] string _objectDescription;
-
-    [SerializeField] bool _isObjectiveObj;
+    [SerializeField] bool _triggerDialogue;
     [SerializeField] int _dialogueIndex;
 
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
-    public bool isObjectiveObj { get => _isObjectiveObj; set => _isObjectiveObj = value; }
     public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
-
+    public bool triggerDialogue { get => _triggerDialogue; set => _triggerDialogue = value; }
     //private Vector3 currentSwitchAngle;
 
     private void Start()

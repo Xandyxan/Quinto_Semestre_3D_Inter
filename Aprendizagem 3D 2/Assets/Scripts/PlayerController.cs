@@ -228,6 +228,7 @@ public class PlayerController : MonoBehaviour
         if (!isCrouched)
         {
             characterController.stepOffset = 0.150f;
+
             characterController.center = new Vector3(0, 0.0775f, 0);
             characterController.radius = 0.03f;
             characterController.height = 0.155f;

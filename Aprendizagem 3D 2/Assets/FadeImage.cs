@@ -17,26 +17,29 @@ public class FadeImage : MonoBehaviour
     [SerializeField] private float intervalTime;
 
     private Image imagem;
-    private GameManager gameManager;
 
+    [SerializeField] bool loadScene;
+    [SerializeField] int sceneIndex;
+
+    bool fadeIn;
     private void Awake()
     {
         imagem = GetComponent<Image>();
-        gameManager = GetComponent<GameManager>();
-
         imagem.color = startColor;
     }
 
     private void Start()
     {
-        StartCoroutine(Fade(durationTime));
+        StartCoroutine(Fade(3f));
     }
 
-    public IEnumerator Fade(float tempoFade) // tava private 🤠
+    public IEnumerator Fade(float tempoFade) // se for true, faz um fade in / se for falso, faz um fade out
     {
+       
         for (float t = 0f; t < tempoFade; t += Time.deltaTime)
         {
             float normalizedTime = t / tempoFade;
+            
             imagem.color = Color.Lerp(startColor, endColor, normalizedTime);
             yield return null;
         }
@@ -52,7 +55,33 @@ public class FadeImage : MonoBehaviour
                 yield return null;
             }
             imagem.color = startColor;
-            gameManager.LoadScene(0);
+           
+           
+        }
+        if (loadScene) { GameManager.instance.LoadScene(sceneIndex); }
+    }
+
+    // Setters
+    public void SetHasNextFade(bool value) { hasNextFade = value; }
+    public void SetIntervalTime(float interval) { interval = intervalTime; }
+    public void SetHasSceneLoad(bool value) { loadScene = value; }
+    public void SetSceneIndex(int index) { sceneIndex = index; }
+
+    public void SetFadeIn(bool value) 
+    { 
+        fadeIn = value;
+        if (fadeIn)
+        {
+            startColor = new Color(imagem.color.r, imagem.color.g, imagem.color.b, 0f);
+            endColor = new Color(imagem.color.r, imagem.color.g, imagem.color.b, 255f);
+            imagem.color = startColor;
+        }
+        else
+        {
+            startColor = new Color(imagem.color.r, imagem.color.g, imagem.color.b, 255f);
+            endColor = new Color(imagem.color.r, imagem.color.g, imagem.color.b, 0f);
+            imagem.color = startColor;
         }
     }
+   
 }

@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_13_MARIANA
   guid: 92c07eea91e0ba4a97ecbcd47cc07d8f
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_07_MARIANA
   guid: 6c722d85efd54e4b9382897413c1d158
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -61,7 +61,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_15_MARIANA
   guid: 32d8facc1ba4904abb7daac4e96b37ad
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -84,7 +84,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_01-02_RAFAELA
   guid: ec0196c9284be941ab8a77dd634b1d13
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -92,6 +92,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 31634
+--- !u!114 &-6928017308712367526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637571329791473541
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1656
+  Exists: 1
 --- !u!114 &-4516753161602854839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +128,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_09_MARIANA
   guid: d81b7ff8d8481043943d5cc0d9c86ce7
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -130,7 +151,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_04_RAFAELA
   guid: 1090f7d06484354194535f4791ff07bd
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -172,7 +193,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_18_RAFAELA
   guid: 15409955723a2742976e198bf7f2ea2f
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -195,7 +216,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_17_MARIANA
   guid: bd86cab8b0aa2c41b88e0a8e08c1f93a
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -218,7 +239,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_08_RAFAELA
   guid: 8995ad41aa62024d83c19862d9cfe738
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -241,7 +262,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_10_RAFAELA
   guid: ee36c5a24c11ea49a9a78ebf4aeaad8f
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -264,7 +285,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO 1/DUB_Jornalista
   guid: b7ffd6624a3e8f43b1e8df19c593e906
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -287,7 +308,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_05_MARIANA
   guid: 71f06814580b3245b76105bd08e7d9e8
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -308,9 +329,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 5238551101844570004}
-  - {fileID: -2099059175515303514}
-  - {fileID: 4936385911879632279}
+  - {fileID: -6928017308712367526}
+  - {fileID: 4283705407920827800}
+  - {fileID: 3241116359376682147}
   EditorEvents:
   - {fileID: -3995625382643112783}
   - {fileID: -1633371645639235802}
@@ -334,10 +355,10 @@ MonoBehaviour:
   - {fileID: -1509890124460391204}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 4936385911879632279}
+  - {fileID: 3241116359376682147}
   StringsBanks:
-  - {fileID: 5238551101844570004}
-  stringsBankWriteTime: 637569896802100759
+  - {fileID: -6928017308712367526}
+  stringsBankWriteTime: 637571329791473541
   cacheVersion: 6
 --- !u!114 &859704140743448655
 MonoBehaviour:
@@ -354,7 +375,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_19_MARIANA
   guid: 4878102e8bce03478fe6def8ef67e575
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -377,7 +398,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_12_RAFAELA
   guid: 678c81b7dd229347b6a1eddc006779d9
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -385,6 +406,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7497
+--- !u!114 &3241116359376682147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637571329791455130
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3593865550376280122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,7 +440,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_11_MARIANA
   guid: ed1e5c14c76f894ea247e7079700269f
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -408,6 +448,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5224
+--- !u!114 &4283705407920827800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dublagens.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Dublagens.bank
+  Name: Dublagens
+  StudioPath: bank:/Dublagens
+  lastModified: 637571329791445226
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4445155519427863453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,7 +482,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_14_RAFAELA
   guid: e01021b0e0266446a4a840cf9dd78eed
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -465,7 +524,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_16_RAFAELA
   guid: 54d14eed51043c4a9c956d80d6bc7fb9
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -509,7 +568,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_20_RAFAELA
   guid: bb039ab2010f9845b40b2621c805076e
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -532,7 +591,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_06_RAFAELA
   guid: 43e98cc9059a4742bff9d4734df581b9
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -555,7 +614,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/DUB_03_MARIANA
   guid: 54e45451aa973e449a35082f8b9e7eea
   Banks:
-  - {fileID: -2099059175515303514}
+  - {fileID: 4283705407920827800}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1

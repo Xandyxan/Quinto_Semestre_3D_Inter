@@ -42,8 +42,8 @@ public class KeepPlayerOnDesiredArea : MonoBehaviour
         {
             Vector3 objectiveDirection = objectivePos - playerViewTransform.position;  // direction = destination - source (tem que ser do pov do jogador)
 
-            print("distance is: " + distanceFromObjective);
-            Debug.DrawRay(playerViewTransform.position, objectiveDirection, Color.green);
+          /// print("distance is: " + distanceFromObjective);
+           // Debug.DrawRay(playerViewTransform.position, objectiveDirection, Color.green);
             Quaternion targetRotation = Quaternion.LookRotation(objectiveDirection);
 
             if (distanceFromObjective > 11.5f)
