@@ -31,6 +31,7 @@ public class DialogueManager2 : MonoBehaviour
         dialogueBox = GameObject.FindGameObjectWithTag("DialogueBox");
         dialogueTextUI = dialogueBox.transform.GetChild(1).GetComponent<Text>();
         characterNameUI = dialogueBox.transform.GetChild(2).GetComponent<Text>();
+       // dialogueBox.gameObject.SetActive(false);
     }
 
     void Start()

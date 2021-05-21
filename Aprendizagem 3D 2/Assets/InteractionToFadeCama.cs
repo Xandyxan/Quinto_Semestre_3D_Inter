@@ -21,7 +21,7 @@ public class InteractionToFadeCama : MonoBehaviour, IFade, ISelectable, IInterac
         fadeScript.SetFadeIn(true);
         fadeScript.SetHasNextFade(false);
         fadeScript.SetHasSceneLoad(true);
-        fadeScript.SetSceneIndex(2);
+        fadeScript.SetSceneIndex(5);
 
         fadeScript.StartCoroutine(fadeScript.Fade( 3f));
     }

@@ -25,6 +25,8 @@ public class PlayerView : MonoBehaviour
     protected float fovZoom = 40f;
     protected float zoomSpeed = 8f;
 
+    private float forceZoomDuration;
+    private bool forceZoomActive;
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
     private bool usingCellphone;
@@ -90,13 +92,13 @@ public class PlayerView : MonoBehaviour
 
     private void HandleZoom()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse1) || forceZoomActive)
         {
             playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, fovZoom, defaultZoomSpeed * Time.deltaTime);
             // make crosshair smaller.
             crosshair.rectTransform.sizeDelta = Vector2.Lerp(crosshair.rectTransform.sizeDelta, new Vector2(chRaio / 2, chRaio / 2), zoomSpeed * Time.deltaTime);
         }
-        else if (playerCamera.fieldOfView != fovDefault)
+        else if (playerCamera.fieldOfView != fovDefault && !forceZoomActive)
         {
             playerCamera.fieldOfView = Mathf.Lerp(playerCamera.fieldOfView, fovDefault, defaultZoomSpeed * Time.deltaTime);
             // return crosshair to bigger size.
@@ -120,4 +122,14 @@ public class PlayerView : MonoBehaviour
     {
         isCrouching = value;
     }
+
+    public IEnumerator ForceZoom(float time)
+    {
+        forceZoomActive = true;
+
+        yield return new WaitForSeconds(time);
+        forceZoomActive = false;
+    }
+
+    
 }

@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GhostDoor : MonoBehaviour
+public class GhostDoor : MonoBehaviour, IInteractable
 {
     private bool conditionCleared = false;
     [SerializeField] private List<Doors> portas;
 
-  
+    [SerializeField] private List<ParticleSystem> particulasLama; // fazer lama esguichar dos moveis enquanto esse evento está rolando
+
+    [SerializeField] private GameObject ursinho;
+
+    [SerializeField] private GameObject Orbe;
     private IEnumerator RemoteOpenDoor()
     {
         // para cada porta, chamar método que faz a porta abrir, esperar alguns segundos e chamar o método novamente, para que a porta feche.
@@ -35,5 +39,21 @@ public class GhostDoor : MonoBehaviour
     public void SetConditionClearedTrue() // evento para terminar
     {
         conditionCleared = true;
+    }
+
+    public void Interact()
+    {
+        StartGhostDoors();
+        Invoke("StartNextEvent", 4f);
+    }
+
+    private void StartNextEvent()
+    {
+        ursinho.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Orbe.gameObject.SetActive(false);
     }
 }

@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: b27e16b6247d9a14f9c2f11bb78850a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,7 +137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: ea51d45696beeac4e8e1c3ebbc2ba025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,7 +216,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: be20118c27119a440a64869c86324df1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -295,7 +295,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: 0d8e3e8f7cc33c94996f5c59f7af3375, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -374,7 +374,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: 0d8e3e8f7cc33c94996f5c59f7af3375, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -485,7 +485,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: ea51d45696beeac4e8e1c3ebbc2ba025, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -564,7 +564,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: 0d8e3e8f7cc33c94996f5c59f7af3375, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -626,7 +626,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 215405821049086928}
-  - component: {fileID: 8398757244830319141}
   - component: {fileID: 8398757244830319138}
   - component: {fileID: 8398757244830319139}
   - component: {fileID: 8398757244830319136}
@@ -656,24 +655,6 @@ Transform:
   m_Father: {fileID: 7261360004644690568}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8398757244830319141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8398757244830319137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771364e46ac528942845cbb499ab67f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectionText: {fileID: 0}
-  objectDescription: "Porta V\xF3"
-  interactionKind: Furniture door
-  isObjectiveObj: 0
-  objectiveManager: {fileID: 0}
-  dialogueIndex: 0
 --- !u!114 &8398757244830319138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -692,10 +673,14 @@ MonoBehaviour:
   desirePositionValue: {x: 0, y: 0, z: 0}
   positionVelocity: 2
   positionOnlyZ: 0
+  dialogue: {fileID: 0}
+  areaTrigger: {fileID: 0}
+  _objectDescription: 
+  _triggerDialogue: 0
+  _dialogueIndex: 0
   isLocked: 1
   keyName: "Chave V\xF3"
-  isObjectiveObj: 1
-  objectiveManager: {fileID: 0}
+  hasDoorDialogue: 0
   doorLocked: 1
   doorUnlocked: 3
 --- !u!65 &8398757244830319139
@@ -788,7 +773,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: de4f00874090f7d4ebf6f5439674313e, type: 3}
+  - {fileID: 2100000, guid: 0d8e3e8f7cc33c94996f5c59f7af3375, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

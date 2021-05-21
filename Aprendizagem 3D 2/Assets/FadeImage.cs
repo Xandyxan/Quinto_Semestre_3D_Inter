@@ -39,7 +39,7 @@ public class FadeImage : MonoBehaviour
         for (float t = 0f; t < tempoFade; t += Time.deltaTime)
         {
             float normalizedTime = t / tempoFade;
-            print(t + "GLUB");
+            
             imagem.color = Color.Lerp(startColor, endColor, normalizedTime);
             yield return null;
         }
