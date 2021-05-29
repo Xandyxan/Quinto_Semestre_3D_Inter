@@ -73,7 +73,7 @@ public class Dialogue : MonoBehaviour
             dialogueSound.StartSound();
             dialogueManager.GetDialogueBox().SetActive(true);
            
-            Cellphone.instance.SetInDialogue(true);
+            if(Cellphone.instance != null) Cellphone.instance.SetInDialogue(true);
 
             _countProvisorio = _countProvisorio / speechs.Length;
 
@@ -93,8 +93,9 @@ public class Dialogue : MonoBehaviour
         dialogueManager.GetDialogueBox().SetActive(false);
         Cellphone.instance.SetInDialogue(false);
 
-        if (nextDialogueScript != null) isSomeDialogueRunning = false; // tava false antes
-        else isSomeDialogueRunning = true; // tava true antes
+        // if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
+        // else isSomeDialogueRunning = false; // tava true antes
+        isSomeDialogueRunning = false;
 
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
         else if(nextDialogueScript == null && restrictCharMovement) { DelayPlayerDuringDialogueOff(); }
