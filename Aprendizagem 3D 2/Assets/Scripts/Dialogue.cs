@@ -23,7 +23,8 @@ public class Dialogue : MonoBehaviour
     [Header("Restrict Character Movement?")]
     [SerializeField] private bool restrictCharMovement;
 
-    [Header("Dialogue Sounds")]
+    [Header("Time to play extra sound")]
+    [SerializeField] bool endSound;
     private PlaySound dialogueSound;
 
     [Header("Other Continuations")]
@@ -59,6 +60,8 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Speech()
     {
+        if(!endSound) dialogueSound.PlayOneShoot();
+
         isSomeDialogueRunning = true;
         if(restrictCharMovement) playerDuringDialogueOn();
 
@@ -99,6 +102,8 @@ public class Dialogue : MonoBehaviour
 
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }
         if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }   
+
+        if(endSound) dialogueSound.PlayOneShoot();
     }
 
     public void RunCoroutine(){ StartCoroutine(SpeechCoroutine()); }

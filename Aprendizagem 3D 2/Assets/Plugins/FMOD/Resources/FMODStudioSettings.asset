@@ -328,10 +328,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   SwitchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
+  HasSourceProject: 1
+  HasPlatforms: 1
   sourceProjectPath: ../../FMOD-LAMA/LAMA.fspro
-  sourceBankPath: Assets/FMOD Assets/Desktop
+  sourceBankPath: ..\..\FMOD-LAMA\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -354,6 +354,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Dublagens
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

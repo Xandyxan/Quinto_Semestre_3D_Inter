@@ -13,6 +13,9 @@ public class PlaySound : MonoBehaviour, ISound
     [SerializeField] private bool _is3dSound;
     [SerializeField] private GameObject _soundSource;
 
+    [Header("Extra sounds?")]
+    [SerializeField] private string extraSoundPath;
+
     private FMOD.Studio.EventInstance sound;
 
     public string soundPath { get => _soundPath; set => _soundPath = value; }
@@ -22,6 +25,7 @@ public class PlaySound : MonoBehaviour, ISound
     {
         if (_soundSource == null) _soundSource = this.gameObject;
         sound = FMODUnity.RuntimeManager.CreateInstance(_soundPath);
+        if (_is3dSound) sound.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(_soundSource));
     }
     private void OnEnable()
     {
@@ -49,5 +53,8 @@ public class PlaySound : MonoBehaviour, ISound
         sound.release();
     }
 
-
+    public void PlayOneShoot()
+    {
+        if(extraSoundPath != "") FMODUnity.RuntimeManager.PlayOneShot(extraSoundPath);
+    }
 }

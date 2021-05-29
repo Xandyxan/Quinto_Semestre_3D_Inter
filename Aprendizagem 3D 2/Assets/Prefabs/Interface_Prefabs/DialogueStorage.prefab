@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7452192731858538415}
   - component: {fileID: 8485123948433352965}
+  - component: {fileID: 1411015263}
   m_Layer: 0
   m_Name: DIA_Rafaela5
   m_TagString: Untagged
@@ -49,11 +50,26 @@ MonoBehaviour:
     tem me relatado mais sobre seus sonhos com a trag\xE9dia. Voc\xEA precisa se
     cuidar meu bem, e \xE9 s\xE9rio, ESCUTE O S\xC9RGIO."
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 4665170873456588466}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 19
+--- !u!114 &1411015263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312223889501642410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_10_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &348999010514352173
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +80,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5499242056452849379}
   - component: {fileID: 1978139339525956467}
+  - component: {fileID: 952394255}
   m_Layer: 0
   m_Name: DIA_Mariana9
   m_TagString: Untagged
@@ -102,11 +119,26 @@ MonoBehaviour:
   - "Com certeza, vai ser \xF3timo! - Mari ri de volta, mas num tom cabisbaixo. -
     Vou ver se relaxo um pouco essa noite pra ficar bem pra amanh\xE3!"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 4962550283875232283}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 9
+--- !u!114 &952394255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348999010514352173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_19_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &441433614866732675
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167550420653500349}
   - component: {fileID: 5223022528659767628}
+  - component: {fileID: 1866200552}
   m_Layer: 0
   m_Name: DIA_Rafaela4
   m_TagString: Untagged
@@ -155,11 +188,26 @@ MonoBehaviour:
   - "Bom, voc\xEA precisa explicar pra ele toda a situa\xE7\xE3o, o S\xE9rgio precisa
     te arranjar uma solu\xE7\xE3o mais vi\xE1vel ent\xE3o."
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 5937216854340635417}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 8
+--- !u!114 &1866200552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441433614866732675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_08_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &470348625113096013
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3651631114905406907}
   - component: {fileID: 6696040330116048843}
+  - component: {fileID: 109112253}
   m_Layer: 0
   m_Name: DIA_Mariana3
   m_TagString: Untagged
@@ -207,11 +256,26 @@ MonoBehaviour:
   speechs:
   - Sim.
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 441433614866732675}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 1
+--- !u!114 &109112253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470348625113096013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_07_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &902934758637675372
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,6 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7705048612264066367}
   - component: {fileID: 5269347952823732063}
+  - component: {fileID: 409283440}
   m_Layer: 0
   m_Name: DIA_Mariana6
   m_TagString: Untagged
@@ -259,11 +324,26 @@ MonoBehaviour:
   speechs:
   - Isso, isso mesmo.
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 4138842873517737027}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 3
+--- !u!114 &409283440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902934758637675372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_13_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &1348411196360213534
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2750184077126011714}
   - component: {fileID: 4775451407741562748}
+  - component: {fileID: 1728267331}
   m_Layer: 0
   m_Name: DIA_Rafaela1
   m_TagString: Untagged
@@ -309,14 +390,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Rafaela
   speechs:
-  - "Mariana, respira! Conta comigo! Um, dois, tr\xEAs, quatro, cinco! Respira fundo!"
+  - "Mariana, respira! Conta comigo! Um, dois, tr\xEAs, quatro, cinco! Respira fundo!
+    Como voc\xEA est\xE1 se sentindo? Ainda t\xE1 a\xED? Al\xF4?"
   - "Como voc\xEA est\xE1 se sentindo? Ainda t\xE1 a\xED? Al\xF4?"
   onlyOnce: 1
   nextDialogue: {fileID: 5710165590205669418}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 28
+--- !u!114 &1728267331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348411196360213534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_01-02_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &1443244106432965044
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,6 +424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3453647172042766305}
   - component: {fileID: 1585728200671522951}
+  - component: {fileID: 856720026}
   m_Layer: 0
   m_Name: DIA_Rafaela2
   m_TagString: Untagged
@@ -366,11 +464,26 @@ MonoBehaviour:
     me passou o diagn\xF3stico e o seu \"ah, vou simplesmente parar com os rem\xE9dios
     de agora\" n\xE3o vai ajudar em nada. E voc\xEA sabe disso."
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 7623227118341386124}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 17
+--- !u!114 &856720026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443244106432965044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &3784139674852486872
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,6 +494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 617604056219700329}
   - component: {fileID: 8769784155477216678}
+  - component: {fileID: 2011731818}
   m_Layer: 0
   m_Name: DIA_Rafaela8
   m_TagString: Untagged
@@ -419,11 +533,26 @@ MonoBehaviour:
   - "Beleza ent\xE3o Mari! Bom, o nosso tempo j\xE1 esgotou tem uns 5 minutinhos,
     eu preciso ir saindo!"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 4313677709299733558}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 8.5
+--- !u!114 &2011731818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3784139674852486872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_16_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &4062964412881496779
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - {fileID: 4775451407741562748}
-  hasInitialDialogue: 0
+  hasInitialDialogue: 1
   initialDialogue: 0
   hasDelayInitialDialogue: 0
   delayTime: 0
@@ -502,6 +631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 747079839111607982}
   - component: {fileID: 5248336823246886546}
+  - component: {fileID: 1375585161}
   m_Layer: 0
   m_Name: DIA_Rafaela7
   m_TagString: Untagged
@@ -540,11 +670,26 @@ MonoBehaviour:
   - "T\xE1 bom! \xC9 legal que a gente v\xE1 se falando enquanto voc\xEA estiver
     l\xE1!"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 8639244934623942584}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 6
+--- !u!114 &1375585161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138842873517737027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_14_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &4313677709299733558
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 526596883882935653}
   - component: {fileID: 451588246546810203}
+  - component: {fileID: 281403044}
   m_Layer: 0
   m_Name: DIA_Mariana8
   m_TagString: Untagged
@@ -593,11 +739,26 @@ MonoBehaviour:
   - "Sem problemas Rafa. Muito obrigado pela sess\xE3o, foi \xF3tima! Prometo que
     vou tentar fazer o melhor nos pr\xF3ximos dias!"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 5732089225994158748}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 10
+--- !u!114 &281403044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4313677709299733558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_17_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &4665170873456588466
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3652241913331651259}
   - component: {fileID: 8735141437969826295}
+  - component: {fileID: 457745927}
   m_Layer: 0
   m_Name: DIA_Mariana5
   m_TagString: Untagged
@@ -645,11 +807,26 @@ MonoBehaviour:
   speechs:
   - Vou tentar Rafa, juro que vou tentar.
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 5880722535007843271}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 5
+--- !u!114 &457745927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4665170873456588466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_11_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &4962550283875232283
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200538368851761104}
   - component: {fileID: 8287275746510487988}
+  - component: {fileID: 1760332203}
   m_Layer: 0
   m_Name: DIA_Rafaela10
   m_TagString: Untagged
@@ -701,7 +879,22 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 3
+--- !u!114 &1760332203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4962550283875232283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_20_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &5189382877763071749
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5068921562395865817}
   - component: {fileID: 6294220434743653333}
+  - component: {fileID: 2097808538}
   m_Layer: 0
   m_Name: DIA_Rafaela3
   m_TagString: Untagged
@@ -752,11 +946,26 @@ MonoBehaviour:
     isso \xE9 algo que voc\xEA precisa tratar com o seu psiquiatra urgente, sua pr\xF3xima
     consulta com ele acontece daqui duas semanas, n\xE9?"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 470348625113096013}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 23
+--- !u!114 &2097808538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5189382877763071749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_06_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &5710165590205669418
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5247924921787395301}
   - component: {fileID: 7267141702130301182}
+  - component: {fileID: 1434321665}
   m_Layer: 0
   m_Name: DIA_Mariana1
   m_TagString: Untagged
@@ -804,11 +1014,26 @@ MonoBehaviour:
   speechs:
   - Oi Rafa, desculpa. To me sentindo um pouco melhor sim.
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 1443244106432965044}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 6
+--- !u!114 &1434321665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5710165590205669418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_03_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &5732089225994158748
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +1044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2508411251279010283}
   - component: {fileID: 4542282568816241774}
+  - component: {fileID: 1755241827}
   m_Layer: 0
   m_Name: DIA_Rafaela9
   m_TagString: Untagged
@@ -858,11 +1084,26 @@ MonoBehaviour:
     internet vai estar melhor e podemos fazer a chamada em v\xEDdeo, t\xE1 bom? -
     ela finaliza com uma risadinha"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 348999010514352173}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 10
+--- !u!114 &1755241827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5732089225994158748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_18_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &5880722535007843271
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +1114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6166996838143757130}
   - component: {fileID: 3853288131465903455}
+  - component: {fileID: 796259685}
   m_Layer: 0
   m_Name: DIA_Rafaela6
   m_TagString: Untagged
@@ -911,11 +1153,26 @@ MonoBehaviour:
   - "Espero de verdade que voc\xEA tente! Ali\xE1s, j\xE1 que voc\xEA tocou no assunto,
     voc\xEA volta pra Brumadinho amanh\xE3 n\xE9?"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 902934758637675372}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 7
+--- !u!114 &796259685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880722535007843271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_12_RAFAELA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
 --- !u!1 &5937216854340635417
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +1183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8114825354256709377}
   - component: {fileID: 1833576303759168837}
+  - component: {fileID: 509404198}
   m_Layer: 0
   m_Name: DIA_Mariana4
   m_TagString: Untagged
@@ -964,11 +1222,26 @@ MonoBehaviour:
   - "Ser\xE1 que eu vou ficar bem, Rafa? Fiquei bem mexida quando recebi a not\xEDcia,
     acho que nenhum rem\xE9dio pode me ajudar mais."
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 312223889501642410}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 11
+--- !u!114 &509404198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937216854340635417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_09_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &7623227118341386124
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320781164949309731}
   - component: {fileID: 5652370413996982243}
+  - component: {fileID: 560074122}
   m_Layer: 0
   m_Name: DIA_Mariana2
   m_TagString: Untagged
@@ -1019,11 +1293,26 @@ MonoBehaviour:
     n\xE3o fazem mais o efeito esperado, eu n\xE3o me sinto melhor. N\xE3o estou
     fazendo por maldade. Poxa Rafa, voc\xEA sabe. "
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 5189382877763071749}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 17
+--- !u!114 &560074122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623227118341386124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_05_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
 --- !u!1 &7840420860673134437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1365,7 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420860745243769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1417,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420860774216694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,7 +1470,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420860905992503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,7 +1555,7 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420861457138962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1320,7 +1609,7 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420861474140879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1724,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!114 &154338279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1448,7 +1737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: event:/DUBLAGENS/DUBS_SONHO 1/DUB_Jornalista
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO 1/SONHO1_DUB_Jornalista
   _is3dSound: 1
   _soundSource: {fileID: 0}
 --- !u!1 &7840420861616053214
@@ -1502,7 +1791,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 7840420862424236621}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420861723852832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,7 +1847,7 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420861850201539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1901,7 @@ MonoBehaviour:
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420862229618658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,7 +2014,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420862424236621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,7 +2066,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420862635972430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +2118,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &7840420862653766512
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,7 +2170,7 @@ MonoBehaviour:
   restrictCharMovement: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 0
 --- !u!1 &8639244934623942584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,6 +2181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496967450751264007}
   - component: {fileID: 261314282924635760}
+  - component: {fileID: 314132364}
   m_Layer: 0
   m_Name: DIA_Mariana7
   m_TagString: Untagged
@@ -1929,8 +2219,23 @@ MonoBehaviour:
   speechs:
   - Beleza, eu vou te mandando mensagem quando eu sentir que preciso!
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 3784139674852486872}
   restrictCharMovement: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  tutorialCrouch: {fileID: 0}
+  _countProvisorio: 5
+--- !u!114 &314132364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8639244934623942584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_15_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
