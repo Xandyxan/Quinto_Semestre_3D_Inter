@@ -5,12 +5,13 @@ using UnityEngine;
 public class InitialMessagesSetup : MonoBehaviour
 {
     private MessageTrigger initialMessagesTrigger;
+    [SerializeField] private float delayMessages = 5;
 
     // Start is called before the first frame update
     void Start()
     {
         initialMessagesTrigger = GetComponent<MessageTrigger>();
-        Invoke("StartSetup", 5f);                                    //tempo até terminar o monólogo inicial
+        Invoke("StartSetup", delayMessages);                                    //tempo até terminar o monólogo inicial
     }
 
     private void StartSetup()

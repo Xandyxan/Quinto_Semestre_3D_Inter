@@ -7,6 +7,8 @@ public class Mission2InteractionAddCount : MonoBehaviour
 
     private Mission2InteractionCounter interactionCounter;
 
+    [SerializeField] bool isDoorLockedObj;
+
     private void Awake()
     {
         interactionCounter = FindObjectOfType<Mission2InteractionCounter>();
@@ -14,8 +16,13 @@ public class Mission2InteractionAddCount : MonoBehaviour
 
     public void AddCount()
     {
-        print("ADICIONOU");
-        interactionCounter.AddInteractionCount();
+        if(isDoorLockedObj) { interactionCounter.AddDoorLockedInteractionCount(); } 
+        else
+        {
+            print("ADICIONOU");
+            interactionCounter.AddInteractionCount();
+           
+        }
         this.enabled = false;
     }
 
