@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8485123948433352965}
   - component: {fileID: 1411015263}
   m_Layer: 0
-  m_Name: DIA_Rafaela5
+  m_Name: INT_10_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,9 +52,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 4665170873456588466}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 19
+  _countProvisorio: 20
 --- !u!114 &1411015263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,6 +71,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_10_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &348999010514352173
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +84,7 @@ GameObject:
   - component: {fileID: 1978139339525956467}
   - component: {fileID: 952394255}
   m_Layer: 0
-  m_Name: DIA_Mariana9
+  m_Name: INT_19_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,9 +123,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 4962550283875232283}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 9
+  _countProvisorio: 9.75
 --- !u!114 &952394255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +142,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_19_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &441433614866732675
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +155,7 @@ GameObject:
   - component: {fileID: 5223022528659767628}
   - component: {fileID: 1866200552}
   m_Layer: 0
-  m_Name: DIA_Rafaela4
+  m_Name: INT_08_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,9 +194,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 5937216854340635417}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 8
+  _countProvisorio: 9
 --- !u!114 &1866200552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +213,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_08_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &470348625113096013
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +226,7 @@ GameObject:
   - component: {fileID: 6696040330116048843}
   - component: {fileID: 109112253}
   m_Layer: 0
-  m_Name: DIA_Mariana3
+  m_Name: INT_07_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,9 +264,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 441433614866732675}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 1
+  _countProvisorio: 1.5
 --- !u!114 &109112253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +283,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_07_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &902934758637675372
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +296,7 @@ GameObject:
   - component: {fileID: 5269347952823732063}
   - component: {fileID: 409283440}
   m_Layer: 0
-  m_Name: DIA_Mariana6
+  m_Name: INT_13_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,9 +334,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 4138842873517737027}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 3
+  _countProvisorio: 4
 --- !u!114 &409283440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +353,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_13_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &1348411196360213534
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +366,7 @@ GameObject:
   - component: {fileID: 4775451407741562748}
   - component: {fileID: 1728267331}
   m_Layer: 0
-  m_Name: DIA_Rafaela1
+  m_Name: INT_01-02_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,9 +406,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 5710165590205669418}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 28
+  _countProvisorio: 29
 --- !u!114 &1728267331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +425,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_01-02_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: event:/SFX/SFX_INTRODUCAO/SFX_RESPIRA_MARIANA
 --- !u!1 &1443244106432965044
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +438,7 @@ GameObject:
   - component: {fileID: 1585728200671522951}
   - component: {fileID: 856720026}
   m_Layer: 0
-  m_Name: DIA_Rafaela2
+  m_Name: INT_04_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,9 +478,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 7623227118341386124}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 17
+  _countProvisorio: 18
 --- !u!114 &856720026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,6 +497,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &3784139674852486872
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +510,7 @@ GameObject:
   - component: {fileID: 8769784155477216678}
   - component: {fileID: 2011731818}
   m_Layer: 0
-  m_Name: DIA_Rafaela8
+  m_Name: INT_16_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,9 +549,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 4313677709299733558}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 8.5
+  _countProvisorio: 9.25
 --- !u!114 &2011731818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,6 +568,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_16_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &4062964412881496779
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +580,7 @@ GameObject:
   - component: {fileID: 5922479188037894438}
   - component: {fileID: 4062964412881496778}
   m_Layer: 0
-  m_Name: Dialogues_InitialMariHouse
+  m_Name: Dialogues_IntroductionlMariHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -619,8 +635,8 @@ MonoBehaviour:
   - {fileID: 4775451407741562748}
   hasInitialDialogue: 1
   initialDialogue: 0
-  hasDelayInitialDialogue: 0
-  delayTime: 0
+  hasDelayInitialDialogue: 1
+  delayTime: 1
 --- !u!1 &4138842873517737027
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +649,7 @@ GameObject:
   - component: {fileID: 5248336823246886546}
   - component: {fileID: 1375585161}
   m_Layer: 0
-  m_Name: DIA_Rafaela7
+  m_Name: INT_14_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,9 +688,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 8639244934623942584}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 6
+  _countProvisorio: 6.75
 --- !u!114 &1375585161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,6 +707,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_14_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &4313677709299733558
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,7 +720,7 @@ GameObject:
   - component: {fileID: 451588246546810203}
   - component: {fileID: 281403044}
   m_Layer: 0
-  m_Name: DIA_Mariana8
+  m_Name: INT_17_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,9 +759,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 5732089225994158748}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 10
+  _countProvisorio: 10.75
 --- !u!114 &281403044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,6 +778,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_17_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &4665170873456588466
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +791,7 @@ GameObject:
   - component: {fileID: 8735141437969826295}
   - component: {fileID: 457745927}
   m_Layer: 0
-  m_Name: DIA_Mariana5
+  m_Name: INT_11_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,9 +829,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 5880722535007843271}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 5
+  _countProvisorio: 6
 --- !u!114 &457745927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +848,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_11_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &4962550283875232283
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,7 +861,7 @@ GameObject:
   - component: {fileID: 8287275746510487988}
   - component: {fileID: 1760332203}
   m_Layer: 0
-  m_Name: DIA_Rafaela10
+  m_Name: INT_20_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -877,9 +899,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 1
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 3
+  _countProvisorio: 3.75
 --- !u!114 &1760332203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -895,6 +918,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_20_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: event:/SFX/SFX_INTRODUCAO/SFX_BOCEJO_MARIANA
 --- !u!1 &5189382877763071749
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +931,7 @@ GameObject:
   - component: {fileID: 6294220434743653333}
   - component: {fileID: 2097808538}
   m_Layer: 0
-  m_Name: DIA_Rafaela3
+  m_Name: INT_06_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -948,9 +972,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 470348625113096013}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 23
+  _countProvisorio: 24
 --- !u!114 &2097808538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -966,6 +991,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_06_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &5710165590205669418
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +1004,7 @@ GameObject:
   - component: {fileID: 7267141702130301182}
   - component: {fileID: 1434321665}
   m_Layer: 0
-  m_Name: DIA_Mariana1
+  m_Name: INT_03_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1016,9 +1042,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 1443244106432965044}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 6
+  _countProvisorio: 7
 --- !u!114 &1434321665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,6 +1061,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_03_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &5732089225994158748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1074,7 @@ GameObject:
   - component: {fileID: 4542282568816241774}
   - component: {fileID: 1755241827}
   m_Layer: 0
-  m_Name: DIA_Rafaela9
+  m_Name: INT_18_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1086,9 +1114,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 348999010514352173}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 10
+  _countProvisorio: 10.75
 --- !u!114 &1755241827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +1133,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_18_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &5880722535007843271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1146,7 @@ GameObject:
   - component: {fileID: 3853288131465903455}
   - component: {fileID: 796259685}
   m_Layer: 0
-  m_Name: DIA_Rafaela6
+  m_Name: INT_12_RAFAELA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1155,9 +1185,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 902934758637675372}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 7
+  _countProvisorio: 8
 --- !u!114 &796259685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,6 +1204,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_12_RAFAELA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &5937216854340635417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1217,7 @@ GameObject:
   - component: {fileID: 1833576303759168837}
   - component: {fileID: 509404198}
   m_Layer: 0
-  m_Name: DIA_Mariana4
+  m_Name: INT_09_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,9 +1256,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 312223889501642410}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 11
+  _countProvisorio: 12
 --- !u!114 &509404198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1242,6 +1275,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_09_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7623227118341386124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,7 +1288,7 @@ GameObject:
   - component: {fileID: 5652370413996982243}
   - component: {fileID: 560074122}
   m_Layer: 0
-  m_Name: DIA_Mariana2
+  m_Name: INT_05_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1295,9 +1329,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 5189382877763071749}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 17
+  _countProvisorio: 18
 --- !u!114 &560074122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1313,6 +1348,7 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_05_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420860673134437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1399,7 @@ MonoBehaviour:
   onlyOnce: 0
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 0
@@ -1376,8 +1413,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420860745243768}
   - component: {fileID: 7840420860745243771}
+  - component: {fileID: 4300333272448208640}
   m_Layer: 0
-  m_Name: DIA_Mariana2
+  m_Name: SONHO-1_DUB_3_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,9 +1453,26 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 7840420862331575371}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 3
+--- !u!114 &4300333272448208640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860745243769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_3_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420860774216694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,8 +1483,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420860774216697}
   - component: {fileID: 7840420860774216696}
+  - component: {fileID: 6013297962259486609}
   m_Layer: 0
-  m_Name: DIA_Mariana3
+  m_Name: SONHO-1_DUB_5_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1464,13 +1520,29 @@ MonoBehaviour:
   characterName: Mariana
   speechs:
   - Eu vou te achar!
-  - "Ser\xE1 que ela se escondeu dentro de algum m\xF3vel? "
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 7840420862635972430}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 1.5
+--- !u!114 &6013297962259486609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420860774216694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_5_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420860905992503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1553,6 +1625,7 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 0
@@ -1607,6 +1680,7 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 0
@@ -1626,7 +1700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7840420861474140878
 Transform:
   m_ObjectHideFlags: 0
@@ -1679,7 +1753,7 @@ GameObject:
   - component: {fileID: 7840420861571212689}
   - component: {fileID: 154338279}
   m_Layer: 0
-  m_Name: DIA_Televisao
+  m_Name: SONHO-1_DUB_JORNALISTA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1722,9 +1796,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 28
 --- !u!114 &154338279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1737,9 +1812,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundPath: event:/DUBLAGENS/DUBS_SONHO 1/SONHO1_DUB_Jornalista
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_JORNALISTA
   _is3dSound: 1
   _soundSource: {fileID: 0}
+  extraSoundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_Choro_MARIANA
 --- !u!1 &7840420861616053214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,8 +1826,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420861616053185}
   - component: {fileID: 7840420861616053184}
+  - component: {fileID: 329003526456386830}
   m_Layer: 0
-  m_Name: DIA_Mariana1
+  m_Name: SONHO-1_DUB_1_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1789,9 +1866,26 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 7840420862424236621}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 7840420862424236621}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 3
+--- !u!114 &329003526456386830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420861616053214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_1_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420861723852832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1939,7 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 0
@@ -1899,6 +1994,7 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 0}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 0
@@ -1913,12 +2009,12 @@ GameObject:
   - component: {fileID: 7840420862229618661}
   - component: {fileID: 7840420862229618660}
   m_Layer: 0
-  m_Name: Dialogues_1_Sonho
+  m_Name: Dialogues_Sonho-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7840420862229618661
 Transform:
   m_ObjectHideFlags: 0
@@ -1935,8 +2031,8 @@ Transform:
   - {fileID: 7840420860745243768}
   - {fileID: 7840420862331575370}
   - {fileID: 7840420860774216697}
-  - {fileID: 7840420862653766515}
   - {fileID: 7840420862635972465}
+  - {fileID: 7840420862653766515}
   - {fileID: 7840420861571211886}
   m_Father: {fileID: 7840420860905992496}
   m_RootOrder: 2
@@ -1960,8 +2056,8 @@ MonoBehaviour:
   - {fileID: 7840420861571212689}
   hasInitialDialogue: 0
   initialDialogue: 0
-  hasDelayInitialDialogue: 0
-  delayTime: 0
+  hasDelayInitialDialogue: 1
+  delayTime: 2
 --- !u!1 &7840420862331575371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,8 +2068,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420862331575370}
   - component: {fileID: 7840420862331575373}
+  - component: {fileID: 3265965909107161711}
   m_Layer: 0
-  m_Name: DIA_Silvana2
+  m_Name: SONHO-1_DUB_4_SILVANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2012,9 +2109,26 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 7840420860774216694}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 10
+--- !u!114 &3265965909107161711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862331575371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_4_SILVANA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420862424236621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,8 +2139,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420862424236620}
   - component: {fileID: 7840420862424236623}
+  - component: {fileID: 6506749024589658883}
   m_Layer: 0
-  m_Name: DIA_Silvana1
+  m_Name: SONHO-1_DUB_2_SILVANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2064,9 +2179,26 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 7840420860745243769}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 6.5
+--- !u!114 &6506749024589658883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862424236621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_2_SILVANA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420862635972430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,8 +2209,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420862635972465}
   - component: {fileID: 7840420862635972464}
+  - component: {fileID: 3862165796888828595}
   m_Layer: 0
-  m_Name: DIA_Mariana4
+  m_Name: SONHO-1_DUB_6_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2096,7 +2229,7 @@ Transform:
   m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
   m_Children: []
   m_Father: {fileID: 7840420862229618661}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7840420862635972464
 MonoBehaviour:
@@ -2112,13 +2245,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterName: Mariana
   speechs:
-  - "Eu acho que n\xE3o deveria sair agora..."
+  - "Ser\xE1 que ela se escondeu dentro de algum m\xF3vel? "
   onlyOnce: 0
   nextDialogue: {fileID: 0}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 2.6
+--- !u!114 &3862165796888828595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862635972430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_6_MARIANA
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &7840420862653766512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,8 +2279,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7840420862653766515}
   - component: {fileID: 7840420862653766514}
+  - component: {fileID: 3579298426711787615}
   m_Layer: 0
-  m_Name: DIA_Silvana3
+  m_Name: SONHO-1_DUB_7_SILVANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2148,7 +2299,7 @@ Transform:
   m_LocalScale: {x: 1.1834898, y: 1.1834898, z: 1.1834898}
   m_Children: []
   m_Father: {fileID: 7840420862229618661}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7840420862653766514
 MonoBehaviour:
@@ -2168,9 +2319,26 @@ MonoBehaviour:
   onlyOnce: 0
   nextDialogue: {fileID: 0}
   restrictCharMovement: 1
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 0
+  _countProvisorio: 7.2
+--- !u!114 &3579298426711787615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7840420862653766512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_7_SILVANA
+  _is3dSound: 1
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &8639244934623942584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2351,7 @@ GameObject:
   - component: {fileID: 261314282924635760}
   - component: {fileID: 314132364}
   m_Layer: 0
-  m_Name: DIA_Mariana7
+  m_Name: INT_15_MARIANA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2221,9 +2389,10 @@ MonoBehaviour:
   onlyOnce: 1
   nextDialogue: {fileID: 3784139674852486872}
   restrictCharMovement: 0
+  endSound: 0
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
-  _countProvisorio: 5
+  _countProvisorio: 5.75
 --- !u!114 &314132364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,3 +2408,4 @@ MonoBehaviour:
   _soundPath: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_15_MARIANA
   _is3dSound: 0
   _soundSource: {fileID: 0}
+  extraSoundPath: 

@@ -60,7 +60,7 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Speech()
     {
-        if(!endSound) dialogueSound.PlayOneShoot();
+        if(!endSound) if(dialogueSound != null) dialogueSound.PlayOneShoot();
 
         isSomeDialogueRunning = true;
         if(restrictCharMovement) playerDuringDialogueOn();
