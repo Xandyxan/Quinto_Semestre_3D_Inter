@@ -12,11 +12,17 @@ public class Mission2InteractionCounter : MonoBehaviour
     public static Mission2InteractionCounter instance { get { return _instance; } }
     #endregion
 
-    private int interactions; // contador de interações
+    private int interactions, doorLokedInteractions; // contador de interações
+
     [Header("Condition")]
     [SerializeField] private int requiredInteractions;
     [Header("Dialogue")]
+    [SerializeField] private int startSearchDialogueIndex;
     [SerializeField] private int bubuNotFoundDialogueIndex;
+    [SerializeField] private int cadeAChaveDialogueIndex;
+    [SerializeField] private int dialogueTaSujoIndex;
+    [SerializeField] private int dialogueAulasIndex;
+
     private DialogueManager2 objectiveManager;
     private void Awake()
     {
@@ -41,9 +47,34 @@ public class Mission2InteractionCounter : MonoBehaviour
         {
             print("CADE ELE?");
             objectiveManager.ExecuteDialogue(bubuNotFoundDialogueIndex);
-            this.enabled = false;
         }
     }
 
+    public void AddDoorLockedInteractionCount()
+    {
+        doorLokedInteractions++;
+
+        if (doorLokedInteractions >= 2)
+        {
+            print("CADE ELE?");
+            Invoke("ExecuteDialogueChave", 3f);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        objectiveManager.ExecuteDialogue(startSearchDialogueIndex);
+        if (PlayerPrefs.HasKey("Bubu")) { objectiveManager.ExecuteDialogue(dialogueTaSujoIndex); }
+        if(PlayerPrefs.HasKey("Aula")) 
+        { 
+            objectiveManager.ExecuteDialogue(dialogueAulasIndex);
+            PlayerPrefs.DeleteKey("Aula");
+        }
+    }
+
+    private void ExecuteDialogueChave()
+    {
+        objectiveManager.ExecuteDialogue(cadeAChaveDialogueIndex);
+    }
 
 }
