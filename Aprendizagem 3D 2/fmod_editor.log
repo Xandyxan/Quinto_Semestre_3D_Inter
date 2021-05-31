@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001ED026F39A8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000201C2F1E298 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,29 +15,18 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (000001ED01D691F8)
-[LOG] SoundI::release                          :     SONHO-1_DUB_1_MARIANA (000001EC472B9DF8)
-[LOG] SoundI::release                          :  (000001ED01D6AEB8)
-[LOG] SoundI::release                          :     SONHO-1_DUB_2_SILVANA (000001EC472C77B8)
-[LOG] SoundI::release                          :  (000001ED01D6E558)
-[LOG] SoundI::release                          :     SONHO-1_DUB_3_MARIANA (000001EC472CB578)
-[LOG] SoundI::release                          :  (000001ED01D6A618)
-[LOG] SoundI::release                          :     SONHO-1_DUB_4_SILVANA (000001EC472BE238)
-[LOG] SoundI::release                          :  (000001ED01D69928)
-[LOG] SoundI::release                          :     SONHO-1_DUB_JORNALISTA (000001EC472BEF38)
-[LOG] SoundI::release                          :  (000001ED01D6AA68)
-[LOG] SoundI::release                          :     SONHO-1_DUB_5_MARIANA (000001EC472C7FD8)
-[LOG] SoundI::release                          :  (000001ED01D6BBA8)
-[LOG] SoundI::release                          :     SONHO-1_DUB_6_MARIANA (000001EC472B8C18)
-[LOG] SoundI::release                          :  (000001ED01D6E6C8)
-[LOG] SoundI::release                          :     SONHO-1_DUB_7_SILVANA (000001EC472BDD58)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
