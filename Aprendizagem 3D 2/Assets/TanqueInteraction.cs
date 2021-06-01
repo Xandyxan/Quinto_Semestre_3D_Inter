@@ -16,6 +16,7 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
     private DialogueManager2 objectiveManager;
 
     [SerializeField] private TriggerUpdateMensagem triggerUpdateMensagem;
+    [SerializeField] private Material skyTarde;
     void Awake()
     {
         fadeScript = FindObjectOfType<FadeImage>();
@@ -56,6 +57,7 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
         PlayerPrefs.DeleteKey(itemTag);
         triggerUpdateMensagem.UpdateContactMessages();
         PlayerPrefs.SetInt("Aula", 1);
+        RenderSettings.skybox = skyTarde;
     }
 
    
