@@ -37,9 +37,11 @@ public class CercadinhoSujoFade : MonoBehaviour,IFade
     private IEnumerator TriggerMudShot()
     {
         yield return new WaitForSeconds(5);
-        print("Borbulhando");
+      //  print("Borbulhando");
+        mudBubbles.Play();
         yield return new WaitForSeconds(2);
-        print("Jato de lama");
+       // print("Jato de lama");
+        mudShot.Play();
         yield return new WaitForSeconds(1f);
         Fade();
         yield return null;

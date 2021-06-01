@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+
 --- !u!114 &-9004443558145475736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,6 +706,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 310
 --- !u!114 &-3689890854110715893
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -716,6 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
   m_EditorClassIdentifier: 
+
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
   guid: 1090f7d06484354194535f4791ff07bd
   Banks:
@@ -2577,3 +2580,4 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8047
+

@@ -60,6 +60,7 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Speech()
     {
+
         if(!endSound) if(dialogueSound != null) dialogueSound.PlayOneShoot();
 
         isSomeDialogueRunning = true;
@@ -87,14 +88,14 @@ public class Dialogue : MonoBehaviour
             if (onlyOnce) alreadyExecuted = true;
             
         }
-        if(dialogueSound != null)
-        dialogueSound.StopSound();
+       if(dialogueSound != null)
+       dialogueSound.StopSound();
 
         dialogueManager.GetDialogueBox().SetActive(false);
         Cellphone.instance.SetInDialogue(false);
 
-        // if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
-        // else isSomeDialogueRunning = false; // tava true antes
+         if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
+         else isSomeDialogueRunning = false; // tava true antes
         isSomeDialogueRunning = false;
 
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }

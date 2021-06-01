@@ -22,8 +22,12 @@ public class Mission2InteractionCounter : MonoBehaviour
     [SerializeField] private int cadeAChaveDialogueIndex;
     [SerializeField] private int dialogueTaSujoIndex;
     [SerializeField] private int dialogueAulasIndex;
+    [SerializeField] private int dialogueBubuSecaIndex;
+    [SerializeField] private int dialogueMimirIndex;
+
 
     private DialogueManager2 objectiveManager;
+    [SerializeField] private NotebookInteraction noteMari;
     private void Awake()
     {
         if (_instance != null && _instance != this)
@@ -36,6 +40,10 @@ public class Mission2InteractionCounter : MonoBehaviour
         }
 
         objectiveManager = FindObjectOfType<DialogueManager2>();
+        PlayerPrefs.DeleteKey("BubuSeca");
+        PlayerPrefs.DeleteKey("Aula");
+        PlayerPrefs.DeleteKey("Bubu");
+        PlayerPrefs.DeleteKey("Mimir");
     }
 
 
@@ -69,6 +77,17 @@ public class Mission2InteractionCounter : MonoBehaviour
         { 
             objectiveManager.ExecuteDialogue(dialogueAulasIndex);
             PlayerPrefs.DeleteKey("Aula");
+            noteMari.SetCanInteractTrue();
+        }
+        if(PlayerPrefs.HasKey("BubuSeca")) 
+        { 
+            objectiveManager.ExecuteDialogue(dialogueBubuSecaIndex);
+            PlayerPrefs.DeleteKey("BubuSeca");
+        }
+        if (PlayerPrefs.HasKey("Mimir"))
+        {
+            objectiveManager.ExecuteDialogue(dialogueMimirIndex);
+           
         }
     }
 
