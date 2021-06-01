@@ -24,8 +24,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private bool restrictCharMovement;
 
     [Header("Time to play extra sound")]
-   // [SerializeField] bool endSound;
-   // private PlaySound dialogueSound;
+    [SerializeField] bool endSound;
+    private PlaySound dialogueSound;
 
     [Header("Other Continuations")]
     [SerializeField] private GameObject postProcessEffect;
@@ -44,7 +44,7 @@ public class Dialogue : MonoBehaviour
     private void Awake()
     {
         dialogueManager = GetComponentInParent<DialogueManager2>();
-       // dialogueSound = GetComponent<PlaySound>();
+        dialogueSound = GetComponent<PlaySound>();
         instance = this;
 
             
@@ -60,7 +60,8 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Speech()
     {
-       // if(!endSound) dialogueSound.PlayOneShoot();
+
+        if(!endSound) if(dialogueSound != null) dialogueSound.PlayOneShoot();
 
         isSomeDialogueRunning = true;
         if(restrictCharMovement) playerDuringDialogueOn();
@@ -69,8 +70,8 @@ public class Dialogue : MonoBehaviour
 
         if (!alreadyExecuted)
         {
-          //  if(dialogueSound != null)
-           // dialogueSound.StartSound();
+            if(dialogueSound != null)
+            dialogueSound.StartSound();
             dialogueManager.GetDialogueBox().SetActive(true);
            
             if(Cellphone.instance != null) Cellphone.instance.SetInDialogue(true);
@@ -87,14 +88,14 @@ public class Dialogue : MonoBehaviour
             if (onlyOnce) alreadyExecuted = true;
             
         }
-      //  if(dialogueSound != null)
-      //  dialogueSound.StopSound();
+       if(dialogueSound != null)
+       dialogueSound.StopSound();
 
         dialogueManager.GetDialogueBox().SetActive(false);
         Cellphone.instance.SetInDialogue(false);
 
-        // if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
-        // else isSomeDialogueRunning = false; // tava true antes
+         if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
+         else isSomeDialogueRunning = false; // tava true antes
         isSomeDialogueRunning = false;
 
         if (nextDialogueScript != null) { nextDialogueScript.RunCoroutine(); }
@@ -104,7 +105,7 @@ public class Dialogue : MonoBehaviour
         if(postProcessEffect != null) { postProcessEffect.SetActive(true); }
         if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }   
 
-      //  if(endSound) dialogueSound.PlayOneShoot();
+        if(endSound) dialogueSound.PlayOneShoot();
     }
 
     public void RunCoroutine(){ StartCoroutine(SpeechCoroutine()); }

@@ -1340,51 +1340,43 @@ PrefabInstance:
     - target: {fileID: 796259685, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 856720026, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1375585161, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1411015263, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1728267331, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
-    - target: {fileID: 1728267331, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
-      propertyPath: extraSoundPath
-      value: event:/SFX/SFX_INTRODUCAO/SFX_RESPIRA_MARIANA
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1755241827, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1760332203, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
-    - target: {fileID: 1760332203, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
-      propertyPath: extraSoundPath
-      value: event:/SFX/SFX_INTRODUCAO/SFX_BOCEJO_MARIANA
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 1866200552, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 2011731818, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 2097808538, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
       propertyPath: _soundSource
       value: 
-      objectReference: {fileID: 704880415}
+      objectReference: {fileID: 704880416}
     - target: {fileID: 7840420860905992496, guid: 1a6f7616016ea934c84c7ddd177f4759,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1450,11 +1442,6 @@ PrefabInstance:
       propertyPath: postProcessEffect
       value: 
       objectReference: {fileID: 292899418}
-    - target: {fileID: 8287275746510487988, guid: 1a6f7616016ea934c84c7ddd177f4759,
-        type: 3}
-      propertyPath: endSound
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
 --- !u!1 &412219918
@@ -2404,9 +2391,9 @@ Transform:
   m_Father: {fileID: 925137814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &704880415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a9aa93823381d5745bf8f88ab4d59dc0,
+--- !u!4 &704880416 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a9aa93823381d5745bf8f88ab4d59dc0,
     type: 3}
   m_PrefabInstance: {fileID: 2071110047}
   m_PrefabAsset: {fileID: 0}
