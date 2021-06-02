@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+
 --- !u!114 &-9004443558145475736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +448,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637581191264343456
+  lastModified: 637581046526625935
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -705,6 +706,7 @@ MonoBehaviour:
   MaxDistance: 20
   Length: 310
 --- !u!114 &-3689890854110715893
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -716,16 +718,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
   m_EditorClassIdentifier: 
-  Path: 
-  guid: 00000000000000000000000000000000
-  Banks: []
+
+  Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
+  guid: 1090f7d06484354194535f4791ff07bd
+  Banks:
+  - {fileID: -1166893488901608063}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18200
 --- !u!114 &-3604957856911318979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +791,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637581191263834814
+  lastModified: 637581046521196854
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -1103,7 +1107,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Dublagens.bank
   Name: Dublagens
   StudioPath: bank:/Dublagens
-  lastModified: 637581191263725106
+  lastModified: 637581046520681460
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -1336,6 +1340,7 @@ MonoBehaviour:
   - {fileID: -587502928891750704}
   - {fileID: -6328072613548433586}
   - {fileID: -7359701671344125512}
+  - {fileID: -3689890854110715893}
   - {fileID: 5159542928892565119}
   - {fileID: 7015022381929596992}
   - {fileID: -287453009843812385}
@@ -1427,13 +1432,12 @@ MonoBehaviour:
   - {fileID: 7057102883107816547}
   - {fileID: -2384299793036729343}
   - {fileID: -4136052263098330890}
-  - {fileID: 2015188643279330601}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8129405341722171793}
   StringsBanks:
   - {fileID: -3238069117898501417}
-  stringsBankWriteTime: 637581191263834814
+  stringsBankWriteTime: 637581046521196854
   cacheVersion: 6
 --- !u!114 &355593461297972739
 MonoBehaviour:
@@ -1734,29 +1738,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10833
---- !u!114 &2015188643279330601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
-  m_EditorClassIdentifier: 
-  Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
-  guid: 1090f7d06484354194535f4791ff07bd
-  Banks:
-  - {fileID: -1166893488901608063}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 18200
 --- !u!114 &2236928305614113112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,7 +2484,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637581191263824841
+  lastModified: 637581046520691431
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2599,3 +2580,4 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8047
+
