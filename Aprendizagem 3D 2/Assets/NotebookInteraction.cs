@@ -14,8 +14,6 @@ public class NotebookInteraction : MonoBehaviour, IFade, IInteractable, ISelecta
 
     private FadeImage fadeScript;
     DialogueManager2 objectiveManager;
-    [Header("Skybox")]
-    [SerializeField] private Material skyMaterialNight;
 
     [Header("Ativaveis")]
     [SerializeField] private GameObject marianaSentada, marianaJogavel, pcInterativo, livroIngles, bubuSeca, bubuFakeMolhada;
@@ -53,7 +51,6 @@ public class NotebookInteraction : MonoBehaviour, IFade, IInteractable, ISelecta
 
     public void BackToGameFade()
     {
-        RenderSettings.skybox = skyMaterialNight;
         GameManager.instance.removePlayerControlEvent?.Invoke();
         fadeScript.SetFadeIn(true);
         fadeScript.SetHasNextFade(true);
