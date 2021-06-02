@@ -11,6 +11,8 @@ public class Collectable : Inspecao
 
     private bool CanBeCollected = false;
     [SerializeField] private GameObject PressToCollectText;
+
+    [SerializeField] private GameObject CollectedObjHud;
     private void Awake()
     {
         if (PlayerPrefs.HasKey(itemTag)) PlayerPrefs.DeleteKey(itemTag);  // reseta o pref no começo da fase, como se o jogador não tivesse o item.
@@ -31,6 +33,7 @@ public class Collectable : Inspecao
             PlayerPrefs.SetInt(this.itemTag, 1);
             this.gameObject.SetActive(false);
             PressToCollectText.SetActive(false);
+            if(CollectedObjHud!= null)CollectedObjHud.SetActive(true);
             print(this.name);
         }
     }

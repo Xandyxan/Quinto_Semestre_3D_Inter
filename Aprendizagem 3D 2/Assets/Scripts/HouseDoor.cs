@@ -20,6 +20,7 @@ public class HouseDoor : Doors
     // da pra usar uma string pra quando o jogador coletar uma chave, nós criarmos um playerPref com o nome da chave e depois checar se bate com esse.
     [Tooltip("Name of the key used to open this door")]
     [SerializeField] private string keyName;
+    [SerializeField] private int KeyValue = 1;
 
     [Header("Trigger dialogue?")]  // valores específicos pra quando for uma porta trancada
     [Tooltip("valores específicos pra interação trancada / destrancou")]
@@ -27,6 +28,8 @@ public class HouseDoor : Doors
     [Tooltip("Index do diálogo")]
     [SerializeField] private int doorLocked, doorUnlocked;
     private DialogueManager2 objectiveManager;
+
+    [SerializeField] private GameObject collectedItemHud;
 
     protected override void Awake()
     {
@@ -42,6 +45,7 @@ public class HouseDoor : Doors
         {
             base.Interact();
             knobAnimator.SetTrigger("Open");
+            if(collectedItemHud!= null) collectedItemHud.SetActive(false);
         }
     }
 
@@ -53,7 +57,7 @@ public class HouseDoor : Doors
 
         if (PlayerPrefs.HasKey(keyName))   // abre a porta
         {
-            if (PlayerPrefs.GetInt(keyName, 0) == 1)
+            if (PlayerPrefs.GetInt(keyName, 0) == KeyValue)
                 // destranca a porta
                 print("Open the door!");
             if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorUnlocked);

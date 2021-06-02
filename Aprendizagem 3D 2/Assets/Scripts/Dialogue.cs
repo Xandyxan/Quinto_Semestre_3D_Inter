@@ -92,7 +92,7 @@ public class Dialogue : MonoBehaviour
        dialogueSound.StopSound();
 
         dialogueManager.GetDialogueBox().SetActive(false);
-        Cellphone.instance.SetInDialogue(false);
+        if(Cellphone.instance!= null) Cellphone.instance.SetInDialogue(false);
 
          if (nextDialogueScript != null) isSomeDialogueRunning = true; // tava false antes
          else isSomeDialogueRunning = false; // tava true antes

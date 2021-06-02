@@ -54,6 +54,7 @@ public class SelectionManager : MonoBehaviour
     }
     private void Update()
     {
+        selectionText.gameObject.SetActive(false);
         if (selectionTransform != null)
         {
            // Renderer selectionRenderer = selectionTransform.GetComponent<Renderer>();
@@ -61,8 +62,6 @@ public class SelectionManager : MonoBehaviour
            // if(selectionRenderer != null)
            // selectionRenderer.material.DisableKeyword("_EMISSION");
             selectionTransform = null;
-
-            selectionText.gameObject.SetActive(false);
         }
         else
         {

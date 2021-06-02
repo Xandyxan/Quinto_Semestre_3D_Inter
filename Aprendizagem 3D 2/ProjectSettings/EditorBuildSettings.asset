@@ -24,9 +24,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Sonho_2.unity
     guid: 7acfd609e1f2c314d854d681c97bd963
   - enabled: 1
-    path: Assets/Scenes/Missao2.unity
-    guid: 723f226dcdac3a644acbe568d1826fc6
+    path: Assets/Scenes/Missao_2.unity
+    guid: fb50d931e7e31844bb3fc9174d0fd8bd
+  - enabled: 1
+    path: Assets/Scenes/Sonho_3.unity
+    guid: fe68d3a022ebaae4b9cb08012efe0b88
+  - enabled: 1
+    path: Assets/Scenes/Missao_3.unity
+    guid: 5934ed2ce1bdc5949be6498909243aac
+  - enabled: 1
+    path: Assets/Scenes/Memorial.unity
+    guid: e163c9e2fa0c6ba428079b5a836ce793
   - enabled: 0
     path: Assets/Scenes/Sonho2.unity
     guid: 4feb2a5867d214645888668b7024db93
+  - enabled: 0
+    path: Assets/Scenes/Missao2.unity
+    guid: 723f226dcdac3a644acbe568d1826fc6
   m_configObjects: {}
