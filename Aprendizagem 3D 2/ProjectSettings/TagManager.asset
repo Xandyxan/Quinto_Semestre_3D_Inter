@@ -11,6 +11,7 @@ TagManager:
   - DialogueBox
   - PauseMenu
   - SelectionManager
+  - Crosshair
   layers:
   - Default
   - TransparentFX

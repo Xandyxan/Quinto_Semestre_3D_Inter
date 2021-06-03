@@ -11053,7 +11053,7 @@ GameObject:
   - component: {fileID: 6417107547733370393}
   m_Layer: 5
   m_Name: Crosshair
-  m_TagString: Untagged
+  m_TagString: Crosshair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13611,6 +13611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dropDownResolutions: {fileID: 7936326492935139410}
   fullScreenToggle: {fileID: 8133241396363619203}
+  mainMenuScreen: 0
 --- !u!1 &6417107548811508776
 GameObject:
   m_ObjectHideFlags: 0

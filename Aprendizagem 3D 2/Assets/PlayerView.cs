@@ -43,10 +43,13 @@ public class PlayerView : MonoBehaviour
 
         SelectionManager = FindObjectOfType<SelectionManager>();
 
+        //crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>();
     }
 
     void Start()
     {
+        
+
         if (lookCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;

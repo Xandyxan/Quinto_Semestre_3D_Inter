@@ -2103,7 +2103,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3348,8 +3348,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: -13
   moveSmoothTime: 0.1
-  shoes: []
-  stepSoundOffset: {fileID: 0}
+  shoes:
+  - {fileID: 2457033024592834181}
+  - {fileID: 1559252895517525089}
+  stepSoundOffset: {fileID: 8742603571918727535}
   SelectionManager: {fileID: 0}
 --- !u!114 &962639029923544103
 MonoBehaviour:
@@ -3369,7 +3371,6 @@ MonoBehaviour:
   mouseSmoothTime: 0.05
   crosshair: {fileID: 0}
   defaultZoomSpeed: 8
-  SelectionManager: {fileID: 0}
 --- !u!95 &8221364053448504278
 Animator:
   serializedVersion: 3

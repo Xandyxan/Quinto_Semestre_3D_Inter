@@ -29,7 +29,7 @@ public class CercadinhoSujoFade : MonoBehaviour,IFade
         fadeScript.SetFadeIn(true);
         fadeScript.SetHasNextFade(false);
         fadeScript.SetHasSceneLoad(true);
-        fadeScript.SetSceneIndex(6);
+        fadeScript.SetSceneIndex(5);
 
         fadeScript.StartCoroutine(fadeScript.Fade(1.2f));
     }

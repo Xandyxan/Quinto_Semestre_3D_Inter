@@ -34,7 +34,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Musicas.bank
   Name: Musicas
   StudioPath: bank:/Musicas
-  lastModified: 637582772315828536
+  lastModified: 637583040596485331
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -514,7 +514,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 3735
 --- !u!114 &-5897699126344852832
 MonoBehaviour:
@@ -698,7 +698,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 3866
 --- !u!114 &-5196813870153930548
 MonoBehaviour:
@@ -1181,6 +1181,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2115
+--- !u!114 &-2851483451335328285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 3/SFX_Telefone
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 3/SFX_Telefone
+  guid: 281c1a6d8dc6b9429ae62991fc6fd8ef
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 18602
 --- !u!114 &-2546826536649061259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,7 +1474,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 7056
 --- !u!114 &-1152819291763904219
 MonoBehaviour:
@@ -1543,7 +1566,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 10120
 --- !u!114 &-587502928891750704
 MonoBehaviour:
@@ -1868,12 +1891,13 @@ MonoBehaviour:
   - {fileID: -791644516454370102}
   - {fileID: -5726263339640102853}
   - {fileID: -4485151344864993617}
+  - {fileID: -2851483451335328285}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4429168681596831693}
   StringsBanks:
   - {fileID: 3315217460542688712}
-  stringsBankWriteTime: 637582772281000052
+  stringsBankWriteTime: 637583040589738144
   cacheVersion: 6
 --- !u!114 &355593461297972739
 MonoBehaviour:
@@ -2126,7 +2150,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 8486
 --- !u!114 &1810318514190449970
 MonoBehaviour:
@@ -2329,7 +2353,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 13256
 --- !u!114 &2596185206003146753
 MonoBehaviour:
@@ -2346,7 +2370,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637582772285016245
+  lastModified: 637583040605995925
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2503,11 +2527,11 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637582772281000052
+  lastModified: 637583040589738144
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6798
+    Value: 6850
   Exists: 1
 --- !u!114 &3503070504149598857
 MonoBehaviour:
@@ -2576,7 +2600,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 21563
 --- !u!114 &3698054786787858454
 MonoBehaviour:
@@ -2777,7 +2801,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637582772280970124
+  lastModified: 637583040589468875
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2848,7 +2872,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 8700
 --- !u!114 &4934176998096565223
 MonoBehaviour:
@@ -2978,7 +3002,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 7180
 --- !u!114 &6224919574285871756
 MonoBehaviour:
@@ -3180,7 +3204,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 8228
 --- !u!114 &7057102883107816547
 MonoBehaviour:
@@ -3220,7 +3244,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Ambiente.bank
   Name: Ambiente
   StudioPath: bank:/Ambiente
-  lastModified: 637582772262848986
+  lastModified: 637583040564223920
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -3268,7 +3292,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 4937
 --- !u!114 &7371756777139587921
 MonoBehaviour:
@@ -3451,7 +3475,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 9109
 --- !u!114 &8601524516815102125
 MonoBehaviour:
@@ -3474,7 +3498,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 12302
 --- !u!114 &8753347895041377811
 MonoBehaviour:
@@ -3514,7 +3538,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Dublagens.bank
   Name: Dublagens
   StudioPath: bank:/Dublagens
-  lastModified: 637582772280900329
+  lastModified: 637583040588481041
   LoadResult: 0
   FileSizes: []
   Exists: 1

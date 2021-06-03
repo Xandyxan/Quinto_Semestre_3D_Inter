@@ -32,16 +32,21 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     [SerializeField] string _objectDescription;
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
 
+    private FMOD.Studio.EventInstance instance;
+
     private void Awake()
     {
         objectiveManager = FindObjectOfType<DialogueManager2>();
         triggerMensagens = GetComponent<MessageTrigger>();
         PlayerPrefs.DeleteKey("FindPote");
+
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFX_MISSAO 3/SFX_Telefone");
     }
     public void Interact()
     {
         if (podeAtender)
         {
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             objectiveManager.ExecuteDialogue(diaFinalIndex);
         }
         else
@@ -57,12 +62,14 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
 
     private void Update()
     {
+        instance.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+
         distanceFromPlayer = Vector3.Distance(this.transform.position, playerTransform.position); // distancia entre o player e o telefone
 
         if(distanceFromPlayer < 1.4f && !podeAtender) // player se aproxima no inicio do game, quando ainda não pode atender a ligação
         {
             // stop telephone sound
-            print("Turun");
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             objectiveManager.ExecuteDialogue(ligacaoDesligaDialogueIndex);
             triggerMensagens.ActivateTrigger();
             PlayerPrefs.SetInt("FindPote", 1);
@@ -84,7 +91,9 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     public void ReceberLigacao(bool ligaram)
     {
         // chamar aqui o código de fazer som de telefone tocando
-        print("Trin trin");
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.start();
+        instance.release();
         podeAtender = ligaram;
     }
 }

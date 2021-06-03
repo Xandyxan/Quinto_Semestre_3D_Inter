@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/1_Gameplay/0_Menu.unity
     guid: 71a998e8b7d318645b851097372423c2
   - enabled: 1
     path: Assets/Scenes/1_Gameplay/1_Introducao.unity
@@ -15,30 +15,27 @@ EditorBuildSettings:
     path: Assets/Scenes/1_Gameplay/2_Sonho 1.unity
     guid: 7d4f022d91a39d24e8ee529b206724be
   - enabled: 1
-    path: Assets/Scenes/Logo.unity
-    guid: 720ee67679640f44b9310263ea74a9c4
-  - enabled: 1
-    path: Assets/Scenes/Missao1.unity
+    path: Assets/Scenes/1_Gameplay/3_Missao_1.unity
     guid: fee694ad1f1cfc54e94c00b83d5647d2
   - enabled: 1
-    path: Assets/Scenes/Sonho_2.unity
+    path: Assets/Scenes/1_Gameplay/4_Sonho_2.unity
     guid: 7acfd609e1f2c314d854d681c97bd963
   - enabled: 1
-    path: Assets/Scenes/Missao_2.unity
+    path: Assets/Scenes/1_Gameplay/5_Missao_2.unity
     guid: fb50d931e7e31844bb3fc9174d0fd8bd
   - enabled: 1
-    path: Assets/Scenes/Sonho_3.unity
+    path: Assets/Scenes/1_Gameplay/6_Sonho_3.unity
     guid: fe68d3a022ebaae4b9cb08012efe0b88
   - enabled: 1
-    path: Assets/Scenes/Missao_3.unity
+    path: Assets/Scenes/1_Gameplay/7_Missao_3.unity
     guid: 5934ed2ce1bdc5949be6498909243aac
   - enabled: 1
-    path: Assets/Scenes/Memorial.unity
+    path: Assets/Scenes/1_Gameplay/8_Memorial.unity
     guid: e163c9e2fa0c6ba428079b5a836ce793
-  - enabled: 0
-    path: Assets/Scenes/Sonho2.unity
-    guid: 4feb2a5867d214645888668b7024db93
-  - enabled: 0
-    path: Assets/Scenes/Missao2.unity
-    guid: 723f226dcdac3a644acbe568d1826fc6
+  - enabled: 1
+    path: Assets/Scenes/1_Gameplay/9_Credits.unity
+    guid: fb5ea1cc26da8bf44be17c6399798f9c
+  - enabled: 1
+    path: Assets/Scenes/Logo.unity
+    guid: 720ee67679640f44b9310263ea74a9c4
   m_configObjects: {}

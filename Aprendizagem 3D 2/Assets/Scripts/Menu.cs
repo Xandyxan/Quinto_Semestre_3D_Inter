@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public GameObject fade;
 
     public void PlayGame()      
     {
@@ -19,6 +20,11 @@ public class Menu : MonoBehaviour
     {
       
         Application.Quit();
+    }
+
+    public void ActiveGameObject()
+    {
+        fade.SetActive(true);
     }
 
 }
