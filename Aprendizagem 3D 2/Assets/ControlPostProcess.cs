@@ -6,7 +6,6 @@ using UnityEngine.Rendering.PostProcessing;
 public class ControlPostProcess : MonoBehaviour
 {
     private PostProcessVolume postProcessVolume;
-    ///private GameManager gameManager;
 
     [Header("Time Post Process Values")]
     [SerializeField] private float intervalTime;
@@ -22,7 +21,6 @@ public class ControlPostProcess : MonoBehaviour
     private void Awake()
     {
         postProcessVolume = GetComponent<PostProcessVolume>();
-        //gameManager = GetComponentInParent<GameManager>();
     }
 
     private void OnEnable()
@@ -70,7 +68,6 @@ public class ControlPostProcess : MonoBehaviour
         switch(action)
         {
             case 1:
-                //gameManager.LoadScene(sceneToLoad);
                 GameManager.instance.LoadScene(sceneToLoad);
                 break;
         }

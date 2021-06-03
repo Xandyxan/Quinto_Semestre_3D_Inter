@@ -2057,7 +2057,7 @@ MonoBehaviour:
   hasInitialDialogue: 0
   initialDialogue: 0
   hasDelayInitialDialogue: 1
-  delayTime: 2
+  delayTime: 3
 --- !u!1 &7840420862331575371
 GameObject:
   m_ObjectHideFlags: 0

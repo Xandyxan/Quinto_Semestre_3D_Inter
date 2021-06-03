@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController characterController;
     private Animator animator;
+    private PlayerView playerView;
 
     [Header("Ground Check stuff")]
     [SerializeField] float gravity = -13.0f;
@@ -28,14 +29,16 @@ public class PlayerController : MonoBehaviour
 
     //Character States
     private bool isRunning, isCrouched, isWalkingZ, isWalkingX;
+    private bool canMove, limitedMovement;
+    private bool usingCellphone;
 
-    private PlayerView playerView;
+    [Header("Type of shoes")]
+    [SerializeField] private GameObject[] shoes;
+    [SerializeField] private Transform stepSoundOffset;
+    private string actualShoePath;
 
     [Header("Other")]
     [SerializeField] SelectionManager SelectionManager;
-
-    private bool canMove, limitedMovement;
-    private bool usingCellphone;
 
     private void Awake()
     {
@@ -52,6 +55,7 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         //We remove the methods from the delegate at the beggining to prevent it to run multiple times.
+        #region Set Delegates
         GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff; 
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
         GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;
@@ -61,9 +65,12 @@ public class PlayerController : MonoBehaviour
         Dialogue.playerDuringDialogueOff -= PlayerDuringDialogueOff;
         Dialogue.playerDuringDialogueOn += PlayerDuringDialogueOn;
         Dialogue.playerDuringDialogueOff += PlayerDuringDialogueOff;
+        #endregion
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+
+        CheckShoeType();
     }
 
     private void OnDisable()
@@ -93,7 +100,6 @@ public class PlayerController : MonoBehaviour
                 // print("PCtrl OF");
             }
         }
-
     }
 
     private void InputProcessing()
@@ -187,8 +193,6 @@ public class PlayerController : MonoBehaviour
             actualWalkSpeedX = Mathf.Lerp(actualWalkSpeedX, crouchSpeedZ, Time.deltaTime * 50f);
         }
 
-
-
         if (limitedMovement)
         {
             actualWalkSpeedZ = Mathf.Clamp(actualWalkSpeedZ, 0, 0.5f);
@@ -220,7 +224,6 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("VelocityZ", axisZ * actualWalkSpeedZ * 3.7f);
             animator.SetFloat("VelocityX", axisX * actualWalkSpeedX * 1.7f);
         }
-
     }
 
     private void UpdateCollider()
@@ -240,6 +243,23 @@ public class PlayerController : MonoBehaviour
             characterController.radius = 0.033f;
             characterController.height = 0.155f;
         }
+    }
+
+    private void CheckShoeType()
+    {
+        if (!shoes[0].activeSelf && !shoes[1].activeSelf) actualShoePath = "event:/SFX/SFX_PLAYER/SFX_Passo_Descalço";
+        else if (shoes[0].activeSelf && !shoes[1].activeSelf) actualShoePath = "event:/SFX/SFX_PLAYER/SFX_Passo_Chinelo";
+        else if (!shoes[0].activeSelf && shoes[1].activeSelf) actualShoePath = "event:/SFX/SFX_PLAYER/SFX_Passo_Sapato";
+    }
+
+    public void FootStepSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(actualShoePath, stepSoundOffset.transform.position);
+    }
+
+    public void PlaySound(string soundPath)
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(soundPath);
     }
 
     //getters

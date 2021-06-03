@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9115442006014969544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dublagens.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Dublagens.bank
+  Name: Dublagens
+  StudioPath: bank:/Dublagens
+  lastModified: 637579445077429165
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-9113536770990347270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Musicas.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Musicas.bank
+  Name: Musicas
+  StudioPath: bank:/Musicas
+  lastModified: 637582772315828536
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-9105650829750356114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637579445077449139
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 5472
+  Exists: 1
 --- !u!114 &-9004443558145475736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +74,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_01_MARIANA
   guid: f14e1b0d35b8ee49aadecf67816cddfd
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -57,7 +116,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_AbreFecha
   guid: e596560cbec46e44baf07e39da17181e
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -65,6 +124,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 456
+--- !u!114 &-8740640073300899266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Prato_Quebrando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Prato_Quebrando
+  guid: f18be6d03d748c4ca196f8e309de5ca8
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4284
 --- !u!114 &-8481787690227203604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +162,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_10_MARIANA
   guid: a17e433cceb5334b91627192daf78b3d
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -110,6 +192,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12255
+--- !u!114 &-8384154568903413304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Televisao_Ligando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Televisao_Ligando
+  guid: d6e506d308b70d4aafd0901e56c15131
+  Banks:
+  - {fileID: 8836420474194934899}
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7
+  Length: 1457
 --- !u!114 &-8221918066842184832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +231,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_05_MARIANA
   guid: 71f06814580b3245b76105bd08e7d9e8
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -148,7 +254,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_02_MARIANA
   guid: 67c364364fa4734b90b06ca08e992a3a
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -156,6 +262,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2364
+--- !u!114 &-7570207168235666475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Lama_Jorrando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Lama_Jorrando
+  guid: c44977780c7f8a42a837ac415915e464
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3422
 --- !u!114 &-7359701671344125512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +300,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_5_MARIANA
   guid: 0e669ce7723fe94c9b00524cf70f4817
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -179,6 +308,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1360
+--- !u!114 &-6546861704656923318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 2/SFX_Computador_Ligando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 2/SFX_Computador_Ligando
+  guid: 3b5c2eaac35a4d418901a25901e53d07
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5470
 --- !u!114 &-6540800058531818226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,13 +346,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_14_RAFAELA
   guid: e01021b0e0266446a4a840cf9dd78eed
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 5400
 --- !u!114 &-6476416973546547749
 MonoBehaviour:
@@ -217,7 +369,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_11_MARIANA
   guid: cabf6851b430cd4cb03ae90ea89274ed
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -240,13 +392,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_06_RAFAELA
   guid: 43e98cc9059a4742bff9d4734df581b9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 23588
 --- !u!114 &-6328072613548433586
 MonoBehaviour:
@@ -263,13 +415,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_2_SILVANA
   guid: 0ddbf06dc0586c4c9d39840ee9420e2b
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Length: 6800
 --- !u!114 &-6326897618181918939
 MonoBehaviour:
@@ -286,13 +438,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_12_RAFAELA
   guid: 678c81b7dd229347b6a1eddc006779d9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 6900
 --- !u!114 &-6288968308193346485
 MonoBehaviour:
@@ -309,7 +461,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Botao_Celular
   guid: c873b7177bc20742b5376f18f1808216
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -317,6 +469,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 120
+--- !u!114 &-6248360666646393078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Estatica_TV
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Estatica_TV
+  guid: dc62a27028e1574a8d4a95f3de98e84d
+  Banks:
+  - {fileID: 8836420474194934899}
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7
+  Length: 11440
 --- !u!114 &-6036358574061715972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +508,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_10_ANTONIA
   guid: 45cc715be61d5c438de3bfc5699b8d03
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -355,7 +531,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_09_MARIANA
   guid: d81b7ff8d8481043943d5cc0d9c86ce7
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -363,6 +539,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11000
+--- !u!114 &-5872287357845248530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Lavando_Louca
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Lavando_Louca
+  guid: 96e89a2dd4c3274584821a92d804f138
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 13600
+--- !u!114 &-5726263339640102853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENTE/AMB_Som_Ambiente_Ventando
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENTE/AMB_Som_Ambiente_Ventando
+  guid: 7360cd577bdb9440b3e61b7a2cedf946
+  Banks:
+  - {fileID: 7075621329266223309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 61250
 --- !u!114 &-5698389781478760327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,7 +600,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_INTRODUCAO/SFX_RESPIRA_MARIANA
   guid: c1707a205d5f4a4d8f9abcbb72a0ffbf
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -401,7 +623,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta Fechando (junto)
   guid: b6d0ced27e488f468e849be4b0eb4f25
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -424,7 +646,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_1_MARIANA
   guid: caaa81e1bdcfeb4482964b633a93ba13
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -432,7 +654,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2300
---- !u!114 &-5605976222420788153
+--- !u!114 &-5356673424481427037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,16 +663,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 3/SFX_Batimento_Cardiaco
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD Assets/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 637581191264343456
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
+  Path: event:/SFX/SFX_MISSAO 3/SFX_Batimento_Cardiaco
+  guid: d65870de2863894fa896573ad78ac434
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10176
 --- !u!114 &-5355509126727316718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -466,7 +692,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_08_ANTONIA
   guid: c0c7bf9f3e9f4345a9f5c8756301eb3d
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -489,7 +715,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_04_MARIANA
   guid: df1c69d02d54fd48b25d9895625493f5
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -512,7 +738,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_08_MARIANA
   guid: a3bf2b2ad3d363459d672271d52e58e0
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -535,7 +761,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_07_MARIANA
   guid: 6c722d85efd54e4b9382897413c1d158
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -543,6 +769,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 640
+--- !u!114 &-5165496515822857171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Lama_Jorrando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Lama_Jorrando
+  guid: c44977780c7f8a42a837ac415915e464
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3422
 --- !u!114 &-5130471573274573965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,8 +806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: "event:/SFX/SFX_GENERAL/SFX_Passo_Descal\xE7o"
   guid: 0a5162be02a9134daa425f38fe24bece
-  Banks:
-  - {fileID: -5605976222420788153}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -581,7 +829,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
   guid: 4b49f4e37c718849aed8c4bb79929c2f
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -604,7 +852,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_02_MARIANA
   guid: c835aa3349447946b032010274a039ee
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -627,7 +875,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-2/SONHO-2_DUB_01_MARIANA
   guid: ed9963fb5ffb00479a90debea38569cd
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -650,7 +898,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-2/SONHO-2_DUB_04_MARIANA
   guid: 48aeb01c9c47ea479eacc2273c99bd02
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -658,6 +906,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7054
+--- !u!114 &-4485151344864993617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSICAS/MUS_CREDITS
+  m_EditorClassIdentifier: 
+  Path: event:/MUSICAS/MUS_CREDITS
+  guid: deda36fbe34cd945b2cd45b74f6d8ee6
+  Banks:
+  - {fileID: -9113536770990347270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 120000
 --- !u!114 &-4136052263098330890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,13 +944,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_7_SILVANA
   guid: 8588b9b75125b64c8999bd66a2c8659e
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Length: 7255
 --- !u!114 &-3999234497405785303
 MonoBehaviour:
@@ -695,8 +966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/SFX_GENERAL/SFX_Passo_Sapato
   guid: d96beba3024d45418fdb33f9ebec5001
-  Banks:
-  - {fileID: -5605976222420788153}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -704,6 +974,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 310
+--- !u!114 &-3909113791761276793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Crianca_Correndo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Crianca_Correndo
+  guid: efea5dba58d8124eb7b3c32733a86816
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21864
 --- !u!114 &-3689890854110715893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,16 +1009,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
   m_EditorClassIdentifier: 
-  Path: 
-  guid: 00000000000000000000000000000000
-  Banks: []
+  Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
+  guid: 1090f7d06484354194535f4791ff07bd
+  Banks:
+  - {fileID: 8836420474194934899}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
+  Is3D: 1
+  IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 18200
 --- !u!114 &-3604957856911318979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,7 +1035,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_01_MARIANA
   guid: 75c882ce2e05e24d8193ba018cca5afb
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -749,6 +1043,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7707
+--- !u!114 &-3394554039150289490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_PLAYER/SFX_Passo_Sapato
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_PLAYER/SFX_Passo_Sapato
+  guid: d96beba3024d45418fdb33f9ebec5001
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 2
+  Length: 310
 --- !u!114 &-3391853764161839829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -764,7 +1081,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_05_MARIANA
   guid: b8b0702b23da46469b60131a963c50e4
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -772,27 +1089,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 11386
---- !u!114 &-3238069117898501417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD Assets/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637581191263834814
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 5472
-  Exists: 1
 --- !u!114 &-3153510482457948777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -808,13 +1104,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_4_SILVANA
   guid: 91518a329eb61e449266152633a442da
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 10
   Length: 10000
 --- !u!114 &-3053281753463007424
 MonoBehaviour:
@@ -831,7 +1127,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_08_MARIANA
   guid: 2d915f26136f6e4f8e1eb13bff0be561
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -839,6 +1135,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12227
+--- !u!114 &-2953844471042547959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Bola_Quicando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Bola_Quicando
+  guid: 95acf73d4fc0074a96d6d9d9037d81a6
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2115
+--- !u!114 &-2936135574472695003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Bola_Quicando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Bola_Quicando
+  guid: 95acf73d4fc0074a96d6d9d9037d81a6
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2115
 --- !u!114 &-2546826536649061259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,7 +1196,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_07_MARIANA
   guid: f21b94ce2c8b2d42b609be4f9ac48960
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -877,7 +1219,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_6_MARIANA
   guid: 059225b81bf92e489391080113ce6db1
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -900,7 +1242,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_05_MARIANA
   guid: ecc1ad177cfa9b469c1640e0ea5049e6
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -923,7 +1265,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_12_MARIANA
   guid: d08fdf5d6d4a094db40ffc4f8a324ca3
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -946,7 +1288,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_INTRODUCAO/SFX_BOCEJO_MARIANA
   guid: 24ca82af45ed0f40a4823a52d932f876
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -969,7 +1311,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_07_MARIANA
   guid: b2d8b05832821841b04e422980647af3
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -992,7 +1334,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_04_MARIANA
   guid: 3d4623ad602e994d9468eb8518f3d671
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1034,15 +1376,15 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_01-02_RAFAELA
   guid: ec0196c9284be941ab8a77dd634b1d13
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 30000
---- !u!114 &-1802932040363169432
+--- !u!114 &-1929164252736036172
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1052,19 +1394,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
+  m_Name: "event:/MUSICAS/MUS_Aceita\xE7\xE3o_MISSAO_3"
   m_EditorClassIdentifier: 
-  Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_04_RAFAELA
-  guid: 1090f7d06484354194535f4791ff07bd
+  Path: "event:/MUSICAS/MUS_Aceita\xE7\xE3o_MISSAO_3"
+  guid: 288e34b6e099154894289336d2e83463
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: -9113536770990347270}
   IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 18200
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 110906
 --- !u!114 &-1564978053466257954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1080,7 +1422,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_09_MARIANA
   guid: 6628e4d5ae98c243bd014faccd8e928b
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1103,7 +1445,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_02_ANTONIA
   guid: 08d937dc9db15a438fbb0480f23d4874
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1111,25 +1453,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7056
---- !u!114 &-1166893488901608063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Dublagens.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD Assets/Desktop/Dublagens.bank
-  Name: Dublagens
-  StudioPath: bank:/Dublagens
-  lastModified: 637581191263725106
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
 --- !u!114 &-1152819291763904219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1468,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-2/SONHO-2_DUB_03_MARIANA
   guid: de66785866193047af4a2cea29da3e78
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1153,6 +1476,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5517
+--- !u!114 &-1131776252080952249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/SFX_PLAYER/SFX_Passo_Descal\xE7o"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/SFX_PLAYER/SFX_Passo_Descal\xE7o"
+  guid: 0a5162be02a9134daa425f38fe24bece
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 2
+  Length: 310
+--- !u!114 &-791644516454370102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENTE/AMB_Som_Ambiente_Passaros
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENTE/AMB_Som_Ambiente_Passaros
+  guid: 6327fce52321ca4495e093978e018db6
+  Banks:
+  - {fileID: 7075621329266223309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 121874
 --- !u!114 &-778226511118592011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,7 +1537,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_11_FATIMA
   guid: 6834e13993efce44ab9c208a94978aff
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1191,7 +1560,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_03_MARIANA
   guid: 0c63cdbe41b1214ead4bc9d424caab75
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1214,7 +1583,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_Choro_SILVANA
   guid: 77bb44b15c62dc4381b4e8886c3fcbf9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1222,6 +1591,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 22073
+--- !u!114 &-407150446150985115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Televisao_Deslignado
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Televisao_Deslignado
+  guid: 1d0cf4c0ffed2741b104d1f7cfde11b3
+  Banks:
+  - {fileID: 8836420474194934899}
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 7
+  Length: 417
 --- !u!114 &-336126262799824620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,7 +1630,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Lanterna_Liga
   guid: df41c9c26856464aa9ef931f4eaa761c
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1260,7 +1653,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_02_MARIANA
   guid: 28f7aa1129db1f499d0cd4e44c446497
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1282,8 +1675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX/SFX_GENERAL/SFX_Passo_Chinelo
   guid: b1ee204195303849bbc94436ef3b0edf
-  Banks:
-  - {fileID: -5605976222420788153}
+  Banks: []
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1306,13 +1698,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_10_RAFAELA
   guid: ee36c5a24c11ea49a9a78ebf4aeaad8f
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 19000
 --- !u!114 &-95502973556195843
 MonoBehaviour:
@@ -1348,10 +1740,12 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3238069117898501417}
-  - {fileID: -1166893488901608063}
-  - {fileID: 8129405341722171793}
-  - {fileID: -5605976222420788153}
+  - {fileID: 3315217460542688712}
+  - {fileID: 8836420474194934899}
+  - {fileID: 4429168681596831693}
+  - {fileID: 2596185206003146753}
+  - {fileID: 7075621329266223309}
+  - {fileID: -9113536770990347270}
   EditorEvents:
   - {fileID: 758557772976861341}
   - {fileID: -1322279749597899026}
@@ -1359,6 +1753,7 @@ MonoBehaviour:
   - {fileID: -587502928891750704}
   - {fileID: -6328072613548433586}
   - {fileID: -7359701671344125512}
+  - {fileID: -3689890854110715893}
   - {fileID: 5159542928892565119}
   - {fileID: 7015022381929596992}
   - {fileID: -287453009843812385}
@@ -1429,34 +1824,56 @@ MonoBehaviour:
   - {fileID: 2473269749485505723}
   - {fileID: -2284500240374219978}
   - {fileID: -5698389781478760327}
-  - {fileID: -5130471573274573965}
   - {fileID: 538965444264157673}
   - {fileID: 6321316235204050570}
   - {fileID: -5120923424029931242}
   - {fileID: 3698054786787858454}
   - {fileID: 8015666425354479378}
   - {fileID: 809701959345779895}
-  - {fileID: -274615061585528658}
   - {fileID: -5665644564933274785}
   - {fileID: 719810708744208914}
   - {fileID: 3199399570550061045}
   - {fileID: -6288968308193346485}
   - {fileID: 3828464157123225542}
   - {fileID: 4434846646066540532}
-  - {fileID: -3999234497405785303}
   - {fileID: -336126262799824620}
   - {fileID: -8860953160937590568}
   - {fileID: 6586948855845249854}
   - {fileID: 7057102883107816547}
   - {fileID: -2384299793036729343}
   - {fileID: -4136052263098330890}
-  - {fileID: -1802932040363169432}
+  - {fileID: -1131776252080952249}
+  - {fileID: 2900449536433767186}
+  - {fileID: -3394554039150289490}
+  - {fileID: -407150446150985115}
+  - {fileID: -6248360666646393078}
+  - {fileID: -5872287357845248530}
+  - {fileID: -8384154568903413304}
+  - {fileID: -3909113791761276793}
+  - {fileID: 3803247957862211964}
+  - {fileID: -6546861704656923318}
+  - {fileID: 7758351657663661224}
+  - {fileID: 3982580996864374082}
+  - {fileID: -2953844471042547959}
+  - {fileID: 9136898294935513522}
+  - {fileID: -7570207168235666475}
+  - {fileID: -5356673424481427037}
+  - {fileID: 2294227139561213168}
+  - {fileID: 7776747093627825774}
+  - {fileID: -1929164252736036172}
+  - {fileID: 6224919574285871756}
+  - {fileID: 8457411201537982202}
+  - {fileID: 3820314493881447721}
+  - {fileID: 2008471788482423015}
+  - {fileID: -791644516454370102}
+  - {fileID: -5726263339640102853}
+  - {fileID: -4485151344864993617}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8129405341722171793}
+  - {fileID: 4429168681596831693}
   StringsBanks:
-  - {fileID: -3238069117898501417}
-  stringsBankWriteTime: 637581191263834814
+  - {fileID: 3315217460542688712}
+  stringsBankWriteTime: 637582772281000052
   cacheVersion: 6
 --- !u!114 &355593461297972739
 MonoBehaviour:
@@ -1473,7 +1890,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_03_MARIANA
   guid: 54e45451aa973e449a35082f8b9e7eea
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1496,7 +1913,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_17_MARIANA
   guid: bd86cab8b0aa2c41b88e0a8e08c1f93a
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1519,7 +1936,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_05_MARIANA
   guid: 3a464f62171692469576f0e914fa2b49
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1542,7 +1959,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_11_MARIANA
   guid: 5cc43bf2d5d4e144a30d72d068083643
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1565,7 +1982,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
   guid: 18970f31ff2b10428ffbc5a730aa2e83
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1588,7 +2005,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
   guid: b8e639e95358c64bb3358f709f46c4de
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1611,7 +2028,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_03_MARIANA
   guid: 06423a196fe5cd4698dbe91b021c54c0
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1634,7 +2051,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_19_MARIANA
   guid: 4878102e8bce03478fe6def8ef67e575
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1657,7 +2074,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Trancada
   guid: 874c47ea9c117c4ea3f136fccaf2947f
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1680,7 +2097,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-2/SONHO-2_DUB_02_MARIANA
   guid: c9d163e8961c0d44982b22f0268029b6
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1703,7 +2120,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_07_FATIMA
   guid: 54b0b8b4565a93469b74e5b995b7e676
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1726,7 +2143,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_08_MARIANA
   guid: cdfbe4aa52149446b63281d15689663c
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1749,7 +2166,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_06_MARIANA
   guid: 4b908ae29c6c834c8aaf2d834c733bbc
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1757,6 +2174,71 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10833
+--- !u!114 &2008471788482423015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENTE/AMB_Som_Ambiente_Noite
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENTE/AMB_Som_Ambiente_Noite
+  guid: f7538d7e40841847b0bc426b67cb6d34
+  Banks:
+  - {fileID: 7075621329266223309}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 378372
+--- !u!114 &2100467684839169191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Tremor
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Tremor
+  guid: 4be56d28e443714ebff9cf4e50699c8d
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40855
+--- !u!114 &2233019807545211952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiente.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Ambiente.bank
+  Name: Ambiente
+  StudioPath: bank:/Ambiente
+  lastModified: 637581063383738843
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2236928305614113112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,7 +2254,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_03_MARIANA
   guid: 725b0e01d216a742ab021b5447f524be
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1780,6 +2262,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5455
+--- !u!114 &2294227139561213168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 1/SFX_Chuveiro
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 1/SFX_Chuveiro
+  guid: eb5ea22cfacfee41a78272263b51a18b
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7344
 --- !u!114 &2473269749485505723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,7 +2300,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_01_MARIANA
   guid: f75b4c00576ab2468bac07f756aa4fc9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1818,7 +2323,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_05_FATIMA
   guid: dc5bdec52878cc42b0e16eb200444072
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1826,6 +2331,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13256
+--- !u!114 &2596185206003146753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 637582772285016245
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &2598164570731868339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,7 +2365,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_15_MARIANA
   guid: 32d8facc1ba4904abb7daac4e96b37ad
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1849,6 +2373,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4700
+--- !u!114 &2900449536433767186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_PLAYER/SFX_Passo_Chinelo
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_PLAYER/SFX_Passo_Chinelo
+  guid: b1ee204195303849bbc94436ef3b0edf
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 2
+  Length: 330
 --- !u!114 &3053344026169335775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,7 +2411,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_07_MARIANA
   guid: a8ed66b8b6bc024d86eb001293c8dc86
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1887,7 +2434,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_11_MARIANA
   guid: ed1e5c14c76f894ea247e7079700269f
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1910,7 +2457,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Destrancando
   guid: bceb51dd14a23245ba5f37be5a126a84
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1918,6 +2465,73 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &3268620059687965592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Lama_Borbulhando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Lama_Borbulhando
+  guid: b6ab1354a4fc1e4ba01d988770534059
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40672
+--- !u!114 &3315217460542688712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637582772281000052
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 6798
+  Exists: 1
+--- !u!114 &3503070504149598857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 2/SFX_Computador_Ligando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 2/SFX_Computador_Ligando
+  guid: 3b5c2eaac35a4d418901a25901e53d07
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5470
 --- !u!114 &3504067230850509889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,7 +2547,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_13_MARIANA
   guid: 92c07eea91e0ba4a97ecbcd47cc07d8f
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1956,7 +2570,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_13_FATIMA
   guid: c17d09711510a74fb1ee6ea276d0d610
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1979,7 +2593,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Lanterna_Desliga
   guid: 646abc4db2c42342adea4766cd28e94f
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1987,6 +2601,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 444
+--- !u!114 &3803247957862211964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 1/SFX_Porta_Bate
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 1/SFX_Porta_Bate
+  guid: fdc664457029e447819084da101c9e64
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1750
+--- !u!114 &3820314493881447721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/MUSICAS/MUS_Depress\xE3o_INT_MISSAO_1"
+  m_EditorClassIdentifier: 
+  Path: "event:/MUSICAS/MUS_Depress\xE3o_INT_MISSAO_1"
+  guid: 7359e131938ee7498790d7cdff847800
+  Banks:
+  - {fileID: -9113536770990347270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 72571
 --- !u!114 &3828464157123225542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,7 +2662,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Bate
   guid: cb4962f56ceea047a1dd65bf6963cf99
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2010,6 +2670,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1104
+--- !u!114 &3982580996864374082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Risadas
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Risadas
+  guid: 930fb36bf5e4ba4bae0cf3df1a1b6a38
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17528
+--- !u!114 &4039216870414383682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 1/SFX_Chuveiro
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 1/SFX_Chuveiro
+  guid: eb5ea22cfacfee41a78272263b51a18b
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7344
 --- !u!114 &4059674569676518639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,7 +2731,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-1/MISSAO-1_DUB_06_MARIANA
   guid: e049aa5b4571ae4b95b85e97c011f6b6
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2033,6 +2739,48 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3656
+--- !u!114 &4130402742867559480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_MISSAO 3/SFX_Batimento_Cardiaco
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_MISSAO 3/SFX_Batimento_Cardiaco
+  guid: d65870de2863894fa896573ad78ac434
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10176
+--- !u!114 &4429168681596831693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637582772280970124
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4429764187240865688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,7 +2796,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_3_MARIANA
   guid: c02e5c39ef867a449058b253572422be
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2071,7 +2819,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Med_Armario_AbreFecha
   guid: d5595e9cffab5d4aa0cfe57d13860d38
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2094,7 +2842,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_09_FATIMA
   guid: a8052c2261a1364289f9af5383230bbf
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2136,13 +2884,13 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_18_RAFAELA
   guid: 15409955723a2742976e198bf7f2ea2f
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 9800
 --- !u!114 &5239001836801766866
 MonoBehaviour:
@@ -2159,14 +2907,33 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_08_RAFAELA
   guid: 8995ad41aa62024d83c19862d9cfe738
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 7900
+--- !u!114 &5755971063079930442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 637579445077832064
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5780977723136763298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,7 +2949,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_04_MARIANA
   guid: c71740073146ff4baf0eda198f69251e
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2205,7 +2972,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_03_FATIMA
   guid: e1dea675a017384488f6ed1bad26ec57
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2213,6 +2980,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7180
+--- !u!114 &6224919574285871756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSICAS/MUS_MENU
+  m_EditorClassIdentifier: 
+  Path: event:/MUSICAS/MUS_MENU
+  guid: 2be173f312a0314484212ea3a0eb6878
+  Banks:
+  - {fileID: -9113536770990347270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 66500
+--- !u!114 &6313015877340508487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Risadas
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Risadas
+  guid: 930fb36bf5e4ba4bae0cf3df1a1b6a38
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17528
 --- !u!114 &6321316235204050570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2228,7 +3041,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Mensagem_Celular
   guid: 20869c0602288a478b736348bb68ba10
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2251,7 +3064,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Disjuntor
   guid: ec7fd9c684141b43ba9f344d6fa71a7f
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2274,7 +3087,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_Choro_MARIANA
   guid: 9d7758e55e2a1e4c97907ee0adc520e9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2282,6 +3095,47 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 10
   Length: 10480
+--- !u!114 &6743217852203097077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Assets/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637579445077439158
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &6817282015644349630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENTE/Som Ambiente Noite
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENTE/Som Ambiente Noite
+  guid: f7538d7e40841847b0bc426b67cb6d34
+  Banks: []
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 374208
 --- !u!114 &6833012412238010512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,7 +3151,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-2/MISSAO-2_DUB_06_MARIANA
   guid: 605c06c57355ef4087087bb1e1097993
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2320,7 +3174,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_06_ANTONIA
   guid: 1941b61ad541244a838dfe6f819cc846
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2343,7 +3197,7 @@ MonoBehaviour:
   Path: event:/Ambiente/Som Ambiente Noite
   guid: f7538d7e40841847b0bc426b67cb6d34
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2233019807545211952}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -2351,6 +3205,25 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 374208
+--- !u!114 &7075621329266223309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiente.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Ambiente.bank
+  Name: Ambiente
+  StudioPath: bank:/Ambiente
+  lastModified: 637582772262848986
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &7163097438550168320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2366,14 +3239,14 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_JORNALISTA
   guid: b7ffd6624a3e8f43b1e8df19c593e906
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 10
-  Length: 27715
+  MaxDistance: 7
+  Length: 27917
 --- !u!114 &7239554007445025107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2389,7 +3262,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_04_ANTONIA
   guid: 4a8b45f11869834c8bae5718b0aede70
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2412,7 +3285,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_10_MARIANA
   guid: 0c3d9e240eb9f9498ef0fa8535ca18a4
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2435,14 +3308,60 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_20_RAFAELA
   guid: bb039ab2010f9845b40b2621c805076e
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 3250
+--- !u!114 &7758351657663661224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Tremor
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Tremor
+  guid: 4be56d28e443714ebff9cf4e50699c8d
+  Banks:
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3250
+  Length: 40855
+--- !u!114 &7776747093627825774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Prato_Quebrando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Prato_Quebrando
+  guid: f18be6d03d748c4ca196f8e309de5ca8
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4284
 --- !u!114 &8015666425354479378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,7 +3377,7 @@ MonoBehaviour:
   Path: event:/SFX/SFX_GENERAL/SFX_Porta_Grande_Armario_AbreFecha
   guid: 6912445bd0fbea4e9006eb639e389c66
   Banks:
-  - {fileID: -5605976222420788153}
+  - {fileID: 2596185206003146753}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2488,7 +3407,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2989
---- !u!114 &8129405341722171793
+--- !u!114 &8457411201537982202
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2497,16 +3416,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSICAS/MUS_Barganha_MISSAO_2
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD Assets/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637581191263824841
-  LoadResult: 0
-  FileSizes: []
-  Exists: 1
+  Path: event:/MUSICAS/MUS_Barganha_MISSAO_2
+  guid: 51420bf26e688e44895904e43f2f7a55
+  Banks:
+  - {fileID: -9113536770990347270}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 106500
 --- !u!114 &8486608828602026043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2522,7 +3445,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_01_FATIMA
   guid: d87dfead87a40847a72da4c4556c7fb7
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2545,7 +3468,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_12_ANTONIA
   guid: b901fb9e91861343b1b3d60bd0986fbb
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2568,14 +3491,33 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_INTRODUCAO/INT_DUB_16_RAFAELA
   guid: 54d14eed51043c4a9c956d80d6bc7fb9
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 8400
+--- !u!114 &8836420474194934899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dublagens.bank
+  m_EditorClassIdentifier: 
+  Path: ../../FMOD-LAMA/Build/Desktop/Dublagens.bank
+  Name: Dublagens
+  StudioPath: bank:/Dublagens
+  lastModified: 637582772280900329
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &9040264045137190565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2591,7 +3533,7 @@ MonoBehaviour:
   Path: event:/DUBLAGENS/DUBS_MISSAO-3/SONHO-3_DUB_09_MARIANA
   guid: bb2a9384399d074db445caa2df4e6083
   Banks:
-  - {fileID: -1166893488901608063}
+  - {fileID: 8836420474194934899}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2599,3 +3541,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8047
+--- !u!114 &9136898294935513522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Lama_Borbulhando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Lama_Borbulhando
+  guid: b6ab1354a4fc1e4ba01d988770534059
+  Banks:
+  - {fileID: 2596185206003146753}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40672
