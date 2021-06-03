@@ -768,11 +768,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2457033024592834181}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &8342172836859856470
 SkinnedMeshRenderer:
@@ -1108,7 +1108,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2956481196156452256
 SkinnedMeshRenderer:
@@ -1265,12 +1265,12 @@ Transform:
   - {fileID: 1455260323818370451}
   - {fileID: 4853880057562558953}
   - {fileID: 1413697942091873244}
-  - {fileID: 4798750294546359963}
   - {fileID: 5743025804167207036}
   - {fileID: 3788409112094028945}
   - {fileID: 4776789554772547341}
   - {fileID: 258960564888401033}
   - {fileID: 6676333087833834927}
+  - {fileID: 4798750294546359963}
   - {fileID: 3558386363231692305}
   - {fileID: 2549454971182254065}
   m_Father: {fileID: 8742603571918727535}
@@ -1643,7 +1643,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &4633853432741495033
 SkinnedMeshRenderer:
@@ -1890,7 +1890,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &8646029774021027598
 SkinnedMeshRenderer:
@@ -2172,6 +2172,7 @@ GameObject:
   - component: {fileID: 5614684797787655805}
   - component: {fileID: 5339848656840476113}
   - component: {fileID: 1694323892780803292}
+  - component: {fileID: 4812192006723925501}
   m_Layer: 0
   m_Name: FPS_Camera
   m_TagString: MainCamera
@@ -2330,6 +2331,20 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &4812192006723925501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5614684797787655793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1 &5699139803487616156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,7 +2748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &3393851597912660219
 SkinnedMeshRenderer:
@@ -2992,7 +3007,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3788409112094028945}
   - component: {fileID: 2418734041057782589}
-  - component: {fileID: 9158918650642203079}
   m_Layer: 8
   m_Name: MarianaCabeca
   m_TagString: Untagged
@@ -3012,7 +3026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2348765764978155258}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &2418734041057782589
 SkinnedMeshRenderer:
@@ -3068,20 +3082,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0015082266, y: 0.028707683, z: 0.0047472822}
     m_Extent: {x: 0.009278147, y: 0.013839796, z: 0.0111304615}
   m_DirtyAABB: 0
---- !u!114 &9158918650642203079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7813694426326095311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
-  ListenerNumber: -1
 --- !u!1 &7930700541530966798
 GameObject:
   m_ObjectHideFlags: 0
@@ -3322,7 +3322,7 @@ CharacterController:
   m_Height: 0.155
   m_Radius: 0.03
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.15
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.0775, z: 0}
@@ -3348,6 +3348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: -13
   moveSmoothTime: 0.1
+  shoes: []
+  stepSoundOffset: {fileID: 0}
   SelectionManager: {fileID: 0}
 --- !u!114 &962639029923544103
 MonoBehaviour:
