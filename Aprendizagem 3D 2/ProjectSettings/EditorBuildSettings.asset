@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/1_Gameplay/0_Menu.unity
     guid: 71a998e8b7d318645b851097372423c2
   - enabled: 1
     path: Assets/Scenes/1_Gameplay/1_Introducao.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Sonho2.unity
     guid: 4feb2a5867d214645888668b7024db93
+  - enabled: 1
+    path: Assets/Scenes/1_Gameplay/99_Credits.unity
+    guid: fb5ea1cc26da8bf44be17c6399798f9c
   m_configObjects: {}

@@ -28,7 +28,7 @@ public class PlayerView : MonoBehaviour
     private float forceZoomDuration;
     private bool forceZoomActive;
     [Header("Other")]
-    [SerializeField] SelectionManager SelectionManager;
+    private SelectionManager SelectionManager;
     private bool usingCellphone;
 
     [Header("Crouching")]
@@ -40,13 +40,11 @@ public class PlayerView : MonoBehaviour
         playerCameraTransform = playerCamera.GetComponent<Transform>();
 
         playerCameraTransform.position = cameraOffSet.transform.position;
-    }
 
-    
-    private void OnEnable()
-    {
+        SelectionManager = FindObjectOfType<SelectionManager>();
 
     }
+
     void Start()
     {
         if (lookCursor)
@@ -54,10 +52,18 @@ public class PlayerView : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+
+        #region ---Set Delagates---
         GameManager.instance.removePlayerControlEvent -= TurnPlayerVisionOff; // we remove the methods from the delegate at the beggining to prevent it to run multiple times.
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerVisonOn;
         GameManager.instance.removePlayerControlEvent += TurnPlayerVisionOff;
         GameManager.instance.returnPlayerControlEvent += TurnPlayerVisonOn;
+
+        VideoSettings.instance.changeMouseSensibility -= SetMouseSensibility;
+        VideoSettings.instance.changeMouseSensibility += SetMouseSensibility;
+        #endregion
+
+        SetMouseSensibility();
     }
 
     // Update is called once per frame
@@ -123,6 +129,12 @@ public class PlayerView : MonoBehaviour
         isCrouching = value;
     }
 
+    public void SetMouseSensibility()
+    {
+        float temp = PlayerPrefs.GetFloat("mouseSensibility");
+        this.mouseSensitivity = temp;
+    }
+
     public IEnumerator ForceZoom(float time)
     {
         forceZoomActive = true;
@@ -131,5 +143,4 @@ public class PlayerView : MonoBehaviour
         forceZoomActive = false;
     }
 
-    
 }
