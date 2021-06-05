@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade
+public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade, ISelectable
 {
     private FadeImage fadeScript;
 
@@ -16,6 +16,10 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade
     private DialogueManager2 objectiveManager;
 
     [SerializeField] private GameObject toalhaHud;
+    [SerializeField] string _objectDescription;
+
+    public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
+
     void Awake()
     {
         fadeScript = FindObjectOfType<FadeImage>();

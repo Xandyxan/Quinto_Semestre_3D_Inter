@@ -9,6 +9,7 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
     [Header("Needs Item")]
     [SerializeField] private bool needsItem;
     [SerializeField] private string itemTag; // key com o qual o pref do item foi registrado
+    [SerializeField] private GameObject itemHUD;
 
     [SerializeField] private List<GameObject> coisasAtivar;
     [SerializeField] private List<GameObject> coisasDesativar;
@@ -31,6 +32,7 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
             Fade();
             foreach (GameObject roupaNova in coisasAtivar) { roupaNova.SetActive(true); }
             foreach (GameObject roupaSuja in coisasDesativar) { roupaSuja.SetActive(false); }
+            itemHUD.SetActive(false);
             Invoke("ReturnPlayer", 4f);
         }
         else
