@@ -84,6 +84,11 @@ public class Cellphone : MonoBehaviour
         inspecting = value;
     }
 
+    public bool GetInspecting()
+    {
+        return inspecting;
+    }
+
     public void SetIsPausedGame(bool value)
     {
         isPausedGame = value;

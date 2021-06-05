@@ -2278,7 +2278,7 @@ PrefabInstance:
         type: 3}
       propertyPath: postProcessEffect
       value: 
-      objectReference: {fileID: 1462156554}
+      objectReference: {fileID: 1785322710}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a6f7616016ea934c84c7ddd177f4759, type: 3}
 --- !u!1 &411795245
@@ -10625,12 +10625,6 @@ Transform:
   m_Father: {fileID: 280860940}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -81.62997, y: 114.775246, z: -112.84516}
---- !u!1 &1462156554 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1324322959927225585, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
-    type: 3}
-  m_PrefabInstance: {fileID: 1566912968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1465093967
 GameObject:
   m_ObjectHideFlags: 0
@@ -13373,6 +13367,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1785322710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1324322959927225585, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566912968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1814313654
 GameObject:
   m_ObjectHideFlags: 0

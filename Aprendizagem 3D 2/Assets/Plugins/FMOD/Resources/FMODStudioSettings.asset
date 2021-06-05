@@ -330,8 +330,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../FMOD-LAMA/LAMA.fspro
-  sourceBankPath: ..\..\FMOD-LAMA\Build
+  sourceProjectPath: ../../../5 semestre/Lama_Stuff/FMOD-LAMA/LAMA.fspro
+  sourceBankPath: ..\..\..\5 semestre\Lama_Stuff\FMOD-LAMA\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

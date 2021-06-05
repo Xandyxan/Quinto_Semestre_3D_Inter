@@ -79,7 +79,8 @@ public class PlayerView : MonoBehaviour
                 UpdateMouseLook();
             }
             HandleZoom();
-        }    
+        }
+       
     }
 
     protected virtual void UpdateMouseLook()
@@ -120,9 +121,15 @@ public class PlayerView : MonoBehaviour
     {
         usingCellphone = false;
         this.enabled = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
-    public void TurnPlayerVisionOff() { usingCellphone = true; }
+    public void TurnPlayerVisionOff() 
+    { 
+        if(!Cellphone.instance.GetInspecting())
+        usingCellphone = true; 
+    }
 
     
     
