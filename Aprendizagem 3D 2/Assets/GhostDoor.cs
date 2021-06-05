@@ -15,6 +15,8 @@ public class GhostDoor : MonoBehaviour, IInteractable
 
     [SerializeField] private GameObject Orbe;
 
+    [SerializeField] private GameObject highlightPrato;
+
     bool firstTime = true;
     private IEnumerator RemoteOpenDoor()
     {
@@ -50,6 +52,7 @@ public class GhostDoor : MonoBehaviour, IInteractable
         if (!firstTime)
         {
             StartGhostDoors();
+            highlightPrato.SetActive(false);
             Invoke("StartNextEvent", 4f);
         }
         else

@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour
     public void TurnPlayerControllerOff()
     {
         canMove = false;
-        usingCellphone = Cellphone.instance.cellOn;
+       if(Cellphone.instance!= null) usingCellphone = Cellphone.instance.cellOn;
     }
 
     public void PlayerDuringDialogueOn() { limitedMovement = true; }

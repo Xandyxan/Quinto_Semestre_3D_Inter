@@ -126,9 +126,12 @@ public class PlayerView : MonoBehaviour
     }
 
     public void TurnPlayerVisionOff() 
-    { 
-        if(!Cellphone.instance.GetInspecting())
-        usingCellphone = true; 
+    {
+        usingCellphone = true;
+        if (Cellphone.instance != null && Cellphone.instance.GetInspecting()) // tem que ter um check a mais pra ver se ta inspecionando
+        {
+            usingCellphone = false;
+        } 
     }
 
     

@@ -30,7 +30,7 @@ public class UrsinhoInteractionSonho2 : MonoBehaviour, IInteractable, IFade
     private float distanceFromObjective;
 
     [Header("Tremer berço")]
-    [SerializeField] float speed = 46f; //how fast it shakes
+    float speed = 46f; //how fast it shakes
     [SerializeField] float amount = 0.002f; //how much it shakes
 
     [Header("Ativaveis")]
@@ -72,7 +72,7 @@ public class UrsinhoInteractionSonho2 : MonoBehaviour, IInteractable, IFade
 
         float value = Mathf.InverseLerp(1, 4, distanceFromObjective);
         speed = 1 / value;
-        if (distanceFromObjective < 4.4f)
+        if (distanceFromObjective < 2f)
         {
             Vector3 tempPos = cercadinhoLimpo.transform.position;
            

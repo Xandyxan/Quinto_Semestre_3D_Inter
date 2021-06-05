@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
 
             instance.pauseGameTrue();
             instance.removePlayerControlEvent();
-            Cellphone.instance.SetIsPausedGame(true);
+           if(Cellphone.instance!= null) Cellphone.instance.SetIsPausedGame(true);
         }
         else
         {
@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
 
             instance.pauseGameFalse();
             instance.returnPlayerControlEvent();
-            Cellphone.instance.SetIsPausedGame(false);
+           if(Cellphone.instance!= null) Cellphone.instance.SetIsPausedGame(false);
         }
     }
 
