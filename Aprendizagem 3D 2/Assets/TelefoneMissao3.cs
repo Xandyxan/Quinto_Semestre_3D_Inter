@@ -96,4 +96,9 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
         instance.release();
         podeAtender = ligaram;
     }
+
+    private void OnDisable()
+    {
+        instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
 }

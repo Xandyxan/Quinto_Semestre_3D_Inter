@@ -14,6 +14,8 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade
     [SerializeField] private List<GameObject> roupasDesativar;
 
     private DialogueManager2 objectiveManager;
+
+    [SerializeField] private GameObject toalhaHud;
     void Awake()
     {
         fadeScript = FindObjectOfType<FadeImage>();
@@ -28,6 +30,7 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade
             Fade();
             foreach(GameObject roupaNova in roupasAtivar) { roupaNova.SetActive(true); }
             foreach(GameObject roupaSuja in roupasDesativar) { roupaSuja.SetActive(false); }
+            if(toalhaHud!= null)toalhaHud.SetActive(false);
             Invoke("ReturnPlayer", 4f);
         }
         else
