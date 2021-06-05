@@ -7,11 +7,15 @@ public class GhostDoor : MonoBehaviour, IInteractable
     private bool conditionCleared = false;
     [SerializeField] private List<Doors> portas;
 
+    [SerializeField] private BoxCollider colliderCorredor;
+
     [SerializeField] private List<ParticleSystem> particulasLama; // fazer lama esguichar dos moveis enquanto esse evento está rolando
 
     [SerializeField] private GameObject ursinho;
 
     [SerializeField] private GameObject Orbe;
+
+    bool firstTime = true;
     private IEnumerator RemoteOpenDoor()
     {
         // para cada porta, chamar método que faz a porta abrir, esperar alguns segundos e chamar o método novamente, para que a porta feche.
@@ -43,8 +47,18 @@ public class GhostDoor : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        StartGhostDoors();
-        Invoke("StartNextEvent", 4f);
+        if (!firstTime)
+        {
+            StartGhostDoors();
+            Invoke("StartNextEvent", 4f);
+        }
+        else
+        {
+            Orbe.gameObject.SetActive(false);
+            colliderCorredor.enabled = false;
+            firstTime = false;
+        }
+      
     }
 
     private void StartNextEvent()
@@ -54,6 +68,6 @@ public class GhostDoor : MonoBehaviour, IInteractable
 
     private void OnTriggerEnter(Collider other)
     {
-        Orbe.gameObject.SetActive(false);
+        Interact();
     }
 }
