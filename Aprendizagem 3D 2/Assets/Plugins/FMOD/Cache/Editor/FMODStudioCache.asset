@@ -946,6 +946,7 @@ MonoBehaviour:
   Path: Assets/FMOD Assets/Desktop/Musicas.bank
   Name: Musicas
   StudioPath: bank:/Musicas
+
   lastModified: 637584521117987981
   LoadResult: 0
   FileSizes: []
