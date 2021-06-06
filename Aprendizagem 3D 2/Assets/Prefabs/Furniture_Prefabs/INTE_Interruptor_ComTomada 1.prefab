@@ -404,9 +404,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6329823901987188859}
+  - component: {fileID: 8016314220200513674}
+  - component: {fileID: 8016314220200513675}
   m_Layer: 0
   m_Name: INTE_Interruptor_ComTomada 1
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -432,6 +434,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &8016314220200513674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919434892831425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09691579, y: 0.14420557, z: 0.089554034}
+  m_Center: {x: 5.974547e-17, y: 0, z: 0.027045779}
+--- !u!114 &8016314220200513675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6670919434892831425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33d1a083a25f74c4c81169e81907830e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowZones: []
+  lightsRealTime: []
+  disjuntores:
+  - {fileID: 3332081668827925868}
+  _objectDescription: Interruptor
+  _triggerDialogue: 1
+  _dialogueIndex: 8
 --- !u!1 &6882404421294631934
 GameObject:
   m_ObjectHideFlags: 0

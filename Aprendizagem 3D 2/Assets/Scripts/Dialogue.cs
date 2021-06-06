@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dialogue : MonoBehaviour
+public class Dialogue : MonoBehaviour, ITask
 {
     [Header("General Text")]
     [SerializeField] private string characterName;
@@ -40,6 +40,10 @@ public class Dialogue : MonoBehaviour
     public static event PlayerDuringDialogueOff playerDuringDialogueOff;  // seria aqui um evento do tipo playerDuringDialogueOff?
 
     public static Dialogue instance;
+
+    [Header("Tasks")]
+    [SerializeField] private string _taskHUDText;
+    public string taskHUDText { get => _taskHUDText; set => _taskHUDText = value; }
 
     private void Awake()
     {
@@ -106,6 +110,7 @@ public class Dialogue : MonoBehaviour
         if (postProcessEffect2 != null) { postProcessEffect2.SetActive(true); }   
 
         if(endSound) dialogueSound.PlayOneShoot();
+        UpdateTaskHUD();
     }
 
     public void RunCoroutine(){ StartCoroutine(SpeechCoroutine()); }
@@ -135,5 +140,13 @@ public class Dialogue : MonoBehaviour
     private void DelayPlayerDuringDialogueOff()
     {
         playerDuringDialogueOff();
+    }
+
+    public void UpdateTaskHUD()
+    {
+        if(taskHUDText!= "")
+        {
+            GameManager.instance.SetTaskText(taskHUDText);
+        }
     }
 }
