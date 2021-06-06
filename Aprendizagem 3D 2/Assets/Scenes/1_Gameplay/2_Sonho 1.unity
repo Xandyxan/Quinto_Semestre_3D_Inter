@@ -7112,6 +7112,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 731931606}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &733797979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1938627134067462030, guid: 7088227bb37779b448f3766dfcefead7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1938627132615904848}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &739911530
 GameObject:
   m_ObjectHideFlags: 0
@@ -18939,12 +18945,12 @@ MonoBehaviour:
   _objectDescription: Porta Entrada
   _triggerDialogue: 0
   _dialogueIndex: 0
-  isLocked: 0
-  keyName: Chave Entrada
+  isLocked: 1
+  keyName: glubglub
   KeyValue: 1
-  hasDoorDialogue: 1
-  doorLocked: 1
-  doorUnlocked: 3
+  hasDoorDialogue: 0
+  doorLocked: 0
+  doorUnlocked: 0
   collectedItemHud: {fileID: 0}
 --- !u!114 &2004661877 stripped
 MonoBehaviour:
@@ -21993,6 +21999,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6417107548801767424, guid: 7088227bb37779b448f3766dfcefead7,
+        type: 3}
+      propertyPath: pauseMenuObject
+      value: 
+      objectReference: {fileID: 733797979}
     - target: {fileID: 6417107548801767441, guid: 7088227bb37779b448f3766dfcefead7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26456,6 +26467,11 @@ PrefabInstance:
       propertyPath: postProcessEffect2
       value: 
       objectReference: {fileID: 5624369301751172995}
+    - target: {fileID: 7840420861616053184, guid: 1a6f7616016ea934c84c7ddd177f4759,
+        type: 3}
+      propertyPath: postProcessEffect
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7840420862229618658, guid: 1a6f7616016ea934c84c7ddd177f4759,
         type: 3}
       propertyPath: m_IsActive
