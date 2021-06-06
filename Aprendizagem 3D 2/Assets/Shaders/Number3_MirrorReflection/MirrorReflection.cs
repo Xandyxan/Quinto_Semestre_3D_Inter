@@ -104,7 +104,7 @@ public class MirrorReflection : MonoBehaviour
 			m_ReflectionTexture = null;
 		}
 		foreach (DictionaryEntry kvp in m_ReflectionCameras)
-			Destroy(((Camera)kvp.Value).gameObject);
+			DestroyImmediate(((Camera)kvp.Value).gameObject);
 		m_ReflectionCameras.Clear();
 	}
 
