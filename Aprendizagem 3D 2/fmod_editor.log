@@ -7,7 +7,8 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001F41169E4B8 isAsync 0 updatePeriod 0.02
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] AsyncManager::init                       : manager 000001F18E2374E8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,16 +16,208 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F18AC34468 : node = 000001F455F87720
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F353122688.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F18AC34468
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F455F87830
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F18AC34468
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC2FF38)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBEAC78)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC29F08)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F18AC33388 : node = 000001F455F879A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F353122688.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F18AC33388
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F455F87AB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F18AC33388
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC34468)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBEAFB8)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC2F008)
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F18AC34978 : node = 000001F182B94490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F353122688.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F18AC34978
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F182B945A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F18AC34978
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC33388)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBE9278)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC30B08)
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F18AC30298 : node = 000001F182B94710
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F353122688.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F18AC30298
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F182B94820
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F18AC30298
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC34978)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBEAE18)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC356F8)
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009122AFF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC1AA7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC1AA7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC1AA7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC1AA7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F182CE00E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var1', format=5, channels=2, frequency=48000, lengthbytes=5664, lengthpcm=24192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.701599.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009122AFF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC1AA7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC1AA7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC1AA7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC1AA7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F182CE00E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var3', format=5, channels=2, frequency=48000, lengthbytes=5856, lengthpcm=24192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.865204.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000009122AFF458
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC1AA7B10
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC1AA7AE0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC1AA7BE0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC1AA7CA0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001F182CE00E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var2', format=5, channels=2, frequency=48000, lengthbytes=5920, lengthpcm=25344, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.896973.
+[WRN] EventInstance::update                    : Event {4120eeb1-3095-4938-bbc9-4436ef3b0edf} waited 120 milliseconds for sample data to load.  Preload sample data to avoid this delay.
+[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001F18AC336E8 : node = 000001F182B94490
+[LOG] SystemI::createSound                     : add node to async list : head = 000001F353122688.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001F18AC336E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001F182B945A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001F18AC336E8
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC30298)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBEAC78)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC32CC8)
+[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC336E8)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18BBE9418)
+[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000001F18AC31A38)
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[WRN] OutputWASAPI::mixerThread                : Starvation detected in WASAPI output buffer!
+[LOG] SoundI::release                          :  (000001F455D92128)
+[LOG] SoundI::release                          :     SONHO-3_DUB_01_MARIANA (000001F18BBE7BB8)
+[LOG] SoundI::release                          :  (000001F455D91FB8)
+[LOG] SoundI::release                          :     SONHO-3_DUB_02_MARIANA (000001F18BBE8A58)
+[LOG] SoundI::release                          :  (000001F455D90FE8)
+[LOG] SoundI::release                          :     SONHO-3_DUB_03_MARIANA (000001F18A64ED28)
+[LOG] SoundI::release                          :  (000001F182B17E18)
+[LOG] SoundI::release                          :     Andar Chinelo Var1 (000001F18BBEA938)
+[LOG] SoundI::release                          :  (000001F182B16B68)
+[LOG] SoundI::release                          :     Andar Chinelo Var3 (000001F18BBE9F78)
+[LOG] SoundI::release                          :  (000001F182B18268)
+[LOG] SoundI::release                          :     Andar Chinelo Var2 (000001F18BBE9278)
+[LOG] SoundI::release                          :  (000001F455D92408)
+[LOG] SoundI::release                          :     SONHO-3_DUB_04_MARIANA (000001F18BBE7EF8)
+[LOG] SoundI::release                          :  (000001F455D90468)
+[LOG] SoundI::release                          :     SONHO-3_DUB_05_MARIANA (000001F18BBE9758)
+[LOG] SoundI::release                          :  (000001F455D8DD98)
+[LOG] SoundI::release                          :     SONHO-3_DUB_06_MARIANA (000001F18BBEAAD8)
+[LOG] SoundI::release                          :  (000001F455D8DF08)
+[LOG] SoundI::release                          :     SONHO-3_DUB_07_MARIANA (000001F18BBE9A98)
+[LOG] SoundI::release                          :  (000001F455D8F8E8)
+[LOG] SoundI::release                          :     Som_Ambiente_Noite (000001F18BCB3C78)
+[LOG] SoundI::release                          :  (000001F455D926E8)
+[LOG] SoundI::release                          :     SONHO-3_DUB_08_MARIANA (000001F18BBE8098)
+[LOG] SoundI::release                          :  (000001F455D912C8)
+[LOG] SoundI::release                          :     SONHO-3_DUB_09_MARIANA (000001F35A682BC8)
+[LOG] SoundI::release                          :  (000001F455D8EA88)
+[LOG] SoundI::release                          :     SONHO-3_DUB_10_MARIANA (000001F18BBE98F8)
+[LOG] SoundI::release                          :  (000001F455D91E48)
+[LOG] SoundI::release                          :     SONHO-3_DUB_11_MARIANA (000001F18E779F48)
+[LOG] SoundI::release                          :  (000001F455D92578)
+[LOG] SoundI::release                          :     SONHO-3_DUB_12_MARIANA (000001F18BBE90D8)
+[LOG] SoundI::release                          :  (000001F455D90E78)
+[LOG] SoundI::release                          :     MUS_Aceitação_MISSAO_3 (000001F18BCB61D8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -32,3 +225,12 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
