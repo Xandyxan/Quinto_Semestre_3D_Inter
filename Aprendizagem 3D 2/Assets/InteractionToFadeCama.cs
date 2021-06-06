@@ -13,6 +13,7 @@ public class InteractionToFadeCama : MonoBehaviour, IFade, ISelectable, IInterac
 
     [SerializeField] int sceneToLoadIndex = 5;
     [SerializeField] string keyPraInteracao = "Banho";
+    [SerializeField] private GameObject collectableHUDitem;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class InteractionToFadeCama : MonoBehaviour, IFade, ISelectable, IInterac
             if (PlayerPrefs.GetInt(keyPraInteracao, 0) == 1)
             {
                 Fade();
+                collectableHUDitem.SetActive(false);
             }
         }
         else
