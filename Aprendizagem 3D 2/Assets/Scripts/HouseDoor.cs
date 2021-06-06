@@ -46,6 +46,7 @@ public class HouseDoor : Doors
             base.Interact();
             knobAnimator.SetTrigger("Open");
             if(collectedItemHud!= null) collectedItemHud.SetActive(false);
+            if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorUnlocked);
         }
     }
 
@@ -59,8 +60,8 @@ public class HouseDoor : Doors
         {
             if (PlayerPrefs.GetInt(keyName, 0) == KeyValue)
                 // destranca a porta
-                print("Open the door!");
-            if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorUnlocked);
+               // print("Open the door!");
+            // som de porta destrancando !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             isLocked = false;
             // depois que isLocked fica false, quando o jogador tentar rodar o código de abrir a porta, ela irá abrir normalmente
 
@@ -69,7 +70,7 @@ public class HouseDoor : Doors
         {
             // bool isLocked já começa como true
             knobAnimator.SetTrigger("Locked");
-            print("jogador não possui a chave!");
+            //print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
             if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorLocked);
             return;

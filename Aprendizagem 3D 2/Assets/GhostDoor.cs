@@ -5,6 +5,8 @@ using UnityEngine;
 public class GhostDoor : MonoBehaviour, IInteractable
 {
     private bool conditionCleared = false;
+
+    [SerializeField] PlaySound somPrato;
     [SerializeField] private List<Doors> portas;
 
     [SerializeField] private BoxCollider colliderCorredor;
@@ -54,6 +56,7 @@ public class GhostDoor : MonoBehaviour, IInteractable
             StartGhostDoors();
             highlightPrato.SetActive(false);
             Invoke("StartNextEvent", 4f);
+            if (somPrato != null) somPrato.PlayOneShoot(); 
         }
         else
         {

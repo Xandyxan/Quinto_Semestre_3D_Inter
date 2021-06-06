@@ -31,7 +31,7 @@ public class Messages : MonoBehaviour
 
     public void UpdateMessages()
     {
-        //print("aaaaaaaaaaaa");
+       // print("aaaaaaaaaaaa");
         int updatedChatMessagesCounter = 0; // vamos setar quantas das mensagens presentes na lista estarão ativas (enviadas) no momento em que o update foi chamado.
 
         if (PlayerPrefs.HasKey(contactName)) // pega a quantidade de mensagens presente na conversa atual através do valor do Pref.
@@ -55,7 +55,7 @@ public class Messages : MonoBehaviour
         for (int i = 0; i < updatedChatMessagesCounter; i++) // dai pega apenas a quantidade de mensagens atual e ativa os objetos delas.
         {
             messages[i].gameObject.SetActive(true);
-            //print((i+ 1) + " messages are active");
+           // print((i+ 1) + " messages are active");
         }
 
         if(updatedChatMessagesCounter > numberOfMessages)  // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
@@ -74,7 +74,7 @@ public class Messages : MonoBehaviour
         else // there are no messages bro
         { 
           scrollMessages.SetNewestMessagePos(0);
-          print("there are no messages in " + contactName + " yet");
+          //print("there are no messages in " + contactName + " yet");
         }
         
         numberOfMessages = updatedChatMessagesCounter;
