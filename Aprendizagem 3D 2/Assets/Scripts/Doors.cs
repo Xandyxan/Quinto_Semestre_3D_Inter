@@ -201,7 +201,6 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
         degreesPerSecond = desiredDPS;
     }
 
-
     //NOTAS PARA FUTURA ATUALIZAÇÃO
     //InspectorRotation method está sendo apenas diferença quando assunto é comparar os valores de rotação como segue no método CheckDoorState
     //Nos outros pontos onde é atribuir o valor esse método não está fazendo diferença, com ou sem o valor é o mesmo, necessita investigação
