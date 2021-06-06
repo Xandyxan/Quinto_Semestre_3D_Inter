@@ -2457,6 +2457,11 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2064150805561681030, guid: cc4edbf539727164a89e81d1e7d09130,
+        type: 3}
+      propertyPath: cullingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2064150805561681031, guid: cc4edbf539727164a89e81d1e7d09130,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2466,6 +2471,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064150805561681031, guid: cc4edbf539727164a89e81d1e7d09130,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064150805561681031, guid: cc4edbf539727164a89e81d1e7d09130,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2064150805561681031, guid: cc4edbf539727164a89e81d1e7d09130,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc4edbf539727164a89e81d1e7d09130, type: 3}
@@ -6915,6 +6935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d1c9fc64407c4c8bc7419ad274503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somPrato: {fileID: 1032524615}
   portas:
   - {fileID: 2032319970}
   - {fileID: 1031832681}
@@ -6957,6 +6978,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1032524609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1032524615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032524610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/DUBLAGENS/DUBS_SONHO-1/SONHO-1_DUB_JORNALISTA
+  _is3dSound: 1
+  _soundSource: {fileID: 1032524614}
+  extraSoundPath: event:/SFX/SFX_SONHO 2/SFX_Prato_Quebrando
 --- !u!1 &1078674340
 GameObject:
   m_ObjectHideFlags: 0
