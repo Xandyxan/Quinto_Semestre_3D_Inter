@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [Header("Pause Menu Screens")]
-    private GameObject pauseMenuObject;
+    [SerializeField] private GameObject pauseMenuObject;
     [HideInInspector] public bool isPausedGame;
     [SerializeField] private GameObject homePauseMenu;
     [SerializeField] private GameObject[] secondaryPauseMenus;
@@ -43,8 +43,6 @@ public class GameManager : MonoBehaviour
     {
         if (_instance != null && _instance != this) Destroy(this.gameObject);
         else _instance = this;
-
-        pauseMenuObject = GameObject.FindGameObjectWithTag("PauseMenu");
         
         if(!mainMenuScreen)SetLockCursor(true);
     }

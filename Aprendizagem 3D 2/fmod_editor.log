@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002A154E9C9F8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F41169E4B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,125 +16,15 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000FE4ACFEFA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC08A7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC08A7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC08A7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC08A7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002A216799108
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var1', format=5, channels=2, frequency=48000, lengthbytes=5664, lengthpcm=24192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.701599.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000FE4ACFEFA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC08A7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC08A7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC08A7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC08A7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002A216799108
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var3', format=5, channels=2, frequency=48000, lengthbytes=5856, lengthpcm=24192, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.865204.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 4112320
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 48288
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000FE4ACFEFA8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAC08A7B10
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAC08A7AE0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAC08A7BE0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAC08A7CA0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002A216799108
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Andar Chinelo Var2', format=5, channels=2, frequency=48000, lengthbytes=5920, lengthpcm=25344, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.896973.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SystemI::createSound                     : filename = Assets/FMOD Assets/Desktop/SFX.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000002A43F6EDF28 : node = 000002A154F47570
-[LOG] SystemI::createSound                     : add node to async list : head = 000002A14DA33C18.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002A43F6EDF28
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMOD Assets/Desktop/SFX.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 4112320
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 48288
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002A154F47680
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Home_Phone_Ringing-SoundBible.com-476855293', format=5, channels=2, frequency=48000, lengthbytes=116704, lengthpcm=892921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.998077.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002A43F6EDF28
-[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000002A43F6F2B18)
-[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000002A1897940B8)
-[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000002A43F6EF1B8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          : Home_Phone_Ringing-SoundBible.com-476855293 (000002A43F6EDF28)
-[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000002A14DC09F78)
-[LOG] SoundI::release                          :     Home_Phone_Ringing-SoundBible.com-476855293 (000002A43F6EEE58)
-[LOG] SoundI::release                          :  (000002A18B7F1608)
-[LOG] SoundI::release                          :     SONHO-3_DUB_01_MARIANA (000002A187F02D68)
-[LOG] SoundI::release                          :  (000002A18B7F1778)
-[LOG] SoundI::release                          :     SONHO-3_DUB_02_MARIANA (000002A187F02F08)
-[LOG] SoundI::release                          :  (000002A18B7F0918)
-[LOG] SoundI::release                          :     SONHO-3_DUB_03_MARIANA (000002A187F038C8)
-[LOG] SoundI::release                          :  (000002A18CB6C1D8)
-[LOG] SoundI::release                          :     Andar Chinelo Var1 (000002A14DC09758)
-[LOG] SoundI::release                          :  (000002A18CB6E738)
-[LOG] SoundI::release                          :     Andar Chinelo Var3 (000002A14DC09A98)
-[LOG] SoundI::release                          :  (000002A18CB6B4E8)
-[LOG] SoundI::release                          :     Andar Chinelo Var2 (000002A14DC09DD8)
-[LOG] SoundI::release                          :  (000002A18B7F3438)
-[LOG] SoundI::release                          :     SONHO-3_DUB_04_MARIANA (000002A187F02A28)
-[LOG] SoundI::release                          :  (000002A18B7F3158)
-[LOG] SoundI::release                          :     SONHO-3_DUB_05_MARIANA (000002A187F03588)
-[LOG] SoundI::release                          :  (000002A18B7F1498)
-[LOG] SoundI::release                          :     SONHO-3_DUB_06_MARIANA (000002A187F03A68)
-[LOG] SoundI::release                          :  (000002A18B7F18E8)
-[LOG] SoundI::release                          :     SONHO-3_DUB_07_MARIANA (000002A14DC09418)
-[LOG] SoundI::release                          :  (000002A18B7EFF08)
-[LOG] SoundI::release                          :     Som_Ambiente_Noite (000002A187F02208)
-[LOG] SoundI::release                          :  (000002A18B7F1D38)
-[LOG] SoundI::release                          :     SONHO-3_DUB_08_MARIANA (000002A14DC09C38)
-[LOG] SoundI::release                          :  (000002A18B7F2FE8)
-[LOG] SoundI::release                          :     SONHO-3_DUB_09_MARIANA (000002A187F02888)
-[LOG] SoundI::release                          :  (000002A18B7F1A58)
-[LOG] SoundI::release                          :     SONHO-3_DUB_10_MARIANA (000002A14DC098F8)
-[LOG] SoundI::release                          :  (000002A18B7F1BC8)
-[LOG] SoundI::release                          :     SONHO-3_DUB_11_MARIANA (000002A187F033E8)
-[LOG] SoundI::release                          :  (000002A18B7F0D68)
-[LOG] SoundI::release                          :     SONHO-3_DUB_12_MARIANA (000002A187F02BC8)
-[LOG] SoundI::release                          :  (000002A18B7EFC28)
-[LOG] SoundI::release                          :     MUS_Aceitação_MISSAO_3 (000002A187F02548)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -142,5 +32,3 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.

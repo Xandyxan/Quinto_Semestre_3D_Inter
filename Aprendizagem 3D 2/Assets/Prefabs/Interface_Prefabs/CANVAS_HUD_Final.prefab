@@ -2791,9 +2791,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  colliderCorredor: {fileID: 0}
   particulasLama: []
   ursinho: {fileID: 0}
   Orbe: {fileID: 0}
+  highlightPrato: {fileID: 0}
 --- !u!1 &1597953962535510055
 GameObject:
   m_ObjectHideFlags: 0
@@ -5991,6 +5993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923589a36f2b341428aa6fb5d962f733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuObject: {fileID: 5025678322166434539}
   isPausedGame: 0
   homePauseMenu: {fileID: 778051887878616793}
   secondaryPauseMenus:
@@ -10929,7 +10932,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5025678322166434539}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74672c81d9f3b9d4ca101d556b33bff1, type: 3}
   m_Name: 

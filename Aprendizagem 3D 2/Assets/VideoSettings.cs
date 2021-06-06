@@ -23,7 +23,8 @@ public class VideoSettings : MonoBehaviour
 
     private void Awake()
     {
-        CreatePlayerPrefs();
+        if (!PlayerPrefs.HasKey("qualityIndex")) CreatePlayerPrefs();
+
         QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qualityIndex"));
 
         if (_instance != null && _instance != this) Destroy(this.gameObject);
