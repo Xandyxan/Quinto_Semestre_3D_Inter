@@ -530,6 +530,8 @@ MonoBehaviour:
   homePauseMenu: {fileID: 0}
   secondaryPauseMenus: []
   mainMenuScreen: 0
+  taskText: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!1 &124745239
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,6 +6136,18 @@ Transform:
   m_Father: {fileID: 2099027052}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15.756949, y: -1.2658869, z: -0.31904954}
+--- !u!114 &912119150 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1938627132335176471, guid: 7088227bb37779b448f3766dfcefead7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1616160814}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f3ace7db0ba8c44a125b946e017d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925137810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7146,12 +7160,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee5985715382bb4a9f01f64be93df1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCameraTransform: {fileID: 925137814}
   cameraOffSet: {fileID: 864778341}
   lookCursor: 1
   mouseSensitivity: 3
   mouseSmoothTime: 0.05
   crosshair: {fileID: 1036576277}
   defaultZoomSpeed: 8
+  SelectionManager: {fileID: 912119150}
   playerHead: {fileID: 1206402680}
   cameraTransform: {fileID: 925137814}
   minPitch: {x: -90, y: -86}

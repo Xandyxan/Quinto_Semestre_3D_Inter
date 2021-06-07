@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
     {
         //We remove the methods from the delegate at the beggining to prevent it to run multiple times.
         #region Set Delegates
+
         GameManager.instance.removePlayerControlEvent -= TurnPlayerControllerOff; 
         GameManager.instance.returnPlayerControlEvent -= TurnPlayerControllerOn;
         GameManager.instance.removePlayerControlEvent += TurnPlayerControllerOff;

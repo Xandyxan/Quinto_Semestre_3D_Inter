@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     public delegate void UpdateMessages();     // tira controle da movimentação do player. 
     public UpdateMessages updateMessagesEvent;
     #endregion
-    [SerializeField] private PlayerController playerMovement;
+   
     [Header("Pause Menu Screens")]
     [SerializeField] private GameObject pauseMenuObject;
     [HideInInspector] public bool isPausedGame;
@@ -43,7 +43,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Text taskText;
 
     private bool playerWasNotFree = false;
-    private bool usingCellphone;
+    private bool usingCellphone, playerInScene;
+    [SerializeField] private PlayerController playerMovement;
+
     //----------------------------------------------------------------------------\\
 
     private void Awake()
@@ -52,6 +54,7 @@ public class GameManager : MonoBehaviour
         else _instance = this;
         
         if(!mainMenuScreen)SetLockCursor(true);
+        if (playerMovement == null) playerInScene = false;
     }
     private void Start()
     {
@@ -70,8 +73,11 @@ public class GameManager : MonoBehaviour
     {
         if (on)
         {
-            if (!playerMovement.GetCanMove()) playerWasNotFree = true;
-            usingCellphone = playerMovement.GetUsingCellphone();
+            if (playerInScene)
+            {
+                if (!playerMovement.GetCanMove()) playerWasNotFree = true;
+                usingCellphone = playerMovement.GetUsingCellphone();
+            }
             Time.timeScale = 0;
             isPausedGame = true;
             pauseMenuObject.SetActive(true);
