@@ -78,8 +78,14 @@ public class SelectionManager : MonoBehaviour
 
                 if (selection.gameObject.CompareTag(selectableTag) && !inspecionando)
                 {
+                   // selectionRenderer = selection.GetComponent<Renderer>();
                     var selectable = selection.GetComponent<ISelectable>();
 
+                   /* if (selectionRenderer != null)
+                    {
+                        selectionRenderer.material.SetColor("_EmissionColor", selectionColor);
+                        selectionRenderer.material.EnableKeyword("_EMISSION");
+                    }*/
                     if(selectable != null)
                     {
                         selectionText.text = selectable.objectDescription;
