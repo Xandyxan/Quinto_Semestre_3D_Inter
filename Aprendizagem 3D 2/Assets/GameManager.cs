@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +29,7 @@ public class GameManager : MonoBehaviour
     public delegate void UpdateMessages();     // tira controle da movimentação do player. 
     public UpdateMessages updateMessagesEvent;
     #endregion
-
+    [SerializeField] private PlayerController playerMovement;
     [Header("Pause Menu Screens")]
     [SerializeField] private GameObject pauseMenuObject;
     [HideInInspector] public bool isPausedGame;
@@ -37,6 +38,12 @@ public class GameManager : MonoBehaviour
 
     [Header("It's main screen?")]
     [SerializeField] private bool mainMenuScreen;
+
+    [Header("Tasks")]
+    [SerializeField] private Text taskText;
+
+    private bool playerWasNotFree = false;
+    private bool usingCellphone;
     //----------------------------------------------------------------------------\\
 
     private void Awake()
@@ -63,6 +70,8 @@ public class GameManager : MonoBehaviour
     {
         if (on)
         {
+            if (!playerMovement.GetCanMove()) playerWasNotFree = true;
+            usingCellphone = playerMovement.GetUsingCellphone();
             Time.timeScale = 0;
             isPausedGame = true;
             pauseMenuObject.SetActive(true);
@@ -80,11 +89,19 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < secondaryPauseMenus.Length; i++) secondaryPauseMenus[i].SetActive(false);
             pauseMenuObject.SetActive(false);
-            SetLockCursor(true);
-
+           
             instance.pauseGameFalse();
-            instance.returnPlayerControlEvent();
-           if(Cellphone.instance!= null) Cellphone.instance.SetIsPausedGame(false);
+            if (!playerWasNotFree) 
+            {
+                instance.returnPlayerControlEvent();
+            }
+            if (!usingCellphone)
+            {
+                SetLockCursor(true);
+            }
+
+            if (Cellphone.instance!= null) Cellphone.instance.SetIsPausedGame(false);
+            playerWasNotFree = false;
         }
     }
 
@@ -117,5 +134,16 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("levelAt", 2);
     }
- 
+    
+    public void SetTaskText(string actualTask)  // scripts vão chamar pra colocar um "Pegue uma toalha" aparecendo no canto da tela
+    {
+        taskText.text = actualTask;
+        taskText.gameObject.SetActive(true);
+    }
+
+    public void ConcludeCurrentTask()    // quando uma condição de task acaba, o script da task chama esse método
+    {
+        taskText.text = "";
+        taskText.gameObject.SetActive(false);
+    }
 }
