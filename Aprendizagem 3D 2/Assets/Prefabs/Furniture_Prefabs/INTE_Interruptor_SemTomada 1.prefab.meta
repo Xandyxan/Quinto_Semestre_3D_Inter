@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Aprendizagem 3D 2/Assets/Models/Banheiro/Banheiro/Chuveiro [TEXTURAS]/Cano/Cano.mat.meta
+guid: 3b590893b1c9abd46add94cc840c0c96
+NativeFormatImporter:
+=======
 guid: fb0aeb1cb1ba9e744b4b38805932d442
 PrefabImporter:
+>>>>>>> Main:Aprendizagem 3D 2/Assets/Prefabs/Furniture_Prefabs/INTE_Interruptor_SemTomada 1.prefab.meta
   externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

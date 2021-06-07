@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerView : MonoBehaviour
 {
     protected Camera playerCamera;
-    [SerializeField] protected Transform playerCameraTransform;
+    protected Transform playerCameraTransform;
     [SerializeField] protected Transform cameraOffSet;
 
     [SerializeField] protected bool lookCursor = true;
@@ -28,7 +28,7 @@ public class PlayerView : MonoBehaviour
     private float forceZoomDuration;
     private bool forceZoomActive;
     [Header("Other")]
-    [SerializeField] private SelectionManager SelectionManager;
+    private SelectionManager SelectionManager;
     private bool usingCellphone;
 
     [Header("Crouching")]
@@ -37,7 +37,13 @@ public class PlayerView : MonoBehaviour
     private void Awake()
     {
         playerCamera = FindObjectOfType<Camera>();
+        playerCameraTransform = playerCamera.GetComponent<Transform>();
+
         playerCameraTransform.position = cameraOffSet.transform.position;
+
+        SelectionManager = FindObjectOfType<SelectionManager>();
+
+        //crosshair = GameObject.FindGameObjectWithTag("Crosshair").GetComponent<Image>();
     }
 
     void Start()

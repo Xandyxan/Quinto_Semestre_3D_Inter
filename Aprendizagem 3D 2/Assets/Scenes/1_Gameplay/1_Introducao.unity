@@ -526,7 +526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923589a36f2b341428aa6fb5d962f733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuObject: {fileID: 0}
   isPausedGame: 0
   homePauseMenu: {fileID: 0}
   secondaryPauseMenus: []
@@ -10863,12 +10862,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1507134936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1938627134067462030, guid: 7088227bb37779b448f3766dfcefead7,
-    type: 3}
-  m_PrefabInstance: {fileID: 1616160814}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1511336892
 GameObject:
   m_ObjectHideFlags: 0
@@ -11500,11 +11493,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6417107548801767424, guid: 7088227bb37779b448f3766dfcefead7,
-        type: 3}
-      propertyPath: pauseMenuObject
-      value: 
-      objectReference: {fileID: 1507134936}
     - target: {fileID: 6417107548801767441, guid: 7088227bb37779b448f3766dfcefead7,
         type: 3}
       propertyPath: m_LocalPosition.x

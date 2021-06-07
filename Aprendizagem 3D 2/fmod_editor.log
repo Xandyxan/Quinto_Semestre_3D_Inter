@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000155221CD978 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001F4D4DF09A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,49 +16,15 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
-[LOG] SoundI::release                          :  (00000156CAD52168)
-[LOG] SoundI::release                          :     SONHO-1_DUB_1_MARIANA (0000015598ECA998)
-[LOG] SoundI::release                          :  (00000156CAD4F088)
-[LOG] SoundI::release                          :     SONHO-1_DUB_2_SILVANA (0000015598ECA7F8)
-[LOG] SoundI::release                          :  (00000156CAD52A08)
-[LOG] SoundI::release                          :     SONHO-1_DUB_3_MARIANA (0000015598EC85D8)
-[LOG] SoundI::release                          :  (00000156CAD4E958)
-[LOG] SoundI::release                          :     SONHO-1_DUB_4_SILVANA (0000015598EC6F18)
-[LOG] SoundI::release                          :  (00000156CAD51BA8)
-[LOG] SoundI::release                          :     SONHO-1_DUB_5_MARIANA (0000015598EC8C58)
-[LOG] SoundI::release                          :  (00000156CAD52448)
-[LOG] SoundI::release                          :     SONHO-1_DUB_6_MARIANA (0000015598ECAB38)
-[LOG] SoundI::release                          :  (00000156CAD51E88)
-[LOG] SoundI::release                          :     SONHO-1_DUB_7_SILVANA (0000015598EC9C98)
-[LOG] SoundI::release                          :  (00000156CAD52E58)
-[LOG] SoundI::release                          :     SONHO-1_DUB_JORNALISTA (0000015598EC9FD8)
-[LOG] SoundI::release                          :  (00000156CAD4EDA8)
-[LOG] SoundI::release                          :     Som_Ambiente_Noite (0000015598EC6D78)
-[LOG] SoundI::release                          :  (00000156CAD4F7B8)
-[LOG] SoundI::release                          :     Televisão Deslignado (0000015598ECB018)
-[LOG] SoundI::release                          :  (00000156CAD52CE8)
-[LOG] SoundI::release                          :     Estatica TV (0000015598EC9E38)
-[LOG] SoundI::release                          :  (00000156CAD4E678)
-[LOG] SoundI::release                          :     Televisão ligando (0000015598EC9AF8)
-[LOG] SoundI::release                          :  (00000156CAD53CB8)
-[LOG] SoundI::release                          :     MUS_Depressão_INT_MISSAO_1 (0000015598EC8438)
-[LOG] SoundI::release                          :  (00000156CAD51A38)
-[LOG] SoundI::release                          :     Lavando Louca (0000015598EC8AB8)
-[LOG] SoundI::release                          :  (00000156CAD53E28)
-[LOG] SoundI::release                          :     Criança Correndo (0000015598EC5858)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
