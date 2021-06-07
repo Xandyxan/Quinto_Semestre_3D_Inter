@@ -1758,6 +1758,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!4 &443622390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261360004644690568, guid: 9f83da68cc0d04349a792c3781654631,
@@ -1818,6 +1819,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 7
+  _taskHUDText: 
 --- !u!114 &454946641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2241,6 +2243,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &531678140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2369,6 +2372,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!198 &538692842 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1292999978092437001, guid: 3bf527da804e48340ae8f5b0994118f6,
@@ -2554,6 +2558,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1 &573998256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,6 +3239,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1 &652437972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,7 +4057,12 @@ PrefabInstance:
         type: 3}
       propertyPath: SelectionManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2080846820}
+    - target: {fileID: 962639029923544103, guid: 524081d2dca0ef74a8d1beedb87c2003,
+        type: 3}
+      propertyPath: playerCameraTransform
+      value: 
+      objectReference: {fileID: 2055794815}
     - target: {fileID: 1118639497428025028, guid: 524081d2dca0ef74a8d1beedb87c2003,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6231,6 +6242,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &932318658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7612,6 +7624,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1 &1131849370
 GameObject:
   m_ObjectHideFlags: 0
@@ -8424,6 +8437,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &1225699382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9253,6 +9267,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1 &1345219768
 GameObject:
   m_ObjectHideFlags: 0
@@ -10117,6 +10132,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &1457452822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11049,6 +11065,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4649980757122190836, guid: 3253d9cc510633148a8acb4c81514212,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4788123699313741694, guid: 3253d9cc510633148a8acb4c81514212,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -11139,6 +11160,11 @@ PrefabInstance:
       propertyPath: mission2
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6180157918801601030, guid: 3253d9cc510633148a8acb4c81514212,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2121283045}
     - target: {fileID: 6180157920303349048, guid: 3253d9cc510633148a8acb4c81514212,
         type: 3}
       propertyPath: portas.Array.data[0]
@@ -11275,6 +11301,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1 &1607604435
 GameObject:
   m_ObjectHideFlags: 0
@@ -12518,6 +12545,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &1861752455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12688,6 +12716,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 6
+  _taskHUDText: 
 --- !u!1001 &1907488464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13740,6 +13769,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2052097691}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2055794815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5614684797787655794, guid: 524081d2dca0ef74a8d1beedb87c2003,
+    type: 3}
+  m_PrefabInstance: {fileID: 745726950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2059407637 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7261360004644690568, guid: 9f83da68cc0d04349a792c3781654631,
@@ -14299,6 +14334,18 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2121283045 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8221364053448504279, guid: 524081d2dca0ef74a8d1beedb87c2003,
+    type: 3}
+  m_PrefabInstance: {fileID: 745726950}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1496b55dd7d8c3e499a3efe32f94acec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7099551346925637
 Transform:
   m_ObjectHideFlags: 0
