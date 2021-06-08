@@ -31,7 +31,6 @@ public class Messages : MonoBehaviour
 
     public void UpdateMessages()
     {
-       // print("aaaaaaaaaaaa");
         int updatedChatMessagesCounter = 0; // vamos setar quantas das mensagens presentes na lista estarão ativas (enviadas) no momento em que o update foi chamado.
 
         if (PlayerPrefs.HasKey(contactName)) // pega a quantidade de mensagens presente na conversa atual através do valor do Pref.
@@ -61,6 +60,7 @@ public class Messages : MonoBehaviour
         if(updatedChatMessagesCounter > numberOfMessages)  // ativar feedback de mensagem nova aqui. //q(≧▽≦q)
         {
             feedbackAnimation.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Mensagem_Celular");
             //print("NEW MESSAGES ARRIVED"); 
         } 
 

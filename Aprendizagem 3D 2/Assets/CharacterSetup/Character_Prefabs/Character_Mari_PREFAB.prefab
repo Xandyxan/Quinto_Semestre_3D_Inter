@@ -2130,6 +2130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f467a1c599b8344c9bb90d9d98954c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPath: event:/SFX/SFX_GENERAL/SFX_Lanterna_Liga
+  offPath: event:/SFX/SFX_GENERAL/SFX_Lanterna_Desliga
 --- !u!1 &5614684797655078731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,7 +2172,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5614684797787655794}
   - component: {fileID: 5614684797787655805}
-  - component: {fileID: 5339848656840476113}
   - component: {fileID: 1694323892780803292}
   - component: {fileID: 4812192006723925501}
   m_Layer: 0
@@ -2240,37 +2241,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &5339848656840476113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5614684797787655793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: 0
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_RenderPostProcessing: 1
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
 --- !u!114 &1694323892780803292
 MonoBehaviour:
   m_ObjectHideFlags: 0

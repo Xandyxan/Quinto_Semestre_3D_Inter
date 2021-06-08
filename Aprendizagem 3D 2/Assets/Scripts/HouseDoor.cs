@@ -46,6 +46,7 @@ public class HouseDoor : Doors
         {
             base.Interact();
             knobAnimator.SetTrigger("Open");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha", this.transform.position);
             if(collectedItemHud!= null) collectedItemHud.SetActive(false);
             if (hasDoorDialogue && neverBefore)
             {
@@ -65,8 +66,8 @@ public class HouseDoor : Doors
         {
             if (PlayerPrefs.GetInt(keyName, 0) == KeyValue)
                 // destranca a porta
-               // print("Open the door!");
-            // som de porta destrancando !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                // print("Open the door!");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_Destrancando", this.transform.position);
             isLocked = false;
             // depois que isLocked fica false, quando o jogador tentar rodar o código de abrir a porta, ela irá abrir normalmente
 
@@ -77,6 +78,7 @@ public class HouseDoor : Doors
             knobAnimator.SetTrigger("Locked");
             //print("jogador não possui a chave!");
             //DialogueManager.UpdateObjective();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_Trancada", this.transform.position);
             if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorLocked);
             return;
         }
