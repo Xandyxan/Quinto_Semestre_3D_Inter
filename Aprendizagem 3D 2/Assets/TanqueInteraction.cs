@@ -11,8 +11,9 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
     [SerializeField] private string itemTag; // key com o qual o pref do item foi registrado
     [SerializeField] private GameObject itemHUD;
 
-    [SerializeField] private List<GameObject> coisasAtivar;
-    [SerializeField] private List<GameObject> coisasDesativar;
+    //[SerializeField] private List<GameObject> coisasAtivar;
+    //[SerializeField] private List<GameObject> coisasDesativar;
+    [SerializeField] private GameObject bubuMolhada;
 
     private DialogueManager2 objectiveManager;
 
@@ -30,8 +31,9 @@ public class TanqueInteraction : MonoBehaviour, IInteractable, IFade
         if (PlayerPrefs.HasKey(itemTag))
         {
             Fade();
-            foreach (GameObject roupaNova in coisasAtivar) { roupaNova.SetActive(true); }
-            foreach (GameObject roupaSuja in coisasDesativar) { roupaSuja.SetActive(false); }
+            //foreach (GameObject roupaNova in coisasAtivar) { roupaNova.SetActive(true); }
+            //foreach (GameObject roupaSuja in coisasDesativar) { roupaSuja.SetActive(false); }
+            bubuMolhada.SetActive(true);
             itemHUD.SetActive(false);
             Invoke("ReturnPlayer", 4f);
         }

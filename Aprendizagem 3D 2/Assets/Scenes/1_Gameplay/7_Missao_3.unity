@@ -4298,16 +4298,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 10
   rotVel: 140
-  inspectionZoom: -5
   triggerMessage: 1
   _objectDescription: Chave Escondida
   _triggerDialogue: 1
   _dialogueIndex: 2
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Chave Entrada
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!4 &229734353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f606420026ba3ea48b9e9006203d6efa,
@@ -5033,6 +5039,107 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4138ccde94c63f44af32547e9c752d6, type: 3}
+--- !u!1 &259317171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 259317175}
+  - component: {fileID: 259317174}
+  - component: {fileID: 259317173}
+  - component: {fileID: 259317172}
+  m_Layer: 5
+  m_Name: CanvasObjetivos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &259317172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259317171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &259317173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259317171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0.5
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &259317174
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259317171}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &259317175
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259317171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 951156171}
+  - {fileID: 2080616015}
+  - {fileID: 642714185}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &265003639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7794,13 +7901,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 0
   rotVel: 0
-  inspectionZoom: 0
   triggerMessage: 0
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &363194084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12392,6 +12504,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1846394816}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &642714184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642714185}
+  - component: {fileID: 642714187}
+  - component: {fileID: 642714186}
+  m_Layer: 5
+  m_Name: PressToReadText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &642714185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642714184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 259317175}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 19}
+  m_SizeDelta: {x: 246.99438, y: 43.735977}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &642714186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642714184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pressione <b>T</b> para ler
+--- !u!222 &642714187
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642714184}
+  m_CullTransparentMesh: 0
 --- !u!1 &648066916
 GameObject:
   m_ObjectHideFlags: 0
@@ -17220,13 +17410,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 0
   rotVel: 0
-  inspectionZoom: 0
   triggerMessage: 0
   _objectDescription: "Crach\xE1 de Papai"
   _triggerDialogue: 0
   _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &863685369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19188,6 +19383,113 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1577617220}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &951156170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951156171}
+  - component: {fileID: 951156175}
+  - component: {fileID: 951156174}
+  - component: {fileID: 951156173}
+  - component: {fileID: 951156172}
+  m_Layer: 5
+  m_Name: TaskText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &951156171
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951156170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.07846, y: 2.07846, z: 2.07846}
+  m_Children: []
+  m_Father: {fileID: 259317175}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 9, y: -96}
+  m_SizeDelta: {x: 281.26978, y: 54.569077}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &951156172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951156170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6183c9f71c42945a4760d86a8a1228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &951156173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951156170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &951156174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951156170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.93725497, g: 0.8588236, b: 0.75294125, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d86b0ab3479d14b4f9685a85eddd8dbd, type: 3}
+    m_FontSize: 10
+    m_FontStyle: 3
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &951156175
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 951156170}
+  m_CullTransparentMesh: 0
 --- !u!1 &955336503
 GameObject:
   m_ObjectHideFlags: 0
@@ -22877,13 +23179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 0
   rotVel: 1
-  inspectionZoom: 0
   triggerMessage: 0
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &1185260277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28058,6 +28365,94 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91f9edf170f94194684565d499607212, type: 3}
+--- !u!1 &1396307316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396307317}
+  - component: {fileID: 1396307319}
+  - component: {fileID: 1396307318}
+  m_Layer: 5
+  m_Name: TextoDocumento
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1396307317
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396307316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080616015}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00017738, y: -5}
+  m_SizeDelta: {x: 880.86816, y: 458.59012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1396307318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396307316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 17
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Querido Ernesto. Ainda n\xE3o acredito que voc\xEA mentiu para mim durante
+    tantos anos e no final de contas foste embora. Como voc\xEA p\xF4de manter duas
+    fam\xEDlias em cidades diferentes? Eu sinto que minha vida foi uma mentira ao
+    seu lado, n\xE3o sinto que conhecia voc\xEA de verdade...\r\n\r\nApesar dos pesares,
+    as meninas ainda sentem falta de voc\xEA, como pode ter ido embora sem se importar
+    com duas filhas? Duas lindas garotas! Inacredit\xE1vel Ernesto!\r\n\r\nBom, s\xF3
+    queria dizer que infelizmente ainda sinto saudades, que as meninas est\xE3o bem
+    e, bom, to levando a vida! N\xE3o que voc\xEA se importe, mas eu s\xF3 queria
+    deixar claro uma coisa, nunca mais volte, n\xE3o quero mais te ver apesar do
+    fato de eu sentir sua falta!\r\n\r\n                     Teresa de F\xE1tima\r\n\r\n                                
+    1982"
+--- !u!222 &1396307319
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396307316}
+  m_CullTransparentMesh: 0
 --- !u!1 &1397266429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2634583499531160613, guid: 24701be0f7c8545469792de4166ce6ad,
@@ -30558,7 +30953,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 7.5
-  _taskHUDText: 
+  _taskHUDText: "\u30FBAtenda o telefone na sala"
 --- !u!4 &1490574190
 Transform:
   m_ObjectHideFlags: 0
@@ -33720,6 +34115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f467a1c599b8344c9bb90d9d98954c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onPath: 
+  offPath: 
 --- !u!108 &1679860889
 Light:
   m_ObjectHideFlags: 0
@@ -36182,6 +36579,84 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.6070288, y: 1.1651525, z: 0.091044866}
   m_Center: {x: 0.30396464, y: 0.16670656, z: -0.007849732}
+--- !u!1 &1795311269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1795311270}
+  - component: {fileID: 1795311272}
+  - component: {fileID: 1795311271}
+  m_Layer: 5
+  m_Name: Pressione pra voltar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1795311270
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795311269}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2080616015}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 29}
+  m_SizeDelta: {x: 367.24377, y: 86.01186}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1795311271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795311269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 22
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pressione <b>T </b>para voltar
+--- !u!222 &1795311272
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795311269}
+  m_CullTransparentMesh: 0
 --- !u!4 &1798125579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6731650478391161272, guid: 27e98dd66227eb444be5f40bb7c848e6,
@@ -40847,7 +41322,7 @@ MonoBehaviour:
   postProcessEffect: {fileID: 0}
   postProcessEffect2: {fileID: 0}
   _countProvisorio: 7
-  _taskHUDText: 
+  _taskHUDText: "\u30FBO telefone toca novamente"
 --- !u!114 &2009836458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42385,6 +42860,82 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 8398757244830319141, guid: 9f83da68cc0d04349a792c3781654631, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9f83da68cc0d04349a792c3781654631, type: 3}
+--- !u!1 &2080616014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080616015}
+  - component: {fileID: 2080616017}
+  - component: {fileID: 2080616016}
+  m_Layer: 5
+  m_Name: TextoCartaErnesto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2080616015
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080616014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1396307317}
+  - {fileID: 1795311270}
+  m_Father: {fileID: 259317175}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 34.319214, y: 28.615234}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2080616016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080616014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2080616017
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080616014}
+  m_CullTransparentMesh: 0
 --- !u!1001 &2084028739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45940,9 +46491,9 @@ MonoBehaviour:
   isLocked: 0
   keyName: GlubGlub
   KeyValue: 1
-  hasDoorDialogue: 1
-  doorLocked: 8
-  doorUnlocked: 3
+  hasDoorDialogue: 0
+  doorLocked: 0
+  doorUnlocked: 0
   collectedItemHud: {fileID: 0}
 --- !u!1 &591729971054370729
 GameObject:
@@ -47567,13 +48118,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 289731911}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 8
   rotVel: 140
-  inspectionZoom: 200
   triggerMessage: 0
   _objectDescription: Cartinha Silvana
   _triggerDialogue: 1
   _dialogueIndex: 9
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Cartinha
 --- !u!65 &919132149531460902
 BoxCollider:
@@ -56367,13 +56923,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 10
   rotVel: 140
-  inspectionZoom: -5
   triggerMessage: 0
   _objectDescription: Carta para Ernesto
   _triggerDialogue: 0
   _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!1001 &3452542152720878344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56541,6 +57102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d1a083a25f74c4c81169e81907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neverUsedBefore: 0
   shadowZones:
   - {fileID: 1853884608}
   - {fileID: 1745690858}
@@ -64949,6 +65511,11 @@ PrefabInstance:
       propertyPath: CollectedObjHud
       value: 
       objectReference: {fileID: 1564839316}
+    - target: {fileID: 6028468682504573294, guid: 228252c2ebd0fc64abdc88d71f8167e9,
+        type: 3}
+      propertyPath: selectionManager
+      value: 
+      objectReference: {fileID: 289731911}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
       propertyPath: m_Size.x
@@ -65906,11 +66473,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4649980757122190836, guid: 3253d9cc510633148a8acb4c81514212,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5025678322166434539, guid: 3253d9cc510633148a8acb4c81514212,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6180157918801601030, guid: 3253d9cc510633148a8acb4c81514212,
+        type: 3}
+      propertyPath: taskText
+      value: 
+      objectReference: {fileID: 951156174}
+    - target: {fileID: 6180157918801601030, guid: 3253d9cc510633148a8acb4c81514212,
+        type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 1401892940}
     - target: {fileID: 6180157920303349048, guid: 3253d9cc510633148a8acb4c81514212,
         type: 3}
       propertyPath: portas.Array.data[0]
@@ -67813,13 +68395,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pontoInspecao: {fileID: 1151853994}
   jogador: {fileID: 1401892940}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
   zoomMultiplier: 10
   rotVel: 140
-  inspectionZoom: -5
   triggerMessage: 0
   _objectDescription: Carta da Montes
   _triggerDialogue: 0
   _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!1 &6572139343327848354
 GameObject:
   m_ObjectHideFlags: 0
@@ -73045,6 +73632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33d1a083a25f74c4c81169e81907830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neverUsedBefore: 0
   shadowZones: []
   lightsRealTime: []
   disjuntores:
