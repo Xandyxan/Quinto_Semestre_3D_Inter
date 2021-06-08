@@ -51,6 +51,10 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
         }
         else
         {
+            objectiveManager.ExecuteDialogue(ligacaoDesligaDialogueIndex);
+            triggerMensagens.ActivateTrigger();
+            PlayerPrefs.SetInt("FindPote", 1);
+            GameManager.instance.ConcludeCurrentTask();
             return;
         }
     }
