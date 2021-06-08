@@ -55,6 +55,7 @@ public class Mission2InteractionCounter : MonoBehaviour
         {
             print("CADE ELE?");
             objectiveManager.ExecuteDialogue(bubuNotFoundDialogueIndex);
+            GameManager.instance.ConcludeCurrentTask();
         }
     }
 
@@ -65,6 +66,7 @@ public class Mission2InteractionCounter : MonoBehaviour
         if (doorLokedInteractions >= 2)
         {
             print("CADE ELE?");
+          
             Invoke("ExecuteDialogueChave", 3f);
         }
     }

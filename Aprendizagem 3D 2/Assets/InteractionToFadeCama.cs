@@ -37,6 +37,7 @@ public class InteractionToFadeCama : MonoBehaviour, IFade, ISelectable, IInterac
             if (PlayerPrefs.GetInt(keyPraInteracao, 0) == 1)
             {
                 Fade();
+                if(collectableHUDitem== null) { return; }
                 collectableHUDitem.SetActive(false);
             }
         }
