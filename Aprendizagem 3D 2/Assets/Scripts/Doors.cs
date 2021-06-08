@@ -70,6 +70,7 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     public virtual void Interact()
     {
         openingIsHappening = true;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_Med_Armario_AbreFecha", transform.position);
         if (dialogue != null)
         {
             dialogue.RunCoroutine();

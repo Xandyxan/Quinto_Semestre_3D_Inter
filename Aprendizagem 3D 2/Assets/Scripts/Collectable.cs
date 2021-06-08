@@ -14,6 +14,8 @@ public class Collectable : Inspecao
 
     [SerializeField] private GameObject CollectedObjHud;
 
+    [SerializeField] private string pathCollectSound;
+
     private void Awake()
     {
         if (PlayerPrefs.HasKey(itemTag)) PlayerPrefs.DeleteKey(itemTag);  // reseta o pref no começo da fase, como se o jogador não tivesse o item.
@@ -37,6 +39,7 @@ public class Collectable : Inspecao
             if(CollectedObjHud!= null)CollectedObjHud.SetActive(true);
             print(this.name);
             GameManager.instance.ConcludeCurrentTask();
+            FMODUnity.RuntimeManager.PlayOneShot(pathCollectSound);
         }
     }
    

@@ -15,7 +15,6 @@ public class AudioSettings : MonoBehaviour
 
     private void Awake()
     {
-        /*
         MasterBus = FMODUnity.RuntimeManager.GetBus("bus:/MASTER");
         EnvironmentBus = FMODUnity.RuntimeManager.GetBus("bus:/MASTER/AMBIENTE");
         DubbingBus = FMODUnity.RuntimeManager.GetBus("bus:/MASTER/DUBLAGENS");
@@ -31,8 +30,6 @@ public class AudioSettings : MonoBehaviour
         MusicBus.setVolume(PlayerPrefs.GetFloat("musicVolume", 1));
 
         if (_instance != null && _instance != this) Destroy(this.gameObject);
-        else _instance = this;
-        */
     }
 
     private void Start()

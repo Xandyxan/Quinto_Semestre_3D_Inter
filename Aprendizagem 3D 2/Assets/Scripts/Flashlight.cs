@@ -6,6 +6,7 @@ public class Flashlight : MonoBehaviour
 {
     private Light light;
     private bool lightOn = false;
+    [SerializeField] private string onPath, offPath;
    // [SerializeField] private Projector proj;
 
     // Start is called before the first frame update
@@ -22,6 +23,9 @@ public class Flashlight : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            if(!light.isActiveAndEnabled) FMODUnity.RuntimeManager.PlayOneShot(onPath);
+            else FMODUnity.RuntimeManager.PlayOneShot(offPath);
+
             light.enabled = !lightOn;
             lightOn = !lightOn;
         }
