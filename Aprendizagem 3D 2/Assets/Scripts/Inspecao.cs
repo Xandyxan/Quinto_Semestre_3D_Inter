@@ -40,10 +40,16 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     [Header("Distancia da camera")]
     [SerializeField] private float objectOffset;
 
-    [Header("Pan")]
-    private Vector3 objMovement;
+    // [Header("Pan")]
+    //private Vector3 objMovement;
     private Vector3 initialPos;
-    float panSpeed = .5f;
+    // float panSpeed = .00001f;
+
+    [Header("Text Inspection")]
+    [SerializeField] bool isText;
+    [SerializeField] private GameObject pressToReadText;
+    [SerializeField] GameObject textUIObj;
+    private bool textIsOn;
 
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     public bool triggerDialogue { get => _triggerDialogue; set => _triggerDialogue = value; }
@@ -88,11 +94,31 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
                     transform.rotation = Quaternion.Slerp(rotacaoAtual, rotacaoInspecao, Time.deltaTime * 8);
 
                     //Verifica a posição do objeto em relação ao ponto de inspeção e desliga o Slerp acima. 
-                    if (posicaoAtual.x <= targetPos.x + 0.0005f && posicaoAtual.z <= targetPos.z + 0.0005f && posicaoAtual.y <= targetPos.y + 0.0005f)
+                    if (Vector3.Distance(transform.position, pontoInspecao.position) <= 0)
                     {
                         chegando = false;
                         initialPos = transform.position;
                         posicaoAtual = pontoInspecao.transform.position;
+                    }
+                }
+
+                if (isText)
+                {
+                    if (Input.GetKeyDown(KeyCode.T))
+                    {
+                        textIsOn = !textIsOn;
+                        if (textIsOn)
+                        {
+                            pressToReadText.SetActive(false);
+                            textUIObj.SetActive(true);
+                        }
+
+                        else
+                        {
+                            textUIObj.SetActive(false);
+                            pressToReadText.SetActive(true);
+                        }
+                           
                     }
                 }
             }
@@ -121,10 +147,10 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     }
     private void FixedUpdate()
     {
-        if (estaSelecionado && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)) { HandleObjectPan(); }
+       // if (estaSelecionado && Input.GetAxis("Vertical") != 0) { HandleObjectPan(); }
     }
 
-    private void HandleObjectPan() // Para que o jogador possa mover o objeto durante a inspeção, facilitando a visualização dos objetos
+    /*private void HandleObjectPan() // Para que o jogador possa mover o objeto durante a inspeção, facilitando a visualização dos objetos
     {
         // move pra cima e para os lados a partir do referencial do ponto de inspecao
         objMovement *= 0;
@@ -134,19 +160,20 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
 
         objMovement += Input.GetAxis("Vertical") * pontoInspecao.transform.up * panSpeed * Time.deltaTime;
 
-        // objMovement.x = Mathf.Clamp(objMovement.x, initialPos.x - 0.03f, initialPos.x + 0.03f);
+         objMovement.x = Mathf.Clamp(objMovement.x, initialPos.x - 0.03f, initialPos.x + 0.03f);
 
-        // objMovement.z = Mathf.Clamp(objMovement.z, initialPos.z - 0.03f, initialPos.z + 0.03f);
+         objMovement.z = Mathf.Clamp(objMovement.z, initialPos.z - 0.03f, initialPos.z + 0.03f);
         objMovement.y = Mathf.Clamp(objMovement.y, initialPos.y - 0.03f, initialPos.y + 0.03f);
 
         transform.position = objMovement;
-    }
+    }*/
     protected virtual void ConcludeInspection()
     {
         selectionManager.inspecionando = false;
         chegando = false;
         voltando = true;
         estaSelecionado = false;
+        if (isText) { pressToReadText.SetActive(false); }
 
         Cellphone.instance.SetInspecting(false);
 
@@ -162,6 +189,7 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
         chegando = true;
         selectionManager.inspecionando = true;
         estaSelecionado = true;
+        if (isText) { pressToReadText.SetActive(true); }
 
         Cellphone.instance.SetInspecting(true);
 
