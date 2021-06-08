@@ -30,6 +30,7 @@ public class HouseDoor : Doors
     private DialogueManager2 objectiveManager;
 
     [SerializeField] private GameObject collectedItemHud;
+    private bool neverBefore = true;
 
     protected override void Awake()
     {
@@ -46,7 +47,11 @@ public class HouseDoor : Doors
             base.Interact();
             knobAnimator.SetTrigger("Open");
             if(collectedItemHud!= null) collectedItemHud.SetActive(false);
-            if (hasDoorDialogue) objectiveManager.ExecuteDialogue(doorUnlocked);
+            if (hasDoorDialogue && neverBefore)
+            {
+                objectiveManager.ExecuteDialogue(doorUnlocked);
+                neverBefore = false;
+            }
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
 {
+    [SerializeField] bool neverUsedBefore = false;
     [SerializeField] private List<GameObject> shadowZones;
     [SerializeField] private List<GameObject> lightsRealTime;
 
@@ -47,6 +48,11 @@ public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable, IObje
                 // disjuntor roda pra direita (-40 no y)
 
                 disjuntor.transform.rotation = Quaternion.AngleAxis(50, Vector3.up);
+            }
+            if(neverUsedBefore) 
+            {
+                GameManager.instance.ConcludeCurrentTask();
+                neverUsedBefore = false;
             }
         }
         else

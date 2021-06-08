@@ -14,16 +14,16 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     private Vector3 origemPos;
     private Quaternion origemRot;
     private Vector3 posicaoAtual;
-    private Quaternion rotacaoAtual;
-    Transform obTrans;
-    
-    private SelectionManager sManager;
+    private Quaternion rotacaoAtual, rotacaoInspecao;
+
+    [SerializeField] private SelectionManager selectionManager;
+    [SerializeField] private Vector3 inspecaoRotation;
 
     public float zoomMultiplier;
     public float rotVel;
-    public float inspectionZoom;
+   // public float inspectionZoom;
 
-    bool chegando;
+    bool chegando, voltando;
 
     bool estaSelecionado = false;
 
@@ -37,19 +37,30 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     [SerializeField] bool _triggerDialogue;
     [SerializeField] int _dialogueIndex;
 
+    [Header("Distancia da camera")]
+    [SerializeField] private float objectOffset;
+
+    [Header("Pan")]
+    private Vector3 objMovement;
+    private Vector3 initialPos;
+    float panSpeed = .5f;
+
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     public bool triggerDialogue { get => _triggerDialogue; set => _triggerDialogue = value; }
     public int dialogueIndex { get => _dialogueIndex; set => _dialogueIndex = value; }
 
-    void Start()
+    private void Awake()
     {
         jogador = FindObjectOfType<PlayerController>();
-        chegando = false;
-        obTrans = transform;
-        sManager = FindObjectOfType<SelectionManager>();
+
+    }
+    void Start()
+    {
         origemPos = transform.position;
         origemRot = transform.rotation;
-        if(triggerMessage) { messageTrigger = GetComponent<MessageTrigger>(); } // se o objeto for ser trigger de novas mensagens no zap, ele pega a ref do trigger.
+        chegando = false;
+        if (triggerMessage) { messageTrigger = GetComponent<MessageTrigger>(); } // se o objeto for ser trigger de novas mensagens no zap, ele pega a ref do trigger.
+        rotacaoInspecao = Quaternion.Euler(inspecaoRotation);
     }
 
     private void Update()
@@ -58,108 +69,100 @@ public class Inspecao : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
         rotacaoAtual = transform.rotation;
 
         //Encerra o processo de inspeção
-        if(Input.GetKeyDown(KeyCode.E) && estaSelecionado)
+        if (Input.GetKeyDown(KeyCode.E) && estaSelecionado)
         {
             ConcludeInspection();
         }
 
         //O Objeto esta sendo inspecionado
-        if(estaSelecionado)
+        if (estaSelecionado)
         {
-                                 
-            inspectionZoom += Input.mouseScrollDelta.y * Time.deltaTime;
-            inspectionZoom = Mathf.Clamp(inspectionZoom, -0.03f, -0.02f);
-            posicaoAtual = pontoInspecao.transform.position + inspectionZoom * pontoInspecao.transform.forward * zoomMultiplier ;
+            // mover objeto pro ponto de inspecao
+            if (chegando)
+            {
+                Vector3 targetPos = pontoInspecao.position;
+                targetPos += pontoInspecao.forward * objectOffset;
+                if (posicaoAtual != targetPos && rotacaoAtual != pontoInspecao.rotation)
+                {
+                    transform.position = Vector3.Slerp(posicaoAtual, targetPos, Time.deltaTime * 8);
+                    transform.rotation = Quaternion.Slerp(rotacaoAtual, rotacaoInspecao, Time.deltaTime * 8);
 
-            //Colocar limite para Zoom de Inspeção**
-          
-            //Rotaciona o objeto em inspeção quando o joghador aperta e segura o botão esquerdo do mouse e o move.
-            if(Input.GetMouseButton(0))
-            {
-               
-                transform.RotateAround(transform.position, jogador.transform.right,(Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime));
-                transform.RotateAround(transform.position, -jogador.transform.up,(Input.GetAxis("Mouse X") * rotVel * Time.deltaTime));
-                 
+                    //Verifica a posição do objeto em relação ao ponto de inspeção e desliga o Slerp acima. 
+                    if (posicaoAtual.x <= targetPos.x + 0.0005f && posicaoAtual.z <= targetPos.z + 0.0005f && posicaoAtual.y <= targetPos.y + 0.0005f)
+                    {
+                        chegando = false;
+                        initialPos = transform.position;
+                        posicaoAtual = pontoInspecao.transform.position;
+                    }
+                }
             }
-            //Rotaciona o objeto para a rotação inicial de inspeção quando o jogado não está mais pressionando o botão esquerdo do mouse
-            else
+
+           // inspectionZoom += Input.mouseScrollDelta.y * Time.deltaTime;
+            //inspectionZoom = Mathf.Clamp(inspectionZoom, -0.03f, -0.02f);
+
+
+            //Rotaciona o objeto em inspeção quando o jogador aperta e segura o botão esquerdo do mouse e o move.
+            if (Input.GetMouseButton(0))
             {
-               
-                this.transform.rotation = Quaternion.Slerp(transform.rotation, pontoInspecao.rotation, Time.deltaTime * 2);
+
+                transform.RotateAround(transform.position, jogador.transform.right, (Input.GetAxis("Mouse Y") * rotVel * Time.deltaTime));
+                transform.RotateAround(transform.position, -jogador.transform.up, (Input.GetAxis("Mouse X") * rotVel * Time.deltaTime));
+
             }
-            
-            this.transform.position = posicaoAtual;
-            
         }
 
         //Retorna o objeto para origem.
-        if(posicaoAtual != origemPos && rotacaoAtual != origemRot && !sManager.inspecionando) 
+        if (posicaoAtual != origemPos && rotacaoAtual != origemRot && voltando)
         {
-            transform.position = Vector3.Slerp(posicaoAtual,origemPos, Time.deltaTime * 2);  
+            transform.position = Vector3.Slerp(posicaoAtual, origemPos, Time.deltaTime * 2);
             transform.rotation = Quaternion.Slerp(rotacaoAtual, origemRot, Time.deltaTime * 2);
         }
 
-        //Leva o Objeto até o ponto de inspeção.
-        else if(posicaoAtual != pontoInspecao.position && rotacaoAtual != pontoInspecao.rotation && sManager.inspecionando && chegando) 
-        { 
-            transform.position = Vector3.Slerp(posicaoAtual, pontoInspecao.position, Time.deltaTime * 8); 
-            transform.rotation =  Quaternion.Slerp(rotacaoAtual, pontoInspecao.rotation, Time.deltaTime * 8);
-
-            //Verifica a posição do objeto em relação ao ponto de inspeção e desliga o Slerp acima. 
-            if((int)posicaoAtual.x == (int)pontoInspecao.position.x && (int)posicaoAtual.z == (int)pontoInspecao.position.z && (int)posicaoAtual.y == (int)pontoInspecao.position.y && 
-            (int)rotacaoAtual.x == (int)pontoInspecao.rotation.x && (int)rotacaoAtual.y == (int)pontoInspecao.rotation.y && (int)rotacaoAtual.z == (int)pontoInspecao.rotation.z)
-            
-            {
-                chegando = false;
-                
-            }
-            
-        }
-
     }
-    private void LateUpdate()
+    private void FixedUpdate()
     {
-        if (estaSelecionado) { HandleObjectPan(); }
-        
+        if (estaSelecionado && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)) { HandleObjectPan(); }
     }
-    //Começa o processo de inspeção.    
-   // public virtual void Interagindo()                     // é chamado no Interactive
-   // {
-       
-   // }
-    
+
     private void HandleObjectPan() // Para que o jogador possa mover o objeto durante a inspeção, facilitando a visualização dos objetos
     {
-        Vector3 objMovement = Vector3.zero;
-        float panSpeed = 2f;
-     
-        objMovement += Input.GetAxis("Horizontal") * pontoInspecao.transform.right * panSpeed * Time.deltaTime;
+        // move pra cima e para os lados a partir do referencial do ponto de inspecao
+        objMovement *= 0;
+        objMovement = transform.position;
+
+        // objMovement += Input.GetAxis("Horizontal") * pontoInspecao.transform.right * panSpeed * Time.deltaTime;
 
         objMovement += Input.GetAxis("Vertical") * pontoInspecao.transform.up * panSpeed * Time.deltaTime;
 
-        // objMovement = new Vector3();
-        transform.position += objMovement;
+        // objMovement.x = Mathf.Clamp(objMovement.x, initialPos.x - 0.03f, initialPos.x + 0.03f);
 
+        // objMovement.z = Mathf.Clamp(objMovement.z, initialPos.z - 0.03f, initialPos.z + 0.03f);
+        objMovement.y = Mathf.Clamp(objMovement.y, initialPos.y - 0.03f, initialPos.y + 0.03f);
+
+        transform.position = objMovement;
     }
     protected virtual void ConcludeInspection()
     {
-        sManager.inspecionando = false;
-        chegando = false; // testando essa bool, ainda n sei oq ela faz
+        selectionManager.inspecionando = false;
+        chegando = false;
+        voltando = true;
         estaSelecionado = false;
 
-        // Cellphone.instance.SetCanUseCellphone(true); // Após o término do processo de inspeção, o player se torna novamente capaz de ativar o menu de celular.
         Cellphone.instance.SetInspecting(false);
 
         GameManager.instance.returnPlayerControlEvent?.Invoke();
+
     }
 
     public virtual void Interact()
     {
+        voltando = false;
+        origemPos = transform.position;
+        origemRot = transform.rotation;
         chegando = true;
-        sManager.inspecionando = true;
+        selectionManager.inspecionando = true;
         estaSelecionado = true;
 
-        // Cellphone.instance.SetCanUseCellphone(false); // impede o jogador de ativar o menu de celular enquanto está inspecionando um objeto.
         Cellphone.instance.SetInspecting(true);
 
         GameManager.instance.removePlayerControlEvent?.Invoke();
