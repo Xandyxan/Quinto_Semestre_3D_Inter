@@ -68,6 +68,7 @@ public class NotebookInteraction : MonoBehaviour, IFade, IInteractable, ISelecta
             if (firstTime)
             {
                 notebookAnimator.SetTrigger("Open"); // fade é chamado no ultimo keyframe da animacao
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_MISSAO 2/SFX_Computador_Ligando", transform.position);
                 canInteract = false;
             }
             else

@@ -2573,6 +2573,7 @@ GameObject:
   - component: {fileID: 1597953962308388693}
   - component: {fileID: 1597953962308388692}
   - component: {fileID: 1597953962308388695}
+  - component: {fileID: 2180063189792373833}
   m_Layer: 5
   m_Name: Button_Home
   m_TagString: Untagged
@@ -2690,6 +2691,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2180063189792373833}
+        m_MethodName: PlayOneShoot2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2180063189792373833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597953962308388713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/SFX/SFX_GENERAL/SFX_Botao_Celular
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &1597953962527163983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,6 +2814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5d1c9fc64407c4c8bc7419ad274503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  somPrato: {fileID: 0}
   portas:
   - {fileID: 0}
   - {fileID: 0}
@@ -6001,6 +6030,8 @@ MonoBehaviour:
   - {fileID: 9188081857334509492}
   - {fileID: 2327200593065886840}
   mainMenuScreen: 0
+  taskText: {fileID: 0}
+  playerMovement: {fileID: 0}
 --- !u!114 &8271328484538013754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6955,6 +6986,7 @@ GameObject:
   - component: {fileID: 4153646101768088842}
   - component: {fileID: 310662089016095275}
   - component: {fileID: 4070240194495870236}
+  - component: {fileID: 926154390683738781}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -7072,7 +7104,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 926154390683738781}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -7083,6 +7115,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &926154390683738781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785284806136555713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a59c7c7dbdd2c040a64926ede20c015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundPath: event:/SFX/SFX_GENERAL/SFX_Botao_Celular
+  _is3dSound: 0
+  _soundSource: {fileID: 0}
+  extraSoundPath: 
 --- !u!1 &1807969988687071420
 GameObject:
   m_ObjectHideFlags: 0
@@ -24176,15 +24224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
---- !u!224 &1543381293379738320 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4661056263344650237, guid: 733e6bc96a5196c45809b7140c0280b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 6180157918670073133}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7729353403103113759 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6180157918670073133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1543381293379738320 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4661056263344650237, guid: 733e6bc96a5196c45809b7140c0280b3,
     type: 3}
   m_PrefabInstance: {fileID: 6180157918670073133}
   m_PrefabAsset: {fileID: 0}
@@ -28989,15 +29037,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67868ce0085c6224f8674c6d3a6ce4d0, type: 3}
---- !u!224 &1343601321334898321 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5143456751886718368, guid: 67868ce0085c6224f8674c6d3a6ce4d0,
-    type: 3}
-  m_PrefabInstance: {fileID: 6180157919643020081}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2629806983544166008 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8195046532674649417, guid: 67868ce0085c6224f8674c6d3a6ce4d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6180157919643020081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1343601321334898321 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5143456751886718368, guid: 67868ce0085c6224f8674c6d3a6ce4d0,
     type: 3}
   m_PrefabInstance: {fileID: 6180157919643020081}
   m_PrefabAsset: {fileID: 0}
@@ -30073,15 +30121,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
---- !u!224 &7729353401779706535 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 6180157919804654997}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1543381292543013480 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4661056263344650237, guid: 733e6bc96a5196c45809b7140c0280b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6180157919804654997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7729353401779706535 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
     type: 3}
   m_PrefabInstance: {fileID: 6180157919804654997}
   m_PrefabAsset: {fileID: 0}
@@ -31860,15 +31908,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 733e6bc96a5196c45809b7140c0280b3, type: 3}
---- !u!224 &7729353402282191604 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 6180157920029963718}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1543381291518886459 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4661056263344650237, guid: 733e6bc96a5196c45809b7140c0280b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6180157920029963718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &7729353402282191604 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4503732761849192242, guid: 733e6bc96a5196c45809b7140c0280b3,
     type: 3}
   m_PrefabInstance: {fileID: 6180157920029963718}
   m_PrefabAsset: {fileID: 0}

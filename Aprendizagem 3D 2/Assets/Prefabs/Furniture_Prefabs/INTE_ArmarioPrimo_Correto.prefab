@@ -1,5 +1,87 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1531266389032912656
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97435559502320813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4154236, y: 0.4928815, z: 0.10935313}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1531266389032912657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97435559502320813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d829bb29ce5634645842d8dfe4ad071e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoInspecao: {fileID: 0}
+  jogador: {fileID: 0}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
+  zoomMultiplier: -4
+  rotVel: 140
+  triggerMessage: 0
+  _objectDescription: Toalha
+  _triggerDialogue: 0
+  _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
+  itemTag: Toalha
+  PressToCollectText: {fileID: 0}
+  CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
+--- !u!65 &980448750206223954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97435559776445355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2448156, y: 0.23417145, z: 0.4034453}
+  m_Center: {x: 0, y: -0.026591063, z: 0.064037}
+--- !u!114 &980448750206223965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97435559776445355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac38d99ea3cb0ed43a0434a09d4fd0ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pontoInspecao: {fileID: 0}
+  jogador: {fileID: 0}
+  selectionManager: {fileID: 0}
+  inspecaoRotation: {x: 0, y: 0, z: 0}
+  zoomMultiplier: 10
+  rotVel: 140
+  triggerMessage: 0
+  _objectDescription: poesia
+  _triggerDialogue: 0
+  _dialogueIndex: 0
+  objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!1 &97435560225751865
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 725635397510437251}
   m_Layer: 0
-  m_Name: INTE_ArmarioPrimo 1
+  m_Name: INTE_ArmarioPrimo_Correto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,6 +191,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &247576123588273614
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +342,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
 --- !u!1 &979858146111737200
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,77 +423,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &980448750206223954
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97435559776445355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2448156, y: 0.23417145, z: 0.4034453}
-  m_Center: {x: 0, y: -0.026591063, z: 0.064037}
---- !u!114 &980448750206223965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97435559776445355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac38d99ea3cb0ed43a0434a09d4fd0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontoInspecao: {fileID: 0}
-  jogador: {fileID: 0}
-  zoomMultiplier: 10
-  rotVel: 140
-  inspectionZoom: -5
-  triggerMessage: 0
-  _objectDescription: poesia
-  _triggerDialogue: 0
-  _dialogueIndex: 0
---- !u!65 &1531266389032912656
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97435559502320813}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4154236, y: 0.4928815, z: 0.10935313}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1531266389032912657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 97435559502320813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d829bb29ce5634645842d8dfe4ad071e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pontoInspecao: {fileID: 0}
-  jogador: {fileID: 0}
-  zoomMultiplier: -4
-  rotVel: 140
-  inspectionZoom: 200
-  triggerMessage: 0
-  _objectDescription: Toalha
-  _triggerDialogue: 0
-  _dialogueIndex: 0
-  itemTag: Toalha
-  PressToCollectText: {fileID: 0}
-  CollectedObjHud: {fileID: 0}
 --- !u!1 &1200375106655093029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,6 +1218,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!1 &6322281866090176474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,6 +1290,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
 --- !u!1 &6704299221695244331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1441,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &7410500644924205648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1592,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!1 &7483231232039453363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1665,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!1 &8068391015001203512
 GameObject:
   m_ObjectHideFlags: 0

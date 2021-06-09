@@ -58,6 +58,7 @@ public class UrsinhoInteractionSonho2 : MonoBehaviour, IInteractable, IFade
     void Start()
     {
         objectiveManager.ExecuteDialogue(12);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_SONHO 2/SFX_Silvana_Chorando", this.transform.position);
     }
 
     // Update is called once per frame

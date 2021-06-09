@@ -16242,6 +16242,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &787053144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23452,6 +23454,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1196793043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34946,6 +34950,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1731014398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34995,6 +35001,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!114 &1731014401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35018,6 +35026,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1731014402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35067,6 +35077,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &1735437521
 GameObject:
   m_ObjectHideFlags: 0
@@ -36608,6 +36620,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1792777872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46593,6 +46607,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
   isLocked: 0
   keyName: GlubGlub
   KeyValue: 1
@@ -46674,6 +46690,8 @@ MonoBehaviour:
   _objectDescription: Porta Entrada
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 0
   keyName: Chave Entrada
   KeyValue: 1
@@ -53193,6 +53211,8 @@ MonoBehaviour:
   _objectDescription: "quarto da bagun\xE7a"
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 1
   keyName: Chave Fundos
   KeyValue: 1
@@ -64528,6 +64548,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!33 &5817707159311769530
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -64682,6 +64704,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &5828184535856524755
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65621,25 +65645,30 @@ PrefabInstance:
       propertyPath: selectionManager
       value: 
       objectReference: {fileID: 289731911}
+    - target: {fileID: 6028468682504573294, guid: 228252c2ebd0fc64abdc88d71f8167e9,
+        type: 3}
+      propertyPath: pathCollectSound
+      value: event:/SFX/SFX_GENERAL/SFX_Pegar_Chave
+      objectReference: {fileID: 0}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.033306234
+      value: 0.08364498
       objectReference: {fileID: 0}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
       propertyPath: m_Center.x
-      value: 0.007928794
+      value: 0.03309817
       objectReference: {fileID: 0}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
       propertyPath: m_Center.y
-      value: 0.0005997068
+      value: 0.0005997072
       objectReference: {fileID: 0}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.00014986107
+      value: 0.00014986099
       objectReference: {fileID: 0}
     - target: {fileID: 6028468682504573295, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
@@ -65705,6 +65734,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062923919704046172, guid: 228252c2ebd0fc64abdc88d71f8167e9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6062923919704046172, guid: 228252c2ebd0fc64abdc88d71f8167e9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6874750888101929190, guid: 228252c2ebd0fc64abdc88d71f8167e9,
         type: 3}
@@ -70806,6 +70845,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!4 &6989473257279503926
 Transform:
   m_ObjectHideFlags: 0
@@ -76134,6 +76175,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &8600449282455268162
 BoxCollider:
   m_ObjectHideFlags: 0

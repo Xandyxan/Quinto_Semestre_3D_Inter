@@ -43,6 +43,8 @@ public class LightSwitchPanel : MonoBehaviour, IInteractable, ISelectable, IObje
                 light.SetActive(true);
             }
 
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Disjuntor", transform.position);
+
             foreach (GameObject disjuntor in disjuntores)
             {
                 // disjuntor roda pra direita (-40 no y)

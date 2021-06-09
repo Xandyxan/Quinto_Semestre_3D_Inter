@@ -1295,6 +1295,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
 --- !u!65 &48204263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1576,6 +1578,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!1001 &54599646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8966,7 +8970,7 @@ MonoBehaviour:
   StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
-  Preload: 1
+  Preload: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
@@ -9329,6 +9333,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317883864}
   m_Mesh: {fileID: 2540817853737639666, guid: 2b622da789305b046b6c91dabbccd7de, type: 3}
+--- !u!1001 &318652364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1324322960344847260, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Post_Processing_Effects (new)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 883f01c3c458a3c4fa5327cc09fe37cc, type: 3}
 --- !u!1 &326801552
 GameObject:
   m_ObjectHideFlags: 0
@@ -12136,6 +12209,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &435674407
 GameObject:
   m_ObjectHideFlags: 0
@@ -16793,6 +16868,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
 --- !u!65 &640780064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17868,6 +17945,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &681150880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21060,15 +21139,15 @@ RectTransform:
   m_GameObject: {fileID: 803359942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.07846, y: 2.07846, z: 2.07846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2050847650}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9, y: -96}
-  m_SizeDelta: {x: 281.26978, y: 54.569077}
+  m_AnchoredPosition: {x: 9, y: -110.3}
+  m_SizeDelta: {x: 281.26978, y: 112.41075}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &803359944
 MonoBehaviour:
@@ -21118,18 +21197,18 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: d86b0ab3479d14b4f9685a85eddd8dbd, type: 3}
-    m_FontSize: 10
+    m_FontSize: 27
     m_FontStyle: 3
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 40
-    m_Alignment: 3
+    m_MaxSize: 48
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Pressione F para ligar a lanterna
 --- !u!222 &803359947
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21695,6 +21774,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
 --- !u!65 &823738805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25438,6 +25519,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &1018643337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28338,6 +28421,7 @@ MonoBehaviour:
   - {fileID: 296835510}
   - {fileID: 1164948742}
   - {fileID: 441686180}
+  objectiveManager: {fileID: 0}
   toalhaHud: {fileID: 286563010}
   _objectDescription: Chuveiro
 --- !u!65 &1150933338
@@ -28401,6 +28485,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1157551119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28798,6 +28884,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &1169688667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29830,6 +29918,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &1225284163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30724,6 +30814,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
 --- !u!65 &1265199599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33370,6 +33462,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1354216069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37581,6 +37675,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1481478367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38625,7 +38721,7 @@ MonoBehaviour:
   StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
-  Preload: 1
+  Preload: 0
   Params: []
   OverrideAttenuation: 0
   OverrideMinDistance: 1
@@ -49836,6 +49932,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1946424483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52308,6 +52406,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &2017133810
 GameObject:
   m_ObjectHideFlags: 0
@@ -53711,6 +53811,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!1001 &2079222194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56021,6 +56123,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
   isLocked: 1
   keyName: GlubGlub
   KeyValue: 1
@@ -56102,6 +56206,8 @@ MonoBehaviour:
   _objectDescription: Porta Entrada
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
   isLocked: 1
   keyName: Chave Entrada
   KeyValue: 1
@@ -58019,7 +58125,7 @@ PrefabInstance:
     - target: {fileID: 5557522432817703186, guid: 27e98dd66227eb444be5f40bb7c848e6,
         type: 3}
       propertyPath: _objectDescription
-      value: "quarto da bagun\xE7a"
+      value: "Quarto da bagun\xE7a"
       objectReference: {fileID: 0}
     - target: {fileID: 5557522432817703189, guid: 27e98dd66227eb444be5f40bb7c848e6,
         type: 3}

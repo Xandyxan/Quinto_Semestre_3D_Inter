@@ -339,6 +339,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Grande_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Grande_Armario_AbreFecha
 --- !u!1 &3947266795344677614
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +713,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Grande_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Grande_Armario_AbreFecha
 --- !u!1 &8026669793009888364
 GameObject:
   m_ObjectHideFlags: 0
