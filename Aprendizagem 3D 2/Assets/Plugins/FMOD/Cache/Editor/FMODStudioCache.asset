@@ -143,7 +143,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637588120735521355
+  lastModified: 637588134794985499
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2226,7 +2226,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Dublagens.bank
   Name: Dublagens
   StudioPath: bank:/Dublagens
-  lastModified: 637588120722970008
+  lastModified: 637588134781702731
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2829,7 +2829,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637588120723290484
+  lastModified: 637588134782230618
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -7622,7 +7622,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Ambiente.bank
   Name: Ambiente
   StudioPath: bank:/Ambiente
-  lastModified: 637588120709541822
+  lastModified: 637588134756036908
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -8207,7 +8207,7 @@ MonoBehaviour:
   - {fileID: 3597546273694706499}
   StringsBanks:
   - {fileID: -5520625443789888904}
-  stringsBankWriteTime: 637588120723290484
+  stringsBankWriteTime: 637588134782230618
   cacheVersion: 6
 --- !u!114 &16433964368094730
 MonoBehaviour:
@@ -10982,7 +10982,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637588120723222426
+  lastModified: 637588134782210593
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -15092,7 +15092,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Musicas.bank
   Name: Musicas
   StudioPath: bank:/Musicas
-  lastModified: 637588120726374330
+  lastModified: 637588134785799220
   LoadResult: 0
   FileSizes: []
   Exists: 1
