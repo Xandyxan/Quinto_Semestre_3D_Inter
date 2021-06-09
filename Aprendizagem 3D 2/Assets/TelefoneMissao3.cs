@@ -46,15 +46,12 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     {
         if (podeAtender)
         {
+            GameManager.instance.ConcludeCurrentTask();
             instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             objectiveManager.ExecuteDialogue(diaFinalIndex);
         }
         else
         {
-            objectiveManager.ExecuteDialogue(ligacaoDesligaDialogueIndex);
-            triggerMensagens.ActivateTrigger();
-            PlayerPrefs.SetInt("FindPote", 1);
-            GameManager.instance.ConcludeCurrentTask();
             return;
         }
     }
@@ -73,10 +70,12 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
         if(distanceFromPlayer < 1.4f && !podeAtender) // player se aproxima no inicio do game, quando ainda não pode atender a ligação
         {
             // stop telephone sound
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            GameManager.instance.ConcludeCurrentTask();
             objectiveManager.ExecuteDialogue(ligacaoDesligaDialogueIndex);
             triggerMensagens.ActivateTrigger();
             PlayerPrefs.SetInt("FindPote", 1);
+            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            
         }
         else if(distanceFromPlayer > 2.8f)
         {
