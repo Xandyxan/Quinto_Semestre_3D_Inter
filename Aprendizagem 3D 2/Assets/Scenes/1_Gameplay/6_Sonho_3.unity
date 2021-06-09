@@ -5,11 +5,12 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 2.5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: fe68d3a022ebaae4b9cb08012efe0b88
+  m_OcclusionCullingData: {fileID: 36300000, guid: a515479a0a849cf448738b458eaa3f79,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -1120,6 +1121,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &32728008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1700,6 +1703,7 @@ MonoBehaviour:
   - {fileID: 296835510}
   - {fileID: 1164948742}
   - {fileID: 441686180}
+  objectiveManager: {fileID: 0}
   toalhaHud: {fileID: 0}
   _objectDescription: 
 --- !u!1001 &53242288
@@ -7509,6 +7513,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &180771667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7598,9 +7604,13 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 2
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: "Chave V\xF3"
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!4 &182488183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3450ef37e7a9d0940ab6a23bcb343344,
@@ -8795,6 +8805,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!1 &213299464
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,9 +9488,13 @@ MonoBehaviour:
   _triggerDialogue: 1
   _dialogueIndex: 2
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Chave Entrada
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!1 &229402365
 GameObject:
   m_ObjectHideFlags: 0
@@ -9814,6 +9831,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &242074673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11209,6 +11228,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &280740161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11911,6 +11932,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
 --- !u!65 &296221429
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12028,6 +12051,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &296514764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12352,6 +12377,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &298716518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13918,6 +13945,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &338270499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16108,7 +16137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_11_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1812041084}
   extraSoundPath: 
 --- !u!1 &379126986
 GameObject:
@@ -16951,7 +16980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_09_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1812041084}
   extraSoundPath: 
 --- !u!1 &396288150
 GameObject:
@@ -18038,6 +18067,48 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418675878}
   m_Mesh: {fileID: 4722374384521592358, guid: 436ff83d2c061af40a4642e6ac6960a2, type: 3}
+--- !u!1 &419174641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419174643}
+  - component: {fileID: 419174642}
+  m_Layer: 0
+  m_Name: Occlusion Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!192 &419174642
+OcclusionArea:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419174641}
+  serializedVersion: 2
+  m_Size: {x: 89.50099, y: 27.5503, z: 82.61763}
+  m_Center: {x: -8.112616, y: 8.850101, z: -1.7208471}
+  m_IsViewVolume: 1
+--- !u!4 &419174643
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419174641}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 52, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &419818239
 GameObject:
   m_ObjectHideFlags: 0
@@ -18867,6 +18938,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &436898035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25373,6 +25446,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &614658272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25851,6 +25927,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &625113401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27589,6 +27668,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &679595509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27709,9 +27790,13 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 17
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Mimir
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!65 &684734547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27908,6 +27993,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &689020632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31144,6 +31232,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &766386368
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32330,7 +32421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_05_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1493449649}
   extraSoundPath: 
 --- !u!1001 &803449468
 PrefabInstance:
@@ -33064,6 +33155,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &821045369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33279,6 +33373,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 0
   keyName: GlubGlub
   KeyValue: 1
@@ -33403,7 +33499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_02_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 141613487}
   extraSoundPath: 
 --- !u!1 &824799061
 GameObject:
@@ -39848,6 +39944,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &955737132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40499,6 +40597,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &964286024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41370,9 +41470,7 @@ MonoBehaviour:
   needsItem: 1
   itemTag: Bubu
   itemHUD: {fileID: 0}
-  coisasAtivar:
-  - {fileID: 2021415808}
-  coisasDesativar: []
+  bubuMolhada: {fileID: 0}
   triggerUpdateMensagem: {fileID: 985206652}
   skyTarde: {fileID: 2100000, guid: c7813d659e98cd044992d841226161d6, type: 2}
 --- !u!65 &985206651
@@ -42636,6 +42734,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &1005821348
 GameObject:
   m_ObjectHideFlags: 0
@@ -42772,6 +42872,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1006603454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43088,6 +43190,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1019131925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48884,6 +48988,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1157259860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49181,9 +49287,13 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 2
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Chave Fundos
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!1 &1164948742 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4190290068123377353, guid: 524081d2dca0ef74a8d1beedb87c2003,
@@ -50069,6 +50179,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1196793043
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52180,7 +52292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_08_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1493449649}
   extraSoundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_08_ANTONIA
 --- !u!1 &1265032610
 GameObject:
@@ -52369,6 +52481,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &1268996067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52600,6 +52715,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1275124910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53014,6 +53131,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
 --- !u!65 &1282107332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53322,7 +53441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_12_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1812041084}
   extraSoundPath: 
 --- !u!1001 &1284960050
 PrefabInstance:
@@ -54671,6 +54790,8 @@ MonoBehaviour:
   _objectDescription: "quarto da bagun\xE7a"
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 0
   keyName: Chave Fundos
   KeyValue: 1
@@ -55679,7 +55800,7 @@ MonoBehaviour:
   - "Voc\xEA n\xE3o fez nada v\xF3! N\xE3o precisa pensar assim! Voc\xEA n\xE3o fez
     nada!"
   onlyOnce: 1
-  nextDialogue: {fileID: 0}
+  nextDialogue: {fileID: 803387998}
   restrictCharMovement: 0
   endSound: 0
   postProcessEffect: {fileID: 0}
@@ -55714,7 +55835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_04_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 141613487}
   extraSoundPath: 
 --- !u!1 &1335806778
 GameObject:
@@ -56119,6 +56240,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &1343821199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57451,6 +57575,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8989847495820276221, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8885956136820922030, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -8786553689470045365, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57516,11 +57650,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8583595826516640866, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -8534134178280293434, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f91c6165b39be614ea6f016b6f3270d0, type: 2}
+    - target: {fileID: -7969548856847347251, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -7696122824502497260, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -7013437597787768700, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57536,11 +57685,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a3b914fa32167b448a64058374c37bcd, type: 2}
+    - target: {fileID: -6503360925908969669, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -6445307313714105313, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -6242154877287944330, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c4f2599afdfe93549be185152571ff12, type: 2}
+    - target: {fileID: -5990534219306594289, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -5854864951159837813, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -5733465937536545225, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57566,6 +57735,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 612c24008fa61c24081c2f5389262921, type: 2}
+    - target: {fileID: -4688144853892881758, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4379674946125890972, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4323694710716228484, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -4274717416321223177, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57576,20 +57760,100 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f30432034e44bba4e8c0b024742955c3, type: 2}
+    - target: {fileID: -4241284044384829913, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4062106030196064662, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3804558527607714300, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -3583152452976381918, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2921817891343812875, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2683870741574768277, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2500710471968352186, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -2142476864913492891, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -1852122231763640545, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 008601442549da74881b2ec455bab139, type: 2}
+    - target: {fileID: -1555661367349172113, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1470567322704144541, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -914909918510925445, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8e84daf7b4be48944ac064f35b8bbec8, type: 2}
+    - target: {fileID: -856431881003979274, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -798159075837162854, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -356398706061852757, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -292622614081177210, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 418718875692807178, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 587081010002009547, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 587081010002009547, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 712881581293037853, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
@@ -57600,6 +57864,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FINAL_CasaAvo
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1341978525477931970, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
@@ -57616,11 +57885,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 68e7e0ee919e5b540b3096389962d0eb, type: 2}
+    - target: {fileID: 2044226608788592043, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104147622045263629, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2273630341471057945, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 464708a75f0f8aa45ba1d1791f3f6506, type: 2}
+    - target: {fileID: 2295848171674768256, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519444303527880938, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2880278671452814914, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57641,6 +57930,21 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3810577850334648505, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3834681678552126854, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015403465041245091, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4134762178122337037, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57651,6 +57955,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ee897e3941110934ba1b1e3879a172c6, type: 2}
+    - target: {fileID: 4562632193982484719, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 4769093950851421539, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57666,11 +57975,26 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e6173d77e9362af458e95551b5150feb, type: 2}
+    - target: {fileID: 5529400597237476006, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5665069537183293668, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: cb91f5353ac14b44d854dc13ea6bdf90, type: 2}
+    - target: {fileID: 5720987609495387233, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773986793982045952, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 5880624474785921695, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57681,6 +58005,21 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5e401c79885b64f4faaefd75ec0a2548, type: 2}
+    - target: {fileID: 6116569706872787234, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6196203993424942806, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6331014881661162391, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6610787716311024480, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57691,6 +58030,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0a3e67f4b85739f4b89bf855deb54c34, type: 2}
+    - target: {fileID: 7411522189186414760, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746416191456123337, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7808035422875101728, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -57706,16 +58055,36 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d919c491fc6b2224baf4c14585caed82, type: 2}
+    - target: {fileID: 8253773522048937928, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8359986979984956439, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a28ec46bcf6e31a4e959499f08142b63, type: 2}
+    - target: {fileID: 8418765544522479500, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8455411974777555091, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8ddde914d90776341accf84e1bd69039, type: 2}
+    - target: {fileID: 8498065279995052489, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657614304180347554, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8674250063517191031, guid: 87bb2fe2f19a7fc4898c83a02bdf98a4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -62471,6 +62840,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1481478367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64048,6 +64419,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1512537833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64388,7 +64761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_07_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1493449649}
   extraSoundPath: 
 --- !u!1 &1514759532
 GameObject:
@@ -64580,6 +64953,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1519137537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66364,6 +66739,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!23 &1548687339
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66967,6 +67344,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!1 &1569228031
 GameObject:
   m_ObjectHideFlags: 0
@@ -67044,6 +67424,9 @@ MonoBehaviour:
   _triggerDialogue: 1
   _dialogueIndex: 9
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Cartinha
 --- !u!65 &1569228035
 BoxCollider:
@@ -67456,6 +67839,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1582445941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67797,9 +68182,13 @@ MonoBehaviour:
   _triggerDialogue: 1
   _dialogueIndex: 2
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Chave Entrada
   PressToCollectText: {fileID: 0}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!114 &1590293045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68441,6 +68830,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  objectiveManager: {fileID: 0}
   toalhaHud: {fileID: 0}
   _objectDescription: Chuveiro
 --- !u!65 &1601557699
@@ -69650,6 +70040,9 @@ MonoBehaviour:
   _triggerDialogue: 0
   _dialogueIndex: 0
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
 --- !u!65 &1635630804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69720,6 +70113,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1636101403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70904,6 +71299,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &1653712137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71322,6 +71719,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Gaveta_Madeira_Fecha
 --- !u!65 &1666390079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71969,6 +72368,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1677481958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76562,7 +76963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_06_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1493449649}
   extraSoundPath: 
 --- !u!1001 &1773178140
 PrefabInstance:
@@ -77131,9 +77532,13 @@ MonoBehaviour:
   _triggerDialogue: 1
   _dialogueIndex: 17
   objectOffset: 0
+  isText: 0
+  pressToReadText: {fileID: 0}
+  textUIObj: {fileID: 0}
   itemTag: Bubu
   PressToCollectText: {fileID: 1484627456}
   CollectedObjHud: {fileID: 0}
+  pathCollectSound: 
 --- !u!1 &1784169871
 GameObject:
   m_ObjectHideFlags: 0
@@ -77582,6 +77987,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
 --- !u!65 &1790650554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -77665,6 +78072,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1792777872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83337,7 +83746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_03_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 141613487}
   extraSoundPath: 
 --- !u!1 &1922099590
 GameObject:
@@ -83786,6 +84195,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &1931739536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84261,6 +84672,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &1946424483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -84526,7 +84939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_13_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1812041084}
   extraSoundPath: 
 --- !u!1001 &1950512368
 PrefabInstance:
@@ -84834,6 +85247,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
 --- !u!65 &1956911849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86592,6 +87007,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1001 &2016849160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87939,6 +88356,80 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1001 &2046314687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1324322960344847260, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Post_Processing_Effects (new)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1324322960344847261, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917281607968748661, guid: 883f01c3c458a3c4fa5327cc09fe37cc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 883f01c3c458a3c4fa5327cc09fe37cc, type: 3}
 --- !u!1 &2046915955
 GameObject:
   m_ObjectHideFlags: 0
@@ -89498,6 +89989,8 @@ MonoBehaviour:
   _objectDescription: Porta Entrada
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
   isLocked: 0
   keyName: Chave Entrada
   KeyValue: 1
@@ -90505,6 +90998,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &2118052406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90686,6 +91181,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &2119396758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -90768,7 +91265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_10_ANTONIA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 1812041084}
   extraSoundPath: 
 --- !u!1 &2125962550
 GameObject:
@@ -93481,6 +93978,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 1
   keyName: Sonho3
   KeyValue: 3
@@ -93562,6 +94061,8 @@ MonoBehaviour:
   _objectDescription: Porta Entrada
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
   isLocked: 1
   keyName: GlubGlub
   KeyValue: 1
@@ -94572,6 +95073,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!1 &1018222223632696142
 GameObject:
   m_ObjectHideFlags: 0
@@ -97077,6 +97580,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!65 &2145214385044417095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -104806,6 +105311,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!33 &5210771901910813928
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -108922,6 +109429,8 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: 
+  closePathSound: 
 --- !u!4 &6877190172316925756
 Transform:
   m_ObjectHideFlags: 0
@@ -112523,7 +113032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _soundPath: event:/DUBLAGENS/DUBS_SONHO-3/SONHO-3_DUB_01_FATIMA
   _is3dSound: 1
-  _soundSource: {fileID: 1867230312}
+  _soundSource: {fileID: 141613487}
   extraSoundPath: 
 --- !u!1 &8700261464709520881
 GameObject:

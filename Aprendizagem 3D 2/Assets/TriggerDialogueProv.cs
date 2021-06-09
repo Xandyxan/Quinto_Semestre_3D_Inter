@@ -10,11 +10,22 @@ public class TriggerDialogueProv : MonoBehaviour
     [SerializeField] private Renderer tvRenderer;
     private float delay;
 
+    private PlaySound playSound;
+    private bool hasAnotherSound;
+
+    private void Awake()
+    {
+        playSound = GetComponent<PlaySound>();
+        if (playSound != null) hasAnotherSound = true;
+        else hasAnotherSound = false;
+    }
+
     private void OnTriggerEnter(Collider col)
     {
         if (col.CompareTag("Player"))
         {
             objectiveManager.ExecuteDialogue(dialogueIndex);
+            if (hasAnotherSound) playSound.PlayOneShoot2();
             if (tv)
             {
                 tvRenderer.material.mainTexture = null;

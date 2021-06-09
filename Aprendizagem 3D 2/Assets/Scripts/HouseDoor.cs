@@ -45,8 +45,7 @@ public class HouseDoor : Doors
         else
         {
             base.Interact();
-            knobAnimator.SetTrigger("Open");
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha", this.transform.position);
+            knobAnimator.SetTrigger("Open"); 
             if(collectedItemHud!= null) collectedItemHud.SetActive(false);
             if (hasDoorDialogue && neverBefore)
             {

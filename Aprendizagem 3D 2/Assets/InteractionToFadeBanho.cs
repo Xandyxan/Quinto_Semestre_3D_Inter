@@ -13,7 +13,7 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade, ISele
     [SerializeField] private List<GameObject> roupasAtivar;
     [SerializeField] private List<GameObject> roupasDesativar;
 
-    private DialogueManager2 objectiveManager;
+    [SerializeField] private DialogueManager2 objectiveManager;
 
     [SerializeField] private GameObject toalhaHud;
     [SerializeField] string _objectDescription;
@@ -24,7 +24,6 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade, ISele
     {
         fadeScript = FindObjectOfType<FadeImage>();
         if (PlayerPrefs.HasKey(itemTag)) { PlayerPrefs.DeleteKey(itemTag); }
-        objectiveManager = FindObjectOfType<DialogueManager2>();
     }
 
     public void Interact()
@@ -36,6 +35,7 @@ public class InteractionToFadeBanho : MonoBehaviour, IInteractable, IFade, ISele
             foreach(GameObject roupaSuja in roupasDesativar) { roupaSuja.SetActive(false); }
             if(toalhaHud!= null)toalhaHud.SetActive(false);
             Invoke("ReturnPlayer", 4f);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_MISSAO 1/SFX_Chuveiro", this.transform.position);
         }
         else
         {

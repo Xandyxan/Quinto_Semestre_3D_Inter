@@ -35,6 +35,8 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
 
     [SerializeField] bool _triggerDialogue;
     [SerializeField] int _dialogueIndex;
+    [SerializeField] protected string openPathSound, closePathSound;
+    protected bool soundBuffer;
 
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
     public bool triggerDialogue { get => _triggerDialogue; set => _triggerDialogue = value; }
@@ -59,6 +61,8 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
         if (desirePositionValue.z > Mathf.Abs(0.001f)) positionZ = true;
 
         if (positionOnlyZ) desirePositionValue = new Vector3(idlePosition.x, idlePosition.y, desirePositionValue.z);
+
+        soundBuffer = false;
     }
 
     protected void Update()
@@ -70,11 +74,17 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     public virtual void Interact()
     {
         openingIsHappening = true;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Porta_Med_Armario_AbreFecha", transform.position);
         if (dialogue != null)
         {
             dialogue.RunCoroutine();
             areaTrigger.SetActive(true);
+        }
+
+        if (!soundBuffer)
+        {
+            soundBuffer = true;
+            if (!isOpened) FMODUnity.RuntimeManager.PlayOneShot(openPathSound, transform.position);
+            else FMODUnity.RuntimeManager.PlayOneShot(closePathSound, transform.position);
         }
     }
 
@@ -179,6 +189,7 @@ public class Doors : MonoBehaviour, IInteractable, ISelectable, IObjectiveObj
     {
         if (!isOpened) this.transform.localEulerAngles = idleRotation;
         else this.transform.localEulerAngles = desireRotationValue;
+        soundBuffer = false;
     }
 
     float InspectorRotation(float angle)  //apply to this.transform.localEulerAngles value

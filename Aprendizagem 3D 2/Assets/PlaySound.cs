@@ -57,4 +57,9 @@ public class PlaySound : MonoBehaviour, ISound
     {
         if(extraSoundPath != "") FMODUnity.RuntimeManager.PlayOneShot(extraSoundPath);
     }
+
+    public void PlayOneShoot2()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(soundPath, _soundSource.transform.position);
+    }
 }

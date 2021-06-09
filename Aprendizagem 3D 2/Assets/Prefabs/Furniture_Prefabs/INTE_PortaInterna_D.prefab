@@ -409,11 +409,15 @@ MonoBehaviour:
   _objectDescription: 
   _triggerDialogue: 0
   _dialogueIndex: 0
+  openPathSound: event:/SFX/SFX_GENERAL/SFX_Porta_AbreFecha
+  closePathSound: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
   isLocked: 1
   keyName: Chave Fundos
+  KeyValue: 1
   hasDoorDialogue: 0
   doorLocked: 1
   doorUnlocked: 3
+  collectedItemHud: {fileID: 0}
 --- !u!65 &5557522432817703187
 BoxCollider:
   m_ObjectHideFlags: 0

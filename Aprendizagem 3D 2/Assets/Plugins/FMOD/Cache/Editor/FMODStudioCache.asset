@@ -143,7 +143,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637587482226065272
+  lastModified: 637588134794985499
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -445,7 +445,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 5
   Length: 729
 --- !u!114 &-8481787690227203604
 MonoBehaviour:
@@ -1320,8 +1320,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 456
+  MaxDistance: 5
+  Length: 450
 --- !u!114 &-7523990917771003844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2226,7 +2226,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Dublagens.bank
   Name: Dublagens
   StudioPath: bank:/Dublagens
-  lastModified: 637587482214957607
+  lastModified: 637588134781702731
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -2829,11 +2829,11 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637587482215225563
+  lastModified: 637588134782230618
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6950
+    Value: 7282
   Exists: 1
 --- !u!114 &-5518102672726724149
 MonoBehaviour:
@@ -3088,6 +3088,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10833
+--- !u!114 &-5291544762911657353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_UI/SFX_Mouse_Over
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_UI/SFX_Mouse_Over
+  guid: a89a75ccbc86c147ac22d40d9f3f989a
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7
 --- !u!114 &-5271132936290382324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4681,8 +4704,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 7344
+  MaxDistance: 5
+  Length: 4007
 --- !u!114 &-3604957856911318979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4882,7 +4905,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Length: 4284
 --- !u!114 &-3233068425402236884
 MonoBehaviour:
@@ -4907,7 +4930,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 5
-  Length: 1728
+  Length: 3360
 --- !u!114 &-3153510482457948777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5456,6 +5479,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 7
   Length: 11440
+--- !u!114 &-2455705433208078156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_GENERAL/SFX_Porta_Peq_Armario_Fecha
+  guid: 09ddb277ae4d6d4d84d7051bea1409a1
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 690
 --- !u!114 &-2420575611670136602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7576,7 +7622,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Ambiente.bank
   Name: Ambiente
   StudioPath: bank:/Ambiente
-  lastModified: 637587482200456547
+  lastModified: 637588134756036908
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -8149,12 +8195,19 @@ MonoBehaviour:
   - {fileID: -4701183446077256048}
   - {fileID: -432934253660563463}
   - {fileID: -738593107341892485}
+  - {fileID: -5291544762911657353}
+  - {fileID: 749000445368338836}
+  - {fileID: 1776918976022176190}
+  - {fileID: -2455705433208078156}
+  - {fileID: 7795908689657593413}
+  - {fileID: 5483928670051803219}
+  - {fileID: 231629241316926343}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3597546273694706499}
   StringsBanks:
   - {fileID: -5520625443789888904}
-  stringsBankWriteTime: 637587482215225563
+  stringsBankWriteTime: 637588134782230618
   cacheVersion: 6
 --- !u!114 &16433964368094730
 MonoBehaviour:
@@ -8296,6 +8349,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3879
+--- !u!114 &231629241316926343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_SONHO 2/SFX_Silvana_Chorando
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_SONHO 2/SFX_Silvana_Chorando
+  guid: 91f2be9b8e3f824b8708a74793b6799a
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18280
 --- !u!114 &235037045637125731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8674,6 +8750,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 870
+--- !u!114 &749000445368338836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_UI/SFX_Mouse_Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_UI/SFX_Mouse_Click
+  guid: c0f85fc614592048ab1b4fb0dd41c43d
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14
 --- !u!114 &758557772976861341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9371,6 +9470,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3656
+--- !u!114 &1776918976022176190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_GENERAL/SFX_Porta_Fecha
+  guid: 0f023a31ac7d2f488e83b84ee5a34153
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 10
+  Length: 1220
 --- !u!114 &1810318514190449970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9875,8 +9997,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 17528
+  MaxDistance: 10
+  Length: 18000
 --- !u!114 &2324338999926366723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10338,8 +10460,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 2115
+  MaxDistance: 30
+  Length: 6347
 --- !u!114 &2992307683107945575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10860,7 +10982,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637587482215086851
+  lastModified: 637588134782210593
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -12685,6 +12807,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4440
+--- !u!114 &5483928670051803219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_GENERAL/SFX_Geladeira_Abre
+  guid: 35bd4190db67d841b7a23bb95fb93099
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 1909
 --- !u!114 &5512222916335087959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14663,6 +14808,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4284
+--- !u!114 &7795908689657593413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/SFX_GENERAL/SFX_Geladeira_Fecha
+  guid: 1eee0a9d338f4d4eb40b06c7f251a589
+  Banks:
+  - {fileID: -9077682180399870440}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 5
+  Length: 1054
 --- !u!114 &7804629346040519099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14924,7 +15092,7 @@ MonoBehaviour:
   Path: ../../FMOD-LAMA/Build/Desktop/Musicas.bank
   Name: Musicas
   StudioPath: bank:/Musicas
-  lastModified: 637587482217896736
+  lastModified: 637588134785799220
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -15429,10 +15597,10 @@ MonoBehaviour:
   - {fileID: -9077682180399870440}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 40672
 --- !u!114 &8780908588806682658
 MonoBehaviour:

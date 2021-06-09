@@ -15,6 +15,7 @@ public class CartaSilvana : Inspecao
         cartaAnimator.SetTrigger("Read");
         base.Interact();
         PlayerPrefs.SetInt(itemTag, 1);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/SFX_GENERAL/SFX_Pegar_Papel", transform.position);
     }
 
     private void Awake()

@@ -33,6 +33,7 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     public string objectDescription { get => _objectDescription; set => _objectDescription = value; }
 
     private FMOD.Studio.EventInstance instance;
+    private bool teste;
 
     private void Awake()
     {
@@ -41,13 +42,14 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
         PlayerPrefs.DeleteKey("FindPote");
 
         instance = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/SFX_MISSAO 3/SFX_Telefone");
+        teste = false;
     }
     public void Interact()
     {
         if (podeAtender)
         {
             GameManager.instance.ConcludeCurrentTask();
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            instance.setVolume(0);
             objectiveManager.ExecuteDialogue(diaFinalIndex);
         }
         else
@@ -59,6 +61,9 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     private void Start()
     {
         ReceberLigacao(false);
+
+        instance.start();
+        instance.release();
     }
 
     private void Update()
@@ -67,15 +72,16 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
 
         distanceFromPlayer = Vector3.Distance(this.transform.position, playerTransform.position); // distancia entre o player e o telefone
 
-        if(distanceFromPlayer < 1.4f && !podeAtender) // player se aproxima no inicio do game, quando ainda não pode atender a ligação
+        if(distanceFromPlayer < 1.4f && !podeAtender && !teste) // player se aproxima no inicio do game, quando ainda não pode atender a ligação
         {
             // stop telephone sound
             GameManager.instance.ConcludeCurrentTask();
             objectiveManager.ExecuteDialogue(ligacaoDesligaDialogueIndex);
             triggerMensagens.ActivateTrigger();
             PlayerPrefs.SetInt("FindPote", 1);
-            instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            
+            instance.setVolume(0);
+            teste = true;
+
         }
         else if(distanceFromPlayer > 2.8f)
         {
@@ -94,9 +100,9 @@ public class TelefoneMissao3 : MonoBehaviour, IInteractable, ISelectable
     public void ReceberLigacao(bool ligaram)
     {
         // chamar aqui o código de fazer som de telefone tocando
-        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        instance.start();
-        instance.release();
+        instance.setVolume(1);
+
+        
         podeAtender = ligaram;
     }
 
